@@ -27,9 +27,9 @@
         p{
             font-size: 16px !important;
         }
-        .aboutmain_sec .aboutsideimg{
+        /* .aboutmain_sec .aboutsideimg{
             height: 100% !important;
-        }
+        } */
         .aboutsecond_sec{
             padding: 80px 0 40px 0;
             background-color: #fff;
@@ -58,6 +58,15 @@
         }
         .aboutthird_sec .section-header{
             margin-bottom: 30px !important;
+        }
+        @media only screen and (max-width: 768px) {
+            .aboutsecond_sec .aboutsideimg img{
+                height: 300px;
+                margin-bottom: 20px;
+            }
+            .aboutthird_sec .aboutsideimg img{
+            height: 300px;
+        }
         }
     </style>
 @endsection
