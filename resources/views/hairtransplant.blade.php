@@ -264,6 +264,20 @@
             border-radius: 3px;
             transition: 0.3s;
         }
+        @media only screen and (max-width: 768px) {
+            .pricing .card{
+                margin-bottom: 20px;
+            }
+            .exploreclinic .card{
+                margin-bottom: 20px;
+            }
+            .howitworks .card{
+                margin-bottom: 20px;
+            }
+            .hairTfaq .nav-item .active{
+                background-color:#f1f7fc;
+            }
+        }
 
         /* .experts .subtitle {
                     font-size: 14px;
@@ -896,7 +910,7 @@
 
 
         <!-- Services Section -->
-        <section id="pricing" class=" pricing services section mb-4">
+        <section id="pricing" class="pricing services section mb-4">
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Our Pricing structure</h2>
