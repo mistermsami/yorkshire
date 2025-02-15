@@ -28,6 +28,11 @@
   <!-- Main CSS File -->
   <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
   @yield('head')
+  <style>
+    .navmenu li a{
+        font-weight: 600;
+    }
+  </style>
   <!-- =======================================================
   * Template Name: Medilab
   * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
