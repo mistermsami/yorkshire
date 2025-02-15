@@ -150,6 +150,8 @@
             padding: 10px 25px;
             border-radius: 3px;
             transition: 0.3s;
+            margin-bottom: 20px;
+
         }
 
         .experts .doc_details img {
@@ -307,7 +309,7 @@
                                     Restore your hair with the UK’s most trusted hair clinic. Yrokshire has helped over
                                     <b>200,000</b> men regain their confidence.
                                 </p>
-                                <button class="cta-btn booking d-none d-sm-block" href="#appointment">Book a
+                                <button class="cta-btn booking d-none d-sm-block" onclick="window.location.href='#appointment'">Book a
                                     Culsultation</button>
                             </div>
                         </div>
@@ -667,9 +669,9 @@
 
             <div class="text-center mb-4">
                 {{-- <button class="btn btn-primary filter-button active" data-filter=".Doctor1">Doctor 1</button> --}}
-                <button class="btn-btn docbtn filter-button active" data-filter=".Doctor1">Doctor 1</button>
-                <button class="btn-btn docbtn filter-button" data-filter=".Doctor2">Doctor 2</button>
-                <button class="btn-btn docbtn filter-button" data-filter=".Doctor3">Doctor 3</button>
+                <button class="btn-btn docbtn filter-button active" data-filter=".Doctor1">Dr. Furqan</button>
+                <button class="btn-btn docbtn filter-button" data-filter=".Doctor2">Dr. Kamran</button>
+                <button class="btn-btn docbtn filter-button" data-filter=".Doctor3">Dr. Imran</button>
             </div>
 
 
@@ -687,8 +689,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
+                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
+                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -698,8 +700,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Best surgical result</b></p>
-                                            <p class="subtitle">Finalist at aesthetic awards 2023</p>
+                                            <p class="title text-center"><b>Best surgical result</b></p>
+                                            <p class="subtitle text-center">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -763,8 +765,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
+                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
+                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -774,8 +776,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Best surgical result</b></p>
-                                            <p class="subtitle">Finalist at aesthetic awards 2023</p>
+                                            <p class="title text-center"><b>Best surgical result</b></p>
+                                            <p class="subtitle text-center">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -839,8 +841,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
+                                            <p "><b>Hair restoration practitioner 2023</b></p>
+                                            <p cla">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -850,8 +852,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title"><b>Best surgical result</b></p>
-                                            <p class="subtitle">Finalist at aesthetic awards 2023</p>
+                                            <p "><b>Best surgical result</b></p>
+                                            <p cla">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>

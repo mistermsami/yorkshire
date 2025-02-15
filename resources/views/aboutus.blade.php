@@ -242,5 +242,95 @@
         </div>
     </section>
     <!-- /Popular Section -->
+    <!-- Popular Section -->
+    <section class="section aboutthird_sec">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+
+                        <div class="section-header">
+                            {{-- <p>Our Services</p> --}}
+                            <h2 style="font-size: 40px; font-weight: 700; margin-bottom:15px;">
+                                What We Stand For
+                            </h2>
+                            {{-- <h3 style="font-size: 34px; font-weight: 600;">This feels good,</h3> --}}
+                        </div>
+                        <div class="about-content">
+                            <p>
+                                We started talking—first to each other, then to others—and actively sought help. The more we spoke, the better we felt. The more we learned about solutions, the more we began to apply them in our lives. And you know what? Taking care of yourself, inside and out, really works.
+                                <br>
+                                But we’re not done yet—it’s a journey. We created Manual to help all of us find the best path to well-being.
+                                <br>
+                                So grab the guide, change gears, and let’s get started. Health and happiness? Let’s make it happen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Doctor Widget -->
+                    <div class="profile-widget">
+                        <div class="doc-img aboutsideimg">
+                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_3-4.png')}}">
+                            {{-- <a href="javascript:void(0)" class="fav-btn">
+                                <i class="far fa-bookmark"></i>
+                            </a> --}}
+                        </div>
+
+                    </div>
+                    <!-- /Doctor Widget -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Popular Section -->
+    <!-- Popular Section -->
+    <section class="section aboutsecond_sec mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Doctor Widget -->
+                    <div class="profile-widget">
+                        <div class="doc-img aboutsideimg">
+                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_1-1.png')}}">
+                            {{-- <a href="javascript:void(0)" class="fav-btn">
+                                <i class="far fa-bookmark"></i>
+                            </a> --}}
+                        </div>
+
+                    </div>
+                    <!-- /Doctor Widget -->
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+
+                        <div class="section-header">
+                            {{-- <p>Our Services</p> --}}
+                            <h2 style="font-size: 40px; font-weight: 700; margin-bottom:15px;">
+                                Where We located
+                            </h2>
+                            {{-- <h3 style="font-size: 34px; font-weight: 600;">This feels good,</h3> --}}
+                        </div>
+                        <div class="about-content">
+                            <p>
+                                LS8 5jL Luxer View Leeds, united kingdom
+                            </p>
+                            <p>
+                                Pakistan
+                            </p>
+                            <p>
+                                UAE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Popular Section -->
     </main>
 @endsection
