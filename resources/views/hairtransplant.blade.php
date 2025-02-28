@@ -13,6 +13,7 @@
     and for custom css --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
         .aboutmain_sec {
             padding-top: 40px;
@@ -264,8 +265,58 @@
             font-weight: 500;
             padding: 10px 25px;
             border-radius: 3px;
-            transition: 0.3s;
         }
+        .stepper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .step {
+            color: #fff;
+            background: #8cbbe4;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 25px;
+            border-radius: 3px;
+        }
+        .step.active {
+            color: #fff;
+            background: #1977cc;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 25px;
+            border-radius: 3px;
+        }
+        .step-content {
+            display: none;
+        }
+        .step-content.active {
+            display: block;
+        }
+
+        .primartbtn{
+            color: #fff;
+            background: #1977cc;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+            padding: 10px 25px;
+            border-radius: 3px;
+        }
+        .previousbtn{
+            color: #fff;
+            background: #848a90;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+            padding: 10px 25px;
+            border-radius: 3px;
+        }
+        .flatpickr-calendar { width: 100%; }
         @media only screen and (max-width: 768px) {
             .pricing .card{
                 margin-bottom: 20px;
@@ -1435,49 +1486,58 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        <div class="stepper d-flex justify-content-between">
+                            <div class="step active">Step 1</div>
+                            <div class="step">Step 2</div>
+                            <div class="step">Step 3</div>
+                        </div>
                         <form action="" method="post" class="php-email-form">
-                            <div class="row gy-4">
-
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                        required="">
+                            <!-- Step 1: User Details -->
+                            <div class="step-content active">
+                                <div class="row gy-4">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <select name="clinic" class="form-select" required>
+                                            <option value="">Preferred Clinic*</option>
+                                            <option value="London">London</option>
+                                            <option value="Leeds">Leeds</option>
+                                            <option value="Manchester">Manchester</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <select name="contact_method" class="form-select" required>
+                                            <option value="">Preferred Contact Method</option>
+                                            <option value="Mobile">Mobile</option>
+                                            <option value="Email">Email</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
+                            </div>
 
-                                <div class="col-md-6 ">
-                                    <input type="tel" class="form-control" name="phone" placeholder="Phone umber"
-                                        required="">
-                                </div>
+                            <!-- Step 2: Date Selection -->
+                            <div class="step-content">
+                                <h3>Select a Date</h3>
+                                <input type="date" name="appointment_date" class="form-control active" required>
+                                {{-- <input type="text" id="calendar" class="form-control" placeholder="Pick a Date" required> --}}
+                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
+                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
+                            </div>
 
-                                <div class="col-md-12">
-                                    <input type="email" class="form-control" name="email" placeholder="Email"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <select name="department" id="department" class="form-select" required="">
-                                        <option value="">Preferred Clinic*</option>
-                                        <option value="Department 1">London</option>
-                                        <option value="Department 2">Leeds</option>
-                                        <option value="Department 3">Manchester</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <select name="department" id="department" class="form-select" required="">
-                                        <option value="">Preferred method of contact</option>
-                                        <option value="Department 1">Mobile</option>
-                                        <option value="Department 2">Email</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    {{-- <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div> --}}
-
-                                    <button type="submit" class="w-100">Submit</button>
-                                </div>
-
+                            <!-- Step 3: Time Selection -->
+                            <div class="step-content">
+                                <h3>Select a Time</h3>
+                                <input type="time" name="appointment_time" class="form-control" required>
+                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
+                                <button type="submit" class="btn btn-success primartbtn">Submit</button>
                             </div>
                         </form>
                     </div><!-- End Contact Form -->
@@ -1487,6 +1547,35 @@
         </section>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        $(document).ready(function () {
+            let currentStep = 0;
+            const steps = $(".step-content");
+            const indicators = $(".step");
+
+            function showStep(index) {
+                steps.removeClass("active");
+                indicators.removeClass("active");
+                $(steps[index]).addClass("active");
+                $(indicators[index]).addClass("active");
+            }
+
+            $(".next-step").click(function () {
+                if (currentStep < steps.length - 1) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
+            });
+
+            $(".prev-step").click(function () {
+                if (currentStep > 0) {
+                    currentStep--;
+                    showStep(currentStep);
+                }
+            });
+        });
+    </script>
     <script>
         $(document).ready(function() {
             var $grid = $('.grid').isotope({

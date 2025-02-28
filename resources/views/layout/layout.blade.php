@@ -67,7 +67,8 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 50px !important;">
+          <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 50px !important;">
+          {{-- <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 50px !important;"> --}}
           {{-- <h1 class="sitename">Medilab</h1> --}}
         </a>
 
@@ -128,7 +129,8 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             {{-- <span class="sitename">Medilab</span> --}}
-            <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 80px !important;">
+            <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 80px !important;">
+            {{-- <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 80px !important;"> --}}
           </a>
           <div class="footer-contact pt-3">
             <p>LS8 5jL Luxer View Leeds</p>
