@@ -35,7 +35,9 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background">
 
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+            <img src="assets/img/hero1.2.jpg" alt="" data-aos="fade-in">
+            {{-- <img src="assets/img/hero1.1.jpg" alt="" data-aos="fade-in"> --}}
+            {{-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> --}}
 
             <div class="container position-relative">
 
@@ -119,7 +121,8 @@
                 <div class="row gy-4 gx-5">
                     {{-- data-aos="fade-up" data-aos-delay="200" --}}
                     <div class="col-lg-6 position-relative align-self-start">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/about1.3.jpg" class="img-fluid" style="height: 450px; width: 100%; object-fit: cover;" alt="">
+                        {{-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> --}}
                         <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
                             class="glightbox pulsating-play-btn"></a>
                     </div>
