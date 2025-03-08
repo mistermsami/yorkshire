@@ -129,7 +129,7 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             {{-- <span class="sitename">Medilab</span> --}}
-            <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 80px !important;">
+            <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 53px !important;">
             {{-- <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 80px !important;"> --}}
           </a>
           <div class="footer-contact pt-3">
