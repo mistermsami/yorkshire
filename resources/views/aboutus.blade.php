@@ -62,6 +62,10 @@
         .aboutthird_sec .section-header{
             margin-bottom: 30px !important;
         }
+        .textarea{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
         @media only screen and (max-width: 768px) {
             .aboutsecond_sec .aboutsideimg img{
                 width: 100%;
@@ -137,7 +141,7 @@
                     </div>
                     <!-- /Doctor Widget -->
                 </div>
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center textarea">
                     <div>
 
                         <div class="section-header">
@@ -164,7 +168,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center textarea">
                     <div>
 
                         <div class="section-header">
@@ -217,7 +221,7 @@
                     </div>
                     <!-- /Doctor Widget -->
                 </div>
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center textarea">
                     <div>
 
                         <div class="section-header">
@@ -250,7 +254,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center textarea">
                     <div>
 
                         <div class="section-header">
@@ -307,7 +311,7 @@
                     </div>
                     <!-- /Doctor Widget -->
                 </div>
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center textarea">
                     <div>
 
                         <div class="section-header">

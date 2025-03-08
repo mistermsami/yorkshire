@@ -46,10 +46,10 @@
         }
 
         /* .aboutsecond_sec .profile-widget{
-                                background-color: #f3f1ee;
-                                border-radius: 20px;
-                                padding: 20px;
-                            } */
+                                        background-color: #f3f1ee;
+                                        border-radius: 20px;
+                                        padding: 20px;
+                                    } */
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
             border-radius: 25px !important;
@@ -247,17 +247,20 @@
         .howitworks .card-body .card-title {
             font-weight: 700;
         }
-        /* .hairTfaq .hidden-content {
-            display: none;
 
-        } */
+        /* .hairTfaq .hidden-content {
+                    display: none;
+
+                } */
         .hairTfaq .details p {
             transition: all 0.5s ease-in-out;
         }
+
         .hairTfaq .hidden-content {
             display: none;
         }
-        .hairTfaq .seemorebtn{
+
+        .hairTfaq .seemorebtn {
             color: #fff;
             background: #1977cc;
             border: none;
@@ -266,11 +269,13 @@
             padding: 10px 25px;
             border-radius: 3px;
         }
+
         .stepper {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
         }
+
         .step {
             color: #fff;
             background: #8cbbe4;
@@ -280,6 +285,7 @@
             padding: 10px 25px;
             border-radius: 3px;
         }
+
         .step.active {
             color: #fff;
             background: #1977cc;
@@ -289,14 +295,16 @@
             padding: 10px 25px;
             border-radius: 3px;
         }
+
         .step-content {
             display: none;
         }
+
         .step-content.active {
             display: block;
         }
 
-        .primartbtn{
+        .primartbtn {
             color: #fff;
             background: #1977cc;
             border: none;
@@ -306,7 +314,8 @@
             padding: 10px 25px;
             border-radius: 3px;
         }
-        .previousbtn{
+
+        .previousbtn {
             color: #fff;
             background: #848a90;
             border: none;
@@ -316,26 +325,57 @@
             padding: 10px 25px;
             border-radius: 3px;
         }
-        .flatpickr-calendar { width: 100%; }
+
+        .flatpickr-calendar {
+            width: 100%;
+        }
+
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /* display: flex; */
+            gap: 5px;
+            /* max-width: 300px; */
+            /* margin: auto; */
+        }
+
+        .day-box {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .day-box.selected {
+            background-color: #007bff;
+            color: white;
+        }
+
         @media only screen and (max-width: 768px) {
-            .pricing .card{
+            .pricing .card {
                 margin-bottom: 20px;
             }
-            .exploreclinic .card{
+
+            .exploreclinic .card {
                 margin-bottom: 20px;
             }
-            .howitworks .card{
+
+            .howitworks .card {
                 margin-bottom: 20px;
             }
-            .hairTfaq .nav-item .active{
-                background-color:#f1f7fc;
+
+            .hairTfaq .nav-item .active {
+                background-color: #f1f7fc;
             }
         }
 
         /* .experts .subtitle {
-                    font-size: 14px;
-                    color: #5c7a7a;
-                } */
+                            font-size: 14px;
+                            color: #5c7a7a;
+                        } */
     </style>
 @endsection
 
@@ -360,7 +400,8 @@
                                     Restore your hair with the UK’s most trusted hair clinic. Yrokshire has helped over
                                     <b>200,000</b> men regain their confidence.
                                 </p>
-                                <button class="cta-btn booking d-none d-sm-block" onclick="window.location.href='#appointment'">Book a
+                                <button class="cta-btn booking d-none d-sm-block"
+                                    onclick="window.location.href='#appointment'">Book a
                                     Culsultation</button>
                             </div>
                         </div>
@@ -894,7 +935,7 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Hair restoration practitioner 2023</b></p>
-                                            <p cla">Shortlisted at aesthetic medicine awards</p>
+                                                    <p cla">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -905,7 +946,7 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Best surgical result</b></p>
-                                            <p cla">Finalist at aesthetic awards 2023</p>
+                                                    <p cla">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1041,6 +1082,23 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+
+
+
+                {{-- financing --}}
+                <div class="col-md-12 mt-5">
+                    <div class="card p-5" style="background-color: #f3f1ee; border: none; border-radius: 15px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="width: 100%" alt="financing">
+                            </div>
+                            <div class="col-md-10 pt-1">
+                                <h3>0% financing available</h3>
+                                {{-- <br> --}}
+                                <p>Finance your transplant at 0% interest up to 12 months.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1291,25 +1349,32 @@
                                     transplant right for me?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Is a hair transplant permanent?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Is a hair transplant
+                                    permanent?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Will I be left with scarring?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Will I be left with
+                                    scarring?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Is a hair transplant procedure painful?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Is a hair transplant
+                                    procedure painful?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Will I need to take medications?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Will I need to take
+                                    medications?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">Will I have to cut my hair short or shave my head?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">Will I have to cut my
+                                    hair short or shave my head?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Which hair transplant procedure is best for me?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Which hair transplant
+                                    procedure is best for me?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">How long after my hair transplant will I see results?</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">How long after my hair
+                                    transplant will I see results?</a>
                             </li>
                         </ul>
                     </div>
@@ -1324,23 +1389,23 @@
                                             you, including:
                                         </p>
 
-                                            <h4 class="pt-2">Your age</h4>
-                                            <p class="fst-italic">
-                                                Your existing level of hair loss is a major factor in determining whether a
-                                                hair transplant is the right course of treatment for you. If your thinning
-                                                or balding isn’t very severe it may be treatable with medications such as
-                                                Finasteride and Minoxidil. If your hair loss is too severe, there may not be
-                                                sufficient donor hair available to perform an effective hair transplant.
-                                            </p>
+                                        <h4 class="pt-2">Your age</h4>
+                                        <p class="fst-italic">
+                                            Your existing level of hair loss is a major factor in determining whether a
+                                            hair transplant is the right course of treatment for you. If your thinning
+                                            or balding isn’t very severe it may be treatable with medications such as
+                                            Finasteride and Minoxidil. If your hair loss is too severe, there may not be
+                                            sufficient donor hair available to perform an effective hair transplant.
+                                        </p>
                                         {{-- <div id="hiddenSection" class="hidden-content"> --}}
-                                            <h4 class="pt-2">Donor hair density</h4>
-                                            <p class="fst-italic">
-                                                Good hair density on the back and sides of the head is one of the most
-                                                important factors. This is where donor follicles are usually harvested from,
-                                                so density in these areas is critical in determining if a transplant will be
-                                                a success for you.
-                                            </p>
-                                            <div id="hiddenSection" class="hidden-content">
+                                        <h4 class="pt-2">Donor hair density</h4>
+                                        <p class="fst-italic">
+                                            Good hair density on the back and sides of the head is one of the most
+                                            important factors. This is where donor follicles are usually harvested from,
+                                            so density in these areas is critical in determining if a transplant will be
+                                            a success for you.
+                                        </p>
+                                        <div id="hiddenSection" class="hidden-content">
                                             <h4 class="pt-2">Hair texture</h4>
                                             <p class="fst-italic">
                                                 All hair types are suitable for hair transplant surgery. Patients with curly
@@ -1366,9 +1431,18 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Is a hair transplant permanent?</h3>
                                         <p class="fst-italic">
-                                            You’ll start to see the full results of your hair transplant after 12 to 18 months, when most of the transplanted hair follicles will have reached their full potential. We expect the majority of the transplanted hairs to remain permanently, although you can expect a small amount of shedding as you age.
+                                            You’ll start to see the full results of your hair transplant after 12 to 18
+                                            months, when most of the transplanted hair follicles will have reached their
+                                            full potential. We expect the majority of the transplanted hairs to remain
+                                            permanently, although you can expect a small amount of shedding as you age.
                                             <br>
-                                            It’s important to note the role of non-surgical treatment, namely medication, alongside a transplant. As well as ensuring that you achieve the best results from your procedure, hair-loss medication will help you maintain hair in other areas that may be vulnerable to thinning. Most patients will warrant another procedure or a smaller, top-up procedure if their hair loss progresses - we’ll discuss this with you in your consultation to ensure that you have a thorough long-term plan to manage your hair loss.
+                                            It’s important to note the role of non-surgical treatment, namely medication,
+                                            alongside a transplant. As well as ensuring that you achieve the best results
+                                            from your procedure, hair-loss medication will help you maintain hair in other
+                                            areas that may be vulnerable to thinning. Most patients will warrant another
+                                            procedure or a smaller, top-up procedure if their hair loss progresses - we’ll
+                                            discuss this with you in your consultation to ensure that you have a thorough
+                                            long-term plan to manage your hair loss.
                                         </p>
                                     </div>
                                 </div>
@@ -1378,7 +1452,12 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Will I be left with scarring?</h3>
                                         <p class="fst-italic">
-                                            All current hair transplant procedures will cause some degree of scarring. However, a procedure performed by an experienced surgeon will result in minimal, virtually undetectable scars. Scars from FUE techniques are often not visible at all once there is even a small amount of growth in the donor area. FUT procedures leave a linear scar which may be more apparent with shorter hair so this method tends to suit those who plan to keep their hair longer.
+                                            All current hair transplant procedures will cause some degree of scarring.
+                                            However, a procedure performed by an experienced surgeon will result in minimal,
+                                            virtually undetectable scars. Scars from FUE techniques are often not visible at
+                                            all once there is even a small amount of growth in the donor area. FUT
+                                            procedures leave a linear scar which may be more apparent with shorter hair so
+                                            this method tends to suit those who plan to keep their hair longer.
 
 
                                         </p>
@@ -1390,7 +1469,12 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Is a hair transplant procedure painful?</h3>
                                         <p class="fst-italic">
-                                            Hair transplants are performed under local anaesthesia - once the initial injections have been administered you should feel no pain or discomfort during the procedure. Our patients often find the procedure relaxing and many fall asleep. You can expect some minor swelling and mild discomfort after the procedure but this will subside and is easily managed with medication. The day following your surgery you should have no significant pain or discomfort.
+                                            Hair transplants are performed under local anaesthesia - once the initial
+                                            injections have been administered you should feel no pain or discomfort during
+                                            the procedure. Our patients often find the procedure relaxing and many fall
+                                            asleep. You can expect some minor swelling and mild discomfort after the
+                                            procedure but this will subside and is easily managed with medication. The day
+                                            following your surgery you should have no significant pain or discomfort.
                                         </p>
                                     </div>
                                 </div>
@@ -1399,7 +1483,8 @@
                                 <div class="row">
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Will I need to take medications?</h3>
-                                        <p class="fst-italic">Following your surgery we’ll prescribe a tailored selection of medications to prevent infection and alleviate any potential discomfort:
+                                        <p class="fst-italic">Following your surgery we’ll prescribe a tailored selection
+                                            of medications to prevent infection and alleviate any potential discomfort:
                                         </p>
                                         <ol>
                                             <li>Antibiotics to minimise the risk of infection</li>
@@ -1408,7 +1493,8 @@
                                             <li>Steroid tablets may also be prescribed to prevent and reduce swelling</li>
                                         </ol>
                                         <p>
-                                            We will also prescribe hair-loss medications to enhance and maintain the results of your hair transplant:
+                                            We will also prescribe hair-loss medications to enhance and maintain the results
+                                            of your hair transplant:
                                         </p>
                                         <ol>
                                             <li>Minoxidil to stimulate continued hair growth</li>
@@ -1422,7 +1508,12 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Will I have to cut my hair short or shave my head?</h3>
                                         <p class="fst-italic">
-                                            Most of our procedures are performed using a part-shaven technique which allows you to keep most of the hair on top whilst we trim the donor area to facilitate extraction. However, we also offer unshaven FUE hair transplant (UFUE) and direct hair implantation methods which allow us to perform the procedure without having to shave a larger area. This may not be achievable for all patients so we suggest discussing this with your surgeon during your consultation.
+                                            Most of our procedures are performed using a part-shaven technique which allows
+                                            you to keep most of the hair on top whilst we trim the donor area to facilitate
+                                            extraction. However, we also offer unshaven FUE hair transplant (UFUE) and
+                                            direct hair implantation methods which allow us to perform the procedure without
+                                            having to shave a larger area. This may not be achievable for all patients so we
+                                            suggest discussing this with your surgeon during your consultation.
                                         </p>
                                     </div>
                                 </div>
@@ -1432,7 +1523,11 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>Which hair transplant procedure is best for me?</h3>
                                         <p class="fst-italic">
-                                            The recommended transplant procedure will depend on your level of hair loss and personal preferences. We therefore advise all of our patients to speak to one of our hair transplant specialists who will pass your details on to one of our surgeons and they will create a bespoke hair transplant plan that will best suit your hair restoration requirements.
+                                            The recommended transplant procedure will depend on your level of hair loss and
+                                            personal preferences. We therefore advise all of our patients to speak to one of
+                                            our hair transplant specialists who will pass your details on to one of our
+                                            surgeons and they will create a bespoke hair transplant plan that will best suit
+                                            your hair restoration requirements.
                                         </p>
                                     </div>
                                 </div>
@@ -1442,10 +1537,15 @@
                                     <div class="col-lg-12 details order-2 order-lg-1">
                                         <h3>How long after my hair transplant will I see results?</h3>
                                         <p class="fst-italic">
-                                            You can expect to see new, sustained hair growth at month 3 following your procedure - after the shedding phase. This time frame varies from patient to patient, however, so it could take a little longer. The initial growth is gentle which has the benefit of making your transplant seem “undetectable” but your hairs will gradually start to thicken and look more voluminous.
+                                            You can expect to see new, sustained hair growth at month 3 following your
+                                            procedure - after the shedding phase. This time frame varies from patient to
+                                            patient, however, so it could take a little longer. The initial growth is gentle
+                                            which has the benefit of making your transplant seem “undetectable” but your
+                                            hairs will gradually start to thicken and look more voluminous.
                                         </p>
                                         <p class="fst-italic">
-                                            After 12 to 18 months, you will see the full results of your hair transplant and can show off your new hair with confidence.
+                                            After 12 to 18 months, you will see the full results of your hair transplant and
+                                            can show off your new hair with confidence.
                                         </p>
                                     </div>
                                 </div>
@@ -1527,7 +1627,39 @@
                             <!-- Step 2: Date Selection -->
                             <div class="step-content">
                                 <h3>Select a Date</h3>
-                                <input type="date" name="appointment_date" class="form-control active" required>
+                                {{-- <input type="date" name="appointment_date" class="form-control active" required> --}}
+
+                                <div class="row gy-4">
+                                    <div class="col-md-6">
+                                        <select id="month-selector" class="form-select">
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select id="year-selector" class="form-select">
+                                            {{-- <option value="2024">2024</option> --}}
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+
+                                        <div id="custom-calendar" class="calendar-container form-control"></div>
+                                    </div>
+                                </div>
+
                                 {{-- <input type="text" id="calendar" class="form-control" placeholder="Pick a Date" required> --}}
                                 <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
                                 <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
@@ -1536,7 +1668,23 @@
                             <!-- Step 3: Time Selection -->
                             <div class="step-content">
                                 <h3>Select a Time</h3>
-                                <input type="time" name="appointment_time" class="form-control" required>
+                                {{-- <input type="time" name="appointment_time" class="form-control" required> --}}
+                                <div class="col-md-12">
+                                    <select name="appointment_time" class="form-select" required>
+                                        <option value="">Preferred Time*</option>
+                                        <option value="9:00am">9:00 am</option>
+                                        <option value="10:00am">10: 00 am</option>
+                                        <option value="11:00am">11:00 am</option>
+                                        <option value="11:00am">11:00 am</option>
+                                        <option value="12:00pm">12:00 pm</option>
+                                        <option value="01:00pm">01:00 pm</option>
+                                        <option value="02:00pm">02:00 pm</option>
+                                        <option value="03:00pm">03:00 pm</option>
+                                        <option value="04:00pm">04:00 pm</option>
+                                        <option value="05:00pm">05:00 pm</option>
+                                        <option value="06:00pm">06:00 pm</option>
+                                    </select>
+                                </div>
                                 <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
                                 <button type="submit" class="btn btn-success primartbtn">Submit</button>
                             </div>
@@ -1550,7 +1698,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             let currentStep = 0;
             const steps = $(".step-content");
             const indicators = $(".step");
@@ -1562,14 +1710,27 @@
                 $(indicators[index]).addClass("active");
             }
 
-            $(".next-step").click(function () {
-                if (currentStep < steps.length - 1) {
+            function validateStep(index) {
+                let isValid = true;
+                $(steps[index]).find("input[required], select[required]").each(function() {
+                    if (!$(this).val()) {
+                        $(this).addClass("is-invalid");
+                        isValid = false;
+                    } else {
+                        $(this).removeClass("is-invalid");
+                    }
+                });
+                return isValid;
+            }
+
+            $(".next-step").click(function() {
+                if (validateStep(currentStep) && currentStep < steps.length - 1) {
                     currentStep++;
                     showStep(currentStep);
                 }
             });
 
-            $(".prev-step").click(function () {
+            $(".prev-step").click(function() {
                 if (currentStep > 0) {
                     currentStep--;
                     showStep(currentStep);
@@ -1595,6 +1756,40 @@
                 $('.filter-button').removeClass('active');
                 $(this).addClass('active');
             });
+        });
+    </script>
+    {{-- date picker --}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const calendarContainer = document.getElementById("custom-calendar");
+            const monthSelector = document.getElementById("month-selector");
+            const yearSelector = document.getElementById("year-selector");
+            let selectedDate = null;
+
+            function generateCalendar() {
+                calendarContainer.innerHTML = ""; // Clear previous dates
+                const month = parseInt(monthSelector.value);
+                const year = parseInt(yearSelector.value);
+                const daysInMonth = new Date(year, month, 0).getDate();
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    let dayBox = document.createElement("div");
+                    dayBox.classList.add("day-box");
+                    dayBox.textContent = day;
+                    dayBox.addEventListener("click", function() {
+                        if (selectedDate) {
+                            selectedDate.classList.remove("selected");
+                        }
+                        selectedDate = dayBox;
+                        selectedDate.classList.add("selected");
+                    });
+                    calendarContainer.appendChild(dayBox);
+                }
+            }
+
+            monthSelector.addEventListener("change", generateCalendar);
+            yearSelector.addEventListener("change", generateCalendar);
+            generateCalendar(); // Initial load
         });
     </script>
     <script>
