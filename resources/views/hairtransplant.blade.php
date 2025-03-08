@@ -346,7 +346,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center">
-                        <div class="px-4">
+                        <div class="" style="padding-left: 50px; padding-right: 50px;">
 
                             <div class="section-header ">
                                 {{-- <p>Our Services</p> --}}
