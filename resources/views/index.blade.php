@@ -872,6 +872,16 @@
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
+                            <div class="faq-item">
+                                <h3>Is HydraFacial good for sensitive skin?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Suitable for All Skin Types: Whether you have dry, oily, combination, or sensitive skin, the HydraFacial can be customized to suit your unique needs. No Downtime: One of the biggest advantages of a HydraFacial is its zero downtime, allowing clients to return to their daily activities immediately post-treatment.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
                         </div>
 
                     </div><!-- End Faq Column-->

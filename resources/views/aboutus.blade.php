@@ -14,6 +14,7 @@
     <style>
         .aboutmain_sec {
             /* padding-top: 20px; */
+            height: 100vh;
             padding-top: 0;
             padding-bottom: 0;
             /* height: 100vh; */
@@ -40,7 +41,9 @@
             padding: 20px;
         } */
         .aboutsecond_sec .aboutsideimg img{
-            height: 500px;
+            /* height: 500px; */
+            height: 100vh;
+            object-fit: cover
             border-radius: 25px !important;
         }
         .aboutsecond_sec .section-header{
@@ -76,11 +79,11 @@
 @section('maincontent')
     <main class="main">
         <!-- Popular Section -->
-    <section class="section aboutmain_sec">
+    <section class="section aboutmain_sec d-flex align-items-center">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-6 d-flex align-items-center">
-                    <div class="px-4">
+                    <div class="" style="padding-left: 50px; padding-right: 50px;">
 
                         <div class="section-header ">
                             {{-- <p>Our Services</p> --}}
@@ -98,11 +101,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="height: 100%">
                     <!-- Doctor Widget -->
                     <div class="profile-widget">
                         <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" style="height: 100%" alt="User Image" src="{{asset('assets/img/sander-sammy-38Un6Oi5beE-unsplash.jpg')}}">
+                                <img class="img-fluid" style="height: 100vh" alt="User Image" src="{{asset('assets/img/sander-sammy-38Un6Oi5beE-unsplash.jpg')}}">
                                 {{-- <img class="img-fluid" alt="User Image" src="{{asset('assets/img/aboutus.png')}}"> --}}
                             {{-- <a href="javascript:void(0)" class="fav-btn">
                                 <i class="far fa-bookmark"></i>
