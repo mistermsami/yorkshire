@@ -46,10 +46,10 @@
         }
 
         /* .aboutsecond_sec .profile-widget{
-                                        background-color: #f3f1ee;
-                                        border-radius: 20px;
-                                        padding: 20px;
-                                    } */
+                                                background-color: #f3f1ee;
+                                                border-radius: 20px;
+                                                padding: 20px;
+                                            } */
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
             border-radius: 25px !important;
@@ -106,6 +106,15 @@
             border-radius: 10px;
             padding: 20px;
             background-color: #f3f1ee;
+        }
+        .resultsbtn{
+            color: #fff;
+            background: #1977cc;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 25px;
+            border-radius: 3px;
         }
 
         .carousel-control-prev-icon {
@@ -249,9 +258,9 @@
         }
 
         /* .hairTfaq .hidden-content {
-                    display: none;
+                            display: none;
 
-                } */
+                        } */
         .hairTfaq .details p {
             transition: all 0.5s ease-in-out;
         }
@@ -354,6 +363,23 @@
             color: white;
         }
 
+        .transpricing_card {
+            border: none;
+            background-color: #f8f7f6;
+            border-radius: 15px;
+        }
+
+        .transpricingBlue_card {
+            border: none;
+            background-color: #1977cc;
+            border-radius: 15px;
+            color: #f1f7f7;
+        }
+
+        .transpricingBlue_card h3 {
+            color: #f1f7f7;
+        }
+
         @media only screen and (max-width: 768px) {
             .pricing .card {
                 margin-bottom: 20px;
@@ -373,9 +399,9 @@
         }
 
         /* .experts .subtitle {
-                            font-size: 14px;
-                            color: #5c7a7a;
-                        } */
+                                    font-size: 14px;
+                                    color: #5c7a7a;
+                                } */
     </style>
 @endsection
 
@@ -692,6 +718,11 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <button class="cta-btn resultsbtn d-none d-sm-block"
+                                    onclick="window.location.href='#'">View results gallery</button>
+                    </div>
                 </div>
             </div>
 
@@ -935,7 +966,7 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Hair restoration practitioner 2023</b></p>
-                                                    <p cla">Shortlisted at aesthetic medicine awards</p>
+                                                            <p cla">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -946,7 +977,7 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Best surgical result</b></p>
-                                                    <p cla">Finalist at aesthetic awards 2023</p>
+                                                            <p cla">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1086,22 +1117,68 @@
                 </div>
 
 
+                {{-- transparent pricing --}}
+
+                <div class="row mt-5">
+                    <div class="col-md-12 mb-4">
+                        <h2>What is transparent pricing?</h2>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card transpricing_card p-5 d-flex justify-content-center align-items-center">
+                            <div class="transpricing_img">
+                                <img src="{{ asset('assets/img/pound_Icon (5).svg') }}" style="height: 80px"
+                                    alt="Transparent Pricing">
+                            </div>
+                            <div class="transpricing_text text-center mt-4">
+                                <h3>The traditional pricing method</h3>
+                                <p>
+                                    Charged on a per graft basis to maximise the cost of your procedure
+                                </p>
+                            </div>
+                            <div class="position-absolute" style="z-index: 99; right: -28px;">
+                                <div class="vs-badge d-flex justify-content-center align-items-center"
+                                    style="height: 30px; width: 30px; background-color: #000; color: #fff; border-radius: 50%;">
+                                    vs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card transpricingBlue_card p-5 d-flex justify-content-center align-items-center">
+                            <div class="transpricing_img">
+                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="height: 80px"
+                                    alt="Transparent Pricing">
+                            </div>
+                            <div class="transpricing_text text-center mt-4">
+                                <h3>How YORKSHIRE prices</h3>
+                                <p>
+                                    Charged based on the size of procedure you need: small, medium or large
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 {{-- financing --}}
                 <div class="col-md-12 mt-5">
                     <div class="card p-5" style="background-color: #f3f1ee; border: none; border-radius: 15px;">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="width: 100%" alt="financing">
+                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="width: 100%"
+                                    alt="financing">
                             </div>
                             <div class="col-md-10 pt-1">
                                 <h3>0% financing available</h3>
                                 {{-- <br> --}}
                                 <p>Finance your transplant at 0% interest up to 12 months.</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+
         </section>
 
         <!-- Services Section -->
@@ -1597,13 +1674,16 @@
                             <div class="step-content active">
                                 <div class="row gy-4">
                                     <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Your Name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                                        <input type="tel" class="form-control" name="phone"
+                                            placeholder="Phone Number" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            required>
                                     </div>
                                     <div class="col-md-12">
                                         <select name="clinic" class="form-select" required>

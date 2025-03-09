@@ -25,6 +25,11 @@
             font-weight: 700;
             margin-bottom:15px;
         }
+        .aboutmain_sec .aboutsideimg img{
+            height: 100vh;
+            object-fit: cover;
+            /* border-radius: 25px !important; */
+        }
         p{
             font-size: 16px !important;
         }
@@ -40,10 +45,11 @@
             border-radius: 20px;
             padding: 20px;
         } */
+
         .aboutsecond_sec .aboutsideimg img{
-            /* height: 500px; */
-            height: 100vh;
-            object-fit: cover
+            height: 500px;
+            /* height: 100vh; */
+            object-fit: cover;
             border-radius: 25px !important;
         }
         .aboutsecond_sec .section-header{
