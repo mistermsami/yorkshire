@@ -380,6 +380,16 @@
             color: #f1f7f7;
         }
 
+        @media only screen and (max-width: 1399px) and (min-width: 769px) {
+            .afterresult .card{
+                height: 280px !important;
+            }
+            .howitworks .card .card-body{
+                height: 200px;
+            }
+        }
+
+
         @media only screen and (max-width: 768px) {
             .pricing .card {
                 margin-bottom: 20px;
