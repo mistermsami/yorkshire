@@ -1156,7 +1156,7 @@
                     <div class="col-md-6">
                         <div class="card transpricingBlue_card p-5 d-flex justify-content-center align-items-center">
                             <div class="transpricing_img">
-                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="height: 80px"
+                                <img src="{{ asset('assets/img/1finance available.png') }}" style="height: 80px; width: 80px; background-color: rgba(255,255,255, 0.9); border-radius: 50%;"
                                     alt="Transparent Pricing">
                             </div>
                             <div class="transpricing_text text-center mt-4">
@@ -1176,7 +1176,7 @@
                     <div class="card p-5" style="background-color: #f3f1ee; border: none; border-radius: 15px;">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="width: 100%"
+                                <img src="{{ asset('assets/img/1finance available.png') }}" style="width: 100%"
                                     alt="financing">
                             </div>
                             <div class="col-md-10 pt-1">
