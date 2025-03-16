@@ -433,7 +433,7 @@
                                 {{-- <p><b>We’re challenging the outdated notion that real men shrug their shoulders and carry
                                     on.</b></p> --}}
                                 <p>
-                                    Restore your hair with the UK’s most trusted hair clinic. Yrokshire has helped over
+                                    Restore your hair with the UK’s most trusted hair clinic. Yorkshire has helped over
                                     <b>200,000</b> men regain their confidence.
                                 </p>
                                 <button class="cta-btn booking d-none d-sm-block"
