@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
         .aboutmain_sec {
+            min-height: 100vh;
             padding-top: 40px;
             padding-bottom: 40px;
             background-color: #f3f1ee;
@@ -34,6 +35,7 @@
         .aboutmain_sec_img {
             border-radius: 15px;
             width: 100%;
+            height: calc(100vh - 130px);
         }
 
         .aboutmain_sec .aboutsideimg {
@@ -387,6 +389,9 @@
             .howitworks .card .card-body{
                 height: 200px;
             }
+            .aboutmain_sec_img {
+                height: auto;
+            }
         }
 
 
@@ -406,12 +411,10 @@
             .hairTfaq .nav-item .active {
                 background-color: #f1f7fc;
             }
+            .aboutmain_sec_img {
+                height: auto;
+            }
         }
-
-        /* .experts .subtitle {
-                                    font-size: 14px;
-                                    color: #5c7a7a;
-                                } */
     </style>
 @endsection
 
