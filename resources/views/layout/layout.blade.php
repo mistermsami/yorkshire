@@ -40,6 +40,7 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
     @yield('head')
     <style>
         .navmenu li a {
@@ -47,25 +48,25 @@
         }
 
         .footer {
-            background-color: #1977CC;
-            color: #f1f7fc;
+            /* background-color: #1977CC; */
+            /* color: #f1f7fc; */
             bottom: 0
         }
 
         .footer a {
             text-decoration: none;
-            color: #f1f7fc;
+            /* color: #f1f7fc; */
         }
 
         .footer h3 {
             font-size: 18px;
             font-weight: 700;
-            color: #f1f7fc;
+            /* color: #f1f7fc; */
 
         }
 
         .social-links a i {
-            color: #fff
+            /* color: #fff */
         }
 
         .company-img {
@@ -112,7 +113,7 @@
                     <ul>
                         <li><a href="{{ route('/') }}" class="active">Home<br></a></li>
                         <li><a href="{{ route('aboutus') }}">About Us</a></li>
-                        <li class="dropdown"><a href="#"><span>Services</span> <i
+                        <li class="dropdown"><a href="#"><span>Solutions</span> <i
                                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><a href="{{ route('hairtransplant') }}">Hair Transplant</a></li>
@@ -124,23 +125,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('contactus') }}">Contact Us</a></li>
-                        {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li> --}}
+                     
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -158,121 +143,76 @@
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
-    <footer class="footer py-2">
-        <div class="container">
-            <div class="row text-md-start text-center pt-5">
+    <footer id="footer" class="footer light-background">
 
-                <!-- Logo & About -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="footer-logo">
-                        <a href="/">
-                            <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" style="width: 100%;" alt="">
-                        </a>
-                    </div>
-                    {{-- <div class="footer-logo">MEDILAB</div> --}}
-                    <p class="mt-2">Providing quality services with passion and dedication.</p>
-                </div>
-
-
-                <!-- Useful Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>Useful Links</h3>
-                    <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- Services -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>Our Services</h3>
-                    <ul class="list-unstyled list-unstyled d-flex flex-column gap-2 ">
-                        <li><a class="mt-2" href="#">Web Design</a></li>
-                        <li><a class="mt-2" href="#">Web Development</a></li>
-                        <li><a class="mt-2" href="#">Product Management</a></li>
-                        <li><a class="mt-2" href="#">Marketing</a></li>
-                        <li><a class="mt-2" href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-2 col-md-6 mb-4 ">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> A108 Adam Street</p>
-                    <p><i class="fas fa-map-marker-alt"></i> New York, NY 535022</p>
-                    <p><i class="fas fa-phone"></i> +1 5589 55488 55</p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
-                </div>
-
-
-                <!-- Additional Sections -->
-                <div class="col-lg-2  col-md-6 mb-4">
-                    <h3>Nobis illum</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Ipsam</p>
-                    <p>Laudantium dolorum</p>
-                    <p>Dinera</p>
-                    <p>Trodelas</p>
-                    <p>Flexo</p>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>Hic solutasetp</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Molestiae accusamus iure</p>
-                    <p>Excepturi dignissimos</p>
-                    <p>Suscipit distinctio</p>
-                    <p>Dilecta</p>
-                    <p>Sit quas consectetur</p>
-                </div>
-
-
-                <!-- Follow Us -->
-                <div class="col-lg-3 col-md-6 mb-4 text-center">
-                    <h3>Follow Us</h3>
-                    <div class="social-links mt-3 d-flex justify-content-center gap-3">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-
-                <!-- Company Logos -->
-                <div class="col-lg-3 col-md-6 mb-4 text-center">
-                    <div class="row justify-content-center align-items-center g-4">
-                        <div class="col-2 col-md-3 text-center">
-                            <img class="img-fluid company-img" src="{{ asset('assets/img/CPDMember.webp') }}"
-                                alt="CPD Member">
-                        </div>
-                        <div class="col-2 col-md-3 text-center">
-                            <img class="img-fluid company-img" src="{{ asset('assets/img/CQCRatingNew.webp') }}"
-                                alt="CQC Rating">
-                        </div>
-                        <div class="col-2 col-md-3 text-center">
-                            <img class="img-fluid company-img" src="{{ asset('assets/img/footer-image-1.webp') }}"
-                                alt="Company Logo 1">
-                        </div>
-                        <div class="col-2 col-md-3 text-center">
-                            <img class="img-fluid company-img" src="{{ asset('assets/img/footer-image-2-2x.webp') }}"
-                                alt="Company Logo 2">
-                        </div>
-                    </div>
-                </div>
-
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Yorkshire</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>175 Dewsbury Roads 
+                    Leeds
+                    Ls11 5EG</p>
+             
+                <p class="mt-3"><strong>Phone:</strong> <span>+07943289303</span></p>
+                <p><strong>Email:</strong> <span>info@example.com</span></p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
-
-            <hr>
-
-            <div class="text-center mt-4">
-                <p>© 2025 Medilab. All Rights Reserved.</p>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
             </div>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Hair Transplant</a></li>
+                <li><a href="#">Weight Loss Treatments</a></li>
+                <li><a href="#">Laser Hair Removal</a></li>
+                <li><a href="#">PRP</a></li>
+                <li><a href="#">HydraFacial</a></li>
+                <li><a href="#">Tanning Bed</a></li>
+              </ul>
+            </div>
+    
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-headset me-2"></i>Customer Care</a></li>
+                    <li><a href="#"><i class="fas fa-truck me-2"></i>Track Your Order</a></li>
+                    <li><a href="#"><i class="fas fa-undo me-2"></i>Returns & Refunds</a></li>
+                    <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Shipping Information</a></li>
+                    <li><a href="#"><i class="fas fa-envelope me-2"></i>Contact Support</a></li>
+                </ul>
+            </div>
+    
+          </div>
         </div>
-        <!-- Preloader -->
-    </footer>
+    
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Yorkshire</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+           
+          </div>
+        </div>
+    
+      </footer>
 
 
 
