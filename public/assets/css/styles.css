@@ -37,7 +37,7 @@
   font-size: 1.2rem;
   color: #fff;
   animation: slideInRight 1s ease-in-out;
-  margin: 20px 0; /* Add spacing between text and button */
+  margin: 20px 0; 
 }
 
 .carousel-caption .btn {
@@ -448,7 +448,7 @@
 
 .left-side .btn:active {
     transform: translateY(0); /* Reset transform when clicked */
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Reset shadow when clicked */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); 
 }
  
   .before-after-section {
@@ -511,7 +511,11 @@
     text-align: center;
     padding: 0 20px;
   }
-  /* Testimonial Slider */
+  
+  /* Testimonial Slider
+  #testimonials{
+    background: linear-gradient(135deg, #f9f9f9, #d7e8f9);
+  }
   .testimonial-slider {
     margin-top: 60px;
     padding: 0 20px;
@@ -543,8 +547,7 @@
     font-size: 0.9rem;
     color: #777;
   }
-
-
+   */
   .meet-experts-section {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -597,28 +600,28 @@
     overflow: hidden;
   }
   .expert-card .card-front {
-    background: #1458a1;
-    color: white;
+    background: #f1f0f0;
+    /* color: white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .expert-card .card-front img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 3px solid white;
+    border: 3px solid whitesmoke;
   }
   .expert-card .card-front h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: white;
+    /* color: white; */
   }
   .expert-card .card-front p {
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
     margin-bottom: 20px;
   }
   .expert-card .card-front .social-links {
@@ -626,7 +629,7 @@
     gap: 15px;
   }
   .expert-card .card-front .social-links a {
-    color: white;
+    /* color: white; */
     font-size: 1.2rem;
     transition: color 0.3s ease;
   }
@@ -693,7 +696,7 @@
       transform: scale(1.2);
     }
   }
-/* Blog Section Styles */
+
 .blog-section {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -800,9 +803,9 @@
     position: relative;
   }
   
-  .timeline-item::before {
-    content: '';
-    position: absolute;
+  /* .timeline-item::before {
+     content: ''; 
+     position: absolute; 
     top: 50%;
     left: 50%;
     width: 20px;
@@ -811,7 +814,7 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-  }
+  } */
   
   .timeline-content {
     display: flex;
@@ -851,90 +854,7 @@
     color: #777;
   }
 
-  /* About Us Section Styling */
-  .about-section {
-    padding: 80px 0;
-    background-color: #f8f9fa;
-  }
-  
-  .about-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    height: 80%;
-  }
-  
-  .about-image img {
-    transition: transform 0.5s ease;
-    object-fit: cover;
-  }
-  
-  .about-image:hover img {
-    transform: scale(1.05);
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 123, 255, 0.1);
-    border-radius: 15px;
-  }
-  
-  .aboutsection-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #042b54;
-    margin-bottom: 40px;
-  }
-  
-  .section-subtitle {
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .section-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.8;
-  }
-  
-  .features-list {
-    margin-bottom: 30px;
-  }
-  
-  .feature-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .feature-icon {
-    font-size: 2rem;
-    color: #007bff;
-    margin-right: 15px;
-  }
-  
-  .feature-text h5 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .feature-text p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 0;
-    line-height: 1.6;
-  }
-  
+
   .btn-primary {
     background: linear-gradient(45deg, #007bff, #00bfff);
     color: #fff;

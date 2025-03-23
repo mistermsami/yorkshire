@@ -346,106 +346,106 @@
         </section>
         
        
+        <!-- Before & After Section -->
         <section class="before-after-section">
-            <div class="container">
-              <h2>Before & After</h2>
-             
-              <div class="grid-container">
-                <!-- Grid Item 1 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba1.jpg" alt="Before PRP">
-                  <div class="overlay">
+    <div class="container">
+        <h2>Before & After</h2>
+        <div class="grid-container">
+            <!-- Grid Item 1 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba1.jpg" alt="Before PRP">
+                <div class="overlay">
                     <h4>Case Study 1</h4>
                     <p>Improved hair growth after 6 months of PRP therapy.</p>
-                   
-                  </div>
                 </div>
-                <!-- Grid Item 2 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba2.jpg" alt="After PRP">
-                  <div class="overlay">
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba2.jpg" alt="After PRP">
+                <div class="overlay">
                     <h4>Case Study 2</h4>
                     <p>Noticeable reduction in wrinkles and fine lines after 2 months.</p>
-                  </div>
                 </div>
-                <!-- Grid Item 3 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba3.png" alt="Before PRP">
-                  <div class="overlay">
+            </div>
+            <!-- Grid Item 3 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba3.png" alt="Before PRP">
+                <div class="overlay">
                     <h4>Case Study 3</h4>
                     <p>Patient saw significant improvement in skin texture after 3 sessions.</p>
-                  </div>
                 </div>
-                <!-- Grid Item 4 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba4.jpg" alt="After PRP">
-                  <div class="overlay">
+            </div>
+            <!-- Grid Item 4 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba4.jpg" alt="After PRP">
+                <div class="overlay">
                     <h4>Case Study 4</h4>
                     <p>Enhanced skin elasticity and glow after 4 sessions.</p>
-                  </div>
                 </div>
-                <!-- grid-5 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba5.jpg" alt="Before PRP">
-                  <div class="overlay">
+            </div>
+            <!-- Grid Item 5 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba5.jpg" alt="Before PRP">
+                <div class="overlay">
                     <h4>Case Study 5</h4>
                     <p>Improved hair growth after 6 months of PRP therapy.</p>
-                  </div>
                 </div>
-                <!-- grid-6 -->
-                <div class="grid-item">
-                  <img src="./assets/img/ba6.webp" alt="Before PRP">
-                  <div class="overlay">
+            </div>
+            <!-- Grid Item 6 -->
+            <div class="grid-item">
+                <img src="./assets/img/ba6.webp" alt="Before PRP">
+                <div class="overlay">
                     <h4>Case Study 6</h4>
                     <p>Improved hair growth after 6 months of PRP therapy.</p>
-                  </div>
                 </div>
-              </div>
-              <!-- Testimonial Slider -->
-              <section id="testimonials" class="testimonial-section">
-                <div class="container">
-                    <h2>What Our Patients Say</h2>
-                    <div class="timeline">
-                        <!-- Testimonial 1 -->
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="assets/img/pt2.jpg" alt="Patient 1">
-                                <div class="testimonial-text">
-                                    <p>"PRP therapy has been life-changing for me. My skin feels rejuvenated, and I’ve received so many compliments!"</p>
-                                    <h5>Sarah Johnson</h5>
-                                    <span>PRP Patient</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 2 -->
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="assets/img/pt.jpg" alt="Patient 2">
-                                <div class="testimonial-text">
-                                    <p>"I was skeptical at first, but after just a few sessions, I noticed a huge difference in my hair growth."</p>
-                                    <h5>Michael Smith</h5>
-                                    <span>PRP Patient</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 3 -->
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <img src="assets/img/pt3.jpg" alt="Patient 3">
-                                <div class="testimonial-text">
-                                    <p>"The results are amazing! My wrinkles have reduced significantly, and my skin looks younger."</p>
-                                    <h5>Emily Davis</h5>
-                                    <span>PRP Patient</span>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonial-section">
+    <div class="container">
+        <h2>What Our Patients Say</h2>
+        <div class="timeline">
+            <!-- Testimonial 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/pt2.jpg" alt="Patient 1">
+                    <div class="testimonial-text">
+                        <p>"PRP therapy has been life-changing for me. My skin feels rejuvenated, and I’ve received so many compliments!"</p>
+                        <h5>Sarah Johnson</h5>
+                        <span>PRP Patient</span>
                     </div>
                 </div>
-            </section>
             </div>
-          </section>
+            <!-- Testimonial 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/pt.jpg" alt="Patient 2">
+                    <div class="testimonial-text">
+                        <p>"I was skeptical at first, but after just a few sessions, I noticed a huge difference in my hair growth."</p>
+                        <h5>Michael Smith</h5>
+                        <span>PRP Patient</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/pt3.jpg" alt="Patient 3">
+                    <div class="testimonial-text">
+                        <p>"The results are amazing! My wrinkles have reduced significantly, and my skin looks younger."</p>
+                        <h5>Emily Davis</h5>
+                        <span>PRP Patient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
         
-          <section class="meet-experts-section">
+        <section class="meet-experts-section">
             <div class="container">
               <h2>Meet the Experts</h2>
               <div class="experts-grid">
@@ -524,11 +524,11 @@
                 </div>
               </div>
             </div>
-          </section>
+        </section>
         
         
         
-          <section id="faq" class="faq section light-background">
+        <section id="faq" class="faq section light-background">
             <div class="container section-title">
                 <h2>Frequently Asked Questions</h2>
             </div>
@@ -632,7 +632,7 @@
         </section>
     
         
-          <section id="blog" class="blog-section">
+        <section id="blog" class="blog-section">
             <div class="container">
                 <h2>Latest News</h2>
                 <div class="row">
@@ -645,7 +645,7 @@
                             <div class="blog-post-content">
                                 <h3>Top Hair Care Tips</h3>
                                 <p>Learn how to keep your hair healthy.</p>
-                                <a href="blog-post1.html" class="btn btn-secondary">Read More</a>
+                                <a href="hairblog.blade.php" class="btn btn-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
