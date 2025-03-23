@@ -44,6 +44,7 @@
     {{-- CSS FILE FOR LIVEWIRE --}}
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
     @livewireStyles
     @yield('head')
     <style>
@@ -146,7 +147,7 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-    <div id="preloader"></div> 
+    <div id="preloader"></div>
     <footer id="footer" class="footer light-background">
 
         <div class="container footer-top">
@@ -229,17 +230,18 @@
             </div>
         </div>
 
-    </footer>  
+    </footer>
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
     <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>  
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <!-- Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     {{-- - Page Scripts - --}}
+    {{-- Livewire Scripts --}}
     @livewireScripts
 </body>
 

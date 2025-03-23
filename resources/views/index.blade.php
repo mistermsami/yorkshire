@@ -1065,7 +1065,7 @@
                     </div>
 
                     <div class="col-lg-8">
-                        @livewire('contactform.contact-form')
+                        @livewire('ContactForm.ContactForm')
                     </div><!-- End Contact Form -->
 
                 </div>
