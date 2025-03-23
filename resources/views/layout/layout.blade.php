@@ -41,6 +41,10 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+    {{-- CSS FILE FOR LIVEWIRE --}}
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    @livewireStyles
     @yield('head')
     <style>
         .navmenu li a {
@@ -125,7 +129,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('contactus') }}">Contact Us</a></li>
-                     
+
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -146,85 +150,86 @@
     <footer id="footer" class="footer light-background">
 
         <div class="container footer-top">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 50px !important;">
-              </a>
-              <div class="footer-contact pt-3">
-                <p>175 Dewsbury Roads 
-                    Leeds
-                    Ls11 5EG</p>
-             
-                <p class="mt-3"><strong>Phone:</strong> <span>07943289303</span></p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
-              </div>
-              <div class="social-links d-flex mt-4">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#">Hair Transplant</a></li>
-                <li><a href="#">Weight Loss Treatments</a></li>
-                <li><a href="#">Laser Hair Removal</a></li>
-                <li><a href="#">PRP</a></li>
-                <li><a href="#">HydraFacial</a></li>
-                <li><a href="#">Tanning Bed</a></li>
-              </ul>
-            </div>
-    
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#"><i class="fas fa-headset me-2"></i>Customer Care</a></li>
-                    <li><a href="#"><i class="fas fa-truck me-2"></i>Track Your Order</a></li>
-                    <li><a href="#"><i class="fas fa-undo me-2"></i>Returns & Refunds</a></li>
-                    <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Shipping Information</a></li>
-                    <li><a href="#"><i class="fas fa-envelope me-2"></i>Contact Support</a></li>
-                </ul>
-            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 50px !important;">
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>175 Dewsbury Roads
+                            Leeds
+                            Ls11 5EG</p>
 
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Why Choose Us?</h4>
-              <ul class="why-us-list">
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Expert Team</a></li>
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Personalized Care</a></li>
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Proven Results</a></li>
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Affordable Pricing</a></li>
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Convenient Location</a></li>
-                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Advanced Technology</li>
-              </ul>
-          </div>
-            
-          </div>
+                        <p class="mt-3"><strong>Phone:</strong> <span>07943289303</span></p>
+                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Hair Transplant</a></li>
+                        <li><a href="#">Weight Loss Treatments</a></li>
+                        <li><a href="#">Laser Hair Removal</a></li>
+                        <li><a href="#">PRP</a></li>
+                        <li><a href="#">HydraFacial</a></li>
+                        <li><a href="#">Tanning Bed</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-headset me-2"></i>Customer Care</a></li>
+                        <li><a href="#"><i class="fas fa-truck me-2"></i>Track Your Order</a></li>
+                        <li><a href="#"><i class="fas fa-undo me-2"></i>Returns & Refunds</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Shipping Information</a></li>
+                        <li><a href="#"><i class="fas fa-envelope me-2"></i>Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Why Choose Us?</h4>
+                    <ul class="why-us-list">
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Expert Team</a></li>
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Personalized Care</a></li>
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Proven Results</a></li>
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Affordable Pricing</a></li>
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Convenient Location</a></li>
+                        <li><a href="#"><i class="bi bi-check-circle me-2"></i>Advanced Technology</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    
+
         <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">Yorkshire</strong> <span>All Rights Reserved</span></p>
-          <div class="credits">
-           
-          </div>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Yorkshire</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">
+
+            </div>
         </div>
-    
-      </footer>
+
+    </footer>
 
 
 
@@ -240,7 +245,8 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
+    {{-- - Page Scripts - --}}
+    @livewireScripts
 </body>
 
 </html>
