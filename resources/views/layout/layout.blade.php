@@ -149,14 +149,14 @@
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
               <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">Yorkshire</span>
+                <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 50px !important;">
               </a>
               <div class="footer-contact pt-3">
                 <p>175 Dewsbury Roads 
                     Leeds
                     Ls11 5EG</p>
              
-                <p class="mt-3"><strong>Phone:</strong> <span>+07943289303</span></p>
+                <p class="mt-3"><strong>Phone:</strong> <span>07943289303</span></p>
                 <p><strong>Email:</strong> <span>info@example.com</span></p>
               </div>
               <div class="social-links d-flex mt-4">
@@ -201,7 +201,19 @@
                     <li><a href="#"><i class="fas fa-envelope me-2"></i>Contact Support</a></li>
                 </ul>
             </div>
-    
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Why Choose Us?</h4>
+              <ul class="why-us-list">
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Expert Team</a></li>
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Personalized Care</a></li>
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Proven Results</a></li>
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Affordable Pricing</a></li>
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Convenient Location</a></li>
+                  <li><a href="#"><i class="bi bi-check-circle me-2"></i>Advanced Technology</li>
+              </ul>
+          </div>
+            
           </div>
         </div>
     

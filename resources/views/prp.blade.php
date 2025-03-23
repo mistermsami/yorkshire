@@ -163,8 +163,9 @@
                     <div class="carousel-caption">
                         <h5>Explore the Beauty of Nature</h5>
                         <p>
-                            Discover breathtaking landscapes, from majestic mountains to serene beaches. Immerse yourself in the tranquility of lush forests and crystal-clear lakes, and let nature rejuvenate your soul. Experience the wonders of the natural world like never before.
+                            Discover breathtaking landscapes, from majestic mountains to serene beaches. Immerse yourself in the tranquility of lush forests and crystal-clear lakes, and let nature rejuvenate your soul. Experience the wonders of the natural world like never before. Witness mesmerizing sunsets painting the sky with vibrant hues. Feel the gentle breeze as you explore hidden trails and untouched wilderness.
                         </p>
+                        
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -174,8 +175,9 @@
                     <div class="carousel-caption">
                         <h5>Adventure Awaits</h5>
                         <p>
-                            Embark on thrilling journeys to the world's most stunning peaks, where every step brings you closer to breathtaking vistas. Challenge yourself with rugged trails, conquer towering summits, and experience the exhilaration of reaching new heights. Adventure is calling—are you ready to answer?
+                            Embark on thrilling journeys to the world's most stunning peaks, where every step brings you closer to breathtaking vistas. Challenge yourself with rugged trails, conquer towering summits, and experience the exhilaration of reaching new heights. Adventure is calling—are you ready to answer? Feel the rush of crisp mountain air filling your lungs as you stand above the clouds. Let the beauty of the untouched wilderness ignite your spirit of exploration.
                         </p>
+                        
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -185,8 +187,9 @@
                     <div class="carousel-caption">
                         <h5>Connect with Nature</h5>
                         <p>
-                            Immerse yourself in the tranquility of lush green forests, where the rustling leaves and chirping birds create a symphony of peace. Breathe in the fresh, crisp air and let the beauty of nature rejuvenate your mind and soul. Discover a world where every moment is a step closer to serenity.
+                            Immerse yourself in the tranquility of lush green forests, where the rustling leaves and chirping birds create a symphony of peace. Breathe in the fresh, crisp air and let the beauty of nature rejuvenate your mind and soul. Discover a world where every moment is a step closer to serenity. Wander along winding trails adorned with vibrant wildflowers, and feel the gentle sunlight filtering through the towering trees. Let the whisper of the breeze guide you into a realm of pure harmony.
                         </p>
+                        
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -679,9 +682,6 @@
        
         
         <section id="appointment" class="services appointment howitworks section mb-4">
-
-            <!-- Section Title -->
-            {{-- data-aos="fade-up" --}}
             <div class="container section-title">
                 <h2>Make Appointment</h2>
             </div>

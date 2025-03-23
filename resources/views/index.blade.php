@@ -209,8 +209,6 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item  position-relative">
                             <div class="icon">
-                                {{-- <i class="fas fa-heartbeat"></i> --}}
-                                {{-- <img class="svgicon" src="assets/img/hairtransplant.svg" alt="" style="height: 40px"> --}}
                                 <svg id="Layer_1" class="servicesvg" data-name="Layer 1"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 465.06 449.71">
                                     <path class="cls-1 "
@@ -397,9 +395,11 @@
                             </a>
                             <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
                                 Corrupti recusandae ducimus enim.</p>
+                                
                             <a href="#" class="stretched-link"></a>
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
+                    <!-- End Service Item -->
 
                 </div>
 
@@ -999,7 +999,9 @@
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
                                 <h3>Location</h3>
-                                <p>LS8 5jL Luxer View Leeds united kingdom</p>
+                                <p>175 Dewsbury Roads 
+                                    Leeds
+                                    Ls11 5EG</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -1007,7 +1009,7 @@
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Call Us</h3>
-                                <p>44 589 55488 55</p>
+                                <p>07943289303</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -1049,7 +1051,10 @@
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                    <button type="submit">Send Message</button>
+                                    <div class="text-center"><button class="btn btn-primary mt-3" type="submit" style="border-radius: 5px">Send message
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                    </div>
                                 </div>
 
                             </div>
