@@ -1062,8 +1062,7 @@
                             </div>
                         </div><!-- End Info Item -->
 
-                    </div>
-
+                    </div> 
                     <div class="col-lg-8"> 
                         <livewire:contactform.contact-form>
                     </div><!-- End Contact Form -->
