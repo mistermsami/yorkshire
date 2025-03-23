@@ -12,7 +12,7 @@
     {{-- for meta tags (SEO)
     and for custom css --}}
     <style>
-        
+
         .stepper {
             display: flex;
             justify-content: space-between;
@@ -147,15 +147,15 @@
             }
         }
     </style>
-    
-   
+
+
 @endsection
 
 @section('maincontent')
-    
+
     <main class="main">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    
+
 
             <!-- Slides -->
             <div class="carousel-inner">
@@ -165,7 +165,7 @@
                         <p>
                             Discover breathtaking landscapes, from majestic mountains to serene beaches. Immerse yourself in the tranquility of lush forests and crystal-clear lakes, and let nature rejuvenate your soul. Experience the wonders of the natural world like never before. Witness mesmerizing sunsets painting the sky with vibrant hues. Feel the gentle breeze as you explore hidden trails and untouched wilderness.
                         </p>
-                        
+
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -177,7 +177,7 @@
                         <p>
                             Embark on thrilling journeys to the world's most stunning peaks, where every step brings you closer to breathtaking vistas. Challenge yourself with rugged trails, conquer towering summits, and experience the exhilaration of reaching new heights. Adventure is calling—are you ready to answer? Feel the rush of crisp mountain air filling your lungs as you stand above the clouds. Let the beauty of the untouched wilderness ignite your spirit of exploration.
                         </p>
-                        
+
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -189,18 +189,18 @@
                         <p>
                             Immerse yourself in the tranquility of lush green forests, where the rustling leaves and chirping birds create a symphony of peace. Breathe in the fresh, crisp air and let the beauty of nature rejuvenate your mind and soul. Discover a world where every moment is a step closer to serenity. Wander along winding trails adorned with vibrant wildflowers, and feel the gentle sunlight filtering through the towering trees. Let the whisper of the breeze guide you into a realm of pure harmony.
                         </p>
-                        
+
                         <a href="#" class="btn btn-primary">Book a consultation
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        
-           
+
+
         </div>
-        
-        
+
+
         <section class="about-prp-section">
             <div class="container">
               <div class="row">
@@ -260,8 +260,8 @@
               </div>
             </div>
           </section>
-        
-        
+
+
         <section id="prp-benefits" class="prp-benefits-section">
             <div class="container">
                 <h2>Benefits of PRP</h2>
@@ -296,7 +296,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="prp-process" class="prp-process-section">
             <div class="container">
                 <h2>PRP Treatment Process</h2>
@@ -344,8 +344,8 @@
                 </div>
             </div>
         </section>
-        
-       
+
+
         <!-- Before & After Section -->
         <section class="before-after-section">
     <div class="container">
@@ -444,12 +444,12 @@
         </div>
     </div>
         </section>
-        
+
         <section class="meet-experts-section">
             <div class="container">
               <h2>Meet the Experts</h2>
               <div class="experts-grid">
-                
+
                 <!-- Expert Card 2 -->
                 <div class="expert-card">
                   <div class="card-inner">
@@ -466,7 +466,7 @@
                     <div class="card-back">
                       <h4>Dr. Jane Smith</h4>
                       <p>8+ years of experience in cosmetic dermatology and skin rejuvenation.</p>
-                      
+
                       <div class="contact-info">
                         <p><i class="fas fa-phone"></i> +123 456 7890</p>
                         <p><i class="fas fa-envelope"></i> jane.smith@example.com</p>
@@ -490,7 +490,7 @@
                     <div class="card-back">
                       <h4>Dr. Emily Davis</h4>
                       <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
-                      
+
                       <div class="contact-info">
                         <p><i class="fas fa-phone"></i> +123 456 7890</p>
                         <p><i class="fas fa-envelope"></i> emily.davis@example.com</p>
@@ -514,7 +514,7 @@
                     <div class="card-back">
                       <h4>Dr. Michael Brown</h4>
                       <p>7+ years of experience in PRP therapy and hair restoration.</p>
-                      
+
                       <div class="contact-info">
                         <p><i class="fas fa-phone"></i> +123 456 7890</p>
                         <p><i class="fas fa-envelope"></i> michael.brown@example.com</p>
@@ -525,22 +525,22 @@
               </div>
             </div>
         </section>
-        
-        
-        
+
+
+
         <section id="faq" class="faq section light-background">
             <div class="container section-title">
                 <h2>Frequently Asked Questions</h2>
             </div>
-        
+
             <div class="container">
-        
+
                 <div class="row justify-content-center">
-        
+
                     <div class="col-lg-10">
-        
+
                         <div class="faq-container">
-        
+
                             <div class="faq-item faq-active">
                                 <h3>What is PRP therapy, and how does it work?</h3>
                                 <div class="faq-content">
@@ -550,7 +550,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>What conditions can PRP therapy treat?</h3>
                                 <div class="faq-content">
@@ -560,7 +560,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Is PRP therapy safe?</h3>
                                 <div class="faq-content">
@@ -570,7 +570,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>How long does a PRP treatment session take?</h3>
                                 <div class="faq-content">
@@ -580,7 +580,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Is PRP therapy painful?</h3>
                                 <div class="faq-content">
@@ -590,7 +590,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>How soon can I see results from PRP therapy?</h3>
                                 <div class="faq-content">
@@ -600,7 +600,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>How many PRP sessions are needed for optimal results?</h3>
                                 <div class="faq-content">
@@ -610,7 +610,7 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Are there any side effects of PRP therapy?</h3>
                                 <div class="faq-content">
@@ -620,18 +620,18 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                         </div>
-        
+
                     </div><!-- End Faq Column-->
-        
+
                 </div>
-        
+
             </div>
-        
+
         </section>
-    
-        
+
+
         <section id="blog" class="blog-section">
             <div class="container">
                 <h2>Latest News</h2>
@@ -645,7 +645,7 @@
                             <div class="blog-post-content">
                                 <h3>Top Hair Care Tips</h3>
                                 <p>Learn how to keep your hair healthy.</p>
-                                <a href="hairblog.blade.php" class="btn btn-secondary">Read More</a>
+                                <a href="hairblog" class="btn btn-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -678,9 +678,9 @@
                 </div>
             </div>
         </section>
-        
-       
-        
+
+
+
         <section id="appointment" class="services appointment howitworks section mb-4">
             <div class="container section-title">
                 <h2>Make Appointment</h2>
@@ -808,7 +808,7 @@
             </div>
 
         </section>
-        
+
     </script>
     <script>
         $(document).ready(function() {
@@ -924,7 +924,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
             const processSteps = document.querySelectorAll('.process-step');
-        
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
@@ -932,14 +932,14 @@
                     }
                 });
             }, { threshold: 0.5 });
-        
+
             processSteps.forEach((step) => {
                 observer.observe(step);
             });
         });
         // JavaScript for FAQ Toggle
         const faqQuestions = document.querySelectorAll('.faq-question');
-        
+
         faqQuestions.forEach(question => {
           question.addEventListener('click', () => {
             question.classList.toggle('active');
@@ -957,7 +957,7 @@
         <!-- Bootstrap JS and dependencies -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-      
+
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     </main>
 @endsection
