@@ -154,51 +154,56 @@
 @section('maincontent')
 
     <main class="main">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-
-
-            <!-- Slides -->
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('./assets/img/prp11.webp');">
-                    <div class="carousel-caption">
-                        <h5>Explore the Beauty of Nature</h5>
-                        <p>
-                            Discover breathtaking landscapes, from majestic mountains to serene beaches. Immerse yourself in the tranquility of lush forests and crystal-clear lakes, and let nature rejuvenate your soul. Experience the wonders of the natural world like never before. Witness mesmerizing sunsets painting the sky with vibrant hues. Feel the gentle breeze as you explore hidden trails and untouched wilderness.
-                        </p>
-
-                        <a href="#" class="btn btn-primary">Book a consultation
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="main-heading">Revolutionary PRP Therapy for Youthful, Radiant Skin</h1>
+                            
+                            <p class="sub-text">
+                                Harness your body's natural healing power with our advanced Platelet-Rich Plasma treatments, recommended by leading dermatologists.
+                            </p>
+                            
+                         
+                            
+                            <div class="trustpilot-container">
+                                <div class="trustpilot-line">
+                                   <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-primary">Book a consultation
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="divider"></div>
+                            
+                            <div class="award-badge">
+                                <i class="fas fa-award" style="color: var(--primary-color);"></i>
+                                <span>2023 Best Aesthetic Treatment Award</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('./assets/img/prp2.webp');">
-                    <div class="carousel-caption">
-                        <h5>Adventure Awaits</h5>
-                        <p>
-                            Embark on thrilling journeys to the world's most stunning peaks, where every step brings you closer to breathtaking vistas. Challenge yourself with rugged trails, conquer towering summits, and experience the exhilaration of reaching new heights. Adventure is calling—are you ready to answer? Feel the rush of crisp mountain air filling your lungs as you stand above the clouds. Let the beauty of the untouched wilderness ignite your spirit of exploration.
-                        </p>
-
-                        <a href="#" class="btn btn-primary">Book a consultation
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('./assets/img/prp3.webp');">
-                    <div class="carousel-caption">
-                        <h5>Connect with Nature</h5>
-                        <p>
-                            Immerse yourself in the tranquility of lush green forests, where the rustling leaves and chirping birds create a symphony of peace. Breathe in the fresh, crisp air and let the beauty of nature rejuvenate your mind and soul. Discover a world where every moment is a step closer to serenity. Wander along winding trails adorned with vibrant wildflowers, and feel the gentle sunlight filtering through the towering trees. Let the whisper of the breeze guide you into a realm of pure harmony.
-                        </p>
-
-                        <a href="#" class="btn btn-primary">Book a consultation
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <!-- Beauty clinic image slideshow -->
+                            <img src="assets/img/prp11.webp" 
+                                 alt="PRP treatment in progress" 
+                                 class="hero-image active">
+                            <img src="assets/img/prp1.webp" 
+                                 alt="Before and after PRP results" 
+                                 class="hero-image">
+                            <img src="assets/img/prp1.jpg" 
+                                 alt="Luxury beauty clinic environment" 
+                                 class="hero-image">
+                            <img src="assets/img/prp3.webp" 
+                                 alt="Happy client after treatment" 
+                                 class="hero-image">
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-        </div>
+        </section>
 
 
         <section class="about-prp-section">
@@ -404,7 +409,7 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonial-section">
+        <section id="testimonial" class="testimonial-section">
     <div class="container">
         <h2>What Our Patients Say</h2>
         <div class="timeline">
@@ -658,7 +663,7 @@
                             <div class="blog-post-content">
                                 <h3>Benefits of PRP Therapy</h3>
                                 <p>Discover how PRP can rejuvenate your skin.</p>
-                                <a href="blog-post2.html" class="btn btn-secondary">Read More</a>
+                                <a href="prpbenefits" class="btn btn-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -828,6 +833,27 @@
                 $('.filter-button').removeClass('active');
                 $(this).addClass('active');
             });
+        });
+    </script>
+    {{-- script for hero-section --}}
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.hero-image');
+            let currentIndex = 0;
+            
+            function changeImage() {
+                // Hide current image
+                images[currentIndex].classList.remove('active');
+                
+                // Move to next image
+                currentIndex = (currentIndex + 1) % images.length;
+                
+                // Show next image
+                images[currentIndex].classList.add('active');
+            }
+            
+            // Change image every 3 seconds
+            setInterval(changeImage, 3000);
         });
     </script>
     {{-- date picker --}}

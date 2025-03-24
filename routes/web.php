@@ -37,8 +37,11 @@ Route::get('contactus/', function () {
     return view('contactus');
 })->name('contactus');
 
-Route::get('hairblog/', function () { //path in URL
-    return view('hairblog'); //filename here
+Route::get('hairblog/', function () { 
+    return view('hairblog'); 
 })->name('hairblog'); //route or page call by this name e.g (<a href='hairblog'>read more</a>)
 
+Route::get('prpbenefits/', function () { 
+    return view('prpbenefits'); 
+})->name('prpbenefits');
 

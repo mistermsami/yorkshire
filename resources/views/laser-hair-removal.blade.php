@@ -17,9 +17,8 @@
     <style>
         .aboutmain_sec {
             min-height: 100vh;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f3f1ee;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
         }
 
         .aboutmain_sec h2 {
@@ -39,19 +38,9 @@
         }
 
         .aboutmain_sec .aboutsideimg {
-            height: 500px;
+            height: 550px;
         }
 
-        .aboutsecond_sec {
-            padding: 80px 0 40px 0;
-            background-color: #fff;
-        }
-
-        /* .aboutsecond_sec .profile-widget{
-                                                            background-color: #f3f1ee;
-                                                            border-radius: 20px;
-                                                            padding: 20px;
-                                                        } */
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
             border-radius: 25px !important;
@@ -455,20 +444,24 @@
                         <div class="" style="padding-left: 50px; padding-right: 50px;">
 
                             <div class="section-header ">
-                                {{-- <p>Our Services</p> --}}
+                                
                                 <h2>Laser Hair Removal from the UK’s Leading Hair Removal Clinic</h2>
-                                {{-- <h3 style="font-size: 34px; font-weight: 600;">This feels good,</h3> --}}
+                               
                             </div>
                             <div class="about-content">
-                                {{-- <p><b>We’re challenging the outdated notion that real men shrug their shoulders and carry
-                                    on.</b></p> --}}
+                               
                                 <p>
                                     Restore your hair with the UK’s most trusted hair clinic. Yorkshire has helped over
                                     <b>200,000</b> men regain their confidence.
                                 </p>
-                                <button class="cta-btn booking d-none d-sm-block"
-                                    onclick="window.location.href='#appointment'">Book a
-                                    Culsultation</button>
+                               <div>
+                                <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                               </div>
+                                <div style="margin-top: 20px">
+                                    <a href="#" class="btn btn-primary">Book a consultation
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -670,49 +663,56 @@
         </section>
         <!-- /Services Section -->
 
-        <section id="services" class="services afterresult section">
+        <section id="services" class="services-section">
             <div class="container">
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="row gy-4">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="icon-box aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
-                                    <i class="bi bi-shield-fill-check"></i>
-                                    <h4>Expertise You Can Trust</h4>
-                                    <p>
-                                        Our team of specialists brings years of experience in hair and skin treatments.
-                                        We use advanced techniques and technology to ensure safety.
-                                    </p>
-                                </div>
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">Our Commitment to You</h2>
+                    <p class="section-subtitle">Experience the Yorkshire Hair and Skin Solutions difference</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Service Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-icon">
+                                <i class="fas fa-user-md"></i>
                             </div>
+                            <h3>Expertise You Can Trust</h3>
+                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration and skin rejuvenation treatments, using only medically-approved techniques.</p>
+                            
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="icon-box aos-init aos-animate" data-aos="zoom-out" data-aos-delay="400">
-                                    <i class="bi bi-person-fill-check"></i>
-                                    <h4>Personalized Care</h4>
-                                    <p>
-                                        Every client is unique. We tailor each treatment plan to match your individual
-                                        goals, ensuring you get the attention and results you deserve.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="icon-box aos-init aos-animate" data-aos="zoom-out" data-aos-delay="500">
-                                    <i class="bi bi-bag-heart-fill"></i>
-                                    <h4>State-of-the-Art Facilities</h4>
-                                    <p>
-                                        Our clinic is equipped with the latest medical-grade tools and technology to
-                                        provide a comfortable and high-quality treatment experience.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Personalized Care</h3>
+                            <p>Your journey begins with a comprehensive consultation where we listen to understand your unique concerns and goals before creating a customized treatment plan.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-icon">
+                                <i class="fas fa-clinic-medical"></i>
+                            </div>
+                            <h3>Premium Facilities</h3>
+                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the latest FDA-cleared technologies in a serene Yorkshire setting.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Book Your Consultation
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1401,62 +1401,71 @@
 
         </section>
 
-        <section id="services" class="services laserinstruction section">
-
-            <!-- Section Title -->
-            {{-- data-aos="fade-up" --}}
-            <div class="container section-title">
-                <h2>Laser hair removal instruction</h2>
-                <p>
-                </p>
-            </div><!-- End Section Title -->
-
-            <div class="container d-flex justify-content-center">
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card p-5">
-                                <h4>Before the treatment</h4>
-                                <ul>
-                                    <li>No sun exposure and skin tanning treatments for 14 days.</li>
-                                    <li>No recent aesthetic procedure such as laser, IPL and skin resurfacing for 4 weeks.</li>
-                                    <li>No plucking, waxing, electrolysis and depilatory creams for 4 weeks.</li>
-                                    <li>It is advised to shave the 1-2 before the treatment.</li>
-                                    <li>It is advised to come with clean skin and free from cosmetic products.</li>
+        <section id="laser-instructions" class="laser-instruction-section">
+            <div class="container">
+                <div class="section-header text-center mb-4">
+                    <h2 class="section-title">Laser Hair Removal Instructions</h2>
+                    <p class="section-subtitle">Essential guidelines for optimal treatment results</p>
+                </div>
+        
+                <div class="row justify-content-center g-4">
+                    <!-- Before Treatment -->
+                    <div class="col-lg-5 col-md-6">
+                        <div class="instruction-card">
+                            <div class="card-header bg-light-purple">
+                                <h3>Before Treatment</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="instruction-list">
+                                    <li>Avoid sun exposure and tanning for <strong>14 days</strong> prior</li>
+                                    <li>No other laser/IPL treatments for <strong>4 weeks</strong></li>
+                                    <li>Stop waxing/plucking <strong>4 weeks</strong> before</li>
+                                    <li>Shave treatment area <strong>24-48 hours</strong> before</li>
+                                    <li>Arrive with clean, product-free skin</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card p-5">
-                                <h4>After the treatment</h4>
-                                <ul>
-                                    <li style="font-size: 16px">Avoid sun exposure, tanning beds, and any form of artificial tanning for at least two weeks.</li>
-                                    <li>Apply sun screen at all times.</li>
-                                    <li>Minimal skin redness and irritation is expected after the treatment which will resolve within an hour.</li>
-                                    <li>Mild redness, swelling, and irritation are normal and should subside within a few hours.</li>
-                                    <li>Avoid any irritating skin products such as retinol, glycolic, or salicylic acid.</li>
+                    </div>
+        
+                    <!-- After Treatment -->
+                    <div class="col-lg-5 col-md-6">
+                        <div class="instruction-card">
+                            <div class="card-header bg-light-purple">
+                                <h3>After Treatment</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="instruction-list">
+                                    <li>Avoid sun exposure for <strong>2 weeks</strong></li>
+                                    <li>Apply <strong>SPF 30+</strong> sunscreen daily</li>
+                                    <li>Expect temporary redness/swelling (24-48 hours)</li>
+                                    <li>Use gentle skincare products for <strong>3 days</strong></li>
+                                    <li>Avoid retinoids/exfoliants for <strong>1 week</strong></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+        
+                <div class="text-center mt-4">
+                    <p class="text-muted">For best results: 6-8 treatments spaced 4-6 weeks apart</p>
+                </div>
             </div>
         </section>
 
         <!-- Faq Section -->
-        <section class="laserdevice section light-background" style="background-color: #f3f1ee">
+        <section class="laserdevice section " >
 
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>How DUETTO MT EVO works for hair removal?</h2>
-                {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
-            </div><!-- End Section Title -->
+               
+            </div>
 
             <div class="container">
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
-                        <div class="card ">
+                        <div class="card " style="background-color: rgba(127, 127, 127, 0.364) ; color:black">
                             <p class="card-text p-5">
                                 The Duetto MT EVO is equipped with two lasers, the Alexandrite and Nd:YAG. These lasers can be used simultaneously based on client’s skin type and hair quality.
                                 <br><br>

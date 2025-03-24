@@ -129,7 +129,7 @@
 
         </section><!-- /Hero Section -->
 
-        <!-- About Section -->
+       
         <!-- About Us Section -->
         <section id="about" class="about-section">
             <div class="container">
@@ -146,7 +146,7 @@
 
                     <!-- Content Column -->
                     <div class="col-md-6 d-flex">
-                        <div class="about-content w-100 h-100 p-4 d-flex flex-column justify-content-center">
+                        <div class="heroabout-content w-100 h-100 p-4 d-flex flex-column justify-content-center">
                             <!-- Removed bg-white, rounded, and shadow -->
                             <h1 class="section-subtitle">Innovating Health and Wellness</h1>
                             <p class="section-description">
