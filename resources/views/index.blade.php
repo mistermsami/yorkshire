@@ -645,7 +645,8 @@
 
             </div>
 
-        </section><!-- /Appointment Section -->
+        </section>
+        <!-- /Appointment Section -->
 
 
         <!-- Faq Section -->
