@@ -666,7 +666,7 @@
         <section id="services" class="services-section">
             <div class="container">
                 <div class="section-header text-center mb-5">
-                    <h2 class="section-title">Our Commitment to You</h2>
+                    <h2 class="servicesection-title">Our Commitment to You</h2>
                     <p class="section-subtitle">Experience the Yorkshire Hair and Skin Solutions difference</p>
                 </div>
                 
@@ -1404,7 +1404,7 @@
         <section id="laser-instructions" class="laser-instruction-section">
             <div class="container">
                 <div class="section-header text-center mb-4">
-                    <h2 class="section-title">Laser Hair Removal Instructions</h2>
+                    <h2 class="lasersection-title">Laser Hair Removal Instructions</h2>
                     <p class="section-subtitle">Essential guidelines for optimal treatment results</p>
                 </div>
         

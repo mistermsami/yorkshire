@@ -147,7 +147,7 @@
                     <!-- Content Column -->
                     <div class="col-md-6 d-flex">
                         <div class="heroabout-content w-100 h-100 p-4 d-flex flex-column justify-content-center">
-                            <!-- Removed bg-white, rounded, and shadow -->
+                           
                             <h1 class="section-subtitle">Innovating Health and Wellness</h1>
                             <p class="section-description">
                                 Yorkshire Hair and Skin Solutions is a trusted name in the field of hair and skin care.

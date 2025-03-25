@@ -1146,14 +1146,14 @@
         margin-bottom: 40px;
     }
     
-    .section-title {
+    .servicesection-title {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 10px;
         position: relative;
     }
     
-    .section-title::after {
+    .servicesection-title::after {
         content: '';
         display: block;
         width: 80px;
@@ -1229,7 +1229,7 @@
             padding: 60px 0;
         }
         
-        .section-title {
+        .servicesection-title {
             font-size: 2rem;
         }
         
@@ -1244,7 +1244,7 @@
   background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
 }
 
-.section-title {
+.lasersection-title {
   font-size: 2rem;
   font-weight: 600;
   color: #4a2d56;
@@ -1306,7 +1306,7 @@
       padding: 60px 0;
   }
   
-  .section-title {
+  .lasersection-title {
       font-size: 1.7rem;
   }
   
