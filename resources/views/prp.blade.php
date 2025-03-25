@@ -676,7 +676,7 @@
                             <div class="blog-post-content">
                                 <h3>Summer Skin Care Tips</h3>
                                 <p>Stay protected and glowing this summer.</p>
-                                <a href="blog-post3.html" class="btn btn-secondary">Read More</a>
+                                <a href="skincaretips" class="btn btn-secondary">Read More</a>
                             </div>
                         </div>
                     </div>

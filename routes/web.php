@@ -45,3 +45,9 @@ Route::get('prpbenefits/', function () {
     return view('prpbenefits'); 
 })->name('prpbenefits');
 
+Route::get('skincaretips/', function () { 
+    return view('skincaretips'); 
+})->name('skincaretips');
+
+
+
