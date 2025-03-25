@@ -1,21 +1,30 @@
 <div>
-    <form action="forms/contact.php" method="post" class="php-email-form">
+    @if (session()->has('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    <form wire:submit.prevent="save" class="php-email-form">
         <div class="row gy-4">
 
             <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                <input type="text" wire:model="name" name="name" class="form-control" placeholder="Your Name" required="">
+                @error('name') <span class="error">{{ $message }}</span> @enderror
             </div>
 
             <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <input type="email" class="form-control" wire:model="email" name="email" placeholder="Your Email" required="">
+                @error('email') <span class="error">{{ $message }}</span> @enderror
             </div>
-
+            
             <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <input type="text" class="form-control" wire:model="subject" name="subject" placeholder="Subject" required="">
+                @error('subject') <span class="error">{{ $message }}</span> @enderror
             </div>
-
+            
             <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                <textarea class="form-control" name="message" wire:model="message" rows="6" placeholder="Message" required=""></textarea>
+                @error('message') <span class="error">{{ $message }}</span> @enderror
             </div>
 
             <div class="col-md-12 text-center">
