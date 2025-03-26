@@ -59,7 +59,7 @@
                             <h2 class="h3 mb-3">Real-Life Success Story</h2>
                             <div class="row align-items-center">
                                 <div class="col-md-4">
-                                    <img src="assets/img/casestory.jpg" alt="Case Study" class="img-fluid rounded" style="height: 180px">
+                                    <img src="assets/img/casestudy.jpg" alt="Case Study" class="img-fluid rounded" style="height: 170px">
                                 </div>
                                 <div class="col-md-8">
                                     <strong>Emma's Transformation:</strong> Emma, a 28-year-old teacher, struggled every summer with breakouts and sun sensitivity. After one particularly bad sunburn, she visited Yorkshire Hair and Skin Solution. Our experts created a customized summer skin care regimen focusing on protection and hydration. Within weeks, Emma noticed her skin was clearer, more resilient, and glowing. Now she enjoys summer activities without worrying about her skin!
