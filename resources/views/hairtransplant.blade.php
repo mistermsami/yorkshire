@@ -18,7 +18,8 @@
     <style>
         .aboutmain_sec {
             min-height: 100vh;
-            padding: 60px 0;;
+            padding: 60px 0;
+            ;
             background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
         }
 
@@ -48,10 +49,10 @@
         }
 
         /* .aboutsecond_sec .profile-widget{
-                                                background-color: #f3f1ee;
-                                                border-radius: 20px;
-                                                padding: 20px;
-                                            } */
+                                                            background-color: #f3f1ee;
+                                                            border-radius: 20px;
+                                                            padding: 20px;
+                                                        } */
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
             border-radius: 25px !important;
@@ -109,7 +110,8 @@
             padding: 20px;
             background-color: #f3f1ee;
         }
-        .resultsbtn{
+
+        .resultsbtn {
             color: #fff;
             background: #1977cc;
             border: none;
@@ -260,9 +262,9 @@
         }
 
         /* .hairTfaq .hidden-content {
-                            display: none;
+                                        display: none;
 
-                        } */
+                                    } */
         .hairTfaq .details p {
             transition: all 0.5s ease-in-out;
         }
@@ -315,7 +317,7 @@
             display: block;
         }
 
-       
+
 
         .previousbtn {
             color: #fff;
@@ -372,14 +374,16 @@
         .transpricingBlue_card h3 {
             color: #f1f7f7;
         }
-      
+
         @media only screen and (max-width: 1399px) and (min-width: 769px) {
-            .afterresult .card{
+            .afterresult .card {
                 height: 280px !important;
             }
-            .howitworks .card .card-body{
+
+            .howitworks .card .card-body {
                 height: 200px;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
@@ -402,6 +406,7 @@
             .hairTfaq .nav-item .active {
                 background-color: #f1f7fc;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
@@ -419,9 +424,9 @@
                         <div class="" style="padding-left: 50px; padding-right: 50px;">
 
                             <div class="section-header ">
-                                
+
                                 <h2>Hair Transplants from the UK’s Leading Hair Loss Clinic</h2>
-                                
+
                             </div>
                             <div class="about-content">
                                 <p>
@@ -430,12 +435,12 @@
                                 </p>
                                 <div>
                                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
-                                   </div>
-                                    <div style="margin-top: 20px">
-                                        <a href="#" class="btn btn-primary">Book a consultation
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
+                                </div>
+                                <div style="margin-top: 20px">
+                                    <a href="#" class="btn btn-primary">Book a consultation
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -727,8 +732,8 @@
                     </div>
 
                     <div class="col-md-12 d-flex justify-content-center">
-                        <button class="cta-btn resultsbtn d-none d-sm-block"
-                                    onclick="window.location.href='#'">View results gallery</button>
+                        <button class="cta-btn resultsbtn d-none d-sm-block" onclick="window.location.href='#'">View
+                            results gallery</button>
                     </div>
                 </div>
             </div>
@@ -744,7 +749,7 @@
                     <h2 class="section-title">Our Commitment to You</h2>
                     <p class="section-subtitle">Experience the Yorkshire Hair and Skin Solutions difference</p>
                 </div>
-                
+
                 <div class="row g-4">
                     <!-- Service Card 1 -->
                     <div class="col-lg-4 col-md-6">
@@ -753,11 +758,12 @@
                                 <i class="fas fa-user-md"></i>
                             </div>
                             <h3>Expertise You Can Trust</h3>
-                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration and skin rejuvenation treatments, using only medically-approved techniques.</p>
-                            
+                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration
+                                and skin rejuvenation treatments, using only medically-approved techniques.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -765,11 +771,12 @@
                                 <i class="fas fa-heart"></i>
                             </div>
                             <h3>Personalized Care</h3>
-                            <p>Your journey begins with a comprehensive consultation where we listen to understand your unique concerns and goals before creating a customized treatment plan.</p>
-                           
+                            <p>Your journey begins with a comprehensive consultation where we listen to understand your
+                                unique concerns and goals before creating a customized treatment plan.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 3 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -777,12 +784,13 @@
                                 <i class="fas fa-clinic-medical"></i>
                             </div>
                             <h3>Premium Facilities</h3>
-                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the latest FDA-cleared technologies in a serene Yorkshire setting.</p>
-                            
+                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the
+                                latest FDA-cleared technologies in a serene Yorkshire setting.</p>
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-5">
                     <a href="#contact" class="btn btn-primary btn-lg">
                         Book Your Consultation
@@ -980,7 +988,8 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Hair restoration practitioner 2023</b></p>
-                                                            <p cla">Shortlisted at aesthetic medicine awards</p>
+                                                                        <p cla">Shortlisted at aesthetic medicine awards
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -991,7 +1000,7 @@
                                         </div>
                                         <div class="text">
                                             <p "><b>Best surgical result</b></p>
-                                                            <p cla">Finalist at aesthetic awards 2023</p>
+                                                                        <p cla">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1160,7 +1169,8 @@
                     <div class="col-md-6">
                         <div class="card transpricingBlue_card p-5 d-flex justify-content-center align-items-center">
                             <div class="transpricing_img">
-                                <img src="{{ asset('assets/img/1finance available.png') }}" style="height: 80px; width: 80px; background-color: rgba(255,255,255, 0.9); border-radius: 50%;"
+                                <img src="{{ asset('assets/img/1finance available.png') }}"
+                                    style="height: 80px; width: 80px; background-color: rgba(255,255,255, 0.9); border-radius: 50%;"
                                     alt="Transparent Pricing">
                             </div>
                             <div class="transpricing_text text-center mt-4">
@@ -1359,7 +1369,7 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Frequently Asked Questions</h2>
-               
+
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -1677,112 +1687,8 @@
                             <p><strong>Email: </strong>info@yorkshirehairandskinsolution.com</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="stepper d-flex justify-content-between">
-                            <div class="step active">Step 1</div>
-                            <div class="step">Step 2</div>
-                            <div class="step">Step 3</div>
-                        </div>
-                        <form action="" method="post" class="php-email-form">
-                            <!-- Step 1: User Details -->
-                            <div class="step-content active">
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="Phone Number" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="email" class="form-control" name="email" placeholder="Email"
-                                            required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="clinic" class="form-select" required>
-                                            <option value="">Preferred Clinic*</option>
-                                            <option value="London">London</option>
-                                            <option value="Leeds">Leeds</option>
-                                            <option value="Manchester">Manchester</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="contact_method" class="form-select" required>
-                                            <option value="">Preferred Contact Method</option>
-                                            <option value="Mobile">Mobile</option>
-                                            <option value="Email">Email</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 2: Date Selection -->
-                            <div class="step-content">
-                                <h3>Select a Date</h3>
-                                {{-- <input type="date" name="appointment_date" class="form-control active" required> --}}
-
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <select id="month-selector" class="form-select">
-                                            <option value="1">January</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <select id="year-selector" class="form-select">
-                                            {{-- <option value="2024">2024</option> --}}
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-
-                                        <div id="custom-calendar" class="calendar-container form-control"></div>
-                                    </div>
-                                </div>
-
-                                {{-- <input type="text" id="calendar" class="form-control" placeholder="Pick a Date" required> --}}
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 3: Time Selection -->
-                            <div class="step-content">
-                                <h3>Select a Time</h3>
-                                {{-- <input type="time" name="appointment_time" class="form-control" required> --}}
-                                <div class="col-md-12">
-                                    <select name="appointment_time" class="form-select" required>
-                                        <option value="">Preferred Time*</option>
-                                        <option value="9:00am">9:00 am</option>
-                                        <option value="10:00am">10: 00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="12:00pm">12:00 pm</option>
-                                        <option value="01:00pm">01:00 pm</option>
-                                        <option value="02:00pm">02:00 pm</option>
-                                        <option value="03:00pm">03:00 pm</option>
-                                        <option value="04:00pm">04:00 pm</option>
-                                        <option value="05:00pm">05:00 pm</option>
-                                        <option value="06:00pm">06:00 pm</option>
-                                    </select>
-                                </div>
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="submit" class="btn btn-success primartbtn">Submit</button>
-                            </div>
-                        </form>
+                    <div class="col-lg-6"> 
+                        @livewire('AppointmentForm.AppointmentForm')
                     </div><!-- End Contact Form -->
                 </div>
             </div>
@@ -1790,102 +1696,6 @@
         </section>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script>
-        $(document).ready(function() {
-            let currentStep = 0;
-            const steps = $(".step-content");
-            const indicators = $(".step");
-
-            function showStep(index) {
-                steps.removeClass("active");
-                indicators.removeClass("active");
-                $(steps[index]).addClass("active");
-                $(indicators[index]).addClass("active");
-            }
-
-            function validateStep(index) {
-                let isValid = true;
-                $(steps[index]).find("input[required], select[required]").each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass("is-invalid");
-                        isValid = false;
-                    } else {
-                        $(this).removeClass("is-invalid");
-                    }
-                });
-                return isValid;
-            }
-
-            $(".next-step").click(function() {
-                if (validateStep(currentStep) && currentStep < steps.length - 1) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
-
-            $(".prev-step").click(function() {
-                if (currentStep > 0) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                filter: '.Doctor1' // Show only Category 1 by default
-            });
-
-            $('.filter-button').on('click', function() {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-
-                // Remove active class and add it to the clicked button
-                $('.filter-button').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-    </script>
-    {{-- date picker --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const calendarContainer = document.getElementById("custom-calendar");
-            const monthSelector = document.getElementById("month-selector");
-            const yearSelector = document.getElementById("year-selector");
-            let selectedDate = null;
-
-            function generateCalendar() {
-                calendarContainer.innerHTML = ""; // Clear previous dates
-                const month = parseInt(monthSelector.value);
-                const year = parseInt(yearSelector.value);
-                const daysInMonth = new Date(year, month, 0).getDate();
-
-                for (let day = 1; day <= daysInMonth; day++) {
-                    let dayBox = document.createElement("div");
-                    dayBox.classList.add("day-box");
-                    dayBox.textContent = day;
-                    dayBox.addEventListener("click", function() {
-                        if (selectedDate) {
-                            selectedDate.classList.remove("selected");
-                        }
-                        selectedDate = dayBox;
-                        selectedDate.classList.add("selected");
-                    });
-                    calendarContainer.appendChild(dayBox);
-                }
-            }
-
-            monthSelector.addEventListener("change", generateCalendar);
-            yearSelector.addEventListener("change", generateCalendar);
-            generateCalendar(); // Initial load
-        });
-    </script>
     <script>
         $(document).ready(function() {
             $("#toggleButton").click(function() {

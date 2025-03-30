@@ -26,7 +26,7 @@ class ContactForm extends Component
     { 
         $this->validate();
 
-        // Logic to register the user 
+        // Logic to store the contact form 
         Contact::create(
             $this->only(['name', 'email', 'subject', 'message'])
         );

@@ -46,6 +46,8 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
     @livewireStyles --}}
+    
+    @livewireStyles
     @yield('head')
     <style>
         .navmenu li a {
@@ -81,7 +83,6 @@
             transition: filter 0.3s ease-in-out;
         }
     </style>
-
 </head>
 
 <body class="index-page">

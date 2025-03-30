@@ -2,9 +2,9 @@
     @if (session()->has('success'))
         <div class="alert alert-success">
             {{ session('success') }}
-        </div>
+        </div> 
     @endif
-    <form wire:submit.prevent="save" class="php-email-form">
+    <form wire:submit.prevent="save" class="php-email-form" action="javascript:void(0);">
         <div class="row gy-4">
 
             <div class="col-md-6">
