@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-md-12">
                     <div id="custom-calendar" class="calendar-container form-control"></div>
-                    <input type="text" name="day" wire:model="day" required id="day" value="">
+                    <input type="hidden" name="day" wire:model="day" required id="day" value="">
                 </div>
             </div>
 
