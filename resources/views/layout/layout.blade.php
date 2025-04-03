@@ -4,19 +4,32 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
     <title>@yield('title') - Yorkshire Hair & Skin Solution</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta name="description" content="Yorkshire Hair & Skin Solution specializes in expert hair transplants, PRP therapy, and advanced skincare treatments. Book a consultation today!">
+    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant">
+    <meta name="author" content="Yorkshire Hair & Skin Solution">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
+    <meta property="og:description" content="We offer top-tier hair transplants, PRP therapy, and skin treatments in Yorkshire. Get a free consultation now!">
+    <meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:site_name" content="Yorkshire Hair & Skin Solution">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
+    <meta name="twitter:description" content="Transform your hair & skin with our expert treatments in Yorkshire. Book a consultation now!">
+    <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg">
+    <meta name="twitter:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+    
 
 
     <!-- Favicons -->
@@ -46,6 +59,8 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
     @livewireStyles --}}
+    
+    @livewireStyles
     @yield('head')
     <style>
         .navmenu li a {
@@ -73,7 +88,6 @@
             transition: filter 0.3s ease-in-out;
         } */
     </style>
-
 </head>
 
 <body class="index-page">

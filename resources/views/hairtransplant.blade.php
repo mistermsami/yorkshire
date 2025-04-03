@@ -18,7 +18,8 @@
     <style>
         .aboutmain_sec {
             min-height: 100vh;
-            padding: 60px 0;;
+            padding: 60px 0;
+            ;
             background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
         }
 
@@ -47,6 +48,11 @@
             background-color: #fff;
         }
 
+        /* .aboutsecond_sec .profile-widget{
+                                                background-color: #f3f1ee;
+                                                border-radius: 20px;
+                                                padding: 20px;
+                                            } */
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
             border-radius: 25px !important;
@@ -104,7 +110,8 @@
             padding: 20px;
             background-color: #f3f1ee;
         }
-        .resultsbtn{
+
+        .resultsbtn {
             color: #fff;
             background: #1977cc;
             border: none;
@@ -251,9 +258,9 @@
         }
 
         /* .hairTfaq .hidden-content {
-                            display: none;
+                                        display: none;
 
-                        } */
+                                    } */
         .hairTfaq .details p {
             transition: all 0.5s ease-in-out;
         }
@@ -306,7 +313,7 @@
             display: block;
         }
 
-       
+
 
         .previousbtn {
             color: #fff;
@@ -363,14 +370,16 @@
         .transpricingBlue_card h3 {
             color: #f1f7f7;
         }
-      
+
         @media only screen and (max-width: 1399px) and (min-width: 769px) {
-            .afterresult .card{
+            .afterresult .card {
                 height: 280px !important;
             }
-            .howitworks .card .card-body{
+
+            .howitworks .card .card-body {
                 height: 200px;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
@@ -393,6 +402,7 @@
             .hairTfaq .nav-item .active {
                 background-color: #f1f7fc;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
@@ -411,7 +421,7 @@
 
                             <div class="section-header ">
                                 
-                                <h2>Hair Transplants by the UK’s Top Hair Clinic</h2>
+                                <h2>Hair Transplants from the UK’s Leading Hair Loss Clinic</h2>
                                 
                             </div>
                             <div class="about-content">
@@ -420,12 +430,12 @@
                                 </p>
                                 <div>
                                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
-                                   </div>
-                                    <div style="margin-top: 20px">
-                                        <a href="#" class="btn btn-primary">Book a consultation
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
+                                </div>
+                                <div style="margin-top: 20px">
+                                    <a href="#" class="btn btn-primary">Book a consultation
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -718,7 +728,7 @@
 
                     <div class="col-md-12 d-flex justify-content-center">
                         <button class="cta-btn resultsbtn d-none d-sm-block"
-                                    onclick="window.location.href='galleryview'">View results gallery</button>
+                                    onclick="window.location.href='#'">View results gallery</button>
                     </div>
                 </div>
             </div>
@@ -734,7 +744,7 @@
                     <h2 class="section-title">Our Commitment to You</h2>
                     <p class="section-subtitle">Experience the Yorkshire Hair and Skin Solutions difference</p>
                 </div>
-                
+
                 <div class="row g-4">
                     <!-- Service Card 1 -->
                     <div class="col-lg-4 col-md-6">
@@ -743,11 +753,12 @@
                                 <i class="fas fa-user-md"></i>
                             </div>
                             <h3>Expertise You Can Trust</h3>
-                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration and skin rejuvenation treatments, using only medically-approved techniques.</p>
-                            
+                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration
+                                and skin rejuvenation treatments, using only medically-approved techniques.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -755,11 +766,12 @@
                                 <i class="fas fa-heart"></i>
                             </div>
                             <h3>Personalized Care</h3>
-                            <p>Your journey begins with a comprehensive consultation where we listen to understand your unique concerns and goals before creating a customized treatment plan.</p>
-                           
+                            <p>Your journey begins with a comprehensive consultation where we listen to understand your
+                                unique concerns and goals before creating a customized treatment plan.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 3 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -767,12 +779,13 @@
                                 <i class="fas fa-clinic-medical"></i>
                             </div>
                             <h3>Premium Facilities</h3>
-                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the latest FDA-cleared technologies in a serene Yorkshire setting.</p>
-                            
+                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the
+                                latest FDA-cleared technologies in a serene Yorkshire setting.</p>
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-5">
                     <a href="#contact" class="btn btn-primary ">
                         Book Your Consultation
@@ -966,8 +979,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
+                                            <p "><b>Hair restoration practitioner 2023</b></p>
+                                                            <p cla">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -977,8 +990,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p class="title text-center"><b>Best surgical result</b></p>
-                                            <p class="subtitle text-center">Finalist at aesthetic awards 2023</p>
+                                            <p "><b>Best surgical result</b></p>
+                                                            <p cla">Finalist at aesthetic awards 2023</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1147,7 +1160,8 @@
                     <div class="col-md-6">
                         <div class="card transpricingBlue_card p-5 d-flex justify-content-center align-items-center">
                             <div class="transpricing_img">
-                                <img src="{{ asset('assets/img/1finance available.png') }}" style="height: 80px; width: 80px; background-color: rgba(255,255,255, 0.9); border-radius: 50%;"
+                                <img src="{{ asset('assets/img/1finance available.png') }}"
+                                    style="height: 80px; width: 80px; background-color: rgba(255,255,255, 0.9); border-radius: 50%;"
                                     alt="Transparent Pricing">
                             </div>
                             <div class="transpricing_text text-center mt-4">
@@ -1348,7 +1362,7 @@
 
             <!-- Section Title -->
             <div class="container section-title">
-                <h2>Hair transplant methods</h2>
+                <h2>Frequently Asked Questions</h2>
                
             </div><!-- End Section Title -->
 
@@ -1574,7 +1588,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary next-step primartbtn" style="margin-top: 10px;">Next</button>
+                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
                             </div>
 
                             <!-- Step 2: Date Selection -->
@@ -1649,102 +1663,6 @@
         </section>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script>
-        $(document).ready(function() {
-            let currentStep = 0;
-            const steps = $(".step-content");
-            const indicators = $(".step");
-
-            function showStep(index) {
-                steps.removeClass("active");
-                indicators.removeClass("active");
-                $(steps[index]).addClass("active");
-                $(indicators[index]).addClass("active");
-            }
-
-            function validateStep(index) {
-                let isValid = true;
-                $(steps[index]).find("input[required], select[required]").each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass("is-invalid");
-                        isValid = false;
-                    } else {
-                        $(this).removeClass("is-invalid");
-                    }
-                });
-                return isValid;
-            }
-
-            $(".next-step").click(function() {
-                if (validateStep(currentStep) && currentStep < steps.length - 1) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
-
-            $(".prev-step").click(function() {
-                if (currentStep > 0) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                filter: '.Doctor1' // Show only Category 1 by default
-            });
-
-            $('.filter-button').on('click', function() {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-
-                // Remove active class and add it to the clicked button
-                $('.filter-button').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-    </script>
-    {{-- date picker --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const calendarContainer = document.getElementById("custom-calendar");
-            const monthSelector = document.getElementById("month-selector");
-            const yearSelector = document.getElementById("year-selector");
-            let selectedDate = null;
-
-            function generateCalendar() {
-                calendarContainer.innerHTML = ""; // Clear previous dates
-                const month = parseInt(monthSelector.value);
-                const year = parseInt(yearSelector.value);
-                const daysInMonth = new Date(year, month, 0).getDate();
-
-                for (let day = 1; day <= daysInMonth; day++) {
-                    let dayBox = document.createElement("div");
-                    dayBox.classList.add("day-box");
-                    dayBox.textContent = day;
-                    dayBox.addEventListener("click", function() {
-                        if (selectedDate) {
-                            selectedDate.classList.remove("selected");
-                        }
-                        selectedDate = dayBox;
-                        selectedDate.classList.add("selected");
-                    });
-                    calendarContainer.appendChild(dayBox);
-                }
-            }
-
-            monthSelector.addEventListener("change", generateCalendar);
-            yearSelector.addEventListener("change", generateCalendar);
-            generateCalendar(); // Initial load
-        });
-    </script>
     <script>
         $(document).ready(function() {
             $("#toggleButton").click(function() {
