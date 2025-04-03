@@ -49,5 +49,9 @@ Route::get('skincaretips/', function () {
     return view('skincaretips'); 
 })->name('skincaretips');
 
+Route::get('galleryview/', function () { 
+    return view('galleryview'); 
+})->name('galleryview');
+
 
 

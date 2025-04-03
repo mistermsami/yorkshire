@@ -146,6 +146,8 @@
                 height: auto;
             }
         }
+
+        
     </style>
 
 
@@ -167,7 +169,7 @@
                             
                          
                             
-                            <div class="trustpilot-container">
+                            <div class="trustpilot-container" >
                                 <div class="trustpilot-line">
                                    <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
                                 </div>
@@ -352,7 +354,7 @@
 
 
         <!-- Before & After Section -->
-        <section class="before-after-section">
+    <section class="before-after-section">
     <div class="container">
         <h2>Before & After</h2>
         <div class="grid-container">

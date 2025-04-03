@@ -63,8 +63,9 @@
             <div class="container position-relative">
 
                 <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                    <h2>WELCOME TO YORKSHIRE</h2>
+                    <h2>YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h2>
                     <p>We are your premier destination for transformative hair and skin treatments.</p>
+                    
                 </div><!-- End Welcome -->
 
                 <div class="content row gy-4">
@@ -73,13 +74,17 @@
                             <h3>Why Choose Yorkshire?</h3>
                             <p>
                                 Choosing the right care for your hair and skin is a decision that should not be taken
-                                lightly. Here at Yorkshire Hair and Skin Solutions, we are committed to providing
-                                results-driven treatments tailored to your needs.
+                                lightly. Here at Yorkshire Hair and Skin Solutions.
+                                
                             </p>
-                            <div class="text-center">
-                                <a href="{{ route('aboutus') }}" class="more-btn"><span>Learn More</span> <i
-                                        class="bi bi-chevron-right"></i></a>
+                            
+                            <div>
+                                <a href="{{ route('aboutus') }}" class="more-btn btn-primary btn-lg">
+                                    <span>Discover Our Difference</span> 
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
                             </div>
+                            
                         </div>
                     </div><!-- End Why Box -->
 
@@ -148,7 +153,7 @@
                     <div class="col-md-6 d-flex">
                         <div class="heroabout-content w-100 h-100 p-4 d-flex flex-column justify-content-center">
                            
-                            <h1 class="section-subtitle">Innovating Health and Wellness</h1>
+                            <h1 class="aboutsection-subtitle">Innovating Health and Wellness</h1>
                             <p class="section-description">
                                 Yorkshire Hair and Skin Solutions is a trusted name in the field of hair and skin care.
                                 Based in the heart of Yorkshire, we combine innovation, expertise, and compassion to offer
@@ -759,7 +764,7 @@
         <!-- /Faq Section -->
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section">
+        {{-- <section id="testimonials" class="testimonials section">
 
             <div class="container">
 
@@ -930,7 +935,7 @@
 
             </div>
 
-        </section>
+        </section> --}}
         <!-- /Testimonials Section -->
 
         <!-- Gallery Section -->
@@ -939,7 +944,7 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Gallery</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>Yorkshire's premier destination for exceptional aesthetic results</p>
             </div><!-- End Section Title -->
 
             <div class="container-fluid">
@@ -1016,6 +1021,37 @@
 
         </section><!-- /Gallery Section -->
 
+
+        {{-- testimonial --}}
+        <section class="trusted-men-section">
+            <div class="trusted-men-bg-circle trusted-men-bg-1"></div>
+            <div class="trusted-men-bg-circle trusted-men-bg-2"></div>
+            
+            <div class="container">
+                <div class="trusted-men-header">
+                    <h2>More than <span class="trusted-men-counter">100,000</span> men<br>trust our treatment plans</h2>
+                </div>
+
+              
+                <div class="trustpilot-container" style="display: flex; justify-content: center; ">
+                    <div class="trustpilot-line">
+                        <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                    </div>
+                </div>
+                <div class="trusted-men-grid" id="trustedMenGrid">
+                    <!-- Testimonials will be inserted here by JavaScript -->
+                </div>
+                
+                <div class="trusted-men-controls">
+                    <button class="trusted-men-nav-btn prev" aria-label="Previous testimonials">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="trusted-men-nav-btn next" aria-label="Next testimonials">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
         <!-- Contact Section -->
         <section id="contact" class="contact section">
 
@@ -1077,4 +1113,231 @@
         <!-- /Contact Section -->
 
     </main>
+    {{-- testimonials script --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for counter animation
+            const counterElement = document.querySelector('.trusted-men-counter');
+            const section = document.querySelector('.trusted-men-section');
+            
+            let counterAnimated = false;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !counterAnimated) {
+                        animateCounter(counterElement, 100000);
+                        counterAnimated = true;
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of section is visible
+            
+            observer.observe(section);
+            
+            // Animate counter
+            function animateCounter(element, target, duration = 2000) {
+                const start = 0;
+                const increment = target / (duration / 16);
+                let current = start;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        element.textContent = Math.floor(current).toLocaleString();
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target.toLocaleString();
+                    }
+                };
+                
+                updateCounter();
+            }
+            
+            // Testimonial data
+            const testimonials = [
+                {
+                    rating: 5,
+                    content: "After struggling with hair loss for years, this treatment plan actually worked. My confidence has never been higher!",
+                    img: "https://randomuser.me/api/portraits/men/32.jpg",
+                    name: "Michael R.",
+                    treatment: "12-month hair program"
+                },
+                {
+                    rating: 5,
+                    content: "The personalized approach made all the difference. Finally found a solution that delivers real results.",
+                    img: "https://randomuser.me/api/portraits/men/44.jpg",
+                    name: "David T.",
+                    treatment: "Custom hair treatment"
+                },
+                {
+                    rating: 4.5,
+                    content: "Noticeable improvement in just 3 months. The team understands men's hair concerns better than anyone.",
+                    img: "https://randomuser.me/api/portraits/men/22.jpg",
+                    name: "James K.",
+                    treatment: "Hair restoration"
+                },
+                {
+                    rating: 5,
+                    content: "Wish I had started sooner. The treatments are painless and actually work. Worth every penny.",
+                    img: "https://randomuser.me/api/portraits/men/55.jpg",
+                    name: "Robert P.",
+                    treatment: "6-month plan"
+                },
+                {
+                    rating: 5,
+                    content: "My barber asked what I've been doing differently. Friends are noticing the transformation!",
+                    img: "https://randomuser.me/api/portraits/men/66.jpg",
+                    name: "Thomas W.",
+                    treatment: "Complete hair solution"
+                },
+                {
+                    rating: 5,
+                    content: "No more worrying about thinning spots. This treatment gave me back my confidence.",
+                    img: "https://randomuser.me/api/portraits/men/77.jpg",
+                    name: "Christopher M.",
+                    treatment: "Hair thickening program"
+                }
+            ];
+            
+            const grid = document.getElementById('trustedMenGrid');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            let currentIndex = 0;
+            let visibleTestimonials = 3; // Default for desktop
+            let autoRotateInterval;
+            const rotationInterval = 3000; // 3 seconds
+            
+            // Initialize the grid
+            function initGrid() {
+                // Determine how many testimonials to show based on screen size
+                if (window.innerWidth < 576) {
+                    visibleTestimonials = 1;
+                } else if (window.innerWidth < 992) {
+                    visibleTestimonials = 2;
+                } else {
+                    visibleTestimonials = 3;
+                }
+                
+                renderTestimonials();
+                updateControls();
+                startAutoRotate();
+            }
+            
+            // Render testimonials
+            function renderTestimonials() {
+                grid.innerHTML = '';
+                const endIndex = Math.min(currentIndex + visibleTestimonials, testimonials.length);
+                
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const testimonial = testimonials[i];
+                    const card = document.createElement('div');
+                    card.className = 'trusted-men-card';
+                    card.style.animationDelay = `${(i - currentIndex) * 0.1}s`;
+                    
+                    // Create rating stars
+                    let stars = '';
+                    const fullStars = Math.floor(testimonial.rating);
+                    const hasHalfStar = testimonial.rating % 1 !== 0;
+                    
+                    for (let j = 0; j < 5; j++) {
+                        if (j < fullStars) {
+                            stars += '<i class="fas fa-star"></i>';
+                        } else if (j === fullStars && hasHalfStar) {
+                            stars += '<i class="fas fa-star-half-alt"></i>';
+                        } else {
+                            stars += '<i class="far fa-star"></i>';
+                        }
+                    }
+                    
+                    card.innerHTML = `
+                        <div class="trusted-men-rating">${stars}</div>
+                        <p class="trusted-men-content">"${testimonial.content}"</p>
+                        <div class="trusted-men-client">
+                            <img src="${testimonial.img}" alt="${testimonial.name}" class="trusted-men-avatar">
+                            <div class="trusted-men-client-details">
+                                <h5>${testimonial.name}</h5>
+                                <p>${testimonial.treatment}</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                }
+            }
+            
+            // Update control buttons
+            function updateControls() {
+                prevBtn.classList.toggle('disabled', currentIndex === 0);
+                nextBtn.classList.toggle('disabled', currentIndex >= testimonials.length - visibleTestimonials);
+            }
+            
+            // Show next set of testimonials
+            function showNext() {
+                if (currentIndex < testimonials.length - visibleTestimonials) {
+                    currentIndex++;
+                    renderTestimonials();
+                    updateControls();
+                } else {
+                    // Loop back to start
+                    currentIndex = 0;
+                    renderTestimonials();
+                    updateControls();
+                }
+            }
+            
+            // Show previous set of testimonials
+            function showPrev() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    renderTestimonials();
+                    updateControls();
+                }
+            }
+            
+            // Auto rotate testimonials
+            function startAutoRotate() {
+                autoRotateInterval = setInterval(showNext, rotationInterval);
+            }
+            
+            // Stop auto rotation
+            function stopAutoRotate() {
+                clearInterval(autoRotateInterval);
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    stopAutoRotate();
+                    showNext();
+                    startAutoRotate();
+                }
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    stopAutoRotate();
+                    showPrev();
+                    startAutoRotate();
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                const prevVisible = visibleTestimonials;
+                initGrid();
+                // Adjust currentIndex if needed
+                if (visibleTestimonials > prevVisible) {
+                    currentIndex = Math.max(0, currentIndex - (visibleTestimonials - prevVisible));
+                }
+                renderTestimonials();
+                updateControls();
+            });
+            
+            // Pause auto-rotate on hover
+            grid.addEventListener('mouseenter', stopAutoRotate);
+            grid.addEventListener('mouseleave', startAutoRotate);
+            
+            // Initialize
+            initGrid();
+        });
+    </script>
 @endsection

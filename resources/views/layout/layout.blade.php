@@ -52,34 +52,26 @@
             font-weight: 600;
         }
 
-        .footer {
-            /* background-color: #1977CC; */
-            /* color: #f1f7fc; */
+        /* .footer {
             bottom: 0
-        }
+        } */
 
-        .footer a {
+        /* .footer a {
             text-decoration: none;
-            /* color: #f1f7fc; */
-        }
+        } */
 
-        .footer h3 {
+        /* .footer h3 {
             font-size: 18px;
             font-weight: 700;
-            /* color: #f1f7fc; */
+        } */
 
-        }
 
-        .social-links a i {
-            /* color: #fff */
-        }
-
-        .company-img {
+        /* .company-img {
             max-width: 80px;
             height: auto;
             filter: brightness(90%);
             transition: filter 0.3s ease-in-out;
-        }
+        } */
     </style>
 
 </head>
@@ -88,11 +80,11 @@
 
     <header id="header" class="header sticky-top">
 
-        {{-- <div class="topbar d-flex align-items-center">
+        <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Yorkshire@info.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>07943289303</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -101,7 +93,7 @@
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-    </div> --}}
+    </div>
         <!-- End Top Bar -->
 
         <div class="branding d-flex align-items-center">

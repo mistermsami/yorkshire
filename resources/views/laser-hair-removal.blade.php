@@ -438,7 +438,7 @@
     <main class="main">
         <!-- Popular Section -->
         <section class="section aboutmain_sec about">
-            <div class="container-fluid">
+            <div class="">
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center">
                         <div class="" style="padding-left: 50px; padding-right: 50px;">
@@ -490,143 +490,166 @@
                 </p>
             </div><!-- End Section Title -->
 
-            <div class="">
-                <div class="row gy-4">
-                    <div class="position-relative">
-                        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/laserresult1.webp" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Sessions:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    03
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+            <div class="row gy-4">
+                <div class="position-relative">
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Card 1 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/laserresult1.webp" alt="Laser Hair Removal Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">03</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">6 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Starting at:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$99/session</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/laserresult2.webp" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Sessions:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    06
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+                                        </div>
+                                        
+                                        <!-- Card 2 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/laserresult2.webp" alt="Skin Brightening Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">06</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">12 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Package Price:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$499 (save 15%)</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/laserresult3.webp" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Sessions:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    06
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+                                        </div>
+                                        
+                                        <!-- Card 3 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/laserresult3.webp" alt="Acne Treatment Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                       <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">06</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">8 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Starting at:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$129/session</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/laserresult4.webp" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Session:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    06
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+                            </div>
+                            
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Card 4 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/laserresult4.webp" alt="Scar Reduction Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">06</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">10 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Package Deal:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$699 (save 20%)</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/result5.png" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Session:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    06
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+                                        </div>
+                                        
+                                        <!-- Card 5 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/result5.png" alt="Anti-Aging Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">06</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">12 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Starting at:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$149/session</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-header p-0">
-                                                        <img src="assets/img/result6.png" alt="">
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <hr style="color: #bfbfbf;">
-                                                            <div class="col-md-6"><b>
-                                                                    Sessions:
-                                                                </b></div>
-                                                            <div class="col-md-6">
-                                                                <p>
-                                                                    03
-                                                                </p>
-                                                            </div>
-
-                                                        </div>
+                                        </div>
+                                        
+                                        <!-- Card 6 -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-header p-0 overflow-hidden">
+                                                    <img src="assets/img/result6.png" alt="Pigmentation Results - Before & After" class="w-100">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <hr style="color: #bfbfbf;">
+                                                        <div class="col-md-6"><b>Treatment:</b></div>
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Sessions:</b></div>
+                                                        <div class="col-md-6 mt-2">03</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
+                                                        <div class="col-md-6 mt-2">4 Weeks</div>
+                                                        
+                                                        <div class="col-md-6 mt-2"><b>Quick Fix:</b></div>
+                                                        <div class="col-md-6 mt-2 text-primary">$299 (all-in)</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -635,28 +658,31 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
-                            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
-                            style="margin-left: -13px; color: #1977cc;">
-                            <span class="carousel-control-prev-icon" style="filter: invert(0);"
-                                aria-hidden="true"></span>
+                        
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" 
+                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
+                                style="margin-left: -13px; color: #1977cc;">
+                            <span class="carousel-control-prev-icon" style="filter: invert(0);" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
-                            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
-                            style="margin-right: -13px; color: #1977cc;">
-                            <span class="carousel-control-next-icon" style="filter: invert(0);"
-                                aria-hidden="true"></span>
+                        <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" 
+                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
+                                style="margin-right: -13px; color: #1977cc;">
+                            <span class="carousel-control-next-icon" style="filter: invert(0);" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <button class="cta-btn resultsbtn d-none d-sm-block" onclick="window.location.href='#'">View
-                            results gallery</button>
-                    </div>
+                </div>
+            
+                <!-- CTA Button -->
+                <div class="col-md-12 d-flex justify-content-center mt-4">
+                    <button class="cta-btn resultsbtn d-none d-sm-block" onclick="window.location.href='#'">
+                        View Full Results Gallery
+                    </button>
                 </div>
             </div>
+
 
 
 
@@ -709,7 +735,7 @@
                 </div>
                 
                 <div class="text-center mt-5">
-                    <a href="#contact" class="btn btn-primary btn-lg">
+                    <a href="#contact" class="btn btn-primary ">
                         Book Your Consultation
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
@@ -719,259 +745,7 @@
 
 
         <!-- Services Section -->
-        <section id="services" class="services experts section">
-
-            <!-- Section Title -->
-            {{-- data-aos="fade-up" --}}
-            <div class="container section-title">
-                <h2>Expert surgeons, best-in-class results</h2>
-                <p>
-                    Your consultation, surgery and follow ups will all be with the same, dedicated Yrokshire surgeon
-                </p>
-            </div><!-- End Section Title -->
-
-            <div class="text-center mb-4">
-                {{-- <button class="btn btn-primary filter-button active" data-filter=".Doctor1">Doctor 1</button> --}}
-                <button class="btn-btn docbtn filter-button active" data-filter=".Doctor1">Dr. Furqan</button>
-                <button class="btn-btn docbtn filter-button" data-filter=".Doctor2">Dr. Kamran</button>
-                <button class="btn-btn docbtn filter-button" data-filter=".Doctor3">Dr. Imran</button>
-            </div>
-
-
-            <div class="container">
-                <div class="grid">
-                    <div class="row doc_details">
-                        <div class="col-md-5 Doctor1 grid-item">
-                            <img src="assets/img/magdiel-lagos-7hjh_X3xsDA-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 Doctor1 grid-item">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p class="title text-center"><b>Best surgical result</b></p>
-                                            <p class="subtitle text-center">Finalist at aesthetic awards 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card card_centered_content p-4"
-                                        style="background-color: #1977cc; color: #f3f1ee;">
-                                        {{-- <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div> --}}
-                                        <div class="text">
-                                            <p><strong>Dr. Furqan Raja</strong>, a leading British hair restoration surgeon
-                                                who employs world-class surgical techniques to ensure natural results which
-                                                are <strong>virtually undetectable.</strong></p>
-                                            <h6 class="mt-3" style="color: #f3f1ee;">EDUCATIONAL AND MEDICAL EXPERIENCE
-                                            </h6>
-                                            <p><i class="bi bi-mortarboard"></i> University of <strong>Leicester</strong>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row doc_details">
-                        <div class="col-md-5 Doctor2 grid-item">
-                            <img src="assets/img/ashkan-forouzani-DPEPYPBZpB8-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 Doctor2 grid-item">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
-                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p class="title text-center"><b>Best surgical result</b></p>
-                                            <p class="subtitle text-center">Finalist at aesthetic awards 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card card_centered_content p-4"
-                                        style="background-color: #1977cc; color: #f3f1ee;">
-                                        {{-- <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div> --}}
-                                        <div class="text">
-                                            <p><strong>Dr. Furqan Raja</strong>, a leading British hair restoration surgeon
-                                                who employs world-class surgical techniques to ensure natural results which
-                                                are <strong>virtually undetectable.</strong></p>
-                                            <h6 class="mt-3" style="color: #f3f1ee;">EDUCATIONAL AND MEDICAL EXPERIENCE
-                                            </h6>
-                                            <p><i class="bi bi-mortarboard"></i> University of <strong>Leicester</strong>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row doc_details">
-                        <div class="col-md-5 Doctor3 grid-item">
-                            <img src="assets/img/ashkan-forouzani-l-NIPb-9Njg-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 Doctor3 grid-item">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p "><b>Hair restoration practitioner 2023</b></p>
-                                                                        <p cla">Shortlisted at aesthetic medicine awards
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
-                                        <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p "><b>Best surgical result</b></p>
-                                                                        <p cla">Finalist at aesthetic awards 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card card_centered_content p-4"
-                                        style="background-color: #1977cc; color: #f3f1ee;">
-                                        {{-- <div class="icon">
-                                            <i class="bi bi-award"></i>
-                                        </div> --}}
-                                        <div class="text">
-                                            <p><strong>Dr. Furqan Raja</strong>, a leading British hair restoration surgeon
-                                                who employs world-class surgical techniques to ensure natural results which
-                                                are <strong>virtually undetectable.</strong></p>
-                                            <h6 class="mt-3" style="color: #f3f1ee;">EDUCATIONAL AND MEDICAL EXPERIENCE
-                                            </h6>
-                                            <p><i class="bi bi-mortarboard"></i> University of <strong>Leicester</strong>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="card card_centered_content p-4">
-                                                {{-- <div class="icon">
-                                                    <i class="bi bi-award"></i>
-                                                </div> --}}
-                                                <div class="text">
-                                                    <p class="title"><b>Hair restoration practitioner 2023</b></p>
-                                                    <p class="subtitle">Shortlisted at aesthetic medicine awards</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+      
         <!-- /Services Section -->
 
 
@@ -1355,11 +1129,7 @@
                                     Charged on a per graft basis to maximise the cost of your procedure
                                 </p>
                             </div>
-                            <div class="position-absolute" style="z-index: 99; right: -28px;">
-                                <div class="vs-badge d-flex justify-content-center align-items-center"
-                                    style="height: 30px; width: 30px; background-color: #000; color: #fff; border-radius: 50%;">
-                                    vs</div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1390,9 +1160,12 @@
                                     alt="financing">
                             </div>
                             <div class="col-md-10 pt-1">
-                                <h3>0% financing available</h3>
+                                <h3>Affordable Pricing Plans</h3>
                                 {{-- <br> --}}
-                                <p>Finance your transplant at 0% interest up to 12 months.</p>
+                                <p>Lock in our best price—quality care that fits your budget.Transparent pricing, no hidden fees—ever.</p>  
+                                <p>Limited-time offer: Book now and save up to 20%.Premium results at a price you’ll love.</p>  
+                                <p>Flexible payment plans tailored just for you.</p>  
+                                <p></p>  
                             </div>
                         </div>
                     </div>
@@ -1483,113 +1256,93 @@
         </section>
         <!-- /Faq Section -->
 
-        <!-- Departments Section -->
-        <section id="departments" class="departments hairTfaq section">
-
-            {{-- <!-- Section Title -->  data-aos="fade-up" --}}
+        <!-- Faq Section -->
+        <section id="faq" class="faq section light-background">
             <div class="container section-title">
-                <h2>FAQ</h2>
-                <p>Hair transplant FAQs</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">When will I see the results after having laser hair removal?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">What is the safety record for laser hair removal?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">How Does Laser Hair Removal Work?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">What do I need to do to prepare for my Laser Hair Removal appointment?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Can I use makeup before a laser treatment?</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8 mt-4 mt-lg-0">
-                        <div class="tab-content">
-                            <div class="tab-pane active show" id="departments-tab-1">
-                                <div class="row">
-                                    <div class="col-lg-12 details order-2 order-lg-1">
-                                        <h3>When will I see the results after having laser hair removal?</h3>
-                                        <p class="fst-italic">
-                                            You will likely see the results immediately after treatment. The results vary from patient to patient. The color and thickness of your hair, area treated, type of laser used, and color of your skin all affect the results. You can expect a 10% to 25% reduction in hair after the first treatment.
-                                        </p>
-                                        <p class="fst-italic">
-                                            To remove the hair, most patients need 2 to 6 laser treatments. After finishing the treatments, most patients do not see any hair on the treated skin for several months or even years. When the hair regrows, there tends to be less of it. The hairs also tend to be finer and lighter in color.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-2">
-                                <div class="row">
-                                    <div class="col-lg-12 details order-2 order-lg-1">
-                                        <h3>When is it safe to have another laser treatment for hair removal?</h3>
-                                        <p class="fst-italic">
-                                            This varies from patient to patient. Removing hair often requires a series of laser treatments. Most patients can have laser hair removal once every 4 to 6 weeks. Your dermatologist will tell you when it is safe to have another treatment.
-                                        </p>
-                                        <p class="fst-italic">
-                                            Most patients see some hair regrowth. Your dermatologist can tell you when you can safely have laser treatments to maintain the results.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-3">
-                                <div class="row">
-                                    <div class="col-lg-12 details order-2 order-lg-1">
-                                        <h3>How Does Laser Hair Removal Work?</h3>
-                                        <p class="fst-italic">
-                                            Laser hair removal involves the use of laser pulses. These pulses emit light into the skin that destroys the root and follicle of the hair. When the root and follicle are destroyed, hair can no longer grow.
-                                        </p>
-                                        <p class="fst-italic">
-                                            For this process to work, the hair must be targeted during an active growth phase. However, individual hairs usually grow at different rates. Therefore, it takes several treatment sessions to capture every hair in the growth phase and produce optimal results.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-4">
-                                <div class="row">
-                                    <div class="col-lg-12 details order-2 order-lg-1">
-                                        <h3>What do I need to do to prepare for my Laser Hair Removal appointment?</h3>
-                                        <ul>
-                                            <li>Shave treatment area at least 12-24 hours prior to your treatment.</li>
-                                            <li>Avoid chemical peels or laser resurfacing treatments at least 4 weeks before your treatment.</li>
-                                            <li>Exfoliate the treatment area at least 3 days before your treatment.</li>
-                                            <li>Ensure all fake tan is removed and there is no residual fake tan present on the skin 24 hours before your treatment.</li>
-                                            <li>Allow 4 weeks prior to your treatment if you have had direct sun exposure. (Any kind of tanning or active sunbathing, with or without SPF). Allow 2 weeks prior to your treatment if you have had incidental sun exposure  (stayed in the shade for the majority of the time during sunny periods, with or without SPF on).</li>
-                                            <li>Avoid using topical creams, moisturisers, body oils, colognes or perfumes to the area being treated 24 hours prior to treatment.</li>
-                                            <li>Do not wax, use depilatory creams or pluck hairs four weeks prior to laser treatment.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-5">
-                                <div class="row">
-                                    <div class="col-lg-12 details order-2 order-lg-1">
-                                        <h3>Can I use makeup before a laser treatment?</h3>
-                                        <p class="fst-italic">No, do not use makeup, body lotion, deodorant, sunblock, sunscreen, day cream on the area to be treated on the same day of laser treatment. This is because of the chemicals that can be absorbed differently by the heat of the skin. The area to be treated needs to be completely clean of products and shaved before a laser treatment.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+                <h2>Frequently Asked Questions</h2>
             </div>
-
+        
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="faq-container">
+        
+                            <div class="faq-item faq-active">
+                                <h3>What is Laser Hair Removal, and how does it work?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Laser Hair Removal is a non-invasive procedure that uses concentrated light energy to target and destroy hair follicles, preventing future hair growth. It provides long-term hair reduction and works on various skin types.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>Is Laser Hair Removal permanent?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Laser Hair Removal significantly reduces hair growth, but results may vary. Some hair may regrow over time, requiring occasional maintenance sessions for long-lasting smooth skin.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>Is Laser Hair Removal safe?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Yes, Laser Hair Removal is a safe and FDA-approved procedure when performed by trained professionals. Minor redness or irritation may occur but usually subsides within a few hours.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>How many sessions are needed for the best results?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Most individuals require 6-8 sessions spaced 4-6 weeks apart to achieve optimal results, depending on hair type, skin tone, and treatment area.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>Does Laser Hair Removal hurt?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        The procedure is generally well-tolerated, with most patients describing it as a mild tingling or snapping sensation. Cooling techniques and numbing creams can help reduce discomfort.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>Which areas can be treated with Laser Hair Removal?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Laser Hair Removal can be performed on various areas, including the face, arms, legs, underarms, bikini line, back, and chest, offering smooth and hair-free skin.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+        
+                            <div class="faq-item">
+                                <h3>Are there any side effects?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Side effects are minimal and may include slight redness, swelling, or temporary sensitivity in the treated area. These usually subside within a few hours to a couple of days.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+                        </div>
+                    </div><!-- End Faq Column-->
+                </div>
+            </div>
         </section>
-        <!-- /Departments Section -->
+        
+        <!-- /Faq Section -->
 
 
         <!-- Services Section -->
@@ -1672,14 +1425,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button> --}}
+                   
                 </div>
             </div>
         </section>
