@@ -728,7 +728,7 @@
 
                     <div class="col-md-12 d-flex justify-content-center">
                         <button class="cta-btn resultsbtn d-none d-sm-block"
-                                    onclick="window.location.href='#'">View results gallery</button>
+                                    onclick="window.location.href='galleryview'">View results gallery</button>
                     </div>
                 </div>
             </div>

@@ -67,26 +67,6 @@
             font-weight: 600;
         }
 
-        /* .footer {
-            bottom: 0
-        } */
-
-        /* .footer a {
-            text-decoration: none;
-        } */
-
-        /* .footer h3 {
-            font-size: 18px;
-            font-weight: 700;
-        } */
-
-
-        /* .company-img {
-            max-width: 80px;
-            height: auto;
-            filter: brightness(90%);
-            transition: filter 0.3s ease-in-out;
-        } */
     </style>
 </head>
 
@@ -155,7 +135,6 @@
             class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
     <footer id="footer" class="footer light-background">
-
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -169,6 +148,7 @@
 
                         <p class="mt-3"><strong>Phone:</strong> <span>07943289303</span></p>
                         <p><strong>Email:</strong> <span>info@example.com</span></p>
+                       
                     </div>
                     <div class="social-links d-flex mt-4">
                         <a href=""><i class="bi bi-twitter-x"></i></a>
