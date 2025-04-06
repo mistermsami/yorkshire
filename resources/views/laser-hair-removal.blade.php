@@ -18,6 +18,7 @@
         .aboutmain_sec {
             min-height: 100vh;
             padding: 60px 0;
+            
             background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
         }
 
@@ -38,8 +39,14 @@
         }
 
         .aboutmain_sec .aboutsideimg {
-            height: 550px;
+            height: 500px;
         }
+
+        .aboutsecond_sec {
+            padding: 80px 0 40px 0;
+            background-color: #fff;
+        }
+
 
         .aboutsecond_sec .aboutsideimg img {
             height: 500px;
@@ -438,25 +445,24 @@
     <main class="main">
         <!-- Popular Section -->
         <section class="section aboutmain_sec about">
-            <div class="">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center">
-                        <div class="" style="padding-left: 50px; padding-right: 50px;">
+                        <div class="" style=" padding-right: 50px;">
 
                             <div class="section-header ">
                                 
-                                <h2>Laser Hair Removal from the UK’s Leading Hair Removal Clinic</h2>
-                               
+                                <h2>Laser Hair Removal from the UK’s Best Clinic</h2>
+                                
                             </div>
                             <div class="about-content">
-                               
                                 <p>
                                     Restore your hair with the UK’s most trusted hair clinic. Yorkshire has helped over
                                     <b>200,000</b> men regain their confidence.
                                 </p>
-                               <div>
-                                <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
-                               </div>
+                                <div>
+                                    <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                                </div>
                                 <div style="margin-top: 20px">
                                     <a href="#" class="btn btn-primary">Book a consultation
                                         <i class="fas fa-arrow-right"></i>
@@ -466,8 +472,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 position-relative align-self-start">
-                        <img src="assets/img/cosmetician-removing-her-female-patient-underarm-h-2024-10-18-09-06-30-utc.jpg"
-                            class="aboutmain_sec_img" alt="">
+                        <img src="assets/img/abouthairtrantplant.jpg" class="aboutmain_sec_img" alt="">
                         {{-- <img src="assets/img/about.jpg" class="aboutmain_sec_img" alt=""> --}}
                         <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
                             class="glightbox pulsating-play-btn"></a>
@@ -742,12 +747,6 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- Services Section -->
-      
-        <!-- /Services Section -->
-
 
         <!-- Services Section -->
         <section id="pricing" class="pricing faq services section mb-4">
@@ -1225,8 +1224,8 @@
             </div>
         </section>
 
-        <!-- Faq Section -->
-        <section class="laserdevice section " >
+        <!-- dmue -->
+        {{-- <section class="laserdevice section " >
 
             <!-- Section Title -->
             <div class="container section-title">
@@ -1253,8 +1252,8 @@
 
             </div>
 
-        </section>
-        <!-- /Faq Section -->
+        </section> --}}
+        <!-- /dmue -->
 
         <!-- Faq Section -->
         <section id="faq" class="faq section light-background">

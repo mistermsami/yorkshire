@@ -56,85 +56,74 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background">
 
-            <img src="assets/img/hero1.2.jpg" alt="" data-aos="fade-in">
-            {{-- <img src="assets/img/hero1.1.jpg" alt="" data-aos="fade-in"> --}}
-            {{-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> --}}
-
+           <img src="assets/img/hero1.2.jpg" alt="" data-aos="fade-in">
+        
             <div class="container position-relative">
-
+        
                 <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
                     <h2>YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h2>
-                    <p>We are your premier destination for transformative hair and skin treatments.</p>
-                    
+            <p>We are your premier destination for transformative hair and skin treatments.</p>
+            
                 </div><!-- End Welcome -->
-
+        
                 <div class="content row gy-4">
                     <div class="col-lg-4 d-flex align-items-stretch">
                         <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                            <h3>Why Choose Yorkshire?</h3>
+                            <h3>Why Choose Our Clinic?</h3>
                             <p>
-                                Choosing the right care for your hair and skin is a decision that should not be taken
-                                lightly. Here at Yorkshire Hair and Skin Solutions.
-                                
+                                Our board-certified dermatologists and aesthetic specialists combine medical expertise with artistic 
+                                vision to deliver natural-looking results. Using the latest FDA-approved technologies, we provide 
+                                personalized treatments tailored to your unique skin needs and aesthetic goals.
                             </p>
-                            
                             <div>
-                                <a href="{{ route('aboutus') }}" class="more-btn btn-primary btn-lg">
-                                    <span>Discover Our Difference</span> 
+                                <a href="{{ route('aboutus') }}" class="more-btn btn-primary">
+                                    <span>Discover Our Approach</span> 
                                     <i class="bi bi-chevron-right"></i>
                                 </a>
                             </div>
-                            
                         </div>
                     </div><!-- End Why Box -->
-
+        
                     <div class="col-lg-8 d-flex align-items-stretch">
                         <div class="d-flex flex-column justify-content-center">
                             <div class="row gy-4">
-
+        
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                                        <i class="bi bi-shield-fill-check"></i>
-                                        <h4>Expertise You Can Trust</h4>
-                                        <p>
-                                            Our team of specialists brings years of experience in hair and skin treatments.
-                                            We use advanced techniques and technology to ensure safety and effectiveness.
-                                        </p>
+                                        <i class="bi bi-shield-check"></i>
+                                        <h4>Medical-Grade Treatments</h4>
+                                        <p>Advanced procedures performed by licensed professionals in a clinical setting</p>
                                     </div>
                                 </div><!-- End Icon Box -->
-
+        
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                                        <i class="bi bi-person-fill-check"></i>
+                                        <i class="bi bi-person-heart"></i>
                                         <h4>Personalized Care</h4>
-                                        <p>
-                                            Every client is unique. We tailor each treatment plan to match your individual
-                                            goals, ensuring you get the attention and results you deserve.
-                                        </p>
+                                        <p>Customized treatment plans designed for your specific skin concerns and goals</p>
                                     </div>
                                 </div><!-- End Icon Box -->
-
+        
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                                        <i class="bi bi-bag-heart-fill"></i>
-                                        <h4>State-of-the-Art Facilities</h4>
-                                        <p>
-                                            Our clinic is equipped with the latest medical-grade tools and technology to
-                                            provide a comfortable and high-quality treatment experience.
-                                        </p>
+                                        <i class="bi bi-lightning-charge"></i>
+                                        <h4>Cutting-Edge Technology</h4>
+                                        <p>State-of-the-art equipment for safe, effective, and comfortable treatments</p>
                                     </div>
                                 </div><!-- End Icon Box -->
-
+        
                             </div>
                         </div>
                     </div>
-                </div><!-- End  Content-->
-
+                </div><!-- End Content-->
+        
             </div>
+        
+        </section>
+        <!-- /Hero Section -->
 
-        </section><!-- /Hero Section -->
-
-       
+      
+        
         <!-- About Us Section -->
         <section id="about" class="about-section">
             <div class="container">
@@ -197,6 +186,52 @@
             </div>
         </section>
         <!-- /About Section -->
+
+         {{-- trustpilot thing --}}
+       <section class="trust-features">
+        <div class="container">
+            <!-- Trustpilot Logo -->
+            <div class="trustpilot-logo-container">
+                <p style="font-size: 12px ; font-weight: bold;">The Yorkshire Hair and Skin Solution difference</p>
+                <img src="/assets/img/trustpilotimage.png" alt="trustpilot" class="trustpilot-logo" style="width: 250px">
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="feature-content">UK Licensed medication</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i> <!-- Spa icon for relaxation and beauty treatments -->
+                    </div>
+                    <p class="feature-content"> Skincare treatments</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i> <!-- Health & wellness icon -->
+                    </div>
+                    <p class="feature-content">FDA approved procedures</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <p class="feature-content">Ongoing medical support</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <!-- Services Section -->
         <section id="services" class="services section">
@@ -418,7 +453,6 @@
         </section>
         <!-- /Services Section -->
 
-
         <!-- Stats Section -->
         <section id="stats" class="stats section light-background">
             {{-- data-aos="fade-up" data-aos-delay="100" --}}
@@ -465,7 +499,6 @@
 
         </section><!-- /Stats Section -->
 
-
         <!-- Departments Section -->
         <section id="departments" class="departments section">
 
@@ -490,6 +523,16 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Weight Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Microneedling</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">PRP</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Client Care and
@@ -1030,7 +1073,7 @@
             let currentIndex = 0;
             let visibleTestimonials = 3; // Default for desktop
             let autoRotateInterval;
-            const rotationInterval = 3000; // 3 seconds
+            const rotationInterval = 6000; // 6 seconds
             
             // Initialize the grid
             function initGrid() {

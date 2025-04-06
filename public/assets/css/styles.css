@@ -1412,7 +1412,7 @@
     left: 20px;
     font-size: 80px;
     color: rgba(52, 152, 219, 0.1);
-    font-family: serif;
+    /* font-family: serif; */
     line-height: 1;
     z-index: 0;
 }
@@ -1495,3 +1495,102 @@
     background: #ddd;
 }
 
+
+
+
+        /* Trust Features Section - Scoped Styles */
+        .trust-features {
+            background: linear-gradient(135deg, #f5f9ff 0%, #f0f7ff 100%);
+            padding: 40px 20px;
+        }
+        
+        .trust-features .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo */
+        .trust-features .trustpilot-logo-container {
+            margin-bottom: 40px;
+           
+        }
+        
+        .trust-features .trustpilot-logo {
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Cards Grid */
+        .trust-features .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        /* Modern Card Design */
+        .trust-features .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(0, 82, 204, 0.08);
+            border: 1px solid rgba(0, 82, 204, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .trust-features .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 82, 204, 0.15);
+        }
+        
+        /* Icon Styling */
+        .trust-features .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #0066ff 0%, #00a3ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(0, 82, 204, 0.05);
+        }
+        
+        /* Content Styling */
+        .trust-features .feature-content {
+            color: #2d3748;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        /* Individual Card Accents */
+        .trust-features .feature-card:nth-child(1)::before { background: linear-gradient(90deg, #0066ff, #0088ff); }
+        .trust-features .feature-card:nth-child(2)::before { background: linear-gradient(90deg, #00a3ff, #00c1ff); }
+        .trust-features .feature-card:nth-child(3)::before { background: linear-gradient(90deg, #0088ff, #00a3ff); }
+        .trust-features .feature-card:nth-child(4)::before { background: linear-gradient(90deg, #0052cc, #0066ff); }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .trust-features .features-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .trust-features .feature-card {
+                padding: 25px;
+            }
+        }
+    
