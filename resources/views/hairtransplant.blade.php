@@ -19,8 +19,7 @@
         .aboutmain_sec {
             min-height: 100vh;
             padding: 60px 0;
-            ;
-            background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
+            background: linear-gradient(135deg, #f9f9f9, #e2f0fe);
         }
 
         .aboutmain_sec h2 {
@@ -738,6 +737,7 @@
         </section>
         <!-- /Services Section -->
 
+        {{-- commitment section --}}
         <section id="services" class="services-section">
             <div class="container">
                 <div class="section-header text-center mb-5">
@@ -812,8 +812,7 @@
                 <button class="btn-btn docbtn filter-button" data-filter=".Doctor2">Dr. Kamran</button>
                 <button class="btn-btn docbtn filter-button" data-filter=".Doctor3">Dr. Imran</button>
             </div>
-
-
+            
             <div class="container">
                 <div class="grid">
                     <div class="row doc_details">
@@ -974,13 +973,13 @@
                         <div class="col-md-7 Doctor3 grid-item">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="card card_centered_content p-3">
+                                     <div class="card card_centered_content p-3">
                                         <div class="icon">
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p "><b>Hair restoration practitioner 2023</b></p>
-                                                            <p cla">Shortlisted at aesthetic medicine awards</p>
+                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
+                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -990,8 +989,8 @@
                                             <i class="bi bi-award"></i>
                                         </div>
                                         <div class="text">
-                                            <p "><b>Best surgical result</b></p>
-                                                            <p cla">Finalist at aesthetic awards 2023</p>
+                                            <p class="title text-center"><b>Hair restoration practitioner 2023</b></p>
+                                            <p class="subtitle text-center">Shortlisted at aesthetic medicine awards</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1044,6 +1043,7 @@
                     </div>
                 </div>
             </div>
+
             </div>
         </section>
         <!-- /Services Section -->
@@ -1664,6 +1664,39 @@
 
     </main>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const buttons = document.querySelectorAll('.docbtn');
+    const allDoctors = document.querySelectorAll('.doc_details');
+    
+    // Hide all doctors except first by default
+    allDoctors.forEach((doctor, index) => {
+        doctor.style.display = index === 0 ? 'flex' : 'none';
+    });
+
+    // Button click handler
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active to clicked button
+            this.classList.add('active');
+            
+            // Hide all doctors
+            allDoctors.forEach(doctor => {
+                doctor.style.display = 'none';
+            });
+            
+            // Show selected doctor
+            const targetClass = this.getAttribute('data-filter').replace('.', '');
+            const targetDoctor = document.querySelector(`.${targetClass}`).closest('.doc_details');
+            if (targetDoctor) {
+                targetDoctor.style.display = 'flex'; // Use flex to maintain layout
+            }
+        });
+    });
+});
         $(document).ready(function() {
             $("#toggleButton").click(function() {
                 $("#hiddenSection").slideToggle(600, function() {
@@ -1678,5 +1711,6 @@
                 });
             });
         });
+        
     </script>
 @endsection
