@@ -121,7 +121,7 @@
         </div>
     </section>
     <!-- /Popular Section -->
-
+    
     <!-- Popular Section -->
     <section class="section aboutsecond_sec">
         <div class="container">
@@ -130,7 +130,7 @@
                     <!-- Doctor Widget -->
                     <div class="profile-widget">
                         <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_6-1.png')}}">
+                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_8.png')}}">
                            
                         </div>
 
@@ -194,7 +194,7 @@
                     <!-- Doctor Widget -->
                     <div class="profile-widget">
                         <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_8.png')}}">
+                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_6-1.png')}}">
                          
                         </div>
 
