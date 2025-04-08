@@ -12,21 +12,208 @@
     {{-- for meta tags (SEO)
     and for custom css --}}
     <style>
-        .aboutmain_sec {
+       /* About Page Hero Section - Scoped Styles */
+       .about-page-hero {
+           min-height: 90vh;
+           display: flex;
+           align-items: center;
+           background: linear-gradient(135deg, #ffffff 0%, #d1e7ff 100%);
+           position: relative;
+           overflow: hidden;
+           padding: 60px 0 150px;
+       }
+
+       .about-hero-wave {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           width: 100%;
+           height: 100px;
+           background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%231977cc" opacity=".1"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%231977cc" opacity=".3"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%231977cc"/></svg>');
+           background-size: cover;
+           z-index: 1;
+       }
+
+       .about-hero-container {
+           width: 100%;
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 0 2rem;
+           position: relative;
+           z-index: 2;
+       }
+
+       .about-hero-content {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           /* gap: 4rem; */
+           /* align-items: center; */
+       }
+
+       /* Typography */
+       .about-hero-title {
+           font-family: 'Montserrat', sans-serif;
+           font-weight: 900;
+           font-size: clamp(2.5rem, 5vw, 3.5rem);
+           line-height: 1.2;
+           color: #0d5a9e;
+           margin-bottom: 1.5rem;
+       }
+
+       .about-hero-subtitle {
+           font-size: 1.1rem;
+           line-height: 1.8;
+           color: #2a2a2a;
+           margin-bottom: 2.5rem;
+           max-width: 90%;
+       }
+
+       /* Image Gallery Styles */
+       .about-hero-gallery {
+           display: grid;
+           grid-template-columns: repeat(6, 1fr);
+           grid-template-rows: repeat(5, 1fr);
+           gap: 15px;
+           height: 500px;
+           width: 100%;
+           margin-bottom: 20px;
+       }
+
+       .about-gallery-item {
+           border-radius: 12px;
+           overflow: hidden;
+           position: relative;
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+           transition: all 0.3s ease;
+       }
+
+       .about-gallery-item:hover {
+           transform: scale(1.03);
+           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+           z-index: 2;
+       }
+
+       .about-gallery-item img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           transition: transform 0.5s ease;
+       }
+
+       .about-gallery-item:hover img {
+           transform: scale(1.1);
+       }
+
+       /* Positioning for each image */
+       .about-gallery-item-1 {
+           grid-column: 1 / 5;
+           grid-row: 1 / 4;
+       }
+
+       .about-gallery-item-2 {
+           grid-column: 5 / 7;
+           grid-row: 1 / 3;
+       }
+
+       .about-gallery-item-3 {
+           grid-column: 1 / 3;
+           grid-row: 4 / 6;
+       }
+
+       .about-gallery-item-4 {
+           grid-column: 3 / 5;
+           grid-row: 4 / 6;
+       }
+
+       .about-gallery-item-5 {
+           grid-column: 5 / 7;
+           grid-row: 3 / 6;
+       }
+
+       /* Buttons */
+       .about-hero-buttons {
+           display: flex;
+           gap: 1rem;
+           margin-top: 2rem;
+           color: white;
+       }
+
+       .btn-about-primary {
+           background: #1977cc;
+           color: white;
+           padding: 0.8rem 2rem;
+           border-radius: 50px;
+           font-weight: 600;
+           border: none;
+           transition: all 0.3s ease;
+       }
+
+       .btn-about-primary:hover {
+           background: #0d5a9e;
+           transform: translateY(-3px);
+           /* box-shadow: 0 10px 20px rgba(25, 119, 204, 0.3); */
+       }
+
+       .btn-about-outline {
+           border: 2px solid #1977cc;
+           color: #1977cc;
+           background: transparent;
+           padding: 0.8rem 2rem;
+           border-radius: 50px;
+           font-weight: 600;
+           transition: all 0.3s ease;
+       }
+
+       .btn-about-outline:hover {
+           background: #1977cc;
+           color: white;
+       }
+
+       /* Responsive */
+       @media (max-width: 992px) {
+           .about-hero-content {
+               grid-template-columns: 1fr;
+               gap: 3rem;
+               text-align: center;
+           }
            
-            height: 90vh;
-            background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
-        }
-        .aboutmain_sec h2{
-            font-size: 50px;
-            font-weight: 700;
-            margin-bottom:15px;
-        }
-        .aboutmain_sec .aboutsideimg img{
-            height: 100vh;
-            object-fit: cover;
-            
-        }
+           .about-hero-subtitle {
+               margin: 0 auto 2rem;
+           }
+           
+           .about-hero-buttons {
+               justify-content: center;
+           }
+           
+           .about-hero-gallery {
+               height: 400px;
+               order: -1;
+           }
+       }
+
+       @media (max-width: 768px) {
+           .about-hero-buttons {
+               flex-direction: column;
+               align-items: center;
+           }
+
+           .about-hero-gallery {
+               height: 350px;
+               gap: 10px;
+           }
+           
+           .about-page-hero {
+               padding-bottom: 120px;
+           }
+       }
+
+       @media (max-width: 576px) {
+           .about-hero-gallery {
+               height: 300px;
+           }
+       }
+  
+       
         p{
             font-size: 16px !important;
         }
@@ -80,46 +267,57 @@
 @section('maincontent')
     <main class="main">
         <!-- Popular Section -->
-    <section class="section aboutmain_sec d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <div class="" style="padding: 0px 50px">
-
-                        <div class="section-header ">
-                            {{-- <p>Our Services</p> --}}
-                            <h2>About Us!</h2>
-                            <h3 style="font-size: 34px; font-weight: 600;">This feels good,</h3>
+        <section class="about-page-hero">
+            <div class="about-hero-wave"></div>
+            <div class="about-hero-container">
+                <div class="about-hero-content">
+                    <div class="about-hero-text">
+                        <h1 class="about-hero-title">Our Journey in Excellence</h1>
+                        <p class="about-hero-subtitle">
+                            Founded with a vision to redefine healthcare standards, we combine cutting-edge technology 
+                            with compassionate care. Our team of board-certified specialists brings together decades 
+                            of experience to deliver exceptional results.
+                            lore
+                        </p>
+                        <div class="trustpilot-container" >
+                            <div class="trustpilot-line">
+                               <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                            </div>
                         </div>
-                        
-                        <div class="about-content">
-                            <p><b>We’re challenging the outdated notion that real men shrug their shoulders and carry
-                                    on.</b></p>
-                            <p>
-                                By empowering men with all the information and choices they need to proactively own their
-                                wellbeing, we can turn a corner. We’re here to be your own personal manual. A guide to
-                                owning your health and happiness. Giving you all the tools you need to be good to you.
-                            </p>
-                            <div>
-                                <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
-                               </div>
+                        <div class="award-badge">
+                            <i class="fas fa-award" style="color: var(--primary-color);"></i>
+                            <span>2023 Best Aesthetic Treatment Award</span>
+                        </div>
+                        <div class="about-hero-buttons">
+                            <button class="btn btn-about-primary">Meet Our Team</button>
+                            <button class="btn btn-about-outline">Our Approach</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6" style="height: 100%">
-                    <!-- Doctor Widget -->
-                    <div class="profile-widget">
-                        <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" style="height: 470px; border-radius: 30px; width: 600px;" alt="User Image" src="{{asset('assets/img/sander-sammy-38Un6Oi5beE-unsplash.jpg')}}">
-                             
+                    <div class="about-hero-gallery">
+                        <div class="about-gallery-item about-gallery-item-1">
+                            <img src="{{asset('assets/img/Screenshot_3-4.png')}}"
+                                 alt="Medical team discussing treatment">
                         </div>
-
+                        <div class="about-gallery-item about-gallery-item-2">
+                            <img src="{{asset('assets/img/care.jpg')}}" 
+                                 alt="Doctor examining patient">
+                        </div>
+                        <div class="about-gallery-item about-gallery-item-3">
+                            <img src="{{asset('assets/img/happypt.jpg')}}" 
+                                 alt="Hospital hallway">
+                        </div>
+                        <div class="about-gallery-item about-gallery-item-4">
+                            <img src="{{asset('assets/img/meditation.jpg')}}" 
+                                 alt="Medical equipment">
+                        </div>
+                        <div class="about-gallery-item about-gallery-item-5">
+                            <img src="{{asset('assets/img/happypt2.jpg')}}" 
+                                 alt="Nurse helping patient">
+                        </div>
                     </div>
-                    <!-- /Doctor Widget -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- /Popular Section -->
     
     <!-- Popular Section -->
@@ -300,7 +498,7 @@
                     <!-- Doctor Widget -->
                     <div class="profile-widget">
                         <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/Screenshot_3-4.png')}}">
+                                <img class="img-fluid" alt="User Image" src="{{asset('assets/img/happyteam.jpg')}}" >
                             {{-- <a href="javascript:void(0)" class="fav-btn">
                                 <i class="far fa-bookmark"></i>
                             </a> --}}
@@ -380,6 +578,6 @@
         </div>
     </div>
 </section>
-  
+
     </main>
 @endsection
