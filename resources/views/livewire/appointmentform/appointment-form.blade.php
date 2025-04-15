@@ -73,7 +73,7 @@
                         <option value="2025" selected>2025</option>
                         <option value="2026">2026</option>
                         <option value="2027">2027</option>
-                    </select>
+                    </select>   
                 </div>
                 <div class="col-md-12">
                     <div id="custom-calendar" class="calendar-container form-control"></div>
