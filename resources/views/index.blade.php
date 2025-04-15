@@ -193,9 +193,9 @@
             <div class="container">
                 <!-- Trustpilot Logo -->
                 <div class="trustpilot-logo-container">
-                    <p style="font-size: 12px ; font-weight: bold;">The Yorkshire Hair and Skin Solution difference</p>
+                    <h2>The Yorkshire Hair and Skin Solution difference</h2>
                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" class="trustpilot-logo"
-                        style="width: 250px">
+                        style="width: 290px">
                 </div>
 
                 <!-- Features Grid -->
