@@ -466,7 +466,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fa-solid fa-user-doctor"></i>
                         <div class="stats-item">
-                            <span>85+</span>
+                            <span>5+</span>
                             <p>Doctors</p>
                         </div>
                     </div><!-- End Stats Item -->
@@ -474,7 +474,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fa-regular fa-hospital"></i>
                         <div class="stats-item">
-                            <span>18+</span>
+                            <span>3+</span>
                             <p>Departments</p>
                         </div>
                     </div><!-- End Stats Item -->
@@ -482,7 +482,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fas fa-flask"></i>
                         <div class="stats-item">
-                            <span>12+</span>
+                            <span>3+</span>
                             <p>Research Labs</p>
                         </div>
                     </div><!-- End Stats Item -->
