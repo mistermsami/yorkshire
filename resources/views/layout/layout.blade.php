@@ -77,8 +77,8 @@
         <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Yorkshire@info.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>07943289303</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@yorkshirehairandskinsolutions.co.uk">info@yorkshirehairandskinsolutions.co.uk</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>07570957502</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -146,8 +146,8 @@
                             Leeds
                             Ls11 5EG</p>
 
-                        <p class="mt-3"><strong>Phone:</strong> <span>07943289303</span></p>
-                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>07570957502</span></p>
+                        <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.com</span></p>
                        
                     </div>
                     <div class="social-links d-flex mt-4">

@@ -131,7 +131,9 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>LS8 5jL Luxer View Leeds united kingdom</p>
+                            <p>175 Dewsbury Roads
+                                Leeds
+                                Ls11 5EG</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -139,7 +141,7 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                             <h3>Call Us</h3>
-                            <p>44 589 55488 55</p>
+                            <p>+447570957502</p>
                         </div>
                     </div><!-- End Info Item -->
 
