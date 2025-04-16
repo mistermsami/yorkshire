@@ -189,6 +189,13 @@
                height: 400px;
                order: -1;
            }
+           .trustpilot-line, .award-badge {
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         }
+           
        }
 
        @media (max-width: 768px) {
@@ -196,6 +203,7 @@
                flex-direction: column;
                align-items: center;
            }
+           
 
            .about-hero-gallery {
                height: 350px;
@@ -527,7 +535,7 @@
             <!-- Map Column -->
             <div class="col-lg-6">
                 <div class="location-map rounded shadow-sm h-100"> <!-- Added h-100 -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LOCATION_ID!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQyJzQxLjgiTiA2N8KwMTknNTAuOSJF!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.051356621758!2d-1.564123684178722!3d53.77547198007586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQ2JzMxLjciTiAxwrAzMyc1MC44Ilc!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
                             width="100%" 
                             height="100%" 
                             style="border:0; min-height: 400px;"

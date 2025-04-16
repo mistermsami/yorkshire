@@ -192,7 +192,7 @@
         <div class="container">
             <!-- Trustpilot Logo -->
             <div class="trustpilot-logo-container">
-                <p style="font-size: 12px ; font-weight: bold;">The Yorkshire Hair and Skin Solution difference</p>
+                <h2 >The Yorkshire Hair and Skin Solution difference</h2>
                 <img src="/assets/img/trustpilotimage.png" alt="trustpilot" class="trustpilot-logo" style="width: 250px">
             </div>
             
@@ -422,10 +422,9 @@
                                 </svg>
                             </div>
                             <a href="{{ route('tanning-bed') }}" class="stretched-link">
-                                <h3>Tanning Bed</h3>
+                                <h3>Face Treatment</h3>
                             </a>
-                            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi
-                                at autem alias eius labore.</p>
+                            <p>Our medical facial uses clinical peels, LED therapy, and collagen boosters to treat acne, pigmentation, or ageing. Includes expert skin analysis, deep exfoliation, and restorative serums for lasting results</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
                     </div><!-- End Service Item -->
@@ -438,8 +437,7 @@
                             <a href="{{ route('prp') }}" class="stretched-link">
                                 <h3>PRP</h3>
                             </a>
-                            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
-                                Corrupti recusandae ducimus enim.</p>
+                            <p>A dermatologist-led PRP treatment extracts and reinjects your platelets to accelerate skin repair, targeting ageing, scarring, and dullness with scientifically proven results.</p>
 
                             <a href="#" class="stretched-link"></a>
                         </div>
@@ -519,28 +517,26 @@
                                     Restoration</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Skin Treatment </a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Face Treatment </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Weight Management</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hydrafacial</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Microneedling</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Microneedling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Hair Loss</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">PRP</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">PRP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Client Care and
-                                    Support</a>
-                            </li>
-                            {{-- <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Eye Care</a>
-                            </li> --}}
+                            
+                            
                         </ul>
                     </div>
                     <div class="col-lg-9 mt-4 mt-lg-0">
@@ -557,19 +553,16 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/hairtp.jpg" alt="" class="dpt_img">
+                                        <img src="assets/img/hairresdep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="departments-tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Skin Treatment Department</h3>
+                                        <h3>Face Treatment Department</h3>
                                         <p class="fst-italic">
-                                            Our team of skincare experts offers a comprehensive range of treatments designed
-                                            to meet your unique needs. From effective laser hair removal to rejuvenating
-                                            facials, we are committed to helping you achieve radiant, flawless, and healthy
-                                            skin that boosts your confidence and enhances your natural beauty.
+                                            Our dermatologist-led facial treatments use medical-grade technology to target ageing, pigmentation, and acne with precision. From collagen-stimulating therapies to intensive hydration, we deliver visible, long-term results for your healthiest skin.
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -580,53 +573,64 @@
                             <div class="tab-pane" id="departments-tab-3">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Weight Management Department</h3>
+                                        <h3>Hydrafacial Department</h3>
                                         <p class="fst-italic">
-                                            This department is focused on helping clients achieve their fitness goals
-                                            through tailored weight loss programs and personalized guidance from certified
-                                            professionals. By combining advanced weight management techniques with a
-                                            compassionate approach, we aim to empower clients to lead healthier, more
-                                            fulfilling lives. From nutritional advice to customized exercise regimens, we
-                                            are dedicated to supporting you every step of the way.
-
+                                            Our HydraFacial treatments are designed to transform your skin with immediate, visible results. Using advanced vortex technology, this multi-step therapy deeply cleanses, exfoliates, extracts impurities, and infuses potent serums tailored to your skin’s needs. Perfect for hydration, anti-ageing, or blemish control, HydraFacial leaves your complexion radiant, refreshed, and rejuvenated—with zero downtime.
 
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/wloss.jpg" alt="" class="dpt_img">
+                                        <img src="assets/img/hydrafdep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="departments-tab-4">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Client Care and Support Department</h3>
+                                        <h3>Laser Hair RemovalDepartment</h3>
                                         <p class="fst-italic">
-                                            Our client care team is here to assist you throughout your journey, providing
-                                            expert guidance, answering all your questions, and ensuring your experience is
-                                            smooth, stress-free, and tailored to your needs.
+                                            Our laser hair removal treatments are designed for smooth, lasting results with minimal discomfort. Using advanced, FDA-approved technology, we safely target unwanted hair on all skin types, ensuring precision and effectiveness. From your initial consultation to aftercare, our specialists guide you through every step—making the process seamless, personalised, and stress-free.
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/clientcare.jpg" alt="" class="dpt_img">
+                                        <img src="assets/img/lhrdep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="departments-tab-5">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.
-                                        </p>
-                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae
-                                            ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet.
-                                            Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                        <h3>Microneedling</h3>
+                                        <p>Our collagen induction therapy revitalises your skin naturally, stimulating your body's healing response for a fresher, more youthful complexion. </p> <p> Using advanced microneedling technology, we create controlled micro-channels in the skin to boost collagen and elastin production. This innovative treatment effectively reduces fine lines, acne scars, and uneven skin texture while enhancing product absorption for optimal results. Suitable for all skin types, our personalised approach ensures visible improvement with minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-5.jpg" alt="" class="dpt_img">
+                                        <img src="assets/img/mndep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane" id="departments-tab-7">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Hair Loss</h3>
+                                        <p>Revitalise thinning hair with our natural PRP hair restoration treatment. </p> <p> Our non-surgical solution uses your body's own healing factors to thicken existing hair and stimulate new growth. Perfect for men and women experiencing early hair loss, this innovative treatment helps restore density and confidence without medications or invasive procedures. Most patients see noticeable improvements in hair quality within just a few months. </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/hairlossdep.jpg" alt="" class="dpt_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="departments-tab-6">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>PRP</h3>
+                                        <p>Experience the ultimate in natural skin rejuvenation with our signature PRP treatment. </p> <p> Our vampire facial combines microneedling with your own growth-rich plasma for unparalleled revitalization. This cutting-edge yet completely natural approach diminishes signs of aging, improves skin texture, and restores youthful radiance. The perfect solution for those seeking noticeable results without synthetic fillers or harsh procedures.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/prpdep.jpg" alt="" class="dpt_img">
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -927,12 +931,12 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>For enquiries or further information, please contact us. Our team is available to assist you</p>
             </div><!-- End Section Title -->
 
             <div class="mb-5">
                 <iframe style="border:0; width: 100%; height: 270px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.571914974049!2d-1.5183046236877165!3d53.814900739562496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795b882fb43061%3A0xf467750bd6ff3301!2sLuxor%20View%2C%20Harehills%2C%20Leeds%2C%20UK!5e0!3m2!1sen!2s!4v1739302064722!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.051356621758!2d-1.564123684178722!3d53.77547198007586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQ2JzMxLjciTiAxwrAzMyc1MC44Ilc!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
                     frameborder="0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- End Google Maps -->
