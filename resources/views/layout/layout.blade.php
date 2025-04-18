@@ -15,20 +15,20 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
     <meta property="og:description" content="We offer top-tier hair transplants, PRP therapy, and skin treatments in Yorkshire. Get a free consultation now!">
-    <meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yorkshirehairandskinsolutions.co.uk/https://yorkshirehairandskinsolutions.co.uk//path-to-image.jpg">
+    <meta property="og:url" content="https://yorkshirehairandskinsolutions.co.uk/https://yorkshirehairandskinsolutions.co.uk/">
     <meta property="og:site_name" content="Yorkshire Hair & Skin Solution">
     <meta property="og:type" content="website">
     
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
     <meta name="twitter:description" content="Transform your hair & skin with our expert treatments in Yorkshire. Book a consultation now!">
-    <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg">
-    <meta name="twitter:url" content="https://yourwebsite.com">
+    <meta name="twitter:image" content="https://yorkshirehairandskinsolutions.co.uk/https://yorkshirehairandskinsolutions.co.uk//path-to-image.jpg">
+    <meta name="twitter:url" content="https://yorkshirehairandskinsolutions.co.uk/https://yorkshirehairandskinsolutions.co.uk/">
     <meta name="twitter:card" content="summary_large_image">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourwebsite.com">
+    <link rel="canonical" href="https://yorkshirehairandskinsolutions.co.uk/https://yorkshirehairandskinsolutions.co.uk/">
     
 
 
