@@ -860,7 +860,8 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
-            color: #4a2d56;
+            /* color: #4a2d56; */
+            color:#0d5a9e;
             transform: translateX(-50px);
             opacity: 0;
             animation: slideIn 0.8s forwards 0.3s;

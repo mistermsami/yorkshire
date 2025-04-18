@@ -514,15 +514,14 @@
                     <div class="col-lg-3">
                         <ul class="nav nav-tabs flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Hair
-                                    Restoration</a>
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Hydrafacial</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Face Treatment </a>
-                            </li>
-                            <li class="nav-item">
+                            </li> --}}
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hydrafacial</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
                             </li>
@@ -542,7 +541,7 @@
                     </div>
                     <div class="col-lg-9 mt-4 mt-lg-0">
                         <div class="tab-content">
-                            <div class="tab-pane active show" id="departments-tab-1">
+                            {{-- <div class="tab-pane active show" id="departments-tab-1">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3>Hair Restoration Department</h3>
@@ -557,8 +556,8 @@
                                         <img src="assets/img/hairresdep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-2">
+                            </div> --}}
+                            {{-- <div class="tab-pane" id="departments-tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3>Face Treatment Department</h3>
@@ -570,8 +569,8 @@
                                         <img src="assets/img/facialtreatment.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="departments-tab-3">
+                            </div> --}}
+                            <div class="tab-pane active show" id="departments-tab-1">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3>Hydrafacial Department</h3>

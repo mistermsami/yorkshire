@@ -46,8 +46,7 @@
        .about-hero-content {
            display: grid;
            grid-template-columns: 1fr 1fr;
-           /* gap: 4rem; */
-           /* align-items: center; */
+           
        }
 
        /* Typography */

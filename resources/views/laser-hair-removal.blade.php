@@ -458,8 +458,11 @@
                             <div class="about-content">
                                 <p>
                                     Restore your hair with the UK’s most trusted hair clinic. Yorkshire has helped over
-                                    <b>200,000</b> men regain their confidence.
+                                    <b>200,000</b> men regain their confidence.  
+                                    Book your free consultation today and take the first step toward a fuller head of hair.  
+                                    Expert care, natural results – your transformation starts here.
                                 </p>
+                                
                                 <div>
                                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
                                 </div>
@@ -472,7 +475,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 position-relative align-self-start">
-                        <img src="assets/img/abouthairtrantplant.jpg" class="aboutmain_sec_img" alt="">
+                        <img src="assets/img/lasercoverphoto.jpg" class="aboutmain_sec_img" alt="" >
                         {{-- <img src="assets/img/about.jpg" class="aboutmain_sec_img" alt=""> --}}
                         <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
                             class="glightbox pulsating-play-btn"></a>
