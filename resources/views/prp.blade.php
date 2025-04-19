@@ -189,7 +189,7 @@
                     <div class="col-lg-6">
                         <div class="image-container">
                             <!-- Beauty clinic image slideshow -->
-                            <img src="assets/img/prp11.webp" 
+                            <img src="assets/img/prp11.jpg" 
                                  alt="PRP treatment in progress" 
                                  class="hero-image active">
                             <img src="assets/img/prp1.webp" 
@@ -198,7 +198,7 @@
                             <img src="assets/img/prp1.jpg" 
                                  alt="Luxury beauty clinic environment" 
                                  class="hero-image">
-                            <img src="assets/img/prp3.webp" 
+                            <img src="assets/img/prpdep.jpg" 
                                  alt="Happy client after treatment" 
                                  class="hero-image">
                         </div>
