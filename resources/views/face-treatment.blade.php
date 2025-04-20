@@ -1,5 +1,5 @@
 @php
-    $pagename = 'Hydra Ficial';
+    $pagename = 'Face Treatment';
     // $title = 'Home';
 @endphp
 @extends('layout.layout')
@@ -11,6 +11,8 @@
 @section('head')
     {{-- for meta tags (SEO)
     and for custom css --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <style>
         
         .content {
@@ -54,30 +56,24 @@
          
         }
       </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    
 @endsection
 
 @section('maincontent')
-  
-    <main style="margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #cfe8ff, #e0f2fe); color: #0f172a; overflow: hidden;">
+    
+<main style="margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #cfe8ff, #e0f2fe); color: #0f172a; overflow: hidden;">
 
         
-        <!-- Page Content -->
-        <div class="container d-flex justify-content-center align-items-center vh-100">
-          <div class="content">
-            <h1>HydraFacial Service is Coming Soon!</h1>
-            <p>We're preparing something special at Yorkshire hair and skin solutions Clinic. Stay tuned for the launch!</p>
-            <button class="btn btn-lg mt-4 notify-btn" onclick="alert('We’ll notify you when it’s live!')">
-              Notify Me
-            </button>
-            <p class="mt-5 text-muted" style="font-size: 0.9rem;">&copy; 2025 Yorkshire hair and skin solutions Clinic. All rights reserved.</p>
-          </div>
-        </div>
-      
-      </main>
-     
-      
- 
+    <!-- Page Content -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+      <div class="content">
+        <h1>Face Treatment Service is Coming Soon!</h1>
+        <p>We're preparing something special at Yorkshire hair and skin solutions Clinic. Stay tuned for the launch!</p>
+        <button class="btn btn-lg mt-4 notify-btn" onclick="alert('We’ll notify you when it’s live!')">
+          Notify Me
+        </button>
+        <p class="mt-5 text-muted" style="font-size: 0.9rem;">&copy; 2025 Yorkshire hair and skin solutions. All rights reserved.</p>
+      </div>
+    </div>
+  
+  </main>
 @endsection

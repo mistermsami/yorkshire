@@ -108,10 +108,10 @@
                                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><a href="{{ route('hairtransplant') }}">Hair Transplant</a></li>
-                                <li><a href="weight-loss">Face Treatments</a></li>
+                                <li><a href="face-treatment">Face Treatments</a></li>
                                 <li><a href="laser-hair-removal">Laser Hair Removal</a></li>
                                 <li><a href="hydra-ficial">HydraFacial</a></li>
-                                <li><a href="tanning-bed">Microneedling</a></li>
+                                <li><a href="microneedling">Microneedling</a></li>
                                 <li><a href="prp">PRP</a></li>
                             </ul>
                         </li>

@@ -116,7 +116,7 @@
             border-radius: 3px;
         }
 
-        .carousel-control-prev-icon {
+        /* .carousel-control-prev-icon {
             background-image: none;
             width: 3rem;
             height: 3rem;
@@ -132,7 +132,7 @@
             background-color: #1977cc;
             mask-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 11-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z'/%3E%3C/svg%3E");
             mask-size: cover;
-        }
+        } */
 
         .afterresult .card {
             background-color: #1977cc;
@@ -434,10 +434,6 @@
             }
         }
 
-        /* .experts .subtitle {
-                                                font-size: 14px;
-                                                color: #5c7a7a;
-                                            } */
     </style>
 @endsection
 
@@ -448,11 +444,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center">
-                        <div class="" style=" padding-right: 50px;">
+                        <div class="">
 
                             <div class="section-header ">
                                 
-                                <h2>Laser Hair Removal from the UK’s Best Clinic</h2>
+                                <h2 style="color: #0d5a9e;">Laser Hair Removal from the Best Clinic</h2>
                                 
                             </div>
                             <div class="about-content">
@@ -466,7 +462,7 @@
                                 <div>
                                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
                                 </div>
-                                <div style="margin-top: 20px">
+                                <div style="margin: 20px 0px">
                                     <a href="#" class="btn btn-primary">Book a consultation
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
@@ -535,7 +531,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/laserresult2.webp" alt="Skin Brightening Results - Before & After" class="w-100">
+                                                    <img src="assets/img/laserresult2.jpg" alt="Skin Brightening Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">

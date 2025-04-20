@@ -13,9 +13,9 @@ Route::get('hairtransplant/', function () {
     return view('hairtransplant');
 })->name('hairtransplant');
 
-Route::get('weight-loss/', function () {
-    return view('weight-loss');
-})->name('weight-loss');
+Route::get('face-treatment/', function () {
+    return view('face-treatment');
+})->name('face-treatment');
 
 Route::get('laser-hair-removal/', function () {
     return view('laser-hair-removal');
@@ -25,9 +25,9 @@ Route::get('hydra-ficial/', function () {
     return view('hydra-ficial');
 })->name('hydra-ficial');
 
-Route::get('tanning-bed/', function () {
-    return view('tanning-bed');
-})->name('tanning-bed');
+Route::get('microneedling/', function () {
+    return view('microneedling');
+})->name('microneedling');
 
 Route::get('prp/', function () {
     return view('prp');

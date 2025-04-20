@@ -12,6 +12,91 @@
     {{-- for meta tags (SEO)
     and for custom css --}}
     <style>
+        .consultation-cta {
+        position: fixed;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 9999;
+        transition: bottom 0.4s ease-out;
+        padding: 0 20px;
+    }
+    
+    .consultation-cta.visible {
+        bottom: 30px;
+    }
+    
+    .consultation-box {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+        padding: 12px 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .cta-text {
+        font-size: 0.95rem;
+        color: #333;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    
+    .consultation-btn {
+        background: #1977cc;
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
+    }
+    
+    .consultation-btn:hover {
+        background: #1565b7;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(25, 119, 204, 0.3);
+    }
+    
+    .consultation-btn:active {
+        transform: translateY(0);
+    }
+    
+    .consultation-btn i {
+        font-size: 0.9em;
+    }
+    
+    @media (max-width: 768px) {
+        .consultation-box {
+            padding: 10px 15px;
+            gap: 12px;
+        }
+        
+        .cta-text {
+            font-size: 0.85rem;
+        }
+        
+        .consultation-btn {
+            padding: 7px 14px;
+            font-size: 0.85rem;
+        }
+        
+        .consultation-cta.visible {
+            bottom: 20px;
+        }
+    }
+        
         .svgicon {
             fill: #1977cc;
             color: #1977cc;
@@ -60,7 +145,7 @@
 
             <div class="container position-relative">
                 <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                    <h2>YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h2>
+                    <h2 style="color: #0d5a9e;">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h2>
                     <p>We are your premier destination for transformative hair and skin treatments.</p>
 
                 </div><!-- End Welcome -->
@@ -985,7 +1070,70 @@
         </section>
         <!-- /Contact Section -->
 
+        <main class="main">
+            <!-- All your existing content... -->
+            
+            <!-- Add this right before closing </main> -->
+            <div class="consultation-cta">
+                <div class="consultation-box">
+                    <span class="cta-text">Ready to transform your look?</span>
+                    <button class="consultation-btn">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </button>
+                </div>
+            </div>
+        </main>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('#hero');
+            const cta = document.querySelector('.consultation-cta');
+            
+            if (!hero || !cta) return;
+            
+            const heroHeight = hero.offsetHeight;
+            let lastScroll = 0;
+            
+            function checkScroll() {
+                const currentScroll = window.scrollY;
+                
+                if (currentScroll > heroHeight + 100) {
+                    cta.classList.add('visible');
+                } else if (currentScroll < lastScroll && currentScroll <= heroHeight) {
+                    cta.classList.remove('visible');
+                }
+                
+                lastScroll = currentScroll;
+            }
+            
+            // Initial check
+            checkScroll();
+            
+            // Listen for scroll with debounce
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        checkScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            // Smooth scroll to appointment
+            document.querySelector('.consultation-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                const appointment = document.getElementById('appointment');
+                if (appointment) {
+                    appointment.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
     {{-- testimonials script --}}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
