@@ -23,11 +23,11 @@
         transition: bottom 0.4s ease-out;
         padding: 0 20px;
     }
-    
+
     .consultation-cta.visible {
         bottom: 30px;
     }
-    
+
     .consultation-box {
         background: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(8px);
@@ -39,14 +39,14 @@
         align-items: center;
         gap: 20px;
     }
-    
+
     .cta-text {
         font-size: 0.95rem;
         color: #333;
         font-weight: 500;
         white-space: nowrap;
     }
-    
+
     .consultation-btn {
         background: #1977cc;
         color: white;
@@ -62,41 +62,41 @@
         gap: 8px;
         box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
     }
-    
+
     .consultation-btn:hover {
         background: #1565b7;
         transform: translateY(-1px);
         box-shadow: 0 4px 12px rgba(25, 119, 204, 0.3);
     }
-    
+
     .consultation-btn:active {
         transform: translateY(0);
     }
-    
+
     .consultation-btn i {
         font-size: 0.9em;
     }
-    
+
     @media (max-width: 768px) {
         .consultation-box {
             padding: 10px 15px;
             gap: 12px;
         }
-        
+
         .cta-text {
             font-size: 0.85rem;
         }
-        
+
         .consultation-btn {
             padding: 7px 14px;
             font-size: 0.85rem;
         }
-        
+
         .consultation-cta.visible {
             bottom: 20px;
         }
     }
-        
+
         .svgicon {
             fill: #1977cc;
             color: #1977cc;
@@ -280,7 +280,7 @@
                 <h2>The Yorkshire Hair and Skin Solution difference</h2>
                 <img src="/assets/img/trustpilotimage.png" alt="trustpilot" class="trustpilot-logo" style="width: 290px">
             </div>
-            
+
             <!-- Features Grid -->
             <div class="features-grid">
                 <!-- Feature 1 -->
@@ -290,7 +290,7 @@
                     </div>
                     <p class="feature-content">UK Licensed medication</p>
                 </div>
-                
+
                 <!-- Feature 2 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -298,7 +298,7 @@
                     </div>
                     <p class="feature-content"> Skincare treatments</p>
                 </div>
-                
+
                 <!-- Feature 3 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -306,7 +306,7 @@
                     </div>
                     <p class="feature-content">FDA approved procedures</p>
                 </div>
-                
+
                 <!-- Feature 4 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -368,7 +368,7 @@
                             <div class="icon">
                                 <i class="fas fa-notes-medical"></i>
                             </div>
-                            <a href="{{ route('weight-loss') }}" class="stretched-link">
+                            <a href="#" class="stretched-link">
                                 <h3>Hair Loss</h3>
                             </a>
                             <p>Achieve your fitness goals with our weight loss programs. Designed to fit your lifestyle, our
@@ -620,8 +620,8 @@
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">PRP</a>
                             </li>
 
-                            
-                            
+
+
                         </ul>
                     </div>
                     <div class="col-lg-9 mt-4 mt-lg-0">
@@ -715,7 +715,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -1072,7 +1072,7 @@
 
         <main class="main">
             <!-- All your existing content... -->
-            
+
             <!-- Add this right before closing </main> -->
             <div class="consultation-cta">
                 <div class="consultation-box">
@@ -1088,27 +1088,27 @@
         document.addEventListener('DOMContentLoaded', function() {
             const hero = document.querySelector('#hero');
             const cta = document.querySelector('.consultation-cta');
-            
+
             if (!hero || !cta) return;
-            
+
             const heroHeight = hero.offsetHeight;
             let lastScroll = 0;
-            
+
             function checkScroll() {
                 const currentScroll = window.scrollY;
-                
+
                 if (currentScroll > heroHeight + 100) {
                     cta.classList.add('visible');
                 } else if (currentScroll < lastScroll && currentScroll <= heroHeight) {
                     cta.classList.remove('visible');
                 }
-                
+
                 lastScroll = currentScroll;
             }
-            
+
             // Initial check
             checkScroll();
-            
+
             // Listen for scroll with debounce
             let ticking = false;
             window.addEventListener('scroll', function() {
@@ -1120,7 +1120,7 @@
                     ticking = true;
                 }
             });
-            
+
             // Smooth scroll to appointment
             document.querySelector('.consultation-btn').addEventListener('click', function(e) {
                 e.preventDefault();
