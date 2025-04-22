@@ -433,7 +433,273 @@
                 background-color: #f1f7fc;
             }
         }
+/* Blue Color Scheme */
+:root {
+    --primary-blue: #0066cc;
+    --dark-blue: #004a99;
+    --light-blue: #e6f2ff;
+    --accent-blue: #0088ff;
+}
 
+/* Main Section */
+.soprano-laser-section {
+    background-color: #f8fbfe;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.laser-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Header */
+.laser-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.laser-header .badge {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.laser-header h2 {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.laser-header .subheader {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid Layout */
+.laser-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.laser-visual, .laser-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Visual Section */
+.machine-wrapper {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-machine {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tech-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-blue);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlights-box {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);
+}
+
+.highlight-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.highlight-item:last-child {
+    margin-bottom: 0;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-size: 20px;
+}
+
+.highlight-item h4 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.highlight-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Details Section */
+.detail-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);
+}
+
+.detail-card h3 {
+    color: #222;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.blue-icon {
+    color: var(--primary-blue);
+}
+
+.detail-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.benefits-list li i {
+    color: var(--primary-blue);
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.benefits-list li strong {
+    color: #222;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.benefits-list li p {
+    color: #666;
+    margin: 0;
+    font-size: 15px;
+}
+
+.tech-specs {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);
+}
+
+.tech-specs h4 {
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.spec-item {
+    background: var(--light-blue);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spec-item i {
+    color: var(--primary-blue);
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.spec-item span {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.spec-item strong {
+    color: #222;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .laser-header h2 {
+        font-size: 32px;
+    }
+    
+    .laser-header .subheader {
+        font-size: 16px;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+  
+}
+
+@media (max-width: 480px) {
+    .laser-header h2 {
+        font-size: 28px;
+    }
+    
+    .detail-card {
+        padding: 25px 20px;
+    }
+}
     </style>
 @endsection
 
@@ -1254,6 +1520,117 @@
         </section> --}}
         <!-- /dmue -->
 
+
+
+        <section class="soprano-laser-section">
+            <div class="laser-container">
+                <!-- Header -->
+                <div class="laser-header">
+                    <span class="badge">BEST IN CLASS</span>
+                    <h2>Soprano ICE Platinum Laser System</h2>
+                    <p class="subheader">The gold standard in pain-free, permanent hair reduction</p>
+                </div>
+        
+                <!-- Main Content -->
+                <div class="laser-grid">
+                    <!-- Left Column - Visual -->
+                    <div class="laser-visual">
+                        <div class="machine-wrapper">
+                            <img src="assets/img/saprano.jpg" alt="Soprano ICE Platinum Machine" class="main-machine">
+                            <div class="tech-badge">
+                                <span>810nm Diode Laser</span>
+                            </div>
+                        </div>
+                        
+                        <div class="highlights-box">
+                            <div class="highlight-item">
+                                <div class="icon-circle">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div>
+                                    <h4>All Skin Types</h4>
+                                    <p>Safe for all skin tones (I-VI), including darker complexions that often can't use traditional lasers.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="icon-circle">
+                                    <i class="fas fa-snowflake"></i>
+                                </div>
+                                <div>
+                                    <h4>Virtually Painless</h4>
+                                    <p>Patented cooling system eliminates discomfort - no numbing cream needed.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="icon-circle">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4>Fast Treatments</h4>
+                                    <p>Large 24mm spot size treats full legs in under 30 minutes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="icon-circle">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4>Proven Results</h4>
+                                    <p>90% permanent hair reduction in just 6-8 sessions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Right Column - Details -->
+                    <div class="laser-details">
+                        <div class="detail-card">
+                            <h3><i class="fas fa-atom blue-icon"></i> How It Works</h3>
+                            <p>
+                              The <strong>Soprano ICE Platinum</strong> uses advanced diode laser technology to gently heat the hair follicles, effectively targeting the root without harming surrounding skin. Its built-in <strong>cooling system</strong> keeps the skin protected and comfortable throughout the treatment.
+                            </p>
+                            <p>
+                              Operating at a precise <strong>810nm wavelength</strong>, the laser focuses on the melanin in the hair shaft, disabling the follicle to prevent regrowth. This wavelength is known for its efficiency and safety across a wide range of skin types and hair colors.
+                            </p>
+                            <p>
+                              With consistent sessions, the treatment results in <strong>long-lasting hair reduction</strong>, giving you smoother skin with minimal discomfort or downtime.
+                            </p>
+                          </div>
+                          
+                        <div class="tech-specs">
+                            <h4>Technical Specifications:</h4>
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <i class="fas fa-wave-square"></i>
+                                    <span>Wavelength</span>
+                                    <strong>810nm</strong>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-expand"></i>
+                                    <span>Spot Size</span>
+                                    <strong>24mm</strong>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Repetition Rate</span>
+                                    <strong>Up to 3Hz</strong>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Approvals</span>
+                                    <strong>FDA, CE, TGA</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+               
+            </div>
+        </section>
         <!-- Faq Section -->
         <section id="faq" class="faq section light-background">
             <div class="container section-title">
