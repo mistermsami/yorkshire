@@ -507,7 +507,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <a href="{{ route('tanning-bed') }}" class="stretched-link">
+                            <a href="#" class="stretched-link">
                                 <h3>Face Treatment</h3>
                             </a>
                             <p>Our medical facial uses clinical peels, LED therapy, and collagen boosters to treat acne, pigmentation, or ageing. Includes expert skin analysis, deep exfoliation, and restorative serums for lasting results</p>
