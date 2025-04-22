@@ -23,6 +23,7 @@
             font-size: 50px;
             font-weight: 700;
             margin-bottom:15px;
+            color: #0d5a9e;
         }
         p{
             font-size: 16px !important;
@@ -74,7 +75,7 @@
                         <div class="section-header ">
                             {{-- <p>Our Services</p> --}}
                             <h2>Contact Us!</h2>
-                            <h3 style="font-size: 34px; font-weight: 600;">This feels good,</h3>
+                            <h3 style="font-size: 34px; font-weight: 600;color: #0d5a9e;">This feels good,</h3>
                         </div>
                         <div class="about-content">
                             <p><b>We’re challenging the outdated notion that real men shrug their shoulders and carry
@@ -91,7 +92,7 @@
                     <!-- Doctor Widget -->
                     <div class="profile-widget">
                         <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" style="height: 100%" alt="User Image" src="{{asset('assets/img/contactus.jpg')}}">
+                                <img class="img-fluid" style="height: 100%" alt="User Image" src="{{asset('assets/img/contactus1.jpg')}}">
                                 {{-- <img class="img-fluid" alt="User Image" src="{{asset('assets/img/aboutus.png')}}"> --}}
                             {{-- <a href="javascript:void(0)" class="fav-btn">
                                 <i class="far fa-bookmark"></i>
