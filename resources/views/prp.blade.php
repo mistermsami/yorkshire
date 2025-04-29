@@ -412,9 +412,9 @@
 
         <!-- Testimonials Section -->
         <section id="testimonial" class="testimonial-section">
-    <div class="container">
-        <h2>What Our Patients Say</h2>
-        <div class="timeline">
+         <div class="container">
+          <h2>What Our Patients Say</h2>
+         <div class="timeline">
             <!-- Testimonial 1 -->
             <div class="timeline-item">
                 <div class="timeline-content">

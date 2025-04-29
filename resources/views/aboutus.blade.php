@@ -219,19 +219,14 @@
                height: 300px;
            }
        }
-  
-       
-       
        
         .aboutsecond_sec{
             padding: 80px 0 40px 0;
             background-color: #fff;
         }
         
-
         .aboutsecond_sec .aboutsideimg img{
             height: 500px;
-            
             object-fit: cover;
             border-radius: 25px !important;
         }
@@ -255,12 +250,54 @@
             padding-left: 50px;
             padding-right: 50px;
         }
+        @media (max-width: 991px) {
+  .section-header h2 {
+    font-size: 24px;
+  }
+  
+  .textarea {
+    padding-top: 30px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .aboutsecond_sec {
+    padding: 30px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 22px;
+  }
+  
+  .col-lg-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .aboutthird_sec {
+            margin: 0;
+            padding: 0;
+        }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .section-header h2 {
+    font-size: 20px;
+  }
+  
+  .about-content p {
+    font-size: 15px;
+  }
+}
+        
         @media only screen and (max-width: 768px) {
             .aboutsecond_sec .aboutsideimg img{
                 width: 100%;
                 height: 300px;
-                margin-bottom: 20px;
+                /* margin-bottom: 20px; */
             }
+        
             .aboutthird_sec .aboutsideimg img{
                 height: 300px;
                 width: 100%;
@@ -727,10 +764,10 @@
                     </div>
 
                     <div class="mt-auto pt-3"> <!-- Pushes buttons to bottom -->
-                        <a href="#appointment" class="btn btn-primary me-2">
+                        <a href="#appointment" class="btn btn-primary me-2" style="margin-bottom: 10px">
                             <i class="fas fa-calendar-check me-1"></i> Book Appointment
                         </a>
-                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary" style="margin-bottom: 5px">
                             <i class="fas fa-directions me-1"></i> Get Directions
                         </a>
                     </div>

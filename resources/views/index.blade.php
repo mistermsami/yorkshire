@@ -11,91 +11,9 @@
 @section('head')
     {{-- for meta tags (SEO)
     and for custom css --}}
+    
     <style>
-        .consultation-cta {
-        position: fixed;
-        bottom: -100px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        z-index: 9999;
-        transition: bottom 0.4s ease-out;
-        padding: 0 20px;
-    }
-
-    .consultation-cta.visible {
-        bottom: 30px;
-    }
-
-    .consultation-box {
-        background: rgba(255, 255, 255, 0.92);
-        backdrop-filter: blur(8px);
-        border-radius: 12px;
-        padding: 12px 20px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .cta-text {
-        font-size: 0.95rem;
-        color: #333;
-        font-weight: 500;
-        white-space: nowrap;
-    }
-
-    .consultation-btn {
-        background: #1977cc;
-        color: white;
-        border: none;
-        padding: 8px 18px;
-        border-radius: 8px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
-    }
-
-    .consultation-btn:hover {
-        background: #1565b7;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(25, 119, 204, 0.3);
-    }
-
-    .consultation-btn:active {
-        transform: translateY(0);
-    }
-
-    .consultation-btn i {
-        font-size: 0.9em;
-    }
-
-    @media (max-width: 768px) {
-        .consultation-box {
-            padding: 10px 15px;
-            gap: 12px;
-        }
-
-        .cta-text {
-            font-size: 0.85rem;
-        }
-
-        .consultation-btn {
-            padding: 7px 14px;
-            font-size: 0.85rem;
-        }
-
-        .consultation-cta.visible {
-            bottom: 20px;
-        }
-    }
+       
 
         .svgicon {
             fill: #1977cc;
@@ -132,6 +50,64 @@
             transition: 0.4s;
             border-radius: 50px;
         }
+        @media(max-width:786px){
+            #dephead{
+                margin-top: 12px;
+            }
+        }
+        /* CTA BTN  */
+        .consultation-cta {
+    position: fixed;
+    bottom: 20px; /* Always visible position */
+    left: 0;
+    right: 0;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 20px;
+}
+
+/* Mobile-only styles */
+@media (max-width: 768px) {
+    .consultation-cta {
+        display: flex; /* Always visible on mobile */
+    }
+    
+    .consultation-box {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+        padding: 10px 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .cta-text {
+        font-size: 0.85rem;
+        color: #333;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    
+    .consultation-btn {
+        background: #1977cc;
+        color: white;
+        border: none;
+        padding: 7px 14px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
+    }
+    
+}
     </style>
 @endsection
 
@@ -658,7 +634,7 @@
                             <div class="tab-pane active show" id="departments-tab-1">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Hydrafacial Department</h3>
+                                        <h3 id="dephead">Hydrafacial Department</h3>
                                         <p class="fst-italic">
                                             Our HydraFacial treatments are designed to transform your skin with immediate, visible results. Using advanced vortex technology, this multi-step therapy deeply cleanses, exfoliates, extracts impurities, and infuses potent serums tailored to your skin’s needs. Perfect for hydration, anti-ageing, or blemish control, HydraFacial leaves your complexion radiant, refreshed, and rejuvenated—with zero downtime.
 
@@ -672,7 +648,7 @@
                             <div class="tab-pane" id="departments-tab-4">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Laser Hair RemovalDepartment</h3>
+                                        <h3 id="dephead">Laser Hair RemovalDepartment</h3>
                                         <p class="fst-italic">
                                             Our laser hair removal treatments are designed for smooth, lasting results with minimal discomfort. Using advanced, FDA-approved technology, we safely target unwanted hair on all skin types, ensuring precision and effectiveness. From your initial consultation to aftercare, our specialists guide you through every step—making the process seamless, personalised, and stress-free.
                                         </p>
@@ -685,7 +661,7 @@
                             <div class="tab-pane" id="departments-tab-5">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Microneedling</h3>
+                                        <h3 id="dephead">Microneedling</h3>
                                         <p>Our collagen induction therapy revitalises your skin naturally, stimulating your body's healing response for a fresher, more youthful complexion. </p> <p> Using advanced microneedling technology, we create controlled micro-channels in the skin to boost collagen and elastin production. This innovative treatment effectively reduces fine lines, acne scars, and uneven skin texture while enhancing product absorption for optimal results. Suitable for all skin types, our personalised approach ensures visible improvement with minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -696,7 +672,7 @@
                             <div class="tab-pane" id="departments-tab-7">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Hair Loss</h3>
+                                        <h3 id="dephead">Hair Loss</h3>
                                         <p>Revitalise thinning hair with our natural PRP hair restoration treatment. </p> <p> Our non-surgical solution uses your body's own healing factors to thicken existing hair and stimulate new growth. Perfect for men and women experiencing early hair loss, this innovative treatment helps restore density and confidence without medications or invasive procedures. Most patients see noticeable improvements in hair quality within just a few months. </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -707,7 +683,7 @@
                             <div class="tab-pane" id="departments-tab-6">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>PRP</h3>
+                                        <h3 id="dephead">PRP</h3>
                                         <p>Experience the ultimate in natural skin rejuvenation with our signature PRP treatment. </p> <p> Our vampire facial combines microneedling with your own growth-rich plasma for unparalleled revitalization. This cutting-edge yet completely natural approach diminishes signs of aging, improves skin texture, and restores youthful radiance. The perfect solution for those seeking noticeable results without synthetic fillers or harsh procedures.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -1071,69 +1047,36 @@
         <!-- /Contact Section -->
 
         <main class="main">
-            <!-- All your existing content... -->
-
-            <!-- Add this right before closing </main> -->
+            <!-- Your main content here -->
+        
+            <!-- Consultation CTA (unchanged) -->
             <div class="consultation-cta">
                 <div class="consultation-box">
                     <span class="cta-text">Ready to transform your look?</span>
                     <button class="consultation-btn">
-                        <i class="fas fa-calendar-check"></i> Book Consultation
+                        {{-- <i class="fas fa-calendar-check"></i>  --}}
+                        Book Consultation
                     </button>
                 </div>
             </div>
         </main>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hero = document.querySelector('#hero');
-            const cta = document.querySelector('.consultation-cta');
+    {{-- CTA-btn-scripts  --}}
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Only run on mobile
+    if (window.innerWidth > 768) return;
 
-            if (!hero || !cta) return;
-
-            const heroHeight = hero.offsetHeight;
-            let lastScroll = 0;
-
-            function checkScroll() {
-                const currentScroll = window.scrollY;
-
-                if (currentScroll > heroHeight + 100) {
-                    cta.classList.add('visible');
-                } else if (currentScroll < lastScroll && currentScroll <= heroHeight) {
-                    cta.classList.remove('visible');
-                }
-
-                lastScroll = currentScroll;
-            }
-
-            // Initial check
-            checkScroll();
-
-            // Listen for scroll with debounce
-            let ticking = false;
-            window.addEventListener('scroll', function() {
-                if (!ticking) {
-                    window.requestAnimationFrame(function() {
-                        checkScroll();
-                        ticking = false;
-                    });
-                    ticking = true;
-                }
-            });
-
-            // Smooth scroll to appointment
-            document.querySelector('.consultation-btn').addEventListener('click', function(e) {
-                e.preventDefault();
-                const appointment = document.getElementById('appointment');
-                if (appointment) {
-                    appointment.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
+    // Just keep the click handler
+    document.querySelector('.consultation-btn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('appointment')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
-    </script>
+    });
+});
+   </script>
     {{-- testimonials script --}}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
