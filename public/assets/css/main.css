@@ -1003,9 +1003,12 @@ section,
 
 @media(max-width:450px){
   .hero .welcome h2 {
-    margin-bottom: 8px;
-    font-size: 34px;
+    margin-bottom: 12px;
+    font-size: 28px;
     font-weight: 700;
+  }
+  .hero .welcome p{
+    font-size: 20px;
   }
 }
 
