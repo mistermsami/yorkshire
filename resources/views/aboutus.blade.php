@@ -53,7 +53,7 @@
        .about-hero-title {
            font-family: 'Montserrat', sans-serif;
            font-weight: 900;
-           font-size: clamp(2.5rem, 5vw, 3.5rem);
+           font-size: clamp(2rem, 5vw, 3.5rem);
            line-height: 1.2;
            color: #0d5a9e;
            margin-bottom: 1.5rem;
@@ -178,6 +178,7 @@
            
            .about-hero-subtitle {
                margin: 0 auto 2rem;
+               text-align: justify;
            }
            
            .about-hero-buttons {
@@ -189,11 +190,12 @@
                order: -1;
            }
            .trustpilot-line, .award-badge {
-         text-align: center;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         }
+             text-align: center;
+             display: flex;
+             justify-content: center; 
+             align-items: center; 
+             font-size: medium;
+           }
            
        }
 
@@ -519,7 +521,7 @@
     <!-- /Popular Section -->
     
     <!-- Popular Section -->
-    <section class="section aboutsecond_sec">
+    <section class="section aboutsecond_sec px-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -556,7 +558,7 @@
     </section>
     <!-- /Popular Section -->
     <!-- Popular Section -->
-    <section class="section aboutthird_sec">
+    <section class="section aboutthird_sec px-3">
         <div class="container">
             <div class="row">
 
@@ -603,7 +605,7 @@
     </section>
     <!-- /Popular Section -->
     <!-- Popular Section -->
-    <section class="section aboutsecond_sec mb-4">
+    <section class="section aboutsecond_sec mb-4 px-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -654,7 +656,7 @@
     </section>
     <!-- /Popular Section -->
     <!-- Popular Section -->
-    <section class="section aboutthird_sec">
+    <section class="section aboutthird_sec px-3">
         <div class="container">
             <div class="row">
 

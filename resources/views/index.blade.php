@@ -1046,10 +1046,8 @@
         </section>
         <!-- /Contact Section -->
 
-        <main class="main">
-            <!-- Your main content here -->
-        
-            <!-- Consultation CTA (unchanged) -->
+        <main class="main">        
+            <!-- Consultation CTA  -->
             <div class="consultation-cta">
                 <div class="consultation-box">
                     <span class="cta-text">Ready to transform your look?</span>
