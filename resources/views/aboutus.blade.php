@@ -313,8 +313,8 @@
         width: 100% !important;
         margin: 0 auto;
         padding: 80px 40px;
-        overflow: visible; /* Ensure waves aren't clipped */
-        padding-bottom: 160px; 
+        overflow: visible;
+        padding-bottom: 160px;
     }
     .about-page-hero::before {
         content: '';
