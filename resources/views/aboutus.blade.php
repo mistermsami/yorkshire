@@ -314,6 +314,7 @@
         padding: 80px 40px;
         overflow: visible; /* Ensure waves aren't clipped */
         padding-bottom: 160px; 
+        
     }
     .about-page-hero::before {
         content: '';
