@@ -339,7 +339,7 @@
   .left-side .content {
     position: relative;
     z-index: 1;
-    padding: 40px;
+    padding: 5px 20px;
  
   }
   .left-side h2 {
@@ -733,18 +733,7 @@
     position: relative;
   }
   
-  /* .timeline-item::before {
-     content: ''; 
-     position: absolute; 
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background: #007bff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  } */
+ 
   
   .timeline-content {
     display: flex;
@@ -989,9 +978,27 @@
             
             
             .image-container {
-                height: 400px;
-                margin-top: 40px;
-                
+              height: 450px; /* adjust height based on image size */
+              position: relative;
+              overflow: hidden;
+              border-radius: 15px;
+              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+              margin-top: 15px;
+            }
+            
+            .hero-image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+            }
+            
+            .hero-image.active {
+              opacity: 1;
             }
             
             @keyframes slideInMobile {

@@ -112,7 +112,7 @@
       }
       
       /* HydraFacial Testimonials */
-      .hydrafacial-testimonial-card {
+      /* .hydrafacial-testimonial-card {
           background: white;
           border-radius: 15px;
           padding: 30px;
@@ -141,7 +141,7 @@
       .hydrafacial-client-rating {
           color: #ffc107;
           margin-bottom: 15px;
-      }
+      } */
       
       /* HydraFacial Pricing */
       .hydrafacial-price-card {

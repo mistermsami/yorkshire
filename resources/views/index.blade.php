@@ -13,8 +13,71 @@
     and for custom css --}}
     
     <style>
-       
 
+:root {
+          --primary-color: #5a82cd; /* Slate blue - professional yet modern */
+          --dark-color: #2c3e50;
+          --light-color: #f8f9fa;
+      }
+      /* HydraFacial Hero Section */
+      .hydrafacial-hero {
+          background: linear-gradient(to right, #1977cc, #02126ce8); 
+          background-size: cover;
+          background-position: center;
+          color: white;
+          padding: 120px 0;
+          position: relative;
+          overflow: hidden;
+      }
+      
+      .hydrafacial-hero::after {
+          content: '';
+          position: absolute;
+          bottom: -50px;
+          left: 0;
+          right: 0;
+          height: 100px;
+          background: white;
+          transform: skewY(-3deg);
+          z-index: 1;
+      }
+      
+      .hydrafacial-hero-title {
+          /* font-size: 3.5rem; */
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      
+      .hydrafacial-hero-subtitle {
+          font-size: 1.4rem;
+          opacity: 0.9;
+          margin-bottom: 25px;
+      }
+      
+      .hydrafacial-btn-primary {
+          background-color: #ff6b6b;
+          border: none;
+          padding: 12px 30px;
+          font-weight: 600;
+          transition: all 0.3s;
+          box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+      }
+      
+      .hydrafacial-btn-primary:hover {
+          background-color: #ff5252;
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+      }
+    
+      .hydrafacial-trustpilot-image img {
+          width: 170px;
+          margin-bottom: 20px;
+      }
+     
+      
+       
+/* ------------------------------------------------------ */
         .svgicon {
             fill: #1977cc;
             color: #1977cc;
@@ -54,6 +117,14 @@
             #dephead{
                 margin-top: 12px;
             }
+            .hydrafacial-hero-title {
+              font-size: 1.9rem;
+              margin-bottom: 15px;
+          }
+          
+          .hydrafacial-hero-subtitle {
+              font-size: 1.2rem;
+          }
         }
         /* CTA BTN  */
         .consultation-cta {
@@ -115,7 +186,7 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section light-background">
+        {{-- <section id="hero" class="hero section light-background">
 
             <img src="assets/img/hero1.2.jpg" alt="" data-aos="fade-in">
 
@@ -180,10 +251,26 @@
 
             </div>
 
-        </section>
+        </section> --}}
         <!-- /Hero Section -->
 
-
+        <section class="hydrafacial-hero text-center">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="hydrafacial-hero-title animate__animated animate__fadeInDown">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
+                        <p class="hydrafacial-hero-subtitle animate__animated animate__fadeIn animate__delay-1s">We are your premier destination for transformative hair and skin treatments</p>
+                        <div class="hydrafacial-trustpilot-image">
+                            <img src="assets/img/c1.png" alt="not found"  >
+                            <img src="assets/img/c2.png" alt="not found" >
+                        </div>
+                        <div class="animate__animated animate__fadeIn animate__delay-2s">
+                            <a href="#contact" class="btn hydrafacial-btn-primary me-2">Book Your Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- About Us Section -->
         <section id="about" class="about-section">

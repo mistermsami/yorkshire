@@ -196,7 +196,16 @@
              align-items: center;
              font-size: medium;
            }
+           .aboutsecond_sec .aboutsideimg img{
+                width: 100%;
+                height: 300px;
+                /* margin-bottom: 20px; */
+            }
 
+            .aboutthird_sec .aboutsideimg img{
+                height: 300px;
+                width: 100%;
+            }
        }
 
        @media (max-width: 768px) {
