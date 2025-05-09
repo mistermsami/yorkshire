@@ -842,7 +842,6 @@
                                         skin health and appearance.
                                     </p>
                                 </div>
-<<<<<<< HEAD
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
@@ -978,11 +977,9 @@
                                                 <option>Platinum HydraFacial ($249)</option>
                                             </select>
                                         </div>
-=======
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <input type="tel" class="form-control" placeholder="Phone Number" required>
->>>>>>> 33659bcba0f20e67bd2f9bf8cc855b8bae99ccee
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <select class="form-select" required>
