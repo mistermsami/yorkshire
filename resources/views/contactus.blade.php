@@ -78,12 +78,12 @@
                             <h3 style="font-size: 34px; font-weight: 600;color: #0d5a9e;">This feels good,</h3>
                         </div>
                         <div class="about-content">
-                            <p><b>We’re challenging the outdated notion that real men shrug their shoulders and carry
-                                    on.</b></p>
+                            <p><b>We believe everyone deserves healthy, radiant skin and hair—without compromise.</b></p>
                             <p>
-                                By empowering men with all the information and choices they need to proactively own their
-                                wellbeing, we can turn a corner. We’re here to be your own personal manual. A guide to
-                                owning your health and happiness. Giving you all the tools you need to be good to you.
+                                Our expert team is dedicated to providing personalised care tailored to your unique needs. Whether you're seeking treatment, advice, or simply a consultation, we’re here to help you look and feel your best.  
+                            </p>
+                            <p>
+                                Reach out today to book an appointment or speak to one of our specialists. Your journey to better skin and hair starts here.  
                             </p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
         <!-- Section Title -->
         <div class="container section-title">
             <h2>Contact</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <p>For enquiries or further information, please contact us. Our team is available to assist you</p>
         </div><!-- End Section Title -->
 
         <div class="mb-5">

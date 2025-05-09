@@ -13,68 +13,175 @@
     and for custom css --}}
     
     <style>
+.section-hero {
+    min-height: 90vh;
+    background: linear-gradient(180deg, #3c3c3b, #0057b7);
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    overflow: hidden;
+}
 
-:root {
-          --primary-color: #5a82cd; /* Slate blue - professional yet modern */
-          --dark-color: #2c3e50;
-          --light-color: #f8f9fa;
-      }
-      /* HydraFacial Hero Section */
-      .hydrafacial-hero {
-          background: linear-gradient(to right, #1977cc, #02126ce8); 
-          background-size: cover;
-          background-position: center;
-          color: white;
-          padding: 120px 0;
-          position: relative;
-          overflow: hidden;
-      }
-      
-      .hydrafacial-hero::after {
-          content: '';
-          position: absolute;
-          bottom: -50px;
-          left: 0;
-          right: 0;
-          height: 100px;
-          background: white;
-          transform: skewY(-3deg);
-          z-index: 1;
-      }
-      
-      .hydrafacial-hero-title {
-          /* font-size: 3.5rem; */
-          font-size: 2.5rem;
-          font-weight: 700;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      }
-      
-      .hydrafacial-hero-subtitle {
-          font-size: 1.4rem;
-          opacity: 0.9;
-          margin-bottom: 25px;
-      }
-      
-      .hydrafacial-btn-primary {
-          background-color: #ff6b6b;
-          border: none;
-          padding: 12px 30px;
-          font-weight: 600;
-          transition: all 0.3s;
-          box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-      }
-      
-      .hydrafacial-btn-primary:hover {
-          background-color: #ff5252;
-          transform: translateY(-3px);
-          box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
-      }
+.section-hero__content {
+    flex: 1;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.section-hero__image-wrapper {
+    transform: translateX(100%);
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.section-hero__image {
+    height: 233px;
+    width: 366px;
+    margin-bottom: 90px;
+}
+
+.section-hero__title {
+    font-size: 2.7rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 430px;
+}
+
+.section-hero__description {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.section-hero__cta {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    padding: 8px 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-hero__cta:hover {
+    background: #fff;
+    color: #0a2647;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.section-hero__badges img {
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Tablet Styles (769px - 1080px) */
+@media (min-width: 769px) and (max-width: 1080px) {
+    .section-hero {
+        padding: 0 5%;
+        min-height: 80vh;
+    }
     
-      .hydrafacial-trustpilot-image img {
-          width: 170px;
-          margin-bottom: 20px;
-      }
-     
+    .section-hero__title {
+        font-size: 2.2rem;
+        max-width: 350px;
+    }
+    
+    .section-hero__description {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    
+    .section-hero__image {
+        width: 300px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+    .section-hero__cta {
+        padding: 8px 70px;
+    }
+    
+    .section-hero__badges img {
+        width: 150px;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .section-hero {
+        flex-direction: column;
+        padding: 100px 5% 50px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .section-hero__content,
+    .section-hero__image-wrapper {
+        transform: none;
+        animation: none;
+        width: 100%;
+        opacity: 1;
+    }
+    
+    .section-hero__content {
+        margin-bottom: 50px;
+    }
+    
+    .section-hero__image {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .section-hero__title {
+        font-size: 2rem;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-hero__description {
+        max-width: 100%;
+    }
+
+    .section-hero__cta {
+        padding: 8px 50px;
+    }
+
+    .section-hero__badges img {
+        width: 130px;
+    }
+}
+
+
       
        
 /* ------------------------------------------------------ */
@@ -254,23 +361,25 @@
         </section> --}}
         <!-- /Hero Section -->
 
-        <section class="hydrafacial-hero text-center">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h1 class="hydrafacial-hero-title animate__animated animate__fadeInDown">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
-                        <p class="hydrafacial-hero-subtitle animate__animated animate__fadeIn animate__delay-1s">We are your premier destination for transformative hair and skin treatments</p>
-                        <div class="hydrafacial-trustpilot-image">
-                            <img src="assets/img/c1.png" alt="not found"  >
-                            <img src="assets/img/c2.png" alt="not found" >
-                        </div>
-                        <div class="animate__animated animate__fadeIn animate__delay-2s">
-                            <a href="#contact" class="btn hydrafacial-btn-primary me-2">Book Your Consultation</a>
-                        </div>
-                    </div>
+
+        <section class="section-hero">
+            <div class="section-hero__content">
+                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
+                <p class="section-hero__description">
+                    We are your premier destination for transformative hair and skin treatments. Recommended Provider for Private Medical Insurance.
+                </p>
+                <div class="section-hero__badges">
+                    <img src="assets/img/c1.png" alt="not found" width="50px">
+                    <img src="assets/img/c2.png" alt="not found">
                 </div>
+                <a href="#services" class="section-hero__cta">Get Started</a>
+            </div>
+            <div class="section-hero__image-wrapper">
+                <img src="assets/img/heroImage.png" alt="Hero Image" class="section-hero__image">
             </div>
         </section>
+        
+       
 
         <!-- About Us Section -->
         <section id="about" class="about-section">
