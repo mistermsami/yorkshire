@@ -992,14 +992,12 @@
                                             <option>Platinum HydraFacial ($249)</option>
                                         </select>
                                     </div>
-<<<<<<< HEAD
                                     <button type="submit" class="btn hydrafacial-btn-primary w-100">Request
                                         Appointment</button>
                                 </form>
                             </div>
                         </div> --}}
                         @livewire('appointmentform.AppointmentForm')
-=======
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -1036,7 +1034,6 @@
                                 <button type="submit" class="btn hydrafacial-btn-primary w-100">Request Appointment</button>
                             </form>
                         </div>
->>>>>>> 33659bcba0f20e67bd2f9bf8cc855b8bae99ccee
                     </div>
                 </div>
             </div>
