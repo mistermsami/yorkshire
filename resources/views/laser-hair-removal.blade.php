@@ -1224,38 +1224,7 @@
                     <p class="text-muted">For best results: 6-8 treatments spaced 4-6 weeks apart</p>
                 </div>
             </div>
-        </section>
-
-        <!-- dmue -->
-        {{-- <section class="laserdevice section " >
-
-            <!-- Section Title -->
-            <div class="container section-title">
-                <h2>How DUETTO MT EVO works for hair removal?</h2>
-               
-            </div>
-
-            <div class="container">
-
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-10">
-                        <div class="card " style="background-color: rgba(127, 127, 127, 0.364) ; color:black">
-                            <p class="card-text p-5">
-                                The Duetto MT EVO is equipped with two lasers, the Alexandrite and Nd:YAG. These lasers can be used simultaneously based on client’s skin type and hair quality.
-                                <br><br>
-                                The laser damages the hair follicle to inhibit hair growth and disrupt hair cycle. It selectively targets the melanin in the hair root, which then be converted to thermal energy causing the destruction of the hair follicle. In comparison with traditional hair removal methods, laser hair removal provides long lasting results with low-risk of possible skin injury. Laser hair removal is the most efficient hair removal method for both men and women, which is even safe for sensitive and intimate areas.
-                                <br><br>
-                                The most effective way to limit the discomfort during the procedure is through an air cooling system. Not all laser hair removal devices are equipped with this technology, meanwhile Duetto MT EVO has a built in cooling system that continuously emits cool air all throughout the procedure. This technology greatly reduces unpleasant sensation and limit overheating of the superficial skin. In addition, Duetto MT EVO has superior adjustability when it comes to spot sizes. Hence, it can effectively target small and large areas.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section> --}}
-        <!-- /dmue -->
+        </section> 
 
 
 
@@ -1545,143 +1514,26 @@
 
 
 
-        <section id="appointment" class="services appointment howitworks section mb-4">
-
-            <!-- Section Title -->
-            {{-- data-aos="fade-up" --}}
-            <div class="container section-title">
-                <h2>Make Appointment</h2>
-                {{-- <p>
-                    Our surgeons have performed over 7,500 successful hair transplants.
-                </p> --}}
+        
+        <!-- Laser CTA Section -->
+        <section id="hydrafacial-contact" class="hydrafacial-cta-section py-5">
+            <div class="hydrafacial-floating-bubbles">
+                <div class="hydrafacial-bubble" style="left: 10%; width: 40px; height: 40px; animation-delay: 0s;"></div>
+                <div class="hydrafacial-bubble" style="left: 20%; width: 30px; height: 30px; animation-delay: 2s;"></div>
+                <div class="hydrafacial-bubble" style="left: 50%; width: 50px; height: 50px; animation-delay: 4s;"></div>
+                <div class="hydrafacial-bubble" style="left: 70%; width: 25px; height: 25px; animation-delay: 1s;"></div>
+                <div class="hydrafacial-bubble" style="left: 90%; width: 35px; height: 35px; animation-delay: 3s;"></div>
             </div>
-            <!-- End Section Title -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        {{-- add heading and sub title here --}}
-                        <div>
-                            <h3 class="title" style="font-weight: 700; font-size: 34px;">Book a consultation</h3>
-                            <p>
-                                Fill in your details and we’ll get in touch with you shortly to answer your questions.
-                            </p>
-                            <br>
-                            <h5>Want to contact us directly?</h5>
-                            <p><strong>Leeds: </strong>44 589 55488 55</p>
-                            <p><strong>Email: </strong>info@yorkshirehairandskinsolution.com</p>
-                        </div>
+            <div class="container position-relative py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" id="contact">
+                        <h2 class="text-white mb-4">Ready for Laser Treatment?</h2>
+                        <p class="lead text-white mb-5">Book your Laser treatment today and experience the difference
+                        </p> 
+                        @livewire('appointmentform.LaserAppointmentForm')
                     </div>
-                    <div class="col-lg-6">
-                        <div class="stepper d-flex justify-content-between">
-                            <div class="step active">Step 1</div>
-                            <div class="step">Step 2</div>
-                            <div class="step">Step 3</div>
-                        </div>
-                        <form action="" method="post" class="php-email-form">
-                            <!-- Step 1: User Details -->
-                            <div class="step-content active">
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="Phone Number" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="email" class="form-control" name="email" placeholder="Email"
-                                            required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="clinic" class="form-select" required>
-                                            <option value="">Preferred Clinic*</option>
-                                            <option value="London">London</option>
-                                            <option value="Leeds">Leeds</option>
-                                            <option value="Manchester">Manchester</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="contact_method" class="form-select" required>
-                                            <option value="">Preferred Contact Method</option>
-                                            <option value="Mobile">Mobile</option>
-                                            <option value="Email">Email</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 2: Date Selection -->
-                            <div class="step-content">
-                                <h3>Select a Date</h3>
-                                {{-- <input type="date" name="appointment_date" class="form-control active" required> --}}
-
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <select id="month-selector" class="form-select">
-                                            <option value="1">January</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <select id="year-selector" class="form-select">
-                                            {{-- <option value="2024">2024</option> --}}
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-
-                                        <div id="custom-calendar" class="calendar-container form-control"></div>
-                                    </div>
-                                </div>
-
-                                {{-- <input type="text" id="calendar" class="form-control" placeholder="Pick a Date" required> --}}
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 3: Time Selection -->
-                            <div class="step-content">
-                                <h3>Select a Time</h3>
-                                {{-- <input type="time" name="appointment_time" class="form-control" required> --}}
-                                <div class="col-md-12">
-                                    <select name="appointment_time" class="form-select" required>
-                                        <option value="">Preferred Time*</option>
-                                        <option value="9:00am">9:00 am</option>
-                                        <option value="10:00am">10: 00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="12:00pm">12:00 pm</option>
-                                        <option value="01:00pm">01:00 pm</option>
-                                        <option value="02:00pm">02:00 pm</option>
-                                        <option value="03:00pm">03:00 pm</option>
-                                        <option value="04:00pm">04:00 pm</option>
-                                        <option value="05:00pm">05:00 pm</option>
-                                        <option value="06:00pm">06:00 pm</option>
-                                    </select>
-                                </div>
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="submit" class="btn btn-success primartbtn">Submit</button>
-                            </div>
-                        </form>
-                    </div><!-- End Contact Form -->
                 </div>
             </div>
-
         </section>
 
     </main>

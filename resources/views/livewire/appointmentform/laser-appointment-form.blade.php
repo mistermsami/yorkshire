@@ -1,4 +1,4 @@
-{{-- Hydra-fecial Appointment Page --}}
+{{-- Laser Appointment Page --}}
 <div>
     @if (session()->has('success'))
         <div class="alert alert-success">
@@ -40,9 +40,9 @@
                         <select class="form-select" wire:model="appointment_type" name="appointment_type"
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
-                            <option value="Signature HydraFacial">Signature HydraFacial</option>
-                            <option value="Advance Face detox facial">Advance Face detox facial</option>
-                            <option>Platinum HydraFacial ($249)</option>
+                            <option value="Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline">Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline</option>
+                            <option value="Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms">Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms</option>
+                            <option value="Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs">Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs</option>
                         </select>
                     </div>
                 </div>

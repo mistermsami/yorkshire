@@ -1,11 +1,12 @@
 <?php
 
+
 namespace App\Livewire\AppointmentForm;
 
-use App\Models\Hydra_Appointment;
+use App\Models\Laser_Appointment;
 use Livewire\Component;
 
-class AppointmentForm extends Component
+class LaserAppointmentForm extends Component
 {
     public $name;
     public $email;
@@ -14,12 +15,11 @@ class AppointmentForm extends Component
     public $date;
     public $time;
     public $message;
-    public $bookedTimes = [];
-
+    public $bookedTimes = []; 
     public function updatedDate($value)
     {
         // Fetch booked times for the selected date
-        $this->bookedTimes = Hydra_Appointment::whereDate('date', $value)
+        $this->bookedTimes = Laser_Appointment::whereDate('date', $value)
                                         ->pluck('time')
                                         ->toArray();
     }
@@ -27,7 +27,7 @@ class AppointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        Hydra_Appointment::create(
+        Laser_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
         // Reset form fields after submission
@@ -38,6 +38,6 @@ class AppointmentForm extends Component
     }
     public function render()
     {
-        return view('livewire.appointmentform.appointment-form');
+        return view('livewire.appointmentform.laser-appointment-form');
     }
-}
+}  

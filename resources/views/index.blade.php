@@ -280,7 +280,8 @@
                     <!-- Image Column -->
                     <div class="col-md-6 d-flex">
                         <div class="about-image w-100 h-100">
-                            <img src="./assets/img/about.jpg" alt="About Us"
+                            {{-- <img src="./assets/img/about.jpg" alt="About Us" --}}
+                            <img src="https://images.pexels.com/photos/5069508/pexels-photo-5069508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="About Us"
                                 class="img-fluid rounded shadow h-100 w-100 object-fit-cover">
                             <div class="image-overlay"></div>
                         </div>
@@ -1100,7 +1101,7 @@
                                 <h3>Location</h3>
                                 <p>175 Dewsbury Roads
                                     Leeds
-                                    Ls11 5EG</p>
+                                    LS11 5EG</p>
                             </div>
                         </div><!-- End Info Item -->
 
