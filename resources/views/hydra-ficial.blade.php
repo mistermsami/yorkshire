@@ -977,9 +977,6 @@
                                                 <option>Platinum HydraFacial ($249)</option>
                                             </select>
                                         </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="tel" class="form-control" placeholder="Phone Number" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <select class="form-select" required>
@@ -995,42 +992,6 @@
                             </div>
                         </div> --}}
                         @livewire('appointmentform.AppointmentForm')
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <select class="form-select" required>
-                                            <option value="" selected disabled>Preferred Day</option>
-                                            <option>Monday</option>
-                                            <option>Tuesday</option>
-                                            <option>Wednesday</option>
-                                            <option>Thursday</option>
-                                            <option>Friday</option>
-                                            <option>Saturday</option>
-                                            <option>Sunday</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <select class="form-select" required>
-                                            <option value="" selected disabled>Preferred Time</option>
-                                            <option>10:00 AM</option>
-                                            <option>11:00 AM</option>
-                                            <option>12:00 PM</option>
-                                            <option>1:00 PM</option>
-                                            <option>2:00 PM</option>
-                                            <option>3:00 PM</option>
-                                            <option>4:00 PM</option>
-                                            <option>5:00 PM</option>
-                                            <option>6:00 PM</option>
-                                            <option>7:00 PM</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="3" placeholder="Any special requests or concerns?"></textarea>
-                                </div>
-                                <button type="submit" class="btn hydrafacial-btn-primary w-100">Request Appointment</button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
