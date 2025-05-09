@@ -991,7 +991,8 @@
                                 </form>
                             </div>
                         </div> --}}
-                        @livewire('appointmentform.AppointmentForm')
+                        @livewire('AppointmentForm.AppointmentForm')
+                        
                     </div>
                 </div>
             </div>
