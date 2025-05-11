@@ -173,11 +173,11 @@
                     <h4>Our Services</h4>
                     <ul>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Transplant</a></li>
-                        {{-- <li><a href="#">Weight Loss Treatments</a></li> --}}
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/laser-hair-removalhttps://yorkshirehairandskinsolutions.co.uk/laser-hair-removal">Laser Hair Removal</a></li>
-                        <li><a href="#">PRP</a></li>
-                        <li><a href="#">HydraFacial</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">PRP</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hydra-ficial">HydraFacial</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li>
                     </ul>
                 </div>
 
