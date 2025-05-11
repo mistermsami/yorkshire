@@ -46,7 +46,7 @@
     color: #fff;
     /* margin-bottom: 1rem; */
     line-height: 1.2;
-    max-width: 520px;
+    max-width: 622px;
 }
 
 .section-hero__description {
@@ -367,7 +367,7 @@
 
         <section class="section-hero">
             <div class="section-hero__content">
-                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
+                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
                 <p class="section-hero__description">
                     We are your premier destination for transformative hair and skin treatments. 
                     {{-- Recommended Provider for Private Medical Insurance. --}}
