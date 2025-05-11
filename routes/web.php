@@ -57,7 +57,7 @@ Route::get('galleryview/', function () {
 
 
 // Dashboard Routes
-Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+Route::get('/admin-dashboard', [DashboardController::class,'index'])->name('admin-dashboard');
 
 
 
