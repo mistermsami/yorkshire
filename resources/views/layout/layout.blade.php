@@ -144,7 +144,7 @@
                     <div class="footer-contact pt-3">
                         <p>175 Dewsbury Roads
                             Leeds
-                            Ls11 5EG</p>
+                            LS11 5EG</p>
 
                         <p class="mt-3"><strong>Phone:</strong> <span>07570957502</span></p>
                         <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.com</span></p>

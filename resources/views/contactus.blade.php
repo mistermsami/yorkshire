@@ -134,7 +134,7 @@
                             <h3>Location</h3>
                             <p>175 Dewsbury Roads
                                 Leeds
-                                Ls11 5EG</p>
+                                LS11 5EG</p>
                         </div>
                     </div><!-- End Info Item -->
 

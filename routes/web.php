@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -37,21 +39,25 @@ Route::get('contactus/', function () {
     return view('contactus');
 })->name('contactus');
 
-Route::get('hairblog/', function () { 
-    return view('hairblog'); 
+Route::get('hairblog/', function () {
+    return view('hairblog');
 })->name('hairblog'); //route or page call by this name e.g (<a href='hairblog'>read more</a>)
 
-Route::get('prpbenefits/', function () { 
-    return view('prpbenefits'); 
+Route::get('prpbenefits/', function () {
+    return view('prpbenefits');
 })->name('prpbenefits');
 
-Route::get('skincaretips/', function () { 
-    return view('skincaretips'); 
+Route::get('skincaretips/', function () {
+    return view('skincaretips');
 })->name('skincaretips');
 
-Route::get('galleryview/', function () { 
-    return view('galleryview'); 
+Route::get('galleryview/', function () {
+    return view('galleryview');
 })->name('galleryview');
+
+
+// Dashboard Routes
+Route::get('/admin-dashboard', [DashboardController::class,'index'])->name('admin-dashboard');
 
 
 

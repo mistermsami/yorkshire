@@ -2,39 +2,36 @@
 
 namespace App\Livewire\AppointmentForm;
 
-use App\Models\Appointment;
+use App\Models\Hydra_Appointment;
 use Livewire\Component;
 
 class AppointmentForm extends Component
 {
-
     public $name;
     public $email;
     public $contact;
-    public $branch;
-    public $contact_type;
-    public $month;
-    public $year;
-    public $day;
+    public $appointment_type;
+    public $date;
     public $time;
-    protected $listeners = ['updateDay' => 'setDay'];
+    public $message;
+    public $bookedTimes = [];
 
-    public function setDay($selectedDay)/* This listens for the event from Livewire.dispatch */
+    public function updatedDate($value)
     {
-        $this->day = $selectedDay;
+        // Fetch booked times for the selected date
+        $this->bookedTimes = Hydra_Appointment::whereDate('date', $value)
+                                        ->pluck('time')
+                                        ->toArray();
     }
     public function save()
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        Appointment::create(
-            $this->only(['name', 'email', 'contact', 'branch', 'contact_type', 'month', 'year', 'day', 'time'])
+        Hydra_Appointment::create(
+            $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
         // Reset form fields after submission
         $this->reset();
-
-        // Send event to JavaScript to reset stepper
-        $this->dispatch('resetStepper');
 
         // Optionally, show a success messag 
         session()->flash('success', 'we will be in touch shortly to address your Appointment.');

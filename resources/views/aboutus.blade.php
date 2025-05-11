@@ -777,7 +777,7 @@
                         <div class="mb-4">
                             <h4 class="h5"><i class="fas fa-map-marker-alt text-primary me-2"></i> Address</h4>
                             <p>175 Dewsbury Roads<br>
-                                Leeds Ls11 5EG</p>
+                                Leeds LS11 5EG</p>
                         </div>
 
                         <div class="mb-4">
