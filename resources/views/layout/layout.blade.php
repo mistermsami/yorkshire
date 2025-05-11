@@ -172,12 +172,12 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Hair Transplant</a></li>
-                        <li><a href="#">Weight Loss Treatments</a></li>
-                        <li><a href="#">Laser Hair Removal</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Transplant</a></li>
+                        {{-- <li><a href="#">Weight Loss Treatments</a></li> --}}
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/laser-hair-removalhttps://yorkshirehairandskinsolutions.co.uk/laser-hair-removal">Laser Hair Removal</a></li>
                         <li><a href="#">PRP</a></li>
                         <li><a href="#">HydraFacial</a></li>
-                        <li><a href="#">Tanning Bed</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
                     </ul>
                 </div>
 
