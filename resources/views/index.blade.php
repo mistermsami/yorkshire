@@ -375,7 +375,7 @@
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
             <div class="section-hero__image-wrapper">
-                <img src="{{asset('ssets/img/heroImage.png')}}" alt="Hero Image" class="section-hero__image">
+                <img src="{{asset('assets/img/heroImage.png')}}" alt="Hero Image" class="section-hero__image">
             </div>
         </section>
 
