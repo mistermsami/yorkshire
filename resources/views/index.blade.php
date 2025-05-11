@@ -44,7 +44,7 @@
 .section-hero__title {
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     line-height: 1.2;
     max-width: 520px;
 }
