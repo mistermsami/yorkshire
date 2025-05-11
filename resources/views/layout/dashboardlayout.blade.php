@@ -35,6 +35,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous">
 
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yorkshirehairandskinsolutions.co.uk/" />
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="https://yorkshirehairandskinsolutions.co.uk/assets/img/gallery/gallery-7.jpg">
+  <meta name="twitter:title" content="Yorkshire Hair & Skin Solutions | Hair Transplant & Laser Clinic in Leeds">
+  <meta name="twitter:description" content="Hair transplant, PRP, HydraFacial & laser hair removal in Leeds. Trusted experts in skin & hair care.">
+  <meta name="twitter:image" content="https://yorkshirehairandskinsolutions.co.uk/assets/img/gallery/gallery-7.jpg"> <!-- Replace with your real image URL -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yorkshire Hair & Skin Solutions | Hair & Skin Care Experts in Leeds">
+  <meta property="og:description" content="Leading skin and hair clinic in Meanwood, Leeds offering PRP, laser hair removal, HydraFacial & more.">
+  <meta property="og:image" content="https://yorkshirehairandskinsolutions.co.uk/assets/img/gallery/gallery-7.jpg"> <!-- Replace with your real image URL -->
+  <meta property="og:url" content="https://yorkshirehairandskinsolutions.co.uk/">
+  <meta property="og:site_name" content="Yorkshire Hair & Skin Solutions">
+
     @yield('headSection')
 </head> <!--end::Head--> <!--begin::Body-->
 
