@@ -11,7 +11,7 @@
 @section('head')
     {{-- for meta tags (SEO)
     and for custom css --}}
-    
+
     <style>
 .section-hero {
     min-height: 90vh;
@@ -107,27 +107,27 @@
         padding: 0 5%;
         min-height: 80vh;
     }
-    
+
     .section-hero__title {
         font-size: 2.2rem;
         max-width: 350px;
     }
-    
+
     .section-hero__description {
         font-size: 1rem;
         max-width: 350px;
     }
-    
+
     .section-hero__image {
         width: 300px;
         height: auto;
         margin-bottom: 50px;
     }
-    
+
     .section-hero__cta {
         padding: 8px 70px;
     }
-    
+
     .section-hero__badges img {
         width: 150px;
     }
@@ -149,11 +149,11 @@
         width: 100%;
         opacity: 1;
     }
-    
+
     .section-hero__content {
         margin-bottom: 50px;
     }
-    
+
     .section-hero__image {
         width: 100%;
         max-width: 330px;
@@ -182,8 +182,8 @@
 }
 
 
-      
-       
+
+
 /* ------------------------------------------------------ */
         .svgicon {
             fill: #1977cc;
@@ -228,7 +228,7 @@
               font-size: 1.9rem;
               margin-bottom: 15px;
           }
-          
+
           .hydrafacial-hero-subtitle {
               font-size: 1.2rem;
           }
@@ -250,7 +250,7 @@
     .consultation-cta {
         display: flex; /* Always visible on mobile */
     }
-    
+
     .consultation-box {
         background: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(8px);
@@ -268,7 +268,7 @@
         font-weight: 500;
         white-space: nowrap;
     }
-    
+
     .consultation-btn {
         background: #1977cc;
         color: white;
@@ -284,7 +284,7 @@
         gap: 8px;
         box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
     }
-    
+
 }
     </style>
 @endsection
@@ -369,17 +369,17 @@
                     We are your premier destination for transformative hair and skin treatments. Recommended Provider for Private Medical Insurance.
                 </p>
                 <div class="section-hero__badges">
-                    <img src="assets/img/c1.png" alt="not found" width="50px">
-                    <img src="assets/img/c2.png" alt="not found">
+                    <img src="{{asset('assets/img/c1.png')}}" alt="not found" width="50px">
+                    <img src="{{asset('assets/img/c2.png')}}" alt="not found">
                 </div>
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
             <div class="section-hero__image-wrapper">
-                <img src="assets/img/heroImage.png" alt="Hero Image" class="section-hero__image">
+                <img src="{{asset('ssets/img/heroImage.png')}}" alt="Hero Image" class="section-hero__image">
             </div>
         </section>
-        
-       
+
+
 
         <!-- About Us Section -->
         <section id="about" class="about-section">
@@ -451,7 +451,7 @@
             <!-- Trustpilot Logo -->
             <div class="trustpilot-logo-container">
                 <h2>The Yorkshire Hair and Skin Solution difference</h2>
-                <img src="/assets/img/trustpilotimage.png" alt="trustpilot" class="trustpilot-logo" style="width: 290px">
+                <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="trustpilot" class="trustpilot-logo" style="width: 290px">
             </div>
 
             <!-- Features Grid -->
@@ -838,7 +838,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/hydrafdep.jpg" alt="" class="dpt_img">
+                                        <img src="{{asset('assets/img/hydrafdep.jpg')}}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -851,7 +851,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/lhrdep.jpg" alt="" class="dpt_img">
+                                        <img src="{{asset('assets/img/lhrdep.jpg')}}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -862,7 +862,7 @@
                                         <p>Our collagen induction therapy revitalises your skin naturally, stimulating your body's healing response for a fresher, more youthful complexion. </p> <p> Using advanced microneedling technology, we create controlled micro-channels in the skin to boost collagen and elastin production. This innovative treatment effectively reduces fine lines, acne scars, and uneven skin texture while enhancing product absorption for optimal results. Suitable for all skin types, our personalised approach ensures visible improvement with minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/mndep.jpg" alt="" class="dpt_img">
+                                        <img src="{{asset('assets/img/mndep.jpg')}}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -873,7 +873,7 @@
                                         <p>Revitalise thinning hair with our natural PRP hair restoration treatment. </p> <p> Our non-surgical solution uses your body's own healing factors to thicken existing hair and stimulate new growth. Perfect for men and women experiencing early hair loss, this innovative treatment helps restore density and confidence without medications or invasive procedures. Most patients see noticeable improvements in hair quality within just a few months. </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/hairlossdep.jpg" alt="" class="dpt_img">
+                                        <img src="{{asset('assets/img/hairlossdep.jpg')}}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -884,7 +884,7 @@
                                         <p>Experience the ultimate in natural skin rejuvenation with our signature PRP treatment. </p> <p> Our vampire facial combines microneedling with your own growth-rich plasma for unparalleled revitalization. This cutting-edge yet completely natural approach diminishes signs of aging, improves skin texture, and restores youthful radiance. The perfect solution for those seeking noticeable results without synthetic fillers or harsh procedures.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/prpdep.jpg" alt="" class="dpt_img">
+                                        <img src="{{asset('assets/img/prpdep.jpg')}}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -1084,64 +1084,64 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-1.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-1.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-2.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-2.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-3.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-3.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-4.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-4.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-5.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-5.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-6.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-6.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-7.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-7.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                            <a href="{{asset('assets/img/gallery/gallery-8.jpg')}}" class="glightbox" data-gallery="images-gallery">
+                                <img src="{{asset('assets/img/gallery/gallery-8.jpg')}}" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
@@ -1166,7 +1166,7 @@
 
                 <div class="trustpilot-container" style="display: flex; justify-content: center; margin-bottom: 40px;">
                     <div class="trustpilot-line">
-                        <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                        <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="trustpilot" width="320px">
                     </div>
                 </div>
                 <div class="trusted-men-grid" id="trustedMenGrid">
@@ -1243,7 +1243,7 @@
         </section>
         <!-- /Contact Section -->
 
-        <main class="main">        
+        <main class="main">
             <!-- Consultation CTA  -->
             <div class="consultation-cta">
                 <div class="consultation-box">
