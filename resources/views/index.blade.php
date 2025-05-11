@@ -37,19 +37,20 @@
 .section-hero__image {
     height: 233px;
     width: 366px;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
+    margin-right: 80px;
 }
 
 .section-hero__title {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
-    max-width: 430px;
+    max-width: 520px;
 }
 
 .section-hero__description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #f0f0f0;
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -373,7 +374,7 @@
                 </p>
                 <div class="section-hero__badges">
                     <img src="{{asset('assets/img/c1.png')}}" alt="not found" width="50px">
-                    <img src="{{asset('assets/img/c2.png')}}" alt="not found">
+                    <img src="{{asset('assets/img/c3.png')}}" alt="not found">
                 </div>
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
