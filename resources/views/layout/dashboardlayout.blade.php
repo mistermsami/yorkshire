@@ -9,7 +9,7 @@
     <meta name="description"
         content="Trusted clinic in Meanwood, Leeds for advanced hair transplant, PRP therapy, HydraFacial, laser hair removal, and skin rejuvenation. Book a free consultation today.">
     <meta name="keywords"
-        content="Hair Transplant Leeds, PRP Treatment Leeds, Laser Hair Removal Meanwood, HydraFacial Leeds, Skin Clinic Leeds, Weight Loss Treatments Leeds, Tanning Bed Leeds, Hair Restoration Leeds, Yorkshire Hair Clinic">
+        content="Hair Transplant Leeds, PRP Treatment Leeds, Laser Hair Removal, HydraFacial Leeds, Skin Clinic Leeds, Weight Loss Treatments Leeds, Tanning Bed Leeds, Hair Restoration Leeds, Yorkshire Hair Clinic">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Yorkshire | Dashboard">
