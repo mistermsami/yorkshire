@@ -7,7 +7,7 @@
     
     <title>@yield('title') - Yorkshire Hair & Skin Solution</title>
     <meta name="description" content="Yorkshire Hair & Skin Solution specializes in expert hair transplants, PRP therapy, and advanced skincare treatments. Book a consultation today!">
-    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant">
+    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant, Laser Hair removal, HydraFacial">
     <meta name="author" content="Yorkshire Hair & Skin Solution">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -151,10 +151,10 @@
                        
                     </div>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/yorkshire_skin"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575654459817"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/yorkshirehairandskinsolutions"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
