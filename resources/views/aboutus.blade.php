@@ -800,7 +800,7 @@
                         <a href="#appointment" class="btn btn-primary me-2" style="margin-bottom: 10px">
                             <i class="fas fa-calendar-check me-1"></i> Book Appointment
                         </a>
-                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary" style="margin-bottom: 5px">
+                        <a href="https://www.google.com/maps/dir//175+Dewsbury+Rd,+Leeds+LS11+5EG/@53.7780838,-1.626911,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48795d8629ebcab1:0xa6c506580cb68f94!2m2!1d-1.5445109!2d53.778112?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-primary" style="margin-bottom: 5px">
                             <i class="fas fa-directions me-1"></i> Get Directions
                         </a>
                     </div>

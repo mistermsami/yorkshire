@@ -14,7 +14,7 @@
 
     <style>
 .section-hero {
-    min-height: 90vh;
+    min-height: 78vh;
     background: linear-gradient(180deg, #3c3c3b, #0057b7);
     display: flex;
     align-items: center;
@@ -26,6 +26,7 @@
     flex: 1;
     transform: translateX(-100%);
     animation: slideInLeft 1s ease-out forwards;
+    margin-left: 10px
 }
 
 .section-hero__image-wrapper {
@@ -36,22 +37,24 @@
 .section-hero__image {
     height: 233px;
     width: 366px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+    margin-right: 80px;
 }
 
 .section-hero__title {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1rem; */
     line-height: 1.2;
-    max-width: 430px;
+    max-width: 622px;
 }
 
 .section-hero__description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #f0f0f0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
+    max-width: 500px;
 }
 
 .section-hero__cta {
@@ -364,13 +367,14 @@
 
         <section class="section-hero">
             <div class="section-hero__content">
-                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
+                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
                 <p class="section-hero__description">
-                    We are your premier destination for transformative hair and skin treatments. Recommended Provider for Private Medical Insurance.
+                    We are your premier destination for transformative hair and skin treatments. 
+                    {{-- Recommended Provider for Private Medical Insurance. --}}
                 </p>
                 <div class="section-hero__badges">
                     <img src="{{asset('assets/img/c1.png')}}" alt="not found" width="50px">
-                    <img src="{{asset('assets/img/c2.png')}}" alt="not found">
+                    <img src="{{asset('assets/img/c3.png')}}" alt="not found">
                 </div>
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
@@ -934,7 +938,8 @@
                                 <select name="department" id="department" class="form-select" required="">
                                     <option value="">Select Treatment</option>
                                     <option value="Hair Transplant">Hair Transplant</option>
-                                    <option value="Weight Loss Treatment">Weight Loss Treatment</option>
+                                    <option value="Face Treatment">Face Treatment</option>
+                                    <option value="Microneedling">Microneedling</option>
                                     <option value="Laser Hair Removal">Laser Hair Removal</option>
                                     <option value="HydraFacial">HydraFacial</option>
                                     <option value="Tanning Bed">Tanning Bed</option>

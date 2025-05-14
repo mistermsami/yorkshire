@@ -197,12 +197,13 @@
                                     <div class="col-md-8 form-group mt-3">
                                         <select name="department" id="department" class="form-select" required="">
                                             <option value="">Select Treatment</option>
-                                            <option value="Summer Skin Consultation">Summer Skin Consultation</option>
+                                            <option value="Hair Transplant">Hair Transplant</option>
+                                            <option value="Face Treatment">Face Treatment</option>
+                                            <option value="Microneedling">Microneedling</option>
+                                            <option value="Laser Hair Removal">Laser Hair Removal</option>
                                             <option value="HydraFacial">HydraFacial</option>
-                                            <option value="Chemical Peels">Chemical Peels</option>
-                                            <option value="Laser Treatments">Laser Treatments</option>
-                                            <option value="Acne Treatment">Acne Treatment</option>
-                                            <option value="Anti-Aging Treatment">Anti-Aging Treatment</option>
+                                            <option value="Tanning Bed">Tanning Bed</option>
+                                            <option value="PRP">PRP</option>
                                         </select>
                                     </div>
                                 </div>

@@ -7,7 +7,7 @@
 
     <title>@yield('title') - Yorkshire Hair & Skin Solution</title>
     <meta name="description" content="Yorkshire Hair & Skin Solution specializes in expert hair transplants, PRP therapy, and advanced skincare treatments. Book a consultation today!">
-    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant">
+    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant, Laser Hair removal, HydraFacial">
     <meta name="author" content="Yorkshire Hair & Skin Solution">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -151,19 +151,19 @@
 
                     </div>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/yorkshire_skin"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575654459817"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/yorkshirehairandskinsolutions"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Home</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/aboutus">About us</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Services</a></li>
                         <li><a href="#">Terms of service</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
@@ -172,12 +172,12 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Hair Transplant</a></li>
-                        <li><a href="#">Weight Loss Treatments</a></li>
-                        <li><a href="#">Laser Hair Removal</a></li>
-                        <li><a href="#">PRP</a></li>
-                        <li><a href="#">HydraFacial</a></li>
-                        <li><a href="#">Tanning Bed</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Transplant</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/laser-hair-removalhttps://yorkshirehairandskinsolutions.co.uk/laser-hair-removal">Laser Hair Removal</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">PRP</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hydra-ficial">HydraFacial</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li>
                     </ul>
                 </div>
 

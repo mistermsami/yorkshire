@@ -1530,7 +1530,7 @@
                         <h2 class="text-white mb-4">Ready for Laser Treatment?</h2>
                         <p class="lead text-white mb-5">Book your Laser treatment today and experience the difference
                         </p> 
-                        @livewire('appointmentform.LaserAppointmentForm')
+                        @livewire('AppointmentForm.LaserAppointmentForm')
                     </div>
                 </div>
             </div>

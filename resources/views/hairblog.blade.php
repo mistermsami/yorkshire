@@ -223,7 +223,8 @@
                                         <select name="department" id="department" class="form-select" required="">
                                             <option value="">Select Treatment</option>
                                             <option value="Hair Transplant">Hair Transplant</option>
-                                            <option value="Weight Loss Treatment">Weight Loss Treatment</option>
+                                            <option value="Face Treatment">Face Treatment</option>
+                                            <option value="Microneedling">Microneedling</option>
                                             <option value="Laser Hair Removal">Laser Hair Removal</option>
                                             <option value="HydraFacial">HydraFacial</option>
                                             <option value="Tanning Bed">Tanning Bed</option>
