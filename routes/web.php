@@ -57,7 +57,21 @@ Route::get('galleryview/', function () {
 
 
 // Dashboard Routes
-Route::get('/admin-dashboard', [DashboardController::class,'index'])->name('admin-dashboard');
+
+//signin and signup routes
+Route::get('signup', [UserController::class, 'signup'])->name('signup');
+Route::get('signup', [UserController::class, 'signin'])->name('login');
+// Route::get('signup', [UserController::class, 'signup'])->name('signup');
+Route::post('/register', [UserController::class, 'register'])->name('register.post');
+Route::get('signin', [UserController::class, 'signin'])->name('signin');
+Route::post('/userSigin', [UserController::class, 'userSignin'])->name('sigin.post');
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+
+Route::middleware(['auth'])->group(function () {
+Route::get('/admin-dashboard', [DashboardController::class, 'index'])->name('admin-dashboard');
+// You can add more routes here that require authentication
+// Route::get('/admin-settings', [SettingsController::class, 'index'])->name('admin-settings');
+});
 
 
 
