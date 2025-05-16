@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HydraController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -69,8 +70,11 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 Route::middleware(['auth'])->group(function () {
 Route::get('/admin-dashboard', [DashboardController::class, 'index'])->name('admin-dashboard');
-// You can add more routes here that require authentication
-// Route::get('/admin-settings', [SettingsController::class, 'index'])->name('admin-settings');
+
+// Hydera
+Route::get('/hydraAppointments', [HydraController::class, 'index'])->name('hydra.index');
+Route::get('/hydraAppointments/edit{id}', [HydraController::class, 'index'])->name('hydra.edit');
+Route::get('/hydraAppointments/show/{id}', [HydraController::class, 'index'])->name('hydra.show');
 });
 
 
