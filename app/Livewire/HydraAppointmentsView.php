@@ -11,15 +11,11 @@ class HydraAppointmentsView extends Component
     use WithPagination;
 
     public $setLimit = 10;
-    public $namefilter;
-    public $emailfilter;
-    public $contactfilter;
-    public $typefilter;
-    public $datefilter;
+    public $namefilter, $emailfilter, $contactfilter, $typefilter, $datefilter;
+    public $deleteId;
 
-    protected $paginationTheme = 'bootstrap'; // For Bootstrap styling
+    protected $paginationTheme = 'bootstrap';
 
-    // Reset pagination on filter update
     public function updating($property)
     {
         if (in_array($property, ['namefilter', 'emailfilter', 'contactfilter', 'typefilter', 'datefilter', 'setLimit'])) {
@@ -29,13 +25,28 @@ class HydraAppointmentsView extends Component
 
     public function clearFilters()
     {
-        $this->reset([
-            'namefilter',
-            'emailfilter',
-            'contactfilter',
-            'typefilter',
-            'datefilter',
-        ]);
+        $this->reset(['namefilter', 'emailfilter', 'contactfilter', 'typefilter', 'datefilter', 'setLimit']);
+    }
+
+    public function confirmDelete($id)
+    {
+        $this->deleteId = $id;
+        $this->dispatch('showDeleteConfirmation');
+    }
+
+    public function delete()
+    {
+        try {
+            Hydra_Appointment::findOrFail($this->deleteId)->delete();
+            session()->flash('success', 'Appointment deleted successfully.');
+        } catch (\Exception $e) {
+            session()->flash('error', 'Error deleting appointment.');
+        }
+
+        $this->deleteId = null;
+
+        // Close modal after delete
+        $this->dispatch('closeDeleteModal');
     }
 
     public function render()

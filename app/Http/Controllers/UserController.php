@@ -41,21 +41,28 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:7|confirmed',
+            'authCode' => 'required',
         ]);
+        if ($request->authCode == 'shireAuth#'){
+            try {
+                $user = new User();
+                $user->name = $request->name;
+                $user->email = $request->email;
+                $user->password = $request->password; // hash password
+                $user->role = 'admin';
+                $user->save();
 
-        try {
-            $user = new User();
-            $user->name = $request->name;
-            $user->email = $request->email;
-            $user->password = $request->password; // hash password
-            $user->role = 'admin';
-            $user->save();
-
-            return redirect()->route('signin')->with('success', 'Registration successful. Please sign in.');
-        } catch (\Exception $e) {
+                return redirect()->route('login')->with('success', 'Registration successful. Please sign in.');
+            } catch (\Exception $e) {
+                return redirect()
+                    ->back()
+                    ->withErrors(['error' => 'Registration failed. Please try again.']);
+            }
+        }
+        else{
             return redirect()
                 ->back()
-                ->withErrors(['error' => 'Registration failed. Please try again.']);
+                ->withErrors(['error' => 'Invalid authentication code.']);
         }
 
         // return redirect()->route('signin')->with('success', 'Registration successful. Please sign in.');
@@ -66,6 +73,6 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('signin')->with('success', 'Logged out successfully.');
+        return redirect()->route('login')->with('success', 'Logged out successfully.');
     }
 }

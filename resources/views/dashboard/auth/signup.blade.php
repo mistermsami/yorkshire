@@ -36,61 +36,73 @@
             <div class="card-body register-card-body">
                 <p class="register-box-msg">Register a new membership</p>
                 <form action="{{ route('register.post') }}" method="POST"> @csrf
-                    <{{-- Show success message --}}
-                        @if (session('success')) <div class="alert alert-success">{{ session('success') }}</div> @endif
-                        {{-- Show error messages --}}
-                        @if ($errors->any()) <div class="alert alert-danger">
-        <ul class="mb-0">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div> @endif
-                        <div class="input-group mb-1">
+                    {{-- Show success message --}}
+                    @if (session('success'))
+                        <div class="alert alert-success">{{ session('success') }}</div>
+                    @endif
+                    {{-- Show error messages --}}
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <div class="input-group mb-1">
                         <div class="form-floating">
                             <input id="registerFullName" name="name" type="text" class="form-control"
                                 placeholder="" required>
                             <label for="registerFullName">Full Name</label>
                         </div>
                         <div class="input-group-text"> <span class="bi bi-person"></span> </div>
-            </div>
+                    </div>
 
-            <div class="input-group mb-1">
-                <div class="form-floating">
-                    <input id="registerEmail" name="email" type="email" class="form-control" placeholder=""
-                        required>
-                    <label for="registerEmail">Email</label>
-                </div>
-                <div class="input-group-text"> <span class="bi bi-envelope"></span> </div>
-            </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating">
+                            <input id="registerEmail" name="email" type="email" class="form-control" placeholder=""
+                                required>
+                            <label for="registerEmail">Email</label>
+                        </div>
+                        <div class="input-group-text"> <span class="bi bi-envelope"></span> </div>
+                    </div>
 
-            <div class="input-group mb-1">
-                <div class="form-floating">
-                    <input id="registerPassword" name="password" type="password" class="form-control" placeholder=""
-                        required>
-                    <label for="registerPassword">Password</label>
-                </div>
-                <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
-            </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating">
+                            <input id="registerPassword" name="password" type="password" class="form-control"
+                                placeholder="" required>
+                            <label for="registerPassword">Password</label>
+                        </div>
+                        <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
+                    </div>
 
-            <div class="input-group mb-1">
-                <div class="form-floating">
-                    <input id="registerPasswordConfirmation" name="password_confirmation" type="password"
-                        class="form-control" placeholder="" required>
-                    <label for="registerPasswordConfirmation">Confirm Password</label>
-                </div>
-                <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
-            </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating">
+                            <input id="registerPasswordConfirmation" name="password_confirmation" type="password"
+                                class="form-control" placeholder="" required>
+                            <label for="registerPasswordConfirmation">Confirm Password</label>
+                        </div>
+                        <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
+                    </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating">
+                            <input id="code" name="authCode" type="password"
+                                class="form-control" placeholder="" required>
+                            <label for="registerPasswordConfirmation">Authentication Code</label>
+                        </div>
+                        <div class="input-group-text"> <span class="bi bi-lock-fill"></span> </div>
+                    </div>
 
-            <div class="row mt-3">
-                <div class="col-12 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </div>
-            </div>
+                    <div class="row mt-3">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </div>
+                    </div>
 
-            </form>
-        </div> <!-- /.register-card-body -->
-    </div>
+                </form>
+            </div> <!-- /.register-card-body -->
+        </div>
     </div> <!-- /.register-box --> <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js"
         integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script>

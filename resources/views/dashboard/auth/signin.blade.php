@@ -34,7 +34,6 @@
                     </h1>
                 </a> </div>
             <div class="card-body register-card-body">
-                <p class="register-box-msg">Register a new membership</p>
                 <form action="{{ route('sigin.post') }}" method="POST">
                     @csrf
                     {{-- Show success message --}}
@@ -73,7 +72,7 @@
 
                     <div class="row mt-3">
                         <div class="col-12 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
                         </div>
                     </div>
 
