@@ -17,4 +17,9 @@ class HydraController extends Controller
         // dd($appointment);
         return view('dashboard.hydra.detail', compact('appointment'));
     }
+    public function editAppointmentDetail($id){
+        $appointment = Hydra_Appointment::findOrFail($id);
+        // dd($appointment);
+        return view('dashboard.hydra.edit', compact('appointment'));
+    }
 }

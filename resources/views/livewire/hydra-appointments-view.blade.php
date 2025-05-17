@@ -76,7 +76,7 @@
                             <td>{{ $appointment->time }}</td>
                             <td>
                                 <a target="_blank" href="{{ route('hydra.detail', $appointment->id)}}" class="btn btn-info btn-sm">View</a>
-                                <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                                <a target="_blank" href="{{ route('hydra.edit', $appointment->id)}}" class="btn btn-warning btn-sm">Edit</a>
                                 {{-- <button wire:click="delete({{ $appointment->id }})" class="btn btn-danger btn-sm">Delete</button> --}}
                                 <button class="btn btn-danger btn-sm" wire:click="confirmDelete({{ $appointment->id }})">Delete</button>
                         </tr>

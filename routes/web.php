@@ -76,5 +76,5 @@ Route::middleware(['auth'])->group(function () {
     // Hydera
     Route::get('/hydraAppointments', [HydraController::class, 'index'])->name('hydra.index');
     Route::get('/hydraAppointment/detail/{id}', [HydraController::class, 'appointmentDetail'])->name('hydra.detail');
-    Route::get('/hydraAppointments/edit{id}', [HydraController::class, 'index'])->name('hydra.edit');
+    Route::get('/hydraAppointment/edit/{id}', [HydraController::class, 'editAppointmentDetail'])->name('hydra.edit');
 });
