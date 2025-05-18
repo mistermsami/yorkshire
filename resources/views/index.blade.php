@@ -1231,7 +1231,7 @@
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p>info@yorkshirehairandskinsolution.com</p>
+                                <p>info@yorkshirehairandskinsolution.co.uk</p>
                             </div>
                         </div><!-- End Info Item -->
 

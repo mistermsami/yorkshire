@@ -147,7 +147,7 @@
                             LS11 5EG</p>
 
                         <p class="mt-3"><strong>Phone:</strong> <span>07570957502</span></p>
-                        <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.com</span></p>
+                        <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.co.uk</span></p>
 
                     </div>
                     <div class="social-links d-flex mt-4">
