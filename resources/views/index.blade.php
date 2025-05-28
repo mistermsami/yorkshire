@@ -110,7 +110,9 @@
         padding: 0 5%;
         min-height: 80vh;
     }
-
+    ..section-hero__content{
+        margin-left: 0px;
+    }
     .section-hero__title {
         font-size: 2.2rem;
         max-width: 350px;
@@ -125,6 +127,7 @@
         width: 300px;
         height: auto;
         margin-bottom: 50px;
+        margin-right: 0px;
     }
 
     .section-hero__cta {
