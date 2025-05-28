@@ -703,7 +703,7 @@
                             <br>
                             <h5>Want to contact us directly?</h5>
                             <p><strong>Leeds: </strong>07570957502</p>
-                            <p><strong>Email: </strong>info@yorkshirehairandskinsolution.com</p>
+                            <p><strong>Email: </strong>info@yorkshirehairandskinsolution.co.uk</p>
                         </div>
                     </div>
                     <div class="col-lg-6">

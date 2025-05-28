@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HydraController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -56,8 +57,24 @@ Route::get('galleryview/', function () {
 })->name('galleryview');
 
 
+
 // Dashboard Routes
-Route::get('/admin-dashboard', [DashboardController::class,'index'])->name('admin-dashboard');
 
+//signin and signup routes
+// Route::get('signup', [UserController::class, 'signup'])->name('signup');
+// Route::get('login', [UserController::class, 'signin'])->name('login');
+Route::get('signup', [UserController::class, 'signup'])->name('signup');
+Route::post('/register', [UserController::class, 'register'])->name('register.post');
+Route::get('signin', [UserController::class, 'signin'])->name('login');
+// Route::get('signin', [UserController::class, 'signin'])->name('signin');
+Route::post('/userSigin', [UserController::class, 'userSignin'])->name('sigin.post');
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin-dashboard', [DashboardController::class, 'index'])->name('admin-dashboard');
 
+    // Hydera
+    Route::get('/hydraAppointments', [HydraController::class, 'index'])->name('hydra.index');
+    Route::get('/hydraAppointment/detail/{id}', [HydraController::class, 'appointmentDetail'])->name('hydra.detail');
+    Route::get('/hydraAppointment/edit/{id}', [HydraController::class, 'editAppointmentDetail'])->name('hydra.edit');
+});

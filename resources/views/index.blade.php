@@ -44,9 +44,9 @@
 .section-hero__title {
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     line-height: 1.2;
-    max-width: 520px;
+    max-width: 622px;
 }
 
 .section-hero__description {
@@ -370,7 +370,7 @@
 
         <section class="section-hero">
             <div class="section-hero__content">
-                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h1>
+                <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
                 <p class="section-hero__description">
                     We are your premier destination for transformative hair and skin treatments. 
                     {{-- Recommended Provider for Private Medical Insurance. --}}
@@ -941,7 +941,8 @@
                                 <select name="department" id="department" class="form-select" required="">
                                     <option value="">Select Treatment</option>
                                     <option value="Hair Transplant">Hair Transplant</option>
-                                    <option value="Weight Loss Treatment">Weight Loss Treatment</option>
+                                    <option value="Face Treatment">Face Treatment</option>
+                                    <option value="Microneedling">Microneedling</option>
                                     <option value="Laser Hair Removal">Laser Hair Removal</option>
                                     <option value="HydraFacial">HydraFacial</option>
                                     <option value="Tanning Bed">Tanning Bed</option>
@@ -1233,7 +1234,7 @@
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p>info@yorkshirehairandskinsolution.com</p>
+                                <p>info@yorkshirehairandskinsolution.co.uk</p>
                             </div>
                         </div><!-- End Info Item -->
 

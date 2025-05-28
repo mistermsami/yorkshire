@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
+
     <title>@yield('title') - Yorkshire Hair & Skin Solution</title>
     <meta name="description" content="Yorkshire Hair & Skin Solution specializes in expert hair transplants, PRP therapy, and advanced skincare treatments. Book a consultation today!">
-    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant">
+    <meta name="keywords" content="Hair Transplant, PRP Therapy, Skin Care, Yorkshire, Hair Loss Treatment, FUE Transplant, Laser Hair removal, HydraFacial">
     <meta name="author" content="Yorkshire Hair & Skin Solution">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
     <meta property="og:description" content="We offer top-tier hair transplants, PRP therapy, and skin treatments in Yorkshire. Get a free consultation now!">
@@ -19,17 +19,17 @@
     <meta property="og:url" content="https://yorkshirehairandskinsolutions.co.uk/">
     <meta property="og:site_name" content="Yorkshire Hair & Skin Solution">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="Yorkshire Hair & Skin Solution - Hair & Skin Experts">
     <meta name="twitter:description" content="Transform your hair & skin with our expert treatments in Yorkshire. Book a consultation now!">
     <meta name="twitter:image" content="https://yorkshirehairandskinsolutions.co.uk/path-to-image.jpg">
     <meta name="twitter:url" content="https://yorkshirehairandskinsolutions.co.uk/">
     <meta name="twitter:card" content="summary_large_image">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://yorkshirehairandskinsolutions.co.uk/">
-    
+
 
 
     <!-- Favicons -->
@@ -59,7 +59,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
     @livewireStyles --}}
-    
+
     @livewireStyles
     @yield('head')
     <style>
@@ -81,9 +81,9 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>07570957502</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/yorkshire_skin" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61575654459817" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/yorkshirehairandskinsolutions" class="instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
@@ -95,7 +95,7 @@
             <div class="container position-relative d-flex align-items-center justify-content-between">
                 <a href="/" class="logo d-flex align-items-center me-auto">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
-                    <img src="assets/img/yorkshirelogo_2.png" alt="" style="max-height: 50px !important;">
+                    <img src="{{ asset('assets/img/yorkshirelogo_2.png') }}" alt="" style="max-height: 50px !important;">
                     {{-- <img src="assets/img/yorkshirelogo2.png" alt="" style="max-height: 50px !important;"> --}}
                     {{-- <h1 class="sitename">Medilab</h1> --}}
                 </a>
@@ -147,23 +147,23 @@
                             LS11 5EG</p>
 
                         <p class="mt-3"><strong>Phone:</strong> <span>07570957502</span></p>
-                        <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.com</span></p>
-                       
+                        <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.co.uk</span></p>
+
                     </div>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/yorkshire_skin"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575654459817"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/yorkshirehairandskinsolutions"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Home</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/aboutus">About us</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Services</a></li>
                         <li><a href="#">Terms of service</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
@@ -172,12 +172,12 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Hair Transplant</a></li>
-                        <li><a href="#">Weight Loss Treatments</a></li>
-                        <li><a href="#">Laser Hair Removal</a></li>
-                        <li><a href="#">PRP</a></li>
-                        <li><a href="#">HydraFacial</a></li>
-                        <li><a href="#">Tanning Bed</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Transplant</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/laser-hair-removalhttps://yorkshirehairandskinsolutions.co.uk/laser-hair-removal">Laser Hair Removal</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">PRP</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hydra-ficial">HydraFacial</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li>
                     </ul>
                 </div>
 
