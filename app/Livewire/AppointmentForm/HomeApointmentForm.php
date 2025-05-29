@@ -1,7 +1,7 @@
 <?php
 namespace App\Livewire\AppointmentForm;
-use Livewire\Component; 
-use App\Models\AllAppointment;
+use Livewire\Component;  
+use App\Models\ALLAppointment;
 
 class HomeApointmentForm extends Component
 {
