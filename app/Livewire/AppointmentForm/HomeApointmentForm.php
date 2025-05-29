@@ -16,9 +16,9 @@ class HomeApointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        // AllAppointment::create(
-        //     attributes: $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'message'])
-        // );
+        AllAppointment::create(
+            attributes: $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'message'])
+        );
         // Reset form fields after submission
         $this->reset();
 
