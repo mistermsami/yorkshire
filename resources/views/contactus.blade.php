@@ -148,7 +148,7 @@
 
                     <div class="info-item d-flex">
                         <i class="bi bi-envelope flex-shrink-0"></i>
-                        <div>
+                        <div> 
                             <h3>Email Us</h3>
                             <p>info@yorkshirehairandskinsolution.co.uk</p>
                         </div>
