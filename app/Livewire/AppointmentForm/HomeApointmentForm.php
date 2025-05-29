@@ -4,7 +4,7 @@ namespace App\Livewire\AppointmentForm;
 
 use App\Models\AllAppointment;
 
-use Livewire\Component;
+use Livewire\Component; 
 
 class HomeApointmentForm extends Component
 {
@@ -20,7 +20,7 @@ class HomeApointmentForm extends Component
         // dd($this->all());
         // Logic to store an appointment form 
         AllAppointment::create(
-            $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'message'])
+            attributes: $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'message'])
         );
         // Reset form fields after submission
         $this->reset();
