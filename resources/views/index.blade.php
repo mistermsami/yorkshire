@@ -1119,7 +1119,7 @@
 
             <div class="container">
                 <div class="trusted-men-header">
-                    <h2>More than <span class="trusted-men-counter">100,000</span> men<br>trust our treatment plans</h2>
+                    <h2>More than <span class="trusted-men-counter">100,000</span> people<br>trust our treatment plans</h2>
                 </div>
 
 
