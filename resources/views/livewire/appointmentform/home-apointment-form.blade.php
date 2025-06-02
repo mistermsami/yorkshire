@@ -1,0 +1,54 @@
+<div>
+    <div class="container d-flex justify-content-center"> 
+        <div class="col-md-10"> 
+            @if (session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            <form wire:submit.prevent="save" class="bg-white p-4 rounded shadow" action="javascript:void(0);">
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <input type="text" name="name" wire:model="name" class="form-control" id="name"
+                            placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" wire:model="email" name="email" id="email"
+                            placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <input type="tel" class="form-control" wire:model="contact" name="contact" id="contact"
+                            placeholder="Your Phone" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 form-group mt-3">
+                        <input type="date" name="date" wire:model="date" class="form-control"
+                            id="date" placeholder="Appointment Date" required>
+                    </div>
+                    <div class="col-md-8 form-group mt-3">
+                        <select name="appointment_type" required id="appointment_type" wire:model="appointment_type"
+                            class="form-select" required="">
+                            <option value="">Select Treatment</option>
+                            <option value="Hair Transplant">Hair Transplant</option>
+                            <option value="Face Treatment">Face Treatment</option>
+                            <option value="Microneedling">Microneedling</option>
+                            <option value="Laser Hair Removal">Laser Hair Removal</option>
+                            <option value="HydraFacial">HydraFacial</option>
+                            <option value="Tanning Bed">Tanning Bed</option>
+                            <option value="PRP">PRP</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <textarea class="form-control" wire:model="message" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                </div>
+                <div class="text-center"><button class="btn btn-primary mt-3" type="submit">Make an Appointment
+                        <i class="fas fa-calendar-check me-3"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -936,63 +936,8 @@
                     <div class="col-lg-8 text-center" id="contact">
                         <h2 class="text-white mb-4">Ready for Radiant Skin?</h2>
                         <p class="lead text-white mb-5">Book your HydraFacial treatment today and experience the difference
-                        </p>
-                        {{-- <div class="row justify-content-center">
-                            <div class="col-md-8">
-                                <form class="bg-white p-4 rounded shadow">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <input type="text" class="form-control" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <input type="email" class="form-control" placeholder="Your Email" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <input type="number" class="form-control" placeholder="Phone number" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <input type="date" class="form-control" placeholder="mm/dd/yyy"
-                                                step="" required id="hourOnly">
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <select id="customTime" class="form-control" required>
-                                                <option value="">Select Time</option>
-                                                <option value="10:00">10:00</option> 
-                                                <option value="11:00">11:00</option> 
-                                                <option value="12:00">12:00</option> 
-                                                <option value="13:00">13:00</option> 
-                                                <option value="14:00">14:00</option> 
-                                                <option value="15:00">15:00</option>    
-                                                <option value="16:00">16:00</option>
-                                                <option value="17:00">17:00</option>
-                                                <option value="18:00">18:00</option>
-                                                <option value="19:00">19:00</option>
-                                            </select>
-                                        </div> 
-                                        <div class="col-md-6 mb-3">
-                                            <select class="form-select">
-                                                <option selected>Select Treatment</option>
-                                                <option>Basic HydraFacial ($149)</option>
-                                                <option>Deluxe HydraFacial ($199)</option>
-                                                <option>Platinum HydraFacial ($249)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <select class="form-select" required>
-                                            <option value="" selected disabled>Select Treatment</option>
-                                            <option>Basic HydraFacial ($149)</option>
-                                            <option>Deluxe HydraFacial ($199)</option>
-                                            <option>Platinum HydraFacial ($249)</option>
-                                        </select>
-                                    </div>
-                                    <button type="submit" class="btn hydrafacial-btn-primary w-100">Request
-                                        Appointment</button>
-                                </form>
-                            </div>
-                        </div> --}}
-                        @livewire('AppointmentForm.AppointmentForm')
-                        
+                        </p> 
+                        @livewire('AppointmentForm.AppointmentForm') 
                     </div>
                 </div>
             </div>
