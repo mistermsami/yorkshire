@@ -111,6 +111,7 @@
                                 <li><a href="face-treatment">Face Treatments</a></li>
                                 <li><a href="laser-hair-removal">Laser Hair Removal</a></li>
                                 <li><a href="hydra-ficial">HydraFacial</a></li>
+                                <li><a href="teethWhite">Teeth Whitening</a></li>
                                 <li><a href="microneedling">Microneedling</a></li>
                                 <li><a href="prp">PRP</a></li>
                             </ul>
