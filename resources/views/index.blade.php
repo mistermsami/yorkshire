@@ -297,77 +297,6 @@
 
 @section('maincontent')
     <main class="main">
-
-        <!-- Hero Section -->
-        {{-- <section id="hero" class="hero section light-background">
-
-            <img src="assets/img/hero1.2.jpg" alt="" data-aos="fade-in">
-
-            <div class="container position-relative">
-                <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                    <h2 style="color: #0d5a9e;">YORKSHIRE'S TRUSTED HAIR & SKIN SPECIALISTS</h2>
-                    <p>We are your premier destination for transformative hair and skin treatments.</p>
-
-                </div><!-- End Welcome -->
-
-                <div class="content row gy-4">
-                    <div class="col-lg-4 d-flex align-items-stretch text-center">
-                        <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                            <h3>Why Choose Our Clinic?</h3>
-                            <p>
-                                We offer expert care in hair transplants, PRP, HydraFacial, laser hair removal, and teeth
-                                whitening — all delivered by a skilled team focused on safety, innovation, and personalized
-                                care. Our experienced team ensures that every treatment is carried out to the highest
-                                standards, giving you the confidence you deserve
-                            </p>
-                            <div>
-                                <a href="{{ route('aboutus') }}" class="more-btn btn-primary">
-                                    <span>Discover Our Approach</span>
-                                    <i class="bi bi-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- End Why Box -->
-
-                    <div class="col-lg-8 d-flex align-items-stretch">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="row gy-4">
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                                        <i class="bi bi-shield-check"></i>
-                                        <h4>Medical-Grade Treatments</h4>
-                                        <p>Advanced procedures performed by licensed professionals in a clinical setting</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                                        <i class="bi bi-person-heart"></i>
-                                        <h4>Personalized Care</h4>
-                                        <p>Customized treatment plans designed for your specific skin concerns and goals</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                                        <i class="bi bi-lightning-charge"></i>
-                                        <h4>Cutting-Edge Technology</h4>
-                                        <p>State-of-the-art equipment for safe, effective, and comfortable treatments</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Content-->
-
-            </div>
-
-        </section> --}}
-        <!-- /Hero Section -->
-
-
         <section class="section-hero">
             <div class="section-hero__content">
                 <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
@@ -397,7 +326,7 @@
                     <div class="col-md-6 d-flex">
                         <div class="about-image w-100 h-100">
                             {{-- <img src="./assets/img/about.jpg" alt="About Us" --}}
-                            <img src="https://images.pexels.com/photos/5069508/pexels-photo-5069508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="About Us"
+                            <img src="assets/img/aboutpic.webp" alt="About Us"
                                 class="img-fluid rounded shadow h-100 w-100 object-fit-cover">
                             <div class="image-overlay"></div>
                         </div>
@@ -548,12 +477,10 @@
                             <div class="icon">
                                 <i class="fas fa-notes-medical"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Hair Loss</h3>
+                            <a href="{{ route('teethWhite') }}" class="stretched-link">
+                              <h3>Teeth Whitening</h3>
                             </a>
-                            <p>Achieve your fitness goals with our weight loss programs. Designed to fit your lifestyle, our
-                                treatments combine expert guidance with advanced methods to help you shed those extra
-                                pounds.</p>
+                            <p>Brighten your smile with our professional teeth whitening treatments. Using safe and effective techniques, we help remove stains and discoloration, giving you a whiter, more confident smile.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -788,13 +715,16 @@
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hydrafacial</a>
                             </li> --}}
                             <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hair Transplant</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Microneedling</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Hair Loss</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Teeth Whitening</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">PRP</a>
@@ -806,22 +736,7 @@
                     </div>
                     <div class="col-lg-9 mt-4 mt-lg-0">
                         <div class="tab-content">
-                            {{-- <div class="tab-pane active show" id="departments-tab-1">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Hair Restoration Department</h3>
-                                        <p class="fst-italic">
-                                            Dedicated to hair transplant procedures and overall scalp health, this
-                                            department combines advanced techniques with personalized care to address hair
-                                            loss concerns effectively. We focus on delivering natural-looking hairlines that
-                                            restore confidence and enhance your appearance.
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/hairresdep.jpg" alt="" class="dpt_img">
-                                    </div>
-                                </div>
-                            </div> --}}
+                            
                             {{-- <div class="tab-pane" id="departments-tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
@@ -846,6 +761,22 @@
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="{{asset('assets/img/hydrafdep.jpg')}}" alt="" class="dpt_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="departments-tab-3">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Hair Transplant Department</h3>
+                                        <p class="fst-italic">
+                                            Dedicated to hair transplant procedures and overall scalp health, this
+                                            department combines advanced techniques with personalized care to address hair
+                                            loss concerns effectively. We focus on delivering natural-looking hairlines that
+                                            restore confidence and enhance your appearance.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/hairresdep.jpg" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -876,8 +807,9 @@
                             <div class="tab-pane" id="departments-tab-7">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3 id="dephead">Hair Loss</h3>
-                                        <p>Revitalise thinning hair with our natural PRP hair restoration treatment. </p> <p> Our non-surgical solution uses your body's own healing factors to thicken existing hair and stimulate new growth. Perfect for men and women experiencing early hair loss, this innovative treatment helps restore density and confidence without medications or invasive procedures. Most patients see noticeable improvements in hair quality within just a few months. </p>
+                                        <h3 id="dephead">Teeth Whitening</h3>
+                                        <p>Brighten your smile with our professional teeth whitening treatment.</p>  
+                                        <p>Our safe and effective solution removes stubborn stains and discoloration, giving you a whiter, more radiant smile in just one session. Perfect for anyone looking to enhance their appearance, this quick and pain-free treatment delivers instant results without sensitivity or damage to enamel. Most patients see a noticeable difference immediately, with teeth appearing up to several shades lighter.</p>  
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="{{asset('assets/img/hairlossdep.jpg')}}" alt="" class="dpt_img">
@@ -1122,7 +1054,7 @@
 
             <div class="container">
                 <div class="trusted-men-header">
-                    <h2>More than <span class="trusted-men-counter">100,000</span> men<br>trust our treatment plans</h2>
+                    <h2>More than <span class="trusted-men-counter">100,000</span> clients<br>trust our treatment plans</h2>
                 </div>
 
 

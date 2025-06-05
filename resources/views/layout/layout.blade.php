@@ -148,13 +148,14 @@
                             LS11 5EG</p>
 
                         <p class="mt-3"><strong>Phone:</strong> <span>07570957502</span></p>
+                        <p ><strong>Tel Number:</strong> <span>0113 338 2716</span></p>
                         <p><strong>Email:</strong> <span>info@yorkshirehairandskinsolution.co.uk</span></p>
 
                     </div>
                     <div class="social-links d-flex mt-4">
-                        <a href="https://x.com/yorkshire_skin"><i class="bi bi-twitter-x"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61575654459817"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/yorkshirehairandskinsolutions"><i class="bi bi-instagram"></i></a>
+                        <a href="https://x.com/yorkshire_skin" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575654459817" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/yorkshirehairandskinsolutions" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
@@ -165,6 +166,7 @@
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Home</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/aboutus">About us</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/">Services</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/contactus">Contact Us</a></li>
                         <li><a href="#">Terms of service</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
@@ -179,6 +181,7 @@
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/hydra-ficial">HydraFacial</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li>
+                           <li><a href="https://yorkshirehairandskinsolutions.co.uk/teethWhite">Teeth Whitening</a></li>
                     </ul>
                 </div>
 
@@ -187,9 +190,9 @@
                     <h4>Support</h4>
                     <ul>
                         <li><a href="#"><i class="fas fa-headset me-2"></i>Customer Care</a></li>
-                        <li><a href="#"><i class="fas fa-truck me-2"></i>Track Your Order</a></li>
-                        <li><a href="#"><i class="fas fa-undo me-2"></i>Returns & Refunds</a></li>
-                        <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Shipping Information</a></li>
+                        <li><a href="#">  <i class="fas fa-certificate me-2"></i></i>Counseling</a></li>
+                        <li><a href="#"><i class="fas fa-user-md me-2"></i>FDA approved</a></li>
+                        <li><a href="#"><i class="fas fa-headset me-2"></i></i>Medical support</a></li>
                         <li><a href="#"><i class="fas fa-envelope me-2"></i>Contact Support</a></li>
                     </ul>
                 </div>

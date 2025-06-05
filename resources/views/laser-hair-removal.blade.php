@@ -368,6 +368,73 @@
             color: #f1f7f7;
         }
 
+         .hydrafacial-cta-section {
+            background: linear-gradient(to right, #3577cf, #021580e8);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hydrafacial-cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: white;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+
+        .hydrafacial-floating-bubbles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .hydrafacial-bubble {
+            position: absolute;
+            bottom: -100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: hydrafacial-floating 15s infinite ease-in;
+        }
+
+        @keyframes hydrafacial-floating {
+            0% {
+                bottom: -100px;
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(100px);
+            }
+
+            100% {
+                bottom: 100%;
+                transform: translateX(-100px);
+            }
+        }
+        .hydrafacial-btn-primary {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .hydrafacial-btn-primary:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+        }
         @media only screen and (max-width: 1399px) and (min-width: 769px) {
             .afterresult .card {
                 height: 280px !important;
@@ -524,7 +591,7 @@
                                                         <div class="col-md-6 mt-2">6 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$99/session</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -549,7 +616,7 @@
                                                         <div class="col-md-6 mt-2">12 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Package Price:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$499 (save 15%)</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;35 (save 15%)</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -574,7 +641,7 @@
                                                         <div class="col-md-6 mt-2">8 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$129/session</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -606,7 +673,7 @@
                                                         <div class="col-md-6 mt-2">10 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Package Deal:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$699 (save 20%)</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;35/session</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -631,7 +698,7 @@
                                                         <div class="col-md-6 mt-2">12 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$149/session</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -656,7 +723,7 @@
                                                         <div class="col-md-6 mt-2">4 Weeks</div>
                                                         
                                                         <div class="col-md-6 mt-2"><b>Quick Fix:</b></div>
-                                                        <div class="col-md-6 mt-2 text-primary">$299 (all-in)</div>
+                                                        <div class="col-md-6 mt-2 text-primary">&pound;35/session</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -762,109 +829,261 @@
             </div><!-- End Section Title -->
 
             <div class="container">
-                <div class="text-center mb-4">
+                {{-- <div class="text-center mb-4">
                     <button class="btn btn pricingbtn mx-2" onclick="showCards('female')">Plans For Fmale</button>
                     <button class="btn btn pricingbtn mx-2" onclick="showCards('male')">Plans For Male</button>
-                </div>
+                </div> --}}
 
                 <div id="female-cards">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4">
-                            <div class="card text-center" style="border: none">
-                                <div class="card-header py-1">
-                                    <div class="mt-3">
-                                        <span
-                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                                            Small Area (Female)
-                                        </span>
-                                    </div>
-                                    <h6 class="mt-3">Upper Lip | Lower Lip | Chin | Jawline</h6>
-                                    <p>Suitable for All.</p>
-                                </div>
-                                <div class="card-body" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                                    <h4 class="card-title"><sup style="font-size: 13px;">from</sup>&pound;4000</h4>
-                                    <p><strong>&pound;333</strong> per month / 12 months</p>
-                                </div>
-                            </div>
+                       <div class="card text-center" style="border: none">
+                      <div class="card-header py-1">
+                      <div class="mt-3">
+                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                     Face Treatments
+                    </span>
+                     </div>
+                  <h6 class="mt-3">Pricing Per Area</h6>
+                   <p>Save with multi-session packages.</p>
+                  </div>
+                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                  <table class="table table-borderless mb-0">
+                  <thead>
+                    <tr class="border-bottom">
+                        <th>Area</th>
+                        <th>1 Session</th>
+                        <th>6 Sessions</th>
+                    </tr>
+                </thead>
+                      <tbody>
+                    <tr>
+                        <td><strong>Full Face</strong></td>
+                        <td>&pound;45</td>
+                        <td>&pound;270 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Half Face</strong></td>
+                        <td>&pound;30</td>
+                        <td>&pound;180 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neck Front/Back</strong></td>
+                        <td>&pound;35</td>
+                        <td>&pound;210</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Upper Lip + Chin/Cheeks</strong></td>
+                        <td>&pound;15</td>
+                        <td>&pound;90 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sideburns</strong></td>
+                        <td>&pound;35</td>
+                        <td>&pound;210 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jaw Line + Chin</strong></td>
+                        <td>&pound;50</td>
+                        <td>&pound;300 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>1/2 Face + Front/back Neck</strong></td>
+                        <td>&pound;50</td>
+                        <td>&pound;300 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>Beard + Cheek</strong></td>
+                        <td>&pound;55</td>
+                        <td>&pound;330 </td>
+                    </tr>
+                    </tbody>
+                     </table>
+                     </div>
+                       </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="card text-center" style="border: none">
-                                <div class="card-header py-1">
-                                    <div class="mt-3">
-                                        <span
-                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                                            Medium Area (Female)
-                                        </span>
-                                    </div>
-                                    <h6 class="mt-3">Full Face | Half-Arms | Bikini Line | Neck | Underarms</h6>
-                                    <p>Suitable for All.</p>
-                                </div>
-                                <div class="card-body" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                                    <h4 class="card-title"><sup style="font-size: 13px;">from</sup>&pound;5000</h4>
-                                    <p><strong>&pound;417</strong> per month / 12 months</p>
-                                </div>
-                            </div>
+                    
+                     <div class="col-md-4">
+                       <div class="card text-center" style="border: none">
+                      <div class="card-header py-1">
+                      <div class="mt-3">
+                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                     Lower Body Treatments
+                    </span>
+                     </div>
+                  <h6 class="mt-3">Pricing Per Area</h6>
+                   <p>Save with multi-session packages.</p>
+                  </div>
+                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                  <table class="table table-borderless mb-0">
+                  <thead>
+                    <tr class="border-bottom">
+                        <th>Area</th>
+                        <th>1 Session</th>
+                        <th>6 Sessions</th>
+                    </tr>
+                </thead>
+                      <tbody>
+                    <tr>
+                        <td><strong>Full Legs <small style="color: #043264">(feet and toes)</small></strong></td>
+                        <td>&pound;95</td>
+                        <td>&pound;570 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Half Legs</strong></td>
+                        <td>&pound;60</td>
+                        <td>&pound;330 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feet & Toes</strong></td>
+                        <td>&pound;20</td>
+                        <td>&pound;120</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Female Bikini</strong></td>
+                        <td>&pound;30</td>
+                        <td>&pound;180 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Female Brazilian</strong></td>
+                        <td>&pound;40</td>
+                        <td>&pound;240 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Female Hollywood + Underarms</strong></td>
+                        <td>&pound;55</td>
+                        <td>&pound;330 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>Male Brazalian</strong></td>
+                        <td>&pound;40</td>
+                        <td>&pound;240 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>Beard + Cheek</strong></td>
+                        <td>&pound;55</td>
+                        <td>&pound;330 </td>
+                    </tr>
+                    </tbody>
+                     </table>
+                     </div>
+                       </div>
+                        </div>
+                    
+
+
+
+
+                    <div class="col-md-4">
+                       <div class="card text-center" style="border: none">
+                      <div class="card-header py-1">
+                      <div class="mt-3">
+                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                     Upper Body Treatments
+                    </span>
+                     </div>
+                  <h6 class="mt-3">Pricing Per Area</h6>
+                   <p>Save with multi-session packages.</p>
+                  </div>
+                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                  <table class="table table-borderless mb-0">
+                 <thead>
+                    <tr class="border-bottom">
+                        <th>Area</th>
+                        <th>1 Session</th>
+                        <th>6 Sessions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Under Arms</strong></td>
+                        <td>&pound;8</td>
+                        <td>&pound;48 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full Arms</strong></td>
+                        <td>&pound;75</td>
+                        <td>&pound;450 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Half Arms</strong></td>
+                        <td>&pound;40</td>
+                        <td>&pound;240</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full Back</strong></td>
+                        <td>&pound;90</td>
+                        <td>&pound;540 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stomach</strong></td>
+                        <td>&pound;40</td>
+                        <td>&pound;240 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chest</strong></td>
+                        <td>&pound;35</td>
+                        <td>&pound;210 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>Hands + Fingers</strong></td>
+                        <td>&pound;15</td>
+                        <td>&pound;90 </td>
+                    </tr>
+                     <tr>
+                        <td><strong>Snail Trail/Naval</strong></td>
+                        <td>&pound;25</td>
+                        <td>&pound;150 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="card text-center" style="border: none">
-                                <div class="card-header py-1">
-                                    <div class="mt-3">
-                                        <span
-                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                                            Large Area (Female)
-                                        </span>
-                                    </div>
-                                    <h6 class="mt-3">Full Bikini | Full-Arms | Half-Back | Buttocks | Chest | Tummy |
-                                        Half-Legs</h6>
-                                    <p>Suitable for All.</p>
-                                </div>
-                                <div class="card-body" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                                    <h4 class="card-title"><sup style="font-size: 13px;">from</sup>&pound;6000</h4>
-                                    <p><strong>&pound;500</strong> per month / 12 months</p>
-                                </div>
-                            </div>
+                         <div class="col-md-4">
+                       <div class="card text-center" style="border: none">
+                      <div class="card-header py-1">
+                      <div class="mt-3">
+                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                     Full Body Treatments
+                    </span>
+                     </div>
+                  <h6 class="mt-3">Pricing Per Area</h6>
+                   <p>Save with multi-session packages.</p>
+                  </div>
+                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                  <table class="table table-borderless mb-0">
+                 <thead>
+                    <tr class="border-bottom">
+                        <th>Area</th>
+                        <th>1 Session</th>
+                        <th>6 Sessions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Full Body</strong></td>
+                        <td>&pound;300</td>
+                        <td>&pound;1800</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full body (4 parts)</strong></td>
+                        <td>&pound;190</td>
+                        <td>&pound;1200 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
                         </div>
+                      
+                     
 
-                        <div class="col-md-4">
-                            <div class="card text-center" style="border: none">
-                                <div class="card-header py-1">
-                                    <div class="mt-3">
-                                        <span
-                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                                            Extra Large Area (Female)
-                                        </span>
-                                    </div>
-                                    <h6 class="mt-3">Full Legs | Chest and Tummy | Full Back</h6>
-                                    <p>Suitable for All.</p>
-                                </div>
-                                <div class="card-body" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                                    <h4 class="card-title"><sup style="font-size: 13px;">from</sup>&pound;6000</h4>
-                                    <p><strong>&pound;500</strong> per month / 12 months</p>
-                                </div>
-                            </div>
-                        </div>
+                      
 
-                        <div class="col-md-4">
-                            <div class="card text-center" style="border: none">
-                                <div class="card-header py-1"
-                                    style="background-color: #1977cc; border-radius: 20px 20px 0 0; color: #f1f7fc;">
-                                    <div class="mt-3">
-                                        <span
-                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                                            Full Body (Female)
-                                        </span>
-                                    </div>
-                                    <h6 class="mt-3">Covers Full Body</h6>
-                                    <p>Suitable for All.</p>
-                                </div>
-                                <div class="card-body" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                                    <h4 class="card-title"><sup style="font-size: 13px;">from</sup>&pound;6000</h4>
-                                    <p><strong>&pound;500</strong> per month / 12 months</p>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -1530,7 +1749,7 @@
                         <h2 class="text-white mb-4">Ready for Laser Treatment?</h2>
                         <p class="lead text-white mb-5">Book your Laser treatment today and experience the difference
                         </p> 
-                        @livewire('AppointmentForm.LaserAppointmentForm')
+                        @livewire(name: 'AppointmentForm.LaserAppointmentForm')
                     </div>
                 </div>
             </div>
@@ -1652,6 +1871,60 @@
                         $("#toggleButton").text("See More");
                     }
                 });
+            });
+        });
+    </script>
+    {{-- hydra bubles js --}}
+    <script>
+        function createHydraFacialBubbles() {
+                const bubblesContainer = document.querySelector('.hydrafacial-floating-bubbles');
+                if (!bubblesContainer) return;
+
+                for (let i = 0; i < 8; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.classList.add('hydrafacial-bubble');
+
+                    // Random size between 20px and 60px
+                    const size = Math.random() * 40 + 20;
+
+                    // Random position
+                    const left = Math.random() * 100;
+
+                    // Random animation delay
+                    const delay = Math.random() * 5;
+
+                    // Random animation duration between 10s and 20s
+                    const duration = Math.random() * 10 + 10;
+
+                    bubble.style.width = `${size}px`;
+                    bubble.style.height = `${size}px`;
+                    bubble.style.left = `${left}%`;
+                    bubble.style.animationDelay = `${delay}s`;
+                    bubble.style.animationDuration = `${duration}s`;
+
+                    bubblesContainer.appendChild(bubble);
+                }
+            }
+
+            createHydraFacialBubbles();
+        });
+         const bookButtons = document.getElementsByClassName('bookNow');
+
+        // If there's only one button, access the first one
+        // bookButtons[0].addEventListener('click', function(e) {
+        //     e.preventDefault();
+        //     const select = document.getElementById('appointmentSelect');
+        //     select.value = "Signature HydraFacial"; // Value must match the option text exactly
+        // });
+        document.querySelectorAll('.bookNow').forEach(function(button) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default action
+                const treatment = this.getAttribute('data-id'); // Get data-id value
+                const select = document.getElementById('appointmentSelect');
+                console.log(treatment);
+
+                // Set the value of the select to match the treatment
+                select.value = treatment;
             });
         });
     </script>

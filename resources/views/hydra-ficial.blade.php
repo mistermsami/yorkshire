@@ -156,7 +156,7 @@
         }
 
         .hydrafacial-price-card.popular {
-            border: 2px solid #ccd3f8;
+            border: 2px solid #bfbfc1;
             transform: scale(1.05);
             box-shadow: 0 10px 30px rgba(106, 90, 205, 0.2);
         }
@@ -168,7 +168,7 @@
 
         .hydrafacial-price-card .card-header {
             padding: 20px;
-            background: rgba(90, 174, 205, 0.1);
+            background: rgba(13, 73, 95, 0.1);
             text-align: center;
             font-weight: 600;
         }
@@ -289,6 +289,26 @@
             }
         }
     </style>
+    <!-- Add this CSS to style the carousel controls -->
+<style>
+    .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+        
+    }
+    .carousel-control-prev {
+        left: -5%;
+    }
+    .carousel-control-next {
+        right: -5%;
+    }
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        background-color: #02256d !important;
+        width: 2.1rem;
+        height: 2.5rem;
+        
+    }
+</style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 @endsection
@@ -733,93 +753,151 @@
 
         <!-- HydraFacial Pricing Section -->
         <section id="hydrafacial-pricing" class="py-5 bg-light">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="hydrafacial-section-title">Treatment Packages</h2>
-                        <p class="lead mb-5">Choose the perfect package for your skincare needs</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="hydrafacial-price-card card">
-                            <div class="card-header">
-                                <h4>Signature HydraFacial</h4>
+         <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="hydrafacial-section-title">Treatment Packages</h2>
+                <p class="lead mb-5">Choose the perfect package for your skincare needs</p>
+            </div>
+         </div>
+        
+        <div class="row">
+            <div class="col-12 position-relative">
+                <div id="pricingCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First group of 3 cards -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hydrafacial-price-card card">
+                                        <div class="card-header">
+                                            <h4>Signature HydraFacial</h4>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="hydrafacial-price-amount">£75-£95</div>
+                                            <div class="hydrafacial-price-period">per session</div>
+                                            <ul class="list-unstyled my-4">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Standard HydraFacial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Basic Serum Infusion</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>60 Minute Session</li>
+                                                <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>LED Light Therapy</li>
+                                                <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
+                                            </ul>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Signature HydraFacial">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="hydrafacial-price-card card popular">
+                                        <div class="card-header">
+                                            <h4>Advance Pore detox facial</h4>
+                                            <span class="badge bg-white text-primary">Most Popular</span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="hydrafacial-price-amount">£65-£85</div>
+                                            <div class="hydrafacial-price-period">per session</div>
+                                            <ul class="list-unstyled my-4">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Enhanced HydraFacial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium Serum Infusion</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>75 Minute Session</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
+                                                <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
+                                            </ul>
+                                            <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Face detox facial">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="hydrafacial-price-card card">
+                                        <div class="card-header">
+                                            <h4>Anti-Ageing Rejuvenation</h4>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="hydrafacial-price-amount">£85-£110</div>
+                                            <div class="hydrafacial-price-period">per session</div>
+                                            <ul class="list-unstyled my-4">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ultimate HydraFacial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Serum Cocktail</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>90 Minute Session</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
+                                            </ul>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <div class="hydrafacial-price-amount">£75-£95</div>
-                                <div class="hydrafacial-price-period">per session</div>
-                                <ul class="list-unstyled my-4">
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Standard HydraFacial
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Basic Serum Infusion
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>60 Minute Session
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>LED Light Therapy</li>
-                                    <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-outline-primary w-100 bookNow"
-                                    data-id="Signature HydraFacial">Book Now</a>
+                        </div>
+                        
+                        <!-- Second group of 2 cards (you can add a third if needed) -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hydrafacial-price-card card">
+                                        <div class="card-header">
+                                            <h4>Oxygen & Nutrient Infusion Therapy</h4>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="hydrafacial-price-amount">£60-£80</div>
+                                            <div class="hydrafacial-price-period">per session</div>
+                                            <ul class="list-unstyled my-4">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ultimate HydraFacial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Serum Cocktail</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>90 Minute Session</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
+                                            </ul>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="hydrafacial-price-card card">
+                                        <div class="card-header">
+                                            <h4>Skin Clarity & Acne Treatment</h4>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="hydrafacial-price-amount">£70-£90</div>
+                                            <div class="hydrafacial-price-period">per session</div>
+                                            <ul class="list-unstyled my-4">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ultimate HydraFacial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Serum Cocktail</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>90 Minute Session</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
+                                            </ul>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add an empty column to maintain layout if needed -->
+                                <div class="col-md-4"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="hydrafacial-price-card card popular">
-                            <div class="card-header">
-                                <h4>Advance Face detox facial</h4>
-                                <span class="badge bg-white text-primary">Most Popular</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="hydrafacial-price-amount">£65-£85</div>
-                                <div class="hydrafacial-price-period">per session</div>
-                                <ul class="list-unstyled my-4">
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Enhanced HydraFacial
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium Serum
-                                        Infusion</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>75 Minute Session
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
-                                </ul>
-                                <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Face detox facial">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hydrafacial-price-card card">
-                            <div class="card-header">
-                                <h4>Platinum</h4>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="hydrafacial-price-amount">£85-£110</div>
-                                <div class="hydrafacial-price-period">per session</div>
-                                <ul class="list-unstyled my-4">
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ultimate HydraFacial
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Serum Cocktail
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>90 Minute Session
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy
-                                    </li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons
-                                    </li>
-                                </ul>
-                                <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-12 text-center">
-                        <p class="text-muted">* Package discounts available when purchasing multiple sessions</p>
-                    </div>
+                    
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#pricingCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#pricingCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="text-muted">* Package discounts available when purchasing multiple sessions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
         <!-- HydraFacial FAQ Section -->
         <section id="faq" class="faq section light-background">
