@@ -790,7 +790,7 @@
                                 <div class="col-md-4">
                                     <div class="hydrafacial-price-card card popular">
                                         <div class="card-header">
-                                            <h4>Advance Pore detox facial</h4>
+                                            <h4>Advance Pore Detox Facial</h4>
                                             <span class="badge bg-white text-primary">Most Popular</span>
                                         </div>
                                         <div class="card-body text-center">
@@ -803,7 +803,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Face detox facial">Book Now</a>
+                                            <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Pore Detox Facial">Book Now</a>
                                         </div>
                                     </div>
                                 </div>

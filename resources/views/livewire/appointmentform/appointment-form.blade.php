@@ -41,6 +41,7 @@
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
                             <option value="Signature HydraFacial">Signature HydraFacial</option>
+                            <option value="Advance Pore Detox Facial">Advance Pore Detox Facial</option>
                             <option value="Anti-Ageing Rejuvenation">Anti-Ageing Rejuvenation</option>
                             <option value="Oxygen & Nutrient Infusion Therapy">Oxygen & Nutrient Infusion Therapy</option>
                             <option value="Skin Clarity & Acne Treatment">Skin Clarity & Acne Treatment</option>
