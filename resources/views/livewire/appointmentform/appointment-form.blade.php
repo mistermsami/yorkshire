@@ -37,7 +37,7 @@
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <select class="form-select" x-data @change="$wire.appointment_type = $event.target.value" wire:model="appointment_type" name="appointment_type"
+                        <select class="form-select"  wire:model="appointment_type" name="appointment_type"
                             id="appointmentSelect" required>
                             <option selected>Select Treatment</option>
                             <option value="Signature HydraFacial">Signature HydraFacial</option>

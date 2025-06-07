@@ -1090,7 +1090,7 @@
             createHydraFacialBubbles();
         });
     </script>
-    <script>
+    {{-- <script>
         const bookButtons = document.getElementsByClassName('bookNow');
  
         document.querySelectorAll('.bookNow').forEach(function(button) {
@@ -1106,5 +1106,5 @@
 
             });
         });
-    </script>
+    </script> --}}
 @endsection
