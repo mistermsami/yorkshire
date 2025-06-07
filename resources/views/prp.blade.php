@@ -750,47 +750,7 @@
             setInterval(changeImage, 3000);
         });
     </script> 
-     <script>
-        $(document).ready(function() {
-            let currentStep = 0;
-            const steps = $(".step-content");
-            const indicators = $(".step");
-
-            function showStep(index) {
-                steps.removeClass("active");
-                indicators.removeClass("active");
-                $(steps[index]).addClass("active");
-                $(indicators[index]).addClass("active");
-            }
-
-            function validateStep(index) {
-                let isValid = true;
-                $(steps[index]).find("input[required], select[required]").each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass("is-invalid");
-                        isValid = false;
-                    } else {
-                        $(this).removeClass("is-invalid");
-                    }
-                });
-                return isValid;
-            }
-
-            $(".next-step").click(function() {
-                if (validateStep(currentStep) && currentStep < steps.length - 1) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
-
-            $(".prev-step").click(function() {
-                if (currentStep > 0) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
-        });
-    </script>
+     
     <script>
         $(document).ready(function() {
             $("#toggleButton").click(function() {
