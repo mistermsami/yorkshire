@@ -1101,7 +1101,7 @@
 
                 // Set the value of the select to match the treatment
                 select.value = treatment;
-                $(select).change();
+                selectElement('appointmentSelect', treatment);
             });
         });
     </script>
