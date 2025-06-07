@@ -822,7 +822,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Anti-Ageing Rejuvenation">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -847,7 +847,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Oxygen & Nutrient Infusion Therapy">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -866,7 +866,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Skin Clarity & Acne Treatment">Book Now</a>
                                         </div>
                                     </div>
                                 </div>

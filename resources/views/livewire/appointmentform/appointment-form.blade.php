@@ -41,8 +41,9 @@
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
                             <option value="Signature HydraFacial">Signature HydraFacial</option>
-                            <option value="Advance Face detox facial">Advance Face detox facial</option>
-                            <option>Platinum HydraFacial ($249)</option>
+                            <option value="Anti-Ageing Rejuvenation">Anti-Ageing Rejuvenation</option>
+                            <option value="Oxygen & Nutrient Infusion Therapy">Oxygen & Nutrient Infusion Therapy</option>
+                            <option value="Skin Clarity & Acne Treatment">Skin Clarity & Acne Treatment</option>
                         </select>
                     </div>
                 </div>
