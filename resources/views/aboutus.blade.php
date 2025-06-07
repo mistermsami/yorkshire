@@ -792,6 +792,7 @@
                         <div class="mb-4">
                             <h4 class="h5"><i class="fas fa-phone-alt text-primary me-2"></i> Contact</h4>
                             <p>Phone: <a href="tel:+447570957502">07570957502</a><br>
+                            Tel Number : <a href="tel:+44 0113 338 2716">0113 338 2716</a><br>
                             Email: <a href="mailto:info@yorkshirehairsolution.com">info@yorkshirehairsolution.com</a></p>
                         </div>
                     </div>

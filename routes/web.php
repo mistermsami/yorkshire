@@ -32,6 +32,10 @@ Route::get('microneedling/', function () {
     return view('microneedling');
 })->name('microneedling');
 
+Route::get('teethWhite/', function () {
+    return view('teethWhite');
+})->name('teethWhite');
+
 Route::get('prp/', function () {
     return view('prp');
 })->name('prp');
