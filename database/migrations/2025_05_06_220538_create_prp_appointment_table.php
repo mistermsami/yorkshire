@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('prp_appointment', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('contact');
+            $table->string('email');  
+            $table->string('date');
+            $table->string('time'); 
+            $table->string('appointment_type');
+            $table->integer('pirce')->default('0');
+            $table->integer('paid')->default('0');
+            $table->string('message')->nullable(true);
             $table->timestamps();
         });
     }

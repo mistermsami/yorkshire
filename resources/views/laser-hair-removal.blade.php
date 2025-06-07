@@ -1543,48 +1543,7 @@
             document.getElementById('male-cards').style.display = (gender === 'male') ? 'block' : 'none';
             document.getElementById('female-cards').style.display = (gender === 'female') ? 'block' : 'none';
         }
-    </script>
-    <script>
-        $(document).ready(function() {
-            let currentStep = 0;
-            const steps = $(".step-content");
-            const indicators = $(".step");
-
-            function showStep(index) {
-                steps.removeClass("active");
-                indicators.removeClass("active");
-                $(steps[index]).addClass("active");
-                $(indicators[index]).addClass("active");
-            }
-
-            function validateStep(index) {
-                let isValid = true;
-                $(steps[index]).find("input[required], select[required]").each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass("is-invalid");
-                        isValid = false;
-                    } else {
-                        $(this).removeClass("is-invalid");
-                    }
-                });
-                return isValid;
-            }
-
-            $(".next-step").click(function() {
-                if (validateStep(currentStep) && currentStep < steps.length - 1) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
-
-            $(".prev-step").click(function() {
-                if (currentStep > 0) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
-        });
-    </script>
+    </script> 
     <script>
         $(document).ready(function() {
             var $grid = $('.grid').isotope({
@@ -1604,41 +1563,7 @@
                 $(this).addClass('active');
             });
         });
-    </script>
-    {{-- date picker --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const calendarContainer = document.getElementById("custom-calendar");
-            const monthSelector = document.getElementById("month-selector");
-            const yearSelector = document.getElementById("year-selector");
-            let selectedDate = null;
-
-            function generateCalendar() {
-                calendarContainer.innerHTML = ""; // Clear previous dates
-                const month = parseInt(monthSelector.value);
-                const year = parseInt(yearSelector.value);
-                const daysInMonth = new Date(year, month, 0).getDate();
-
-                for (let day = 1; day <= daysInMonth; day++) {
-                    let dayBox = document.createElement("div");
-                    dayBox.classList.add("day-box");
-                    dayBox.textContent = day;
-                    dayBox.addEventListener("click", function() {
-                        if (selectedDate) {
-                            selectedDate.classList.remove("selected");
-                        }
-                        selectedDate = dayBox;
-                        selectedDate.classList.add("selected");
-                    });
-                    calendarContainer.appendChild(dayBox);
-                }
-            }
-
-            monthSelector.addEventListener("change", generateCalendar);
-            yearSelector.addEventListener("change", generateCalendar);
-            generateCalendar(); // Initial load
-        });
-    </script>
+    </script> 
     <script>
         $(document).ready(function() {
             $("#toggleButton").click(function() {
