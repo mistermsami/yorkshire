@@ -1091,14 +1091,7 @@
         });
     </script>
     <script>
-        const bookButtons = document.getElementsByClassName('bookNow');
-
-        // If there's only one button, access the first one
-        // bookButtons[0].addEventListener('click', function(e) {
-        //     e.preventDefault();
-        //     const select = document.getElementById('appointmentSelect');
-        //     select.value = "Signature HydraFacial"; // Value must match the option text exactly
-        // });
+        const bookButtons = document.getElementsByClassName('bookNow'); 
         document.querySelectorAll('.bookNow').forEach(function(button) {
             button.addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent default action
@@ -1108,6 +1101,7 @@
 
                 // Set the value of the select to match the treatment
                 select.value = treatment;
+                $(select).change();
             });
         });
     </script>
