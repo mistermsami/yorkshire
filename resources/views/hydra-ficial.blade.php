@@ -1091,16 +1091,17 @@
         });
     </script>
     <script>
-        const bookButtons = document.getElementsByClassName('bookNow'); 
+        const bookButtons = document.getElementsByClassName('bookNow');
+ 
         document.querySelectorAll('.bookNow').forEach(function(button) {
             button.addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent default action
                 const treatment = this.getAttribute('data-id'); // Get data-id value
-                const select = document.getElementById('appointmentSelect').options[0];
+                const select = document.getElementById('appointmentSelect');
                 console.log(treatment);
 
                 // Set the value of the select to match the treatment
-                select.value = treatment; 
+                select.value = treatment;
             });
         });
     </script>
