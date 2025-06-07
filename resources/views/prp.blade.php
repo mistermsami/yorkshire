@@ -720,26 +720,7 @@
         </section>
 
         </script>
-        <script>
-            $(document).ready(function() {
-                var $grid = $('.grid').isotope({
-                    itemSelector: '.grid-item',
-                    layoutMode: 'fitRows',
-                    filter: '.Doctor1' // Show only Category 1 by default
-                });
-
-                $('.filter-button').on('click', function() {
-                    var filterValue = $(this).attr('data-filter');
-                    $grid.isotope({
-                        filter: filterValue
-                    });
-
-                    // Remove active class and add it to the clicked button
-                    $('.filter-button').removeClass('active');
-                    $(this).addClass('active');
-                });
-            });
-        </script>
+       
         {{-- script for hero-section --}}
         <script>
             document.addEventListener('DOMContentLoaded', function() {
