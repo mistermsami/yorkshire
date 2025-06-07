@@ -1097,12 +1097,12 @@
             button.addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent default action
                 const treatment = this.getAttribute('data-id'); // Get data-id value
-                // const select = document.getElementById('appointmentSelect');
+                const select = document.getElementById('appointmentSelect');
                 console.log(treatment);
 
                 // Set the value of the select to match the treatment
-                // select.value = treatment;
-                document.getElementById('appointmentSelect').options[0].value = treatment; 
+                select.value = treatment;
+                $("#appointmentSelect").val(treatment).change();
             });
         });
     </script>
