@@ -1101,7 +1101,7 @@
 
                 // Set the value of the select to match the treatment
                 select.value = treatment;
-                selectElement('appointmentSelect', treatment);
+                select.appointmentSelect[i].selected = true;
             });
         });
     </script>
