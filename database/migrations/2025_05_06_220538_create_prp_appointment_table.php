@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('pirce')->default('0');
             $table->integer('paid')->default('0');
             $table->string('message')->nullable(true);
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 
