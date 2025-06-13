@@ -790,7 +790,7 @@
                                 <div class="col-md-4">
                                     <div class="hydrafacial-price-card card popular">
                                         <div class="card-header">
-                                            <h4>Advance Pore detox facial</h4>
+                                            <h4>Advance Pore Detox Facial</h4>
                                             <span class="badge bg-white text-primary">Most Popular</span>
                                         </div>
                                         <div class="card-body text-center">
@@ -803,7 +803,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Face detox facial">Book Now</a>
+                                            <a href="#contact" class="btn hydrafacial-btn-primary w-100 bookNow" data-id="Advance Pore Detox Facial">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -822,7 +822,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Anti-Ageing Rejuvenation">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -847,7 +847,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Oxygen & Nutrient Infusion Therapy">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -866,7 +866,7 @@
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Light Therapy</li>
                                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Booster Add-ons</li>
                                             </ul>
-                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow">Book Now</a>
+                                            <a href="#contact" class="btn btn-outline-primary w-100 bookNow" data-id="Skin Clarity & Acne Treatment">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1090,25 +1090,21 @@
             createHydraFacialBubbles();
         });
     </script>
-    <script>
+    {{-- <script>
         const bookButtons = document.getElementsByClassName('bookNow');
-
-        // If there's only one button, access the first one
-        // bookButtons[0].addEventListener('click', function(e) {
-        //     e.preventDefault();
-        //     const select = document.getElementById('appointmentSelect');
-        //     select.value = "Signature HydraFacial"; // Value must match the option text exactly
-        // });
+ 
         document.querySelectorAll('.bookNow').forEach(function(button) {
             button.addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent default action
                 const treatment = this.getAttribute('data-id'); // Get data-id value
-                const select = document.getElementById('appointmentSelect');
+                // const select = document.getElementById('appointmentSelect');
                 console.log(treatment);
 
                 // Set the value of the select to match the treatment
-                select.value = treatment;
+                // select.value = treatment; 
+                $('#appointmentSelect').val(treatment).trigger('change');
+
             });
         });
-    </script>
+    </script> --}}
 @endsection

@@ -12,7 +12,6 @@
     {{-- for meta tags (SEO)
     and for custom css --}}
     <style>
-
         .stepper {
             display: flex;
             justify-content: space-between;
@@ -114,12 +113,14 @@
         }
 
         @media only screen and (max-width: 1399px) and (min-width: 769px) {
-            .afterresult .card{
+            .afterresult .card {
                 height: 280px !important;
             }
-            .howitworks .card .card-body{
+
+            .howitworks .card .card-body {
                 height: 200px;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
@@ -142,19 +143,15 @@
             .hairTfaq .nav-item .active {
                 background-color: #f1f7fc;
             }
+
             .aboutmain_sec_img {
                 height: auto;
             }
         }
-
-        
     </style>
-
-
 @endsection
 
 @section('maincontent')
-
     <main class="main">
         <section class="hero-section">
             <div class="container">
@@ -162,24 +159,25 @@
                     <div class="col-lg-6">
                         <div class="hero-content">
                             <h1 class="main-heading">Revolutionary PRP Therapy for Youthful, Radiant Skin</h1>
-                            
+
                             <p class="sub-text">
-                                Harness your body's natural healing power with our advanced Platelet-Rich Plasma treatments, recommended by leading dermatologists.
+                                Harness your body's natural healing power with our advanced Platelet-Rich Plasma treatments,
+                                recommended by leading dermatologists.
                             </p>
-                            
-                         
-                            
-                            <div class="trustpilot-container" >
+
+
+
+                            <div class="trustpilot-container">
                                 <div class="trustpilot-line">
-                                   <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
+                                    <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
                                 </div>
                             </div>
-                            
+
                             <a href="#" class="btn btn-primary">Book a consultation
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                             <div class="divider"></div>
-                            
+
                             <div class="award-badge">
                                 <i class="fas fa-award" style="color: var(--primary-color);"></i>
                                 <span>2023 Best Aesthetic Treatment Award</span>
@@ -189,18 +187,10 @@
                     <div class="col-lg-6">
                         <div class="image-container">
                             <!-- Beauty clinic image slideshow -->
-                            <img src="assets/img/prp11.jpg" 
-                                 alt="PRP treatment in progress" 
-                                 class="hero-image active">
-                            <img src="assets/img/prp1.webp" 
-                                 alt="Before and after PRP results" 
-                                 class="hero-image">
-                            <img src="assets/img/prp1.jpg" 
-                                 alt="Luxury beauty clinic environment" 
-                                 class="hero-image">
-                            <img src="assets/img/prpdep.jpg" 
-                                 alt="Happy client after treatment" 
-                                 class="hero-image">
+                            <img src="assets/img/prp11.jpg" alt="PRP treatment in progress" class="hero-image active">
+                            <img src="assets/img/prp1.webp" alt="Before and after PRP results" class="hero-image">
+                            <img src="assets/img/prp1.jpg" alt="Luxury beauty clinic environment" class="hero-image">
+                            <img src="assets/img/prpdep.jpg" alt="Happy client after treatment" class="hero-image">
                         </div>
                     </div>
                 </div>
@@ -210,63 +200,67 @@
 
         <section class="about-prp-section">
             <div class="container">
-              <div class="row">
-                <!-- Left Side -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                  <div class="left-side">
-                    <div class="content">
-                      <h2>What is PRP Therapy?</h2>
-                      <p>
-                        PRP (Platelet-Rich Plasma) therapy is a cutting-edge, non-surgical treatment that harnesses your body's natural healing abilities to repair and rejuvenate tissues. It’s widely used for its effectiveness in promoting recovery and enhancing skin, hair, and joint health. This innovative treatment is gaining popularity due to its natural approach and minimal downtime.
-                      </p>
-                      <a href="#contact" class="btn">
-                         <!-- Font Awesome icon -->
-                         Learn More About PRP
-                         <i class="fas fa-medkit"></i>
-                    </a>
+                <div class="row">
+                    <!-- Left Side -->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="left-side">
+                            <div class="content">
+                                <h2>What is PRP Therapy?</h2>
+                                <p>
+                                    PRP (Platelet-Rich Plasma) therapy is a cutting-edge, non-surgical treatment that
+                                    harnesses your body's natural healing abilities to repair and rejuvenate tissues. It’s
+                                    widely used for its effectiveness in promoting recovery and enhancing skin, hair, and
+                                    joint health. This innovative treatment is gaining popularity due to its natural
+                                    approach and minimal downtime.
+                                </p>
+                                <a href="#contact" class="btn">
+                                    <!-- Font Awesome icon -->
+                                    Learn More About PRP
+                                    <i class="fas fa-medkit"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <!-- Right Side -->
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <!-- Icon Box 1 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-syringe"></i>
+                                    <h4>Minimally Invasive</h4>
+                                    <p>No surgery required. Just a simple injection process.</p>
+                                </div>
+                            </div>
+                            <!-- Icon Box 2 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-heartbeat"></i>
+                                    <h4>Natural Healing</h4>
+                                    <p>Uses your body's own platelets for natural recovery.</p>
+                                </div>
+                            </div>
+                            <!-- Icon Box 3 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-clock"></i>
+                                    <h4>Quick Recovery</h4>
+                                    <p>Most patients resume normal activities within a day.</p>
+                                </div>
+                            </div>
+                            <!-- Icon Box 4 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>Proven Results</h4>
+                                    <p>Clinically proven to improve tissue repair and regeneration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Right Side -->
-                <div class="col-lg-6">
-                  <div class="row">
-                    <!-- Icon Box 1 -->
-                    <div class="col-md-6 mb-4">
-                      <div class="icon-box">
-                        <i class="fas fa-syringe"></i>
-                        <h4>Minimally Invasive</h4>
-                        <p>No surgery required. Just a simple injection process.</p>
-                      </div>
-                    </div>
-                    <!-- Icon Box 2 -->
-                    <div class="col-md-6 mb-4">
-                      <div class="icon-box">
-                        <i class="fas fa-heartbeat"></i>
-                        <h4>Natural Healing</h4>
-                        <p>Uses your body's own platelets for natural recovery.</p>
-                      </div>
-                    </div>
-                    <!-- Icon Box 3 -->
-                    <div class="col-md-6 mb-4">
-                      <div class="icon-box">
-                        <i class="fas fa-clock"></i>
-                        <h4>Quick Recovery</h4>
-                        <p>Most patients resume normal activities within a day.</p>
-                      </div>
-                    </div>
-                    <!-- Icon Box 4 -->
-                    <div class="col-md-6 mb-4">
-                      <div class="icon-box">
-                        <i class="fas fa-check-circle"></i>
-                        <h4>Proven Results</h4>
-                        <p>Clinically proven to improve tissue repair and regeneration.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
+        </section>
 
 
         <section id="prp-benefits" class="prp-benefits-section">
@@ -279,7 +273,7 @@
                                 <i class="bi bi-heart"></i>
                             </div>
                             <h3>Natural Results</h3>
-                            <p>Uses your body's own healing mechanisms for safe  results.</p>
+                            <p>Uses your body's own healing mechanisms for safe results.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -354,182 +348,185 @@
 
 
         <!-- Before & After Section -->
-    <section class="before-after-section">
-    <div class="container">
-        <h2>Before & After</h2>
-        <div class="grid-container">
-            <!-- Grid Item 1 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba1.jpg" alt="Before PRP">
-                <div class="overlay">
-                    <h4>Case Study 1</h4>
-                    <p>Improved hair growth after 6 months of PRP therapy.</p>
+        <section class="before-after-section">
+            <div class="container">
+                <h2>Before & After</h2>
+                <div class="grid-container">
+                    <!-- Grid Item 1 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba1.jpg" alt="Before PRP">
+                        <div class="overlay">
+                            <h4>Case Study 1</h4>
+                            <p>Improved hair growth after 6 months of PRP therapy.</p>
+                        </div>
+                    </div>
+                    <!-- Grid Item 2 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba2.jpg" alt="After PRP">
+                        <div class="overlay">
+                            <h4>Case Study 2</h4>
+                            <p>Noticeable reduction in wrinkles and fine lines after 2 months.</p>
+                        </div>
+                    </div>
+                    <!-- Grid Item 3 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba3.png" alt="Before PRP">
+                        <div class="overlay">
+                            <h4>Case Study 3</h4>
+                            <p>Patient saw significant improvement in skin texture after 3 sessions.</p>
+                        </div>
+                    </div>
+                    <!-- Grid Item 4 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba4.jpg" alt="After PRP">
+                        <div class="overlay">
+                            <h4>Case Study 4</h4>
+                            <p>Enhanced skin elasticity and glow after 4 sessions.</p>
+                        </div>
+                    </div>
+                    <!-- Grid Item 5 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba5.jpg" alt="Before PRP">
+                        <div class="overlay">
+                            <h4>Case Study 5</h4>
+                            <p>Improved hair growth after 6 months of PRP therapy.</p>
+                        </div>
+                    </div>
+                    <!-- Grid Item 6 -->
+                    <div class="grid-item">
+                        <img src="./assets/img/ba6.webp" alt="Before PRP">
+                        <div class="overlay">
+                            <h4>Case Study 6</h4>
+                            <p>Improved hair growth after 6 months of PRP therapy.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Grid Item 2 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba2.jpg" alt="After PRP">
-                <div class="overlay">
-                    <h4>Case Study 2</h4>
-                    <p>Noticeable reduction in wrinkles and fine lines after 2 months.</p>
-                </div>
-            </div>
-            <!-- Grid Item 3 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba3.png" alt="Before PRP">
-                <div class="overlay">
-                    <h4>Case Study 3</h4>
-                    <p>Patient saw significant improvement in skin texture after 3 sessions.</p>
-                </div>
-            </div>
-            <!-- Grid Item 4 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba4.jpg" alt="After PRP">
-                <div class="overlay">
-                    <h4>Case Study 4</h4>
-                    <p>Enhanced skin elasticity and glow after 4 sessions.</p>
-                </div>
-            </div>
-            <!-- Grid Item 5 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba5.jpg" alt="Before PRP">
-                <div class="overlay">
-                    <h4>Case Study 5</h4>
-                    <p>Improved hair growth after 6 months of PRP therapy.</p>
-                </div>
-            </div>
-            <!-- Grid Item 6 -->
-            <div class="grid-item">
-                <img src="./assets/img/ba6.webp" alt="Before PRP">
-                <div class="overlay">
-                    <h4>Case Study 6</h4>
-                    <p>Improved hair growth after 6 months of PRP therapy.</p>
-                </div>
-            </div>
-        </div>
-    </div>
         </section>
 
         <!-- Testimonials Section -->
         <section id="testimonial" class="testimonial-section">
-         <div class="container">
-          <h2>What Our Patients Say</h2>
-         <div class="timeline">
-            <!-- Testimonial 1 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <img src="assets/img/pt2.jpg" alt="Patient 1">
-                    <div class="testimonial-text">
-                        <p>"PRP therapy has been life-changing for me. My skin feels rejuvenated, and I’ve received so many compliments!"</p>
-                        <h5>Sarah Johnson</h5>
-                        <span>PRP Patient</span>
+            <div class="container">
+                <h2>What Our Patients Say</h2>
+                <div class="timeline">
+                    <!-- Testimonial 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img src="assets/img/pt2.jpg" alt="Patient 1">
+                            <div class="testimonial-text">
+                                <p>"PRP therapy has been life-changing for me. My skin feels rejuvenated, and I’ve received
+                                    so many compliments!"</p>
+                                <h5>Sarah Johnson</h5>
+                                <span>PRP Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img src="assets/img/pt.jpg" alt="Patient 2">
+                            <div class="testimonial-text">
+                                <p>"I was skeptical at first, but after just a few sessions, I noticed a huge difference in
+                                    my hair growth."</p>
+                                <h5>Michael Smith</h5>
+                                <span>PRP Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img src="assets/img/pt3.jpg" alt="Patient 3">
+                            <div class="testimonial-text">
+                                <p>"The results are amazing! My wrinkles have reduced significantly, and my skin looks
+                                    younger."</p>
+                                <h5>Emily Davis</h5>
+                                <span>PRP Patient</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Testimonial 2 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <img src="assets/img/pt.jpg" alt="Patient 2">
-                    <div class="testimonial-text">
-                        <p>"I was skeptical at first, but after just a few sessions, I noticed a huge difference in my hair growth."</p>
-                        <h5>Michael Smith</h5>
-                        <span>PRP Patient</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonial 3 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <img src="assets/img/pt3.jpg" alt="Patient 3">
-                    <div class="testimonial-text">
-                        <p>"The results are amazing! My wrinkles have reduced significantly, and my skin looks younger."</p>
-                        <h5>Emily Davis</h5>
-                        <span>PRP Patient</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
         </section>
 
         <section class="meet-experts-section">
             <div class="container">
-              <h2>Meet the Experts</h2>
-              <div class="experts-grid">
+                <h2>Meet the Experts</h2>
+                <div class="experts-grid">
 
-                <!-- Expert Card 2 -->
-                <div class="expert-card">
-                  <div class="card-inner">
-                    <div class="card-front">
-                      <img src="./assets/img/doc1copy.jpg" alt="Dr. Jane Smith">
-                      <h4>Dr. Jane Smith</h4>
-                      <p>Dermatologist</p>
-                      <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <h4>Dr. Jane Smith</h4>
-                      <p>8+ years of experience in cosmetic dermatology and skin rejuvenation.</p>
+                    <!-- Expert Card 2 -->
+                    <div class="expert-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/doc1copy.jpg" alt="Dr. Jane Smith">
+                                <h4>Dr. Jane Smith</h4>
+                                <p>Dermatologist</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h4>Dr. Jane Smith</h4>
+                                <p>8+ years of experience in cosmetic dermatology and skin rejuvenation.</p>
 
-                      <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                        <p><i class="fas fa-envelope"></i> jane.smith@example.com</p>
-                      </div>
+                                <div class="contact-info">
+                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                                    <p><i class="fas fa-envelope"></i> jane.smith@example.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <!-- Expert Card 3 -->
+                    <div class="expert-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/doc2.jpg" alt="Dr. Emily Davis">
+                                <h4>Dr. Emily Davis</h4>
+                                <p>Cosmetic Surgeon</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h4>Dr. Emily Davis</h4>
+                                <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
+
+                                <div class="contact-info">
+                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                                    <p><i class="fas fa-envelope"></i> emily.davis@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Card 4 -->
+                    <div class="expert-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/doc3.jpg" alt="Dr. Michael Brown">
+                                <h4>Dr. Michael Brown</h4>
+                                <p>PRP Therapist</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h4>Dr. Michael Brown</h4>
+                                <p>7+ years of experience in PRP therapy and hair restoration.</p>
+
+                                <div class="contact-info">
+                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                                    <p><i class="fas fa-envelope"></i> michael.brown@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Expert Card 3 -->
-                <div class="expert-card">
-                  <div class="card-inner">
-                    <div class="card-front">
-                      <img src="./assets/img/doc2.jpg" alt="Dr. Emily Davis">
-                      <h4>Dr. Emily Davis</h4>
-                      <p>Cosmetic Surgeon</p>
-                      <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <h4>Dr. Emily Davis</h4>
-                      <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
-
-                      <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                        <p><i class="fas fa-envelope"></i> emily.davis@example.com</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Expert Card 4 -->
-                <div class="expert-card">
-                  <div class="card-inner">
-                    <div class="card-front">
-                      <img src="./assets/img/doc3.jpg" alt="Dr. Michael Brown">
-                      <h4>Dr. Michael Brown</h4>
-                      <p>PRP Therapist</p>
-                      <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <h4>Dr. Michael Brown</h4>
-                      <p>7+ years of experience in PRP therapy and hair restoration.</p>
-
-                      <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                        <p><i class="fas fa-envelope"></i> michael.brown@example.com</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
         </section>
 
@@ -552,7 +549,10 @@
                                 <h3>What is PRP therapy, and how does it work?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        PRP (Platelet-Rich Plasma) therapy is a non-surgical treatment that uses your own blood's platelets to promote healing and rejuvenation. The plasma, rich in growth factors, is injected into the targeted area to stimulate tissue repair and collagen production.
+                                        PRP (Platelet-Rich Plasma) therapy is a non-surgical treatment that uses your own
+                                        blood's platelets to promote healing and rejuvenation. The plasma, rich in growth
+                                        factors, is injected into the targeted area to stimulate tissue repair and collagen
+                                        production.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -562,7 +562,9 @@
                                 <h3>What conditions can PRP therapy treat?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        PRP therapy is commonly used for hair restoration, skin rejuvenation, joint pain relief, and wound healing. It can also improve the appearance of fine lines, wrinkles, and acne scars.
+                                        PRP therapy is commonly used for hair restoration, skin rejuvenation, joint pain
+                                        relief, and wound healing. It can also improve the appearance of fine lines,
+                                        wrinkles, and acne scars.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -572,7 +574,9 @@
                                 <h3>Is PRP therapy safe?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Yes, PRP therapy is safe because it uses your own blood, reducing the risk of allergic reactions or infections. The procedure is minimally invasive and performed under sterile conditions.
+                                        Yes, PRP therapy is safe because it uses your own blood, reducing the risk of
+                                        allergic reactions or infections. The procedure is minimally invasive and performed
+                                        under sterile conditions.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -582,7 +586,8 @@
                                 <h3>How long does a PRP treatment session take?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        A typical PRP session takes about 30-60 minutes, depending on the area being treated. This includes blood draw, plasma preparation, and injection.
+                                        A typical PRP session takes about 30-60 minutes, depending on the area being
+                                        treated. This includes blood draw, plasma preparation, and injection.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -592,7 +597,8 @@
                                 <h3>Is PRP therapy painful?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Most patients experience minimal discomfort during PRP therapy. A topical anesthetic can be applied to the treatment area to ensure a comfortable experience.
+                                        Most patients experience minimal discomfort during PRP therapy. A topical anesthetic
+                                        can be applied to the treatment area to ensure a comfortable experience.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -602,7 +608,9 @@
                                 <h3>How soon can I see results from PRP therapy?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Results vary depending on the individual and the condition being treated. For hair restoration, visible improvements may take 3-6 months. For skin rejuvenation, results can often be seen within a few weeks.
+                                        Results vary depending on the individual and the condition being treated. For hair
+                                        restoration, visible improvements may take 3-6 months. For skin rejuvenation,
+                                        results can often be seen within a few weeks.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -612,7 +620,9 @@
                                 <h3>How many PRP sessions are needed for optimal results?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        The number of sessions depends on the treatment area and desired results. Typically, 3-4 sessions spaced 4-6 weeks apart are recommended for hair restoration, while skin rejuvenation may require fewer sessions.
+                                        The number of sessions depends on the treatment area and desired results. Typically,
+                                        3-4 sessions spaced 4-6 weeks apart are recommended for hair restoration, while skin
+                                        rejuvenation may require fewer sessions.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -622,7 +632,8 @@
                                 <h3>Are there any side effects of PRP therapy?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Side effects are rare but may include mild swelling, redness, or bruising at the injection site. These usually resolve within a few days.
+                                        Side effects are rare but may include mild swelling, redness, or bruising at the
+                                        injection site. These usually resolve within a few days.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -687,300 +698,86 @@
         </section>
 
 
-
-        <section id="appointment" class="services appointment howitworks section mb-4">
-            <div class="container section-title">
-                <h2>Make Appointment</h2>
+        <!-- Laser CTA Section -->
+        <section id="hydrafacial-contact" class="hydrafacial-cta-section py-5">
+            <div class="hydrafacial-floating-bubbles">
+                <div class="hydrafacial-bubble" style="left: 10%; width: 40px; height: 40px; animation-delay: 0s;"></div>
+                <div class="hydrafacial-bubble" style="left: 20%; width: 30px; height: 30px; animation-delay: 2s;"></div>
+                <div class="hydrafacial-bubble" style="left: 50%; width: 50px; height: 50px; animation-delay: 4s;"></div>
+                <div class="hydrafacial-bubble" style="left: 70%; width: 25px; height: 25px; animation-delay: 1s;"></div>
+                <div class="hydrafacial-bubble" style="left: 90%; width: 35px; height: 35px; animation-delay: 3s;"></div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div>
-                            <h3 class="title" style="font-weight: 700; font-size: 34px;">Book a consultation</h3>
-                            <p>
-                                Fill in your details and we’ll get in touch with you shortly to answer your questions.
-                            </p>
-                            <br>
-                            <h5>Want to contact us directly?</h5>
-                            <p><strong>Leeds: </strong>07570957502</p>
-                            <p><strong>Email: </strong>info@yorkshirehairandskinsolution.co.uk</p>
-                        </div>
+            <div class="container position-relative py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" id="contact">
+                        <h2 class="text-white mb-4">Ready for Laser Treatment?</h2>
+                        <p class="lead text-white mb-5">Book your Laser treatment today and experience the difference
+                        </p>
+                        @livewire('AppointmentForm.PrpAppointmentForm')
                     </div>
-                    <div class="col-lg-6">
-                        <div class="stepper d-flex justify-content-between">
-                            <div class="step active">Step 1</div>
-                            <div class="step">Step 2</div>
-                            <div class="step">Step 3</div>
-                        </div>
-                        <form action="" method="post" class="php-email-form">
-                            <!-- Step 1: User Details -->
-                            <div class="step-content active">
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="Phone Number" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="email" class="form-control" name="email" placeholder="Email"
-                                            required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="clinic" class="form-select" required>
-                                            <option value="">Preferred Clinic*</option>
-                                            <option value="London">London</option>
-                                            <option value="Leeds">Leeds</option>
-                                            <option value="Manchester">Manchester</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <select name="contact_method" class="form-select" required>
-                                            <option value="">Preferred Contact Method</option>
-                                            <option value="Mobile">Mobile</option>
-                                            <option value="Email">Email</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 2: Date Selection -->
-                            <div class="step-content">
-                                <h3>Select a Date</h3>
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <select id="month-selector" class="form-select">
-                                            <option value="1">January</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <select id="year-selector" class="form-select">
-                                            {{-- <option value="2024">2024</option> --}}
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-
-                                        <div id="custom-calendar" class="calendar-container form-control"></div>
-                                    </div>
-                                </div>
-
-                                {{-- <input type="text" id="calendar" class="form-control" placeholder="Pick a Date" required> --}}
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="button" class="btn btn-primary next-step primartbtn">Next</button>
-                            </div>
-
-                            <!-- Step 3: Time Selection -->
-                            <div class="step-content">
-                                <h3>Select a Time</h3>
-                                {{-- <input type="time" name="appointment_time" class="form-control" required> --}}
-                                <div class="col-md-12">
-                                    <select name="appointment_time" class="form-select" required>
-                                        <option value="">Preferred Time*</option>
-                                        <option value="9:00am">9:00 am</option>
-                                        <option value="10:00am">10: 00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="11:00am">11:00 am</option>
-                                        <option value="12:00pm">12:00 pm</option>
-                                        <option value="01:00pm">01:00 pm</option>
-                                        <option value="02:00pm">02:00 pm</option>
-                                        <option value="03:00pm">03:00 pm</option>
-                                        <option value="04:00pm">04:00 pm</option>
-                                        <option value="05:00pm">05:00 pm</option>
-                                        <option value="06:00pm">06:00 pm</option>
-                                    </select>
-                                </div>
-                                <button type="button" class="btn btn-secondary prev-step previousbtn">Previous</button>
-                                <button type="submit" class="btn btn-success primartbtn">Submit</button>
-                            </div>
-                        </form>
-                    </div><!-- End Contact Form -->
                 </div>
             </div>
-
         </section>
 
-    </script>
-    <script>
-        $(document).ready(function() {
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                filter: '.Doctor1' // Show only Category 1 by default
-            });
-
-            $('.filter-button').on('click', function() {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-
-                // Remove active class and add it to the clicked button
-                $('.filter-button').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-    </script>
-    {{-- script for hero-section --}}
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.hero-image');
-            let currentIndex = 0;
-            
-            function changeImage() {
-                // Hide current image
-                images[currentIndex].classList.remove('active');
-                
-                // Move to next image
-                currentIndex = (currentIndex + 1) % images.length;
-                
-                // Show next image
-                images[currentIndex].classList.add('active');
-            }
-            
-            // Change image every 3 seconds
-            setInterval(changeImage, 3000);
-        });
-    </script>
-    {{-- date picker --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const calendarContainer = document.getElementById("custom-calendar");
-            const monthSelector = document.getElementById("month-selector");
-            const yearSelector = document.getElementById("year-selector");
-            let selectedDate = null;
-
-            function generateCalendar() {
-                calendarContainer.innerHTML = ""; // Clear previous dates
-                const month = parseInt(monthSelector.value);
-                const year = parseInt(yearSelector.value);
-                const daysInMonth = new Date(year, month, 0).getDate();
-
-                for (let day = 1; day <= daysInMonth; day++) {
-                    let dayBox = document.createElement("div");
-                    dayBox.classList.add("day-box");
-                    dayBox.textContent = day;
-                    dayBox.addEventListener("click", function() {
-                        if (selectedDate) {
-                            selectedDate.classList.remove("selected");
-                        }
-                        selectedDate = dayBox;
-                        selectedDate.classList.add("selected");
-                    });
-                    calendarContainer.appendChild(dayBox);
-                }
-            }
-
-            monthSelector.addEventListener("change", generateCalendar);
-            yearSelector.addEventListener("change", generateCalendar);
-            generateCalendar(); // Initial load
-        });
-    </script>
-     <script>
-        $(document).ready(function() {
-            let currentStep = 0;
-            const steps = $(".step-content");
-            const indicators = $(".step");
-
-            function showStep(index) {
-                steps.removeClass("active");
-                indicators.removeClass("active");
-                $(steps[index]).addClass("active");
-                $(indicators[index]).addClass("active");
-            }
-
-            function validateStep(index) {
-                let isValid = true;
-                $(steps[index]).find("input[required], select[required]").each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass("is-invalid");
-                        isValid = false;
-                    } else {
-                        $(this).removeClass("is-invalid");
-                    }
-                });
-                return isValid;
-            }
-
-            $(".next-step").click(function() {
-                if (validateStep(currentStep) && currentStep < steps.length - 1) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
-
-            $(".prev-step").click(function() {
-                if (currentStep > 0) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#toggleButton").click(function() {
-                $("#hiddenSection").slideToggle(600, function() {
-                    if ($(this).is(":visible")) {
-                        $("#toggleButton").text("See Less");
-                        $("html, body").animate({
-                            scrollTop: $("#hiddenSection").offset().top - 100
-                        }, 800);
-                    } else {
-                        $("#toggleButton").text("See More");
-                    }
-                });
-            });
-        });
-    </script>
+        </script>
+       
+        {{-- script for hero-section --}}
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            const processSteps = document.querySelectorAll('.process-step');
+            document.addEventListener('DOMContentLoaded', function() {
+                const images = document.querySelectorAll('.hero-image');
+                let currentIndex = 0;
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
+                function changeImage() {
+                    // Hide current image
+                    images[currentIndex].classList.remove('active');
+
+                    // Move to next image
+                    currentIndex = (currentIndex + 1) % images.length;
+
+                    // Show next image
+                    images[currentIndex].classList.add('active');
+                }
+
+                // Change image every 3 seconds
+                setInterval(changeImage, 3000);
+            });
+        </script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const processSteps = document.querySelectorAll('.process-step');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+
+                processSteps.forEach((step) => {
+                    observer.observe(step);
+                });
+            });
+            // JavaScript for FAQ Toggle
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    question.classList.toggle('active');
+                    const answer = question.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        answer.style.padding = '0 20px';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.padding = '10px 20px';
                     }
                 });
-            }, { threshold: 0.5 });
-
-            processSteps.forEach((step) => {
-                observer.observe(step);
             });
-        });
-        // JavaScript for FAQ Toggle
-        const faqQuestions = document.querySelectorAll('.faq-question');
-
-        faqQuestions.forEach(question => {
-          question.addEventListener('click', () => {
-            question.classList.toggle('active');
-            const answer = question.nextElementSibling;
-            if (answer.style.maxHeight) {
-              answer.style.maxHeight = null;
-              answer.style.padding = '0 20px';
-            } else {
-              answer.style.maxHeight = answer.scrollHeight + 'px';
-              answer.style.padding = '10px 20px';
-            }
-          });
-        });
         </script>
         <!-- Bootstrap JS and dependencies -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
