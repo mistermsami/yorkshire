@@ -123,6 +123,7 @@
                 </nav>
 
                 <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+                
 
             </div>
 
@@ -221,6 +222,31 @@
         </div>
 
     </footer>
+
+    {{-- appointment button js --}}
+    <script>
+        document.getElementById('appointment-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // 1. Check if we're on the Hydra Facial page
+    if (window.location.pathname.includes('hydra-ficial')) {
+        const hydraSection = document.getElementById('hydrafacial-contact');
+        if (hydraSection) {
+            // Smooth scroll to Hydra's appointment section
+            hydraSection.scrollIntoView({ behavior: 'smooth' });
+            return;
+        }
+    }
+    
+    // 2. Default behavior for other pages
+    const targetPage = 
+        window.location.pathname.includes('services') ? '/services.html' :
+        window.location.pathname.includes('contact') ? '/contact.html' :
+        '/default-page.html'; // Fallback
+    
+    window.location.href = `${targetPage}#appointment`;
+});
+    </script>
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>

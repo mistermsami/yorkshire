@@ -187,7 +187,16 @@
     }
 }
 
+/* testimonial trustpilot image */
+.trustpilot-img-container {
+    margin-bottom: 15px;
+    
+}
 
+.trustpilot-img-container img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* ------------------------------------------------------ */
@@ -1168,230 +1177,197 @@
    </script>
     {{-- testimonials script --}}
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Intersection Observer for counter animation
-            const counterElement = document.querySelector('.trusted-men-counter');
-            const section = document.querySelector('.trusted-men-section');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Intersection Observer for counter animation
+        const counterElement = document.querySelector('.trusted-men-counter');
+        const section = document.querySelector('.trusted-men-section');
 
-            let counterAnimated = false;
+        let counterAnimated = false;
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !counterAnimated) {
-                        animateCounter(counterElement, 100000);
-                        counterAnimated = true;
-                    }
-                });
-            }, {
-                threshold: 0.5
-            }); // Trigger when 50% of section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counterAnimated) {
+                    animateCounter(counterElement, 100000);
+                    counterAnimated = true;
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
 
-            observer.observe(section);
+        observer.observe(section);
 
-            // Animate counter
-            function animateCounter(element, target, duration = 2000) {
-                const start = 0;
-                const increment = target / (duration / 16);
-                let current = start;
+        function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
 
-                const updateCounter = () => {
-                    current += increment;
-                    if (current < target) {
-                        element.textContent = Math.floor(current).toLocaleString();
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        element.textContent = target.toLocaleString();
-                    }
-                };
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    element.textContent = Math.floor(current).toLocaleString();
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            };
 
-                updateCounter();
+            updateCounter();
+        }
+
+        // Testimonial data (removed rating property)
+        const testimonials = [
+            {
+                content: "After struggling with hair loss for years, this treatment plan actually worked. My confidence has never been higher!",
+                img: "https://randomuser.me/api/portraits/men/32.jpg",
+                name: "Michael R.",
+                treatment: "12-month hair program"
+            },
+            {
+                content: "The personalized approach made all the difference. Finally found a solution that delivers real results.",
+                img: "https://randomuser.me/api/portraits/men/44.jpg",
+                name: "David T.",
+                treatment: "Custom hair treatment"
+            },
+            {
+                content: "Noticeable improvement in just 3 months. The team understands men's hair concerns better than anyone.",
+                img: "https://randomuser.me/api/portraits/men/22.jpg",
+                name: "James K.",
+                treatment: "Hair restoration"
+            },
+            {
+                content: "Wish I had started sooner. The treatments are painless and actually work. Worth every penny.",
+                img: "https://randomuser.me/api/portraits/men/55.jpg",
+                name: "Robert P.",
+                treatment: "6-month plan"
+            },
+            {
+                content: "My barber asked what I've been doing differently. Friends are noticing the transformation!",
+                img: "https://randomuser.me/api/portraits/men/66.jpg",
+                name: "Thomas W.",
+                treatment: "Complete hair solution"
+            },
+            {
+                content: "No more worrying about thinning spots. This treatment gave me back my confidence.",
+                img: "https://randomuser.me/api/portraits/men/77.jpg",
+                name: "Christopher M.",
+                treatment: "Hair thickening program"
+            }
+        ];
+
+        const grid = document.getElementById('trustedMenGrid');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+        let visibleTestimonials = 3;
+        let autoRotateInterval;
+        const rotationInterval = 6000;
+
+        function initGrid() {
+            if (window.innerWidth < 576) {
+                visibleTestimonials = 1;
+            } else if (window.innerWidth < 992) {
+                visibleTestimonials = 2;
+            } else {
+                visibleTestimonials = 3;
             }
 
-            // Testimonial data
-            const testimonials = [{
-                    rating: 5,
-                    content: "After struggling with hair loss for years, this treatment plan actually worked. My confidence has never been higher!",
-                    img: "https://randomuser.me/api/portraits/men/32.jpg",
-                    name: "Michael R.",
-                    treatment: "12-month hair program"
-                },
-                {
-                    rating: 5,
-                    content: "The personalized approach made all the difference. Finally found a solution that delivers real results.",
-                    img: "https://randomuser.me/api/portraits/men/44.jpg",
-                    name: "David T.",
-                    treatment: "Custom hair treatment"
-                },
-                {
-                    rating: 4.5,
-                    content: "Noticeable improvement in just 3 months. The team understands men's hair concerns better than anyone.",
-                    img: "https://randomuser.me/api/portraits/men/22.jpg",
-                    name: "James K.",
-                    treatment: "Hair restoration"
-                },
-                {
-                    rating: 5,
-                    content: "Wish I had started sooner. The treatments are painless and actually work. Worth every penny.",
-                    img: "https://randomuser.me/api/portraits/men/55.jpg",
-                    name: "Robert P.",
-                    treatment: "6-month plan"
-                },
-                {
-                    rating: 5,
-                    content: "My barber asked what I've been doing differently. Friends are noticing the transformation!",
-                    img: "https://randomuser.me/api/portraits/men/66.jpg",
-                    name: "Thomas W.",
-                    treatment: "Complete hair solution"
-                },
-                {
-                    rating: 5,
-                    content: "No more worrying about thinning spots. This treatment gave me back my confidence.",
-                    img: "https://randomuser.me/api/portraits/men/77.jpg",
-                    name: "Christopher M.",
-                    treatment: "Hair thickening program"
-                }
-            ];
+            renderTestimonials();
+            updateControls();
+            startAutoRotate();
+        }
 
-            const grid = document.getElementById('trustedMenGrid');
-            const prevBtn = document.querySelector('.prev');
-            const nextBtn = document.querySelector('.next');
-            let currentIndex = 0;
-            let visibleTestimonials = 3; // Default for desktop
-            let autoRotateInterval;
-            const rotationInterval = 6000; // 6 seconds
+        function renderTestimonials() {
+            grid.innerHTML = '';
+            const endIndex = Math.min(currentIndex + visibleTestimonials, testimonials.length);
 
-            // Initialize the grid
-            function initGrid() {
-                // Determine how many testimonials to show based on screen size
-                if (window.innerWidth < 576) {
-                    visibleTestimonials = 1;
-                } else if (window.innerWidth < 992) {
-                    visibleTestimonials = 2;
-                } else {
-                    visibleTestimonials = 3;
-                }
+            for (let i = currentIndex; i < endIndex; i++) {
+                const testimonial = testimonials[i];
+                const card = document.createElement('div');
+                card.className = 'trusted-men-card';
+                card.style.animationDelay = `${(i - currentIndex) * 0.1}s`;
 
+                card.innerHTML = `
+                    <div class="trustpilot-img-container">
+                        <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="Trustpilot" width="230">
+                    </div>
+                    <p class="trusted-men-content">"${testimonial.content}"</p>
+                    <div class="trusted-men-client">
+                        <img src="${testimonial.img}" alt="${testimonial.name}" class="trusted-men-avatar">
+                        <div class="trusted-men-client-details">
+                            <h5>${testimonial.name}</h5>
+                            <p>${testimonial.treatment}</p>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            }
+        }
+
+        function updateControls() {
+            prevBtn.classList.toggle('disabled', currentIndex === 0);
+            nextBtn.classList.toggle('disabled', currentIndex >= testimonials.length - visibleTestimonials);
+        }
+
+        function showNext() {
+            if (currentIndex < testimonials.length - visibleTestimonials) {
+                currentIndex++;
                 renderTestimonials();
                 updateControls();
+            } else {
+                currentIndex = 0;
+                renderTestimonials();
+                updateControls();
+            }
+        }
+
+        function showPrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderTestimonials();
+                updateControls();
+            }
+        }
+
+        function startAutoRotate() {
+            autoRotateInterval = setInterval(showNext, rotationInterval);
+        }
+
+        function stopAutoRotate() {
+            clearInterval(autoRotateInterval);
+        }
+
+        nextBtn.addEventListener('click', function() {
+            if (!this.classList.contains('disabled')) {
+                stopAutoRotate();
+                showNext();
                 startAutoRotate();
             }
-
-            // Render testimonials
-            function renderTestimonials() {
-                grid.innerHTML = '';
-                const endIndex = Math.min(currentIndex + visibleTestimonials, testimonials.length);
-
-                for (let i = currentIndex; i < endIndex; i++) {
-                    const testimonial = testimonials[i];
-                    const card = document.createElement('div');
-                    card.className = 'trusted-men-card';
-                    card.style.animationDelay = `${(i - currentIndex) * 0.1}s`;
-
-                    // Create rating stars
-                    let stars = '';
-                    const fullStars = Math.floor(testimonial.rating);
-                    const hasHalfStar = testimonial.rating % 1 !== 0;
-
-                    for (let j = 0; j < 5; j++) {
-                        if (j < fullStars) {
-                            stars += '<i class="fas fa-star"></i>';
-                        } else if (j === fullStars && hasHalfStar) {
-                            stars += '<i class="fas fa-star-half-alt"></i>';
-                        } else {
-                            stars += '<i class="far fa-star"></i>';
-                        }
-                    }
-
-                    card.innerHTML = `
-                        <div class="trusted-men-rating">${stars}</div>
-                        <p class="trusted-men-content">"${testimonial.content}"</p>
-                        <div class="trusted-men-client">
-                            <img src="${testimonial.img}" alt="${testimonial.name}" class="trusted-men-avatar">
-                            <div class="trusted-men-client-details">
-                                <h5>${testimonial.name}</h5>
-                                <p>${testimonial.treatment}</p>
-                            </div>
-                        </div>
-                    `;
-
-                    grid.appendChild(card);
-                }
-            }
-
-            // Update control buttons
-            function updateControls() {
-                prevBtn.classList.toggle('disabled', currentIndex === 0);
-                nextBtn.classList.toggle('disabled', currentIndex >= testimonials.length - visibleTestimonials);
-            }
-
-            // Show next set of testimonials
-            function showNext() {
-                if (currentIndex < testimonials.length - visibleTestimonials) {
-                    currentIndex++;
-                    renderTestimonials();
-                    updateControls();
-                } else {
-                    // Loop back to start
-                    currentIndex = 0;
-                    renderTestimonials();
-                    updateControls();
-                }
-            }
-
-            // Show previous set of testimonials
-            function showPrev() {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    renderTestimonials();
-                    updateControls();
-                }
-            }
-
-            // Auto rotate testimonials
-            function startAutoRotate() {
-                autoRotateInterval = setInterval(showNext, rotationInterval);
-            }
-
-            // Stop auto rotation
-            function stopAutoRotate() {
-                clearInterval(autoRotateInterval);
-            }
-
-            // Event listeners
-            nextBtn.addEventListener('click', function() {
-                if (!this.classList.contains('disabled')) {
-                    stopAutoRotate();
-                    showNext();
-                    startAutoRotate();
-                }
-            });
-
-            prevBtn.addEventListener('click', function() {
-                if (!this.classList.contains('disabled')) {
-                    stopAutoRotate();
-                    showPrev();
-                    startAutoRotate();
-                }
-            });
-
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                const prevVisible = visibleTestimonials;
-                initGrid();
-                // Adjust currentIndex if needed
-                if (visibleTestimonials > prevVisible) {
-                    currentIndex = Math.max(0, currentIndex - (visibleTestimonials - prevVisible));
-                }
-                renderTestimonials();
-                updateControls();
-            });
-
-            // Pause auto-rotate on hover
-            grid.addEventListener('mouseenter', stopAutoRotate);
-            grid.addEventListener('mouseleave', startAutoRotate);
-
-            // Initialize
-            initGrid();
         });
-    </script>
+
+        prevBtn.addEventListener('click', function() {
+            if (!this.classList.contains('disabled')) {
+                stopAutoRotate();
+                showPrev();
+                startAutoRotate();
+            }
+        });
+
+        window.addEventListener('resize', function() {
+            const prevVisible = visibleTestimonials;
+            initGrid();
+            if (visibleTestimonials > prevVisible) {
+                currentIndex = Math.max(0, currentIndex - (visibleTestimonials - prevVisible));
+            }
+            renderTestimonials();
+            updateControls();
+        });
+
+        grid.addEventListener('mouseenter', stopAutoRotate);
+        grid.addEventListener('mouseleave', startAutoRotate);
+
+        initGrid();
+    });
+</script>
 @endsection

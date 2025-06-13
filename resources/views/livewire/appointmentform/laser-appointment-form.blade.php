@@ -40,9 +40,10 @@
                         <select class="form-select" wire:model="appointment_type" name="appointment_type"
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
-                            <option value="Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline">Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline</option>
-                            <option value="Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms">Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms</option>
-                            <option value="Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs">Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs</option>
+                            <option value="Face Treatments">Face Treatments</option>
+                            <option value="Upper Body Treatments">Upper Body Treatments</option>
+                            <option value="Lower Body Treatments">Lower Body Treatments</option>
+                             <option value="Full Body Treatments">Full Body Treatments</option>
                         </select>
                     </div>
                 </div>

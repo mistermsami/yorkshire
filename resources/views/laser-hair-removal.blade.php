@@ -1087,7 +1087,7 @@
                     </div>
                 </div>
 
-                <div id="male-cards" style="display: none;">
+                {{-- <div id="male-cards" style="display: none;">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4">
                             <div class="card text-center" style="border: none">
@@ -1186,7 +1186,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- plans details --}}
                 <div class="row mt-5 d-flex justify-content-center">
@@ -1203,59 +1203,121 @@
                                 <h3>Female Plan Details</h3>
                                 <div class="faq-content">
                                     <p>
-                                        <b>Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline</b>
+                                        <b>Face Treatments</b>
                                         <br>
-                                        1 session 15%: 59.50 £
+                                        Full Face 1 session : 45 £
                                         <br>
-                                        3 session 25%: 157.50 £
+                                        Full Face 6 session : 270 £
                                         <br>
-                                        6 session 30%: 294.00 £
+                                        Half Face 1 session : 30 £	
                                         <br>
-                                        <b>70 £</b>
+                                        Half Face 6 session : 180 £
+                                        <br>
+                                        Neck Front/Back 1 session : 35 £
+                                        <br>
+                                        Neck Front/Back 6 session : 210 £
+                                        <br>
+                                        Upper Lip + Chin/Cheeks 1 session : 15 £
+                                        <br>
+                                        Upper Lip + Chin/Cheeks 6 session : 90 £
+                                        <br>
+                                        Sideburns 1 session : 35 £
+                                        <br>
+                                        Sideburns 6 session : 210 £
+                                        <br>
+                                        Jaw Line + Chin 1 session : 50 £
+                                        <br>
+                                        Jaw Line + Chin 6 session : 300 £
+                                        <br>
+                                        1/2 Face + Front/back Neck 1 session : 50 £
+                                        <br>
+                                        1/2 Face + Front/back Neck 6 session : 300 £
+                                        <br>
+                                        Beard + Cheek 1 session : 55 £
+                                        <br>
+                                        Beard + Cheek 6 session : 330 £
                                         <br><br>
 
-                                        <b>Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms</b>
+                                        <b>Lower Body Treatments</b>
                                         <br>
-                                        1 session 15%: 193.50 £
+                                        Full Legs (feet and toes) 1 session : 95 £
                                         <br>
-                                        3 sessions 25%: 517.50 £
+                                        Full Legs (feet and toes) 6 session : 570 £
                                         <br>
-                                        6 sessions 30%: 966.00 £
+                                        Half Legs 1 session : 60 £
                                         <br>
-                                        <b>230 £</b>
+                                        Half Legs 6 session : 330 £
+                                        <br>
+                                        Feet & Toes 1 session : 20 £
+                                        <br>
+                                        Feet & Toes 6 session : 120 £
+                                        <br>
+                                        Female Bikini 1 session : 30 £
+                                        <br>
+                                        Female Bikini 6 session : 180 £
+                                        <br>
+                                        Female Brazilian 1 session : 40 £
+                                        <br>
+                                         Female Brazilian 6 session : 240 £
+                                         <br>
+                                         Female Hollywood + Underarms 1 session : 55 £
+                                         <br>
+                                         Female Hollywood + Underarms 6 session : 330 £
+                                         <br>
+                                         Male Brazalian 1 session : 40 £
+                                         <br>
+                                         Male Brazalian 1 session : 240 £
+                                         <br>
+                                         Beard + Cheek 1 session : 55 £
+                                         <br>
+                                         Beard + Cheek 1 session : 330 £
                                         <br><br>
 
-                                        <b>Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs</b>
+                                        <b>Upper Body Treatments</b>
                                         <br>
-                                        1 session 15%: 289.00 £
+                                        Under Arms 1 session : 8 £
                                         <br>
-                                        3 sessions 25%: 765.00 £
+                                        Under Arms 6 session : 48 £
                                         <br>
-                                        6 sessions 30%: 1428.00 £
+                                        Full Arms 1 session : 75 £
                                         <br>
-                                        <b>340 £</b>
+                                        Full Arms 6 session : 450 £
+                                        <br>
+                                        Half Arms 1 session : 40 £
+                                        <br>
+                                        Half Arms 6 session : 240 £
+                                        <br>
+                                        Full Back 1 session : 90 £
+                                        <br>
+                                        Full Back 6 session : 540 £
+                                        <br>
+                                        Stomach 1 session : 40 £
+                                        <br>
+                                        Stomach 6 session : 240 £
+                                        <br>
+                                        Chest 1 session : 35 £
+                                        <br>
+                                        Chest 6 session : 210 £
+                                        <br>
+                                        Hands + Fingers 1 session : 15 £
+                                        <br>
+                                        Hands + Fingers 6 session : 90 £
+                                        <br>
+                                        Snail Trail/Naval 1 session : 25 £
+                                        <br>
+                                        Snail Trail/Naval 6 session : 150 £
                                         <br><br>
 
-                                        <b>Extra Large area – Full Legs/ Chest and Tummy/ Full Back</b>
-                                        <br>
-                                        1 session 15%: 425.00 £
-                                        <br>
-                                        3 sessions 25%: 1125.00 £
-                                        <br>
-                                        6 sessions 30%: 2100.00 £
-                                        <br>
-                                        <b>500 £</b>
-                                        <br><br>
 
                                         <b>Full body</b>
                                         <br>
-                                        1 session 15%: 1147.50 £
+                                       Full Body 1 session : 300 £
                                         <br>
-                                        3 sessions 25%: 3037.50 £
+                                       Full Body 6 session : 1800 £
                                         <br>
-                                        6 sessions 30%: 5670 £
+                                       Full body (4 parts) 1 session : 190 £
                                         <br>
-                                        <b>1350 £</b>
+                                        Full body (4 parts) 6 session : 1200 £
                                         <br><br>
                                     </p>
                                 </div>
