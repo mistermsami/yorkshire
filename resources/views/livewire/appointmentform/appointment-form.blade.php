@@ -37,20 +37,12 @@
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-<<<<<<< HEAD
                         <select class="form-select" wire:model="appointment_type" name="appointment_type"
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
                             <option value="Signature HydraFacial">Signature HydraFacial</option>
                             <option value="Advance Pore Detox Facial">Advanced Pore Detox Facial</option>
                             <option value="Anti-Ageing Rejuvenation Facial">Anti-Ageing Rejuvenation Facial</option>
-=======
-                        <select class="form-select"  wire:model="appointment_type" name="appointment_type"
-                            id="appointmentSelect" required> 
-                            <option value="Signature HydraFacial" selected>Signature HydraFacial</option>
-                            <option value="Advance Pore Detox Facial">Advance Pore Detox Facial</option>
-                            <option value="Anti-Ageing Rejuvenation">Anti-Ageing Rejuvenation</option>
->>>>>>> 0425c5ec0cd9640bf74eaefa752b7e1c99cd907b
                             <option value="Oxygen & Nutrient Infusion Therapy">Oxygen & Nutrient Infusion Therapy</option>
                             <option value="Skin Clarity & Acne Treatment">Skin Clarity & Acne Treatment</option>
                         </select>

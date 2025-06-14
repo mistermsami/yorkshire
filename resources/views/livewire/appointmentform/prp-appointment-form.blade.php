@@ -40,9 +40,12 @@
                         <select class="form-select" wire:model="appointment_type" name="appointment_type"
                             id="appointmentSelect">
                             <option selected>Select Treatment</option>
-                            <option value="Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline">Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline</option>
-                            <option value="Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms">Medium Area – Full Face / Half-Arms / Bikini Line/ Neck/ Underarms</option>
-                            <option value="Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs">Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs</option>
+                            <option value="PRP for face Rejuvenation">PRP for face Rejuvenation</option>
+                            <option value="PRP for dark circles">PRP for dark circles</option>
+                            <option value="Bioting-Enhanced PRP">Bioting-Enhanced PRP </option>
+                            <option value="IV Therapy Services ">IV Therapy Services  </option>
+                            <option value="Advanced Regenerative Therapies ">Advanced Regenerative Therapies</option>
+                            <option value="Vitamin Injection Treatments">Vitamin Injection Treatments</option>
                         </select>
                     </div>
                 </div>

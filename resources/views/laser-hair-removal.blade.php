@@ -368,73 +368,6 @@
             color: #f1f7f7;
         }
 
-         .hydrafacial-cta-section {
-            background: linear-gradient(to right, #3577cf, #021580e8);
-            color: white;
-            padding: 80px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hydrafacial-cta-section::before {
-            content: '';
-            position: absolute;
-            top: -50px;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: white;
-            transform: skewY(-3deg);
-            z-index: 1;
-        }
-
-        .hydrafacial-floating-bubbles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            overflow: hidden;
-        }
-
-        .hydrafacial-bubble {
-            position: absolute;
-            bottom: -100px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: hydrafacial-floating 15s infinite ease-in;
-        }
-
-        @keyframes hydrafacial-floating {
-            0% {
-                bottom: -100px;
-                transform: translateX(0);
-            }
-
-            50% {
-                transform: translateX(100px);
-            }
-
-            100% {
-                bottom: 100%;
-                transform: translateX(-100px);
-            }
-        }
-        .hydrafacial-btn-primary {
-            background-color: #ff6b6b;
-            border: none;
-            padding: 12px 30px;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-        }
-
-        .hydrafacial-btn-primary:hover {
-            background-color: #ff5252;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
-        }
         @media only screen and (max-width: 1399px) and (min-width: 769px) {
             .afterresult .card {
                 height: 280px !important;
@@ -1200,7 +1133,7 @@
                         <div class="faq-container">
 
                             <div class="faq-item ">
-                                <h3>Female Plan Details</h3>
+                                <h3>Treatment Plan Overview</h3>
                                 <div class="faq-content">
                                     <p>
                                         <b>Face Treatments</b>
@@ -1322,71 +1255,9 @@
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
-                            <div class="faq-item">
-                                <h3>Male Plan Details</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        <b>Small Area - Upper Lip/ Lower Lip/ Chin/ Jawline</b>
-                                        <br>
-                                        1 session 15%: 59.50 £
-                                        <br>
-                                        3 session 25%: 157.50 £
-                                        <br>
-                                        6 session 30%: 294.00 £
-                                        <br>
-                                        <b>70 £</b>
-                                        <br><br>
-
-                                        <b>Medium Area – Full Face / Half-Arms / Beard Line/ Neck/ Underarms</b>
-                                        <br>
-                                        1 session 15%: 280.50 £
-                                        <br>
-                                        3 sessions 25%: 742.50 £
-                                        <br>
-                                        6 sessions 30%: 1386.00 £
-                                        <br>
-                                        <b>330 £</b>
-                                        <br><br>
-
-                                        <b>Large Area – Full Bikini/ Full-Arms/ Half-Back/ Buttocks/ Chest/ Tummy/ Half-Legs</b>
-                                        <br>
-                                        1 session 15%: 395.25 £
-                                        <br>
-                                        3 sessions 25%: 1046.25 £
-                                        <br>
-                                        6 sessions 30%: 1953.00 £
-                                        <br>
-                                        <b>465 £</b>
-                                        <br><br>
-
-                                        <b>Extra Large area – Full Legs/ Chest and Tummy/ Full Back</b>
-                                        <br>
-                                        1 session 15%: 561.00 £
-                                        <br>
-                                        3 sessions 25%: 1485.00 £
-                                        <br>
-                                        6 sessions 30%: 2772.00 £
-                                        <br>
-                                        <b>660 £</b>
-                                        <br><br>
-
-                                        <b>Full body</b>
-                                        <br>
-                                        1 session 15%: 1428.00 £
-                                        <br>
-                                        3 sessions 25%: 3780.00 £
-                                        <br>
-                                        6 sessions 30%: 7056.00 £
-                                        <br>
-                                        <b>1680 £</b>
-                                        <br><br>
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
+                      
                         </div>
                     </div>
                 </div>

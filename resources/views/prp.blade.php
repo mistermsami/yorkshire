@@ -779,6 +779,41 @@
                 });
             });
         </script>
+        {{-- for cta form bubbles --}}
+        <script>
+             function createHydraFacialBubbles() {
+                const bubblesContainer = document.querySelector('.hydrafacial-floating-bubbles');
+                if (!bubblesContainer) return;
+
+                for (let i = 0; i < 8; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.classList.add('hydrafacial-bubble');
+
+                    // Random size between 20px and 60px
+                    const size = Math.random() * 40 + 20;
+
+                    // Random position
+                    const left = Math.random() * 100;
+
+                    // Random animation delay
+                    const delay = Math.random() * 5;
+
+                    // Random animation duration between 10s and 20s
+                    const duration = Math.random() * 10 + 10;
+
+                    bubble.style.width = `${size}px`;
+                    bubble.style.height = `${size}px`;
+                    bubble.style.left = `${left}%`;
+                    bubble.style.animationDelay = `${delay}s`;
+                    bubble.style.animationDuration = `${duration}s`;
+
+                    bubblesContainer.appendChild(bubble);
+                }
+            }
+
+            createHydraFacialBubbles();
+        
+        </script>
         <!-- Bootstrap JS and dependencies -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

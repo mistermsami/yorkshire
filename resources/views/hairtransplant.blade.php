@@ -460,7 +460,7 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="content">
        <h1>Hair Transplant Services Available at Our Clinic</h1>
-<p>While we're still working on our online information, our expert Hair Transplant services are currently available at Yorkshire Hair and Skin Solutions Clinic. Visit us or call to book your consultation today!</p>
+        <p>While we're still working on our online information, our expert Hair Transplant services are currently available at Yorkshire Hair and Skin Solutions Clinic. Visit us or call to book your consultation today!</p>
         <button class="btn btn-lg mt-4 notify-btn" onclick="alert('We’ll notify you when it’s live!')">
           Notify Me
         </button>
