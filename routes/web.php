@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HydraController;
+use App\Http\Controllers\LaserController;
 use App\Http\Controllers\PrpController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -89,4 +90,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/prpAppointments', [PrpController::class, 'index'])->name('prp.index');
     Route::get('/prpAppointment/detail/{id}', [PrpController::class, 'appointmentDetail'])->name('prp.detail');
     Route::get('/prpAppointment/edit/{id}', [PrpController::class, 'editAppointmentDetail'])->name('prp.edit');
+
+    // LASER
+    Route::get('/laserAppointments', [LaserController::class, 'index'])->name('laser.index');
+    Route::get('/laserAppointment/detail/{id}', [LaserController::class, 'appointmentDetail'])->name('laser.detail');
+    Route::get('/laserAppointment/edit/{id}', [LaserController::class, 'editAppointmentDetail'])->name('laser.edit');
 });

@@ -179,6 +179,23 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-clipboard-fill"></i>
+                                <p>
+                                    Laser
+                                    {{-- <span class="nav-badge badge text-bg-secondary me-3">6</span>  --}}
+                                    <i
+                                        class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="{{ route('laser.index')}}" class="nav-link"> <i
+                                            class="nav-icon bi bi-circle"></i>
+                                        <p>Appointments</p>
+                                    </a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('logout')}}" class="nav-link">
                                 <i class="nav-icon bi bi-circle-fill"></i>
                                 <p>logout</p>

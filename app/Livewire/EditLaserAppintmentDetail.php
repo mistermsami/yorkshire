@@ -2,17 +2,17 @@
 
 namespace App\Livewire;
 
-use App\Models\Prp_Appointment;
+use App\Models\Laser_Appointment;
 use Livewire\Component;
 
-class EditPrpAppintmentDetail extends Component
+class EditLaserAppintmentDetail extends Component
 {
     public $appointmentId;
     public $name, $email, $contact, $date, $time, $appointment_type, $price, $paid, $message;
 
     public function mount()
     {
-        $appointment = Prp_Appointment::findOrFail($this->appointmentId);
+        $appointment = Laser_Appointment::findOrFail($this->appointmentId);
 
         $this->name = $appointment->name;
         $this->email = $appointment->email;
@@ -20,7 +20,7 @@ class EditPrpAppintmentDetail extends Component
         $this->date = $appointment->date;
         $this->time = $appointment->time;
         $this->appointment_type = $appointment->appointment_type;
-        $this->price = $appointment->price;
+        $this->price = $appointment->pirce;
         $this->paid = $appointment->paid;
         $this->message = $appointment->message;
     }
@@ -39,7 +39,7 @@ class EditPrpAppintmentDetail extends Component
             'message' => 'nullable|string',
         ]);
 
-        Prp_Appointment::where('id', $this->appointmentId)->update([
+        Laser_Appointment::where('id', $this->appointmentId)->update([
             'name' => $this->name,
             'email' => $this->email,
             'contact' => $this->contact,
@@ -55,6 +55,6 @@ class EditPrpAppintmentDetail extends Component
     }
     public function render()
     {
-        return view('livewire.edit-prp-appintment-detail');
+        return view('livewire.edit-laser-appintment-detail');
     }
 }

@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <th>Price</th>
-                        <td>GBP {{ number_format($appiontmentDetail->price, 2) }}</td>
+                        <td>GBP {{ number_format($appiontmentDetail->pirce, 2) }}</td>
                     </tr>
                     <tr>
                         <th>Paid</th>
@@ -52,7 +52,7 @@
                 </tbody>
             </table>
 
-            <a href="{{ route('prp.index')}}" class="btn btn-secondary mt-3">
+            <a href="{{ route('laser.index')}}" class="btn btn-secondary mt-3">
                 ← Back to Appointments
             </a>
         </div>
