@@ -15,31 +15,28 @@ class ContactForm extends Component
     protected $rules = [
         'name' => 'required|min:3',
         'email' => 'required|email',
-        'subject' => 'required',
-        'message' => 'required',
+        'subject' => 'required|min:3',
+        'message' => 'required|min:5',
     ];
+
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
+
     public function save()
-    { 
-        $this->validate();
+    {
+        $validated = $this->validate();
 
-        // Logic to store the contact form 
-        Contact::create(
-            $this->only(['name', 'email', 'subject', 'message'])
-        );
+        Contact::create($validated);
 
-        session()->flash('success', 'we will be in touch shortly to address your questions or concerns.');
+        session()->flash('success', 'We will be in touch shortly to address your questions or concerns.');
 
-        // Reset the form fields
-        $this->reset(['name', 'email', 'subject', 'message']);
+        $this->reset();
     }
 
     public function render()
     {
-        // dd('hello');
         return view('livewire.contactform.contact-form');
     }
 }

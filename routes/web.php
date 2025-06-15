@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HydraController;
 use App\Http\Controllers\LaserController;
@@ -95,4 +96,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/laserAppointments', [LaserController::class, 'index'])->name('laser.index');
     Route::get('/laserAppointment/detail/{id}', [LaserController::class, 'appointmentDetail'])->name('laser.detail');
     Route::get('/laserAppointment/edit/{id}', [LaserController::class, 'editAppointmentDetail'])->name('laser.edit');
+
+    // CONTACTS LIST
+    Route::get('/contactlist', [ContactListController::class, 'index'])->name('contact.index');
+    Route::get('/contact/detail/{id}', [ContactListController::class, 'contactDetail'])->name('contact.detail');
 });
