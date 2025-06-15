@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HydraController;
+use App\Http\Controllers\PrpController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -74,6 +75,8 @@ Route::get('signin', [UserController::class, 'signin'])->name('login');
 Route::post('/userSigin', [UserController::class, 'userSignin'])->name('sigin.post');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+
+// DASHBOARD
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin-dashboard', [DashboardController::class, 'index'])->name('admin-dashboard');
 
@@ -81,4 +84,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/hydraAppointments', [HydraController::class, 'index'])->name('hydra.index');
     Route::get('/hydraAppointment/detail/{id}', [HydraController::class, 'appointmentDetail'])->name('hydra.detail');
     Route::get('/hydraAppointment/edit/{id}', [HydraController::class, 'editAppointmentDetail'])->name('hydra.edit');
+
+    // PRP
+    Route::get('/prpAppointments', [PrpController::class, 'index'])->name('prp.index');
+    Route::get('/prpAppointment/detail/{id}', [PrpController::class, 'appointmentDetail'])->name('prp.detail');
+    Route::get('/prpAppointment/edit/{id}', [PrpController::class, 'editAppointmentDetail'])->name('prp.edit');
 });
