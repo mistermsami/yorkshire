@@ -4,6 +4,8 @@ namespace App\Livewire\ContactForm;
 
 use App\Models\Contact;
 use Livewire\Component;
+use App\Mail\ContactSubmitted;
+use Illuminate\Support\Facades\Mail;
 
 class ContactForm extends Component
 {
@@ -28,8 +30,8 @@ class ContactForm extends Component
     {
         $validated = $this->validate();
 
-        Contact::create($validated);
-
+        $contact = Contact::create($validated); // assign to $contact
+        Mail::to($this->email)->send(new ContactSubmitted($contact));
         session()->flash('success', 'We will be in touch shortly to address your questions or concerns.');
 
         $this->reset();
