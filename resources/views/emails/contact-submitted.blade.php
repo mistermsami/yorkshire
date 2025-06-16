@@ -10,7 +10,7 @@
 </head>
 <body class="bg-light">
   <div class="container">
-    <img class="ax-center my-10 w-24" src="https://yorkshirehairandskinsolutions.co.uk/assets/img/yorkshirelogo_2.png" />
+    <img class="ax-center my-10 w-24" src="https://yorkshirehairandskinsolutions.co.uk/assets/img/yorkshirelogo_2.png" style="max-width: 200px" />
     <div class="card p-6 p-lg-10 space-y-4">
       <h1 class="h3 fw-700">
         Thank you for contacting Yorkshire Hair & Skin Solutions
@@ -28,9 +28,9 @@
       </p>
       <a class="btn btn-primary p-3 fw-700" href="https://yorkshirehairandskinsolutions.co.uk">Visit Website</a>
     </div>
-    <img class="ax-center mt-10 w-40" src="https://yorkshirehairandskinsolutions.co.uk/assets/img/yorkshirelogo_2.png" />
+    {{-- <img class="ax-center mt-10 w-40" src="https://yorkshirehairandskinsolutions.co.uk/assets/img/yorkshirelogo_2.png" /> --}}
     <div class="text-muted text-center my-6">
-      Sent with &lt;3 from Yorkshire Hair & Skin Solutions<br>
+      Sent  from Yorkshire Hair & Skin Solutions<br>
       175 Dewsbury Roads <br>
       Leeds LS11 5EG <br>
     </div>
