@@ -80,10 +80,10 @@
                         <div class="about-content">
                             <p><b>We believe everyone deserves healthy, radiant skin and hair—without compromise.</b></p>
                             <p>
-                                Our expert team is dedicated to providing personalised care tailored to your unique needs. Whether you're seeking treatment, advice, or simply a consultation, we’re here to help you look and feel your best.  
+                                Our expert team is dedicated to providing personalised care tailored to your unique needs. Whether you're seeking treatment, advice, or simply a consultation, we’re here to help you look and feel your best.
                             </p>
                             <p>
-                                Reach out today to book an appointment or speak to one of our specialists. Your journey to better skin and hair starts here.  
+                                Reach out today to book an appointment or speak to one of our specialists. Your journey to better skin and hair starts here.
                             </p>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
 
                     <div class="info-item d-flex">
                         <i class="bi bi-envelope flex-shrink-0"></i>
-                        <div> 
+                        <div>
                             <h3>Email Us</h3>
                             <p>info@yorkshirehairandskinsolution.co.uk</p>
                         </div>
@@ -157,7 +157,8 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <form action="" method="post" class="php-email-form">
+                    @livewire('contact-form.contact-form')
+                    {{-- <form action="" method="post" class="php-email-form">
                         <div class="row gy-4">
 
                             <div class="col-md-6">
@@ -188,7 +189,7 @@
                             </div>
 
                         </div>
-                    </form>
+                    </form> --}}
                 </div><!-- End Contact Form -->
 
             </div>

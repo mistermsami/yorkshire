@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class ContactSubmitted extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $contact;
+
+    public function __construct($contact)
+    {
+        $this->contact = $contact;
+    }
+
+    public function build()
+    {
+        // return $this->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
+        //     ->cc('support@yorkshirehairandskinsolutions.co.uk')
+        //     ->view('emails.contact-submitted');
+        return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
+        ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
+        ->cc('support@yorkshirehairandskinsolutions.co.uk')
+        ->view('emails.contact-submitted');
+    }
+}
