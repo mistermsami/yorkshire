@@ -520,8 +520,12 @@
                             <span>2023 Best Aesthetic Treatment Award</span>
                         </div>
                         <div class="about-hero-buttons">
-                            <button class="btn btn-about-primary">Meet Our Team</button>
-                            <button class="btn btn-about-outline">Our Approach</button>
+                            <a href="#OurBeleive">
+                                <button class="btn btn-about-primary">Our Beleive</button>
+                            </a>
+                           <a href="#OurApproach">
+                             <button class="btn btn-about-outline">Our Approach</button>
+                           </a>
                         </div>
                     </div>
                     <div class="about-hero-gallery">
@@ -593,7 +597,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 d-flex align-items-center textarea">
+                <div class="col-lg-6 d-flex align-items-center textarea" id="OurBeleive">
                     <div>
 
                         <div class="section-header">
@@ -650,7 +654,7 @@
                     </div>
                     <!-- /Doctor Widget -->
                 </div>
-                <div class="col-lg-6 d-flex align-items-center textarea">
+                <div class="col-lg-6 d-flex align-items-center textarea" id="OurApproach">
                     <div>
 
                         <div class="section-header">
@@ -687,7 +691,7 @@
     </section>
     <!-- /Popular Section -->
     <!-- Popular Section -->
-    <section class="section aboutthird_sec px-3">
+    <section class="section aboutthird_sec px-3" >
         <div class="container">
             <div class="row">
 
@@ -747,7 +751,7 @@
 
 
 <!-- Where We're Located Section -->
-<section class="location-section py-5">
+    <section class="location-section py-5">
     <div class="container">
         <div class="section-header text-center mb-5">
             <h2 class="fw-bold">Where We're Located</h2>
@@ -798,7 +802,7 @@
                     </div>
 
                     <div class="mt-auto pt-3"> <!-- Pushes buttons to bottom -->
-                        <a href="#appointment" class="btn btn-primary me-2" style="margin-bottom: 10px">
+                        <a href="#contact" class="btn btn-primary me-2" style="margin-bottom: 10px">
                             <i class="fas fa-calendar-check me-1"></i> Book Appointment
                         </a>
                         <a href="https://www.google.com/maps/dir//175+Dewsbury+Rd,+Leeds+LS11+5EG/@53.7780838,-1.626911,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48795d8629ebcab1:0xa6c506580cb68f94!2m2!1d-1.5445109!2d53.778112?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-primary" style="margin-bottom: 5px">
@@ -809,7 +813,60 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
+
+<!-- Contact Section -->
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title">
+                <h2>Contact</h2>
+                <p>For enquiries or further information, please contact us. Our team is available to assist you</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>175 Dewsbury Roads
+                                    Leeds
+                                    LS11 5EG</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>07570957502</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@yorkshirehairandskinsolution.co.uk</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        @livewire('ContactForm.ContactForm')
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Contact Section -->
 
     </main>
 @endsection

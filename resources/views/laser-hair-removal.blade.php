@@ -475,7 +475,6 @@
                     </div>
                     <div class="col-lg-6 position-relative align-self-start">
                         <img src="assets/img/lasercoverphoto.jpg" class="aboutmain_sec_img" alt="" >
-                        {{-- <img src="assets/img/about.jpg" class="aboutmain_sec_img" alt=""> --}}
                         <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
                             class="glightbox pulsating-play-btn"></a>
                     </div>

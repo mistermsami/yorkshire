@@ -173,7 +173,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="btn btn-primary">Book a consultation
+                            <a href="#hydrafacial-contact" class="btn btn-primary">Book a consultation
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                             <div class="divider"></div>

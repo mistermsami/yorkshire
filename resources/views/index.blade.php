@@ -332,14 +332,28 @@
                 <h2 class="aboutsection-title">About Us</h2>
                 <div class="row g-4 d-flex align-items-stretch">
                     <!-- Image Column -->
-                    <div class="col-md-6 d-flex">
+                    {{-- <div class="col-md-6 d-flex">
                         <div class="about-image w-100 h-100">
-                            {{-- <img src="./assets/img/about.jpg" alt="About Us" --}}
                             <img src="assets/img/aboutpic.webp" alt="About Us"
                                 class="img-fluid rounded shadow h-100 w-100 object-fit-cover">
+                                  <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
+                            class="glightbox pulsating-play-btn"></a>
                             <div class="image-overlay"></div>
                         </div>
-                    </div>
+                    </div> --}}
+                   <div class="col-md-6 d-flex">
+                   <div class="about-image position-relative w-100 h-100">
+                  <img src="assets/img/aboutpic.webp" alt="About Us"
+                   class="img-fluid rounded shadow object-fit-cover h-100 w-100" />
+                    <a href="assets/img/homepage.mp4"
+                     class="glightbox pulsating-play-btn position-absolute translate-middle"
+                     style="top: 50%; left: 50%; z-index: 10;"
+                     data-type="video">
+                        ▶
+                    </a>
+                 <div class="image-overlay"></div>
+                 </div>
+                  </div>
 
                     <!-- Content Column -->
                     <div class="col-md-6 d-flex">
