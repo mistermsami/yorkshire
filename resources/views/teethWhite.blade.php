@@ -341,7 +341,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
             text-align: center;
-            border: 2px solid transparent;
+            border: 2px solid var(--secondary-blue);
         }
         
         .pricing-card.popular {

@@ -18,7 +18,6 @@
         .aboutmain_sec {
             min-height: 100vh;
             padding: 60px 0;
-            
             background: linear-gradient(135deg, #f9f9f9, #e2f0fe)
         }
 
@@ -35,6 +34,7 @@
         .aboutmain_sec_img {
             border-radius: 15px;
             width: 100%;
+            margin-left: 40px;
             height: calc(100vh - 130px);
         }
 
