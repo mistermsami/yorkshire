@@ -46,6 +46,10 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>Status</th>
+                        <td>{{ $appiontmentDetail->status->label() }}</td>
+                    </tr>
+                    <tr>
                         <th>Message</th>
                         <td>{{ $appiontmentDetail->message }}</td>
                     </tr>

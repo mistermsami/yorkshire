@@ -49,6 +49,10 @@
                         <th>Message</th>
                         <td>{{ $appiontmentDetail->message }}</td>
                     </tr>
+                    <tr>
+                        <th>status</th>
+                        <td>{{ $appiontmentDetail->status->label() }}</td>
+                    </tr>
                 </tbody>
             </table>
 
