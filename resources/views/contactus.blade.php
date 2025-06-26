@@ -12,100 +12,291 @@
     {{-- for meta tags (SEO)
     and for custom css --}}
     <style>
-        .aboutmain_sec {
-            /* padding-top: 20px; */
-            padding-top: 0;
-            padding-bottom: 0;
-            /* height: 100vh; */
-            background-color: #f3f1ee;
+        /* Modern Blue Theme */
+        :root {
+            --electric-blue: #2962ff;
+            --deep-blue: #0039cb;
+            --sky-blue: #82b1ff;
+            --ice-blue: #e3f2fd;
+            --neon-blue: #00b0ff;
+            --text-dark: #212121;
+            --text-light: #f5f5f5;
         }
-        .aboutmain_sec h2{
-            font-size: 50px;
+        
+        
+        .hero-section {
+            background: linear-gradient(to right, #1977cc, #02126ce8);
+            color: var(--text-light);
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
             font-weight: 700;
-            margin-bottom:15px;
-            color: #0d5a9e;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        p{
-            font-size: 16px !important;
+        
+        .hero-title span {
+            color: #00f3ff;
+            position: relative;
+            display: inline-block;
         }
-        .aboutmain_sec .aboutsideimg{
-            height: 100% !important;
+        
+        .hero-title span::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #00f3ff;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease;
         }
-        .aboutsecond_sec{
-            padding: 80px 0 40px 0;
-            background-color: #fff;
+        
+        .hero-title:hover span::after {
+            transform: scaleX(1);
+            transform-origin: left;
         }
-        /* .aboutsecond_sec .profile-widget{
-            background-color: #f3f1ee;
-            border-radius: 20px;
-            padding: 20px;
-        } */
-        .aboutsecond_sec .aboutsideimg img{
-            height: 500px;
-            border-radius: 25px !important;
+        
+        .hero-subtitle {
+            font-size: 1.35rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            font-weight: 300;
+            opacity: 0.9;
         }
-        .aboutsecond_sec .section-header{
-            margin-bottom: 30px !important;
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
-        .aboutthird_sec{
-            padding: 80px 0 40px 0;
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--text-dark);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 176, 255, 0.3);
+            position: relative;
+            overflow: hidden;
         }
-        .aboutthird_sec .profile-widget{
-            border-radius: 20px;
+        
+        .contact-btn i {
+            margin-right: 10px;
+            font-size: 1.1rem;
         }
-        .aboutthird_sec .aboutsideimg img{
-            height: 500px;
-            border-radius: 25px !important;
+        
+        .contact-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
         }
-        .aboutthird_sec .section-header{
-            margin-bottom: 30px !important;
+        
+        .contact-btn:hover::before {
+            left: 100%;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 176, 255, 0.4);
+        }
+        
+        .secondary-btn {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--sky-blue);
+            box-shadow: none;
+        }
+        
+        .secondary-btn:hover {
+            background-color: rgba(130, 177, 255, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .floating-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            animation: float 15s infinite linear;
+        }
+        
+        .circle-1 {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+        
+        .circle-2 {
+            width: 150px;
+            height: 150px;
+            bottom: 15%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+        
+        .circle-3 {
+            width: 100px;
+            height: 100px;
+            top: 60%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        .pulse-animation {
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .hero-section {
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 6rem 1.5rem 4rem;
+                clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.15rem;
+            }
+            
+            .btn-container {
+                gap: 1rem;
+            }
+            
+            .contact-btn {
+                padding: 0.9rem 1.8rem;
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 5rem 1rem 3rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                max-width: 280px;
+            }
         }
     </style>
 @endsection
 
 @section('maincontent')
     <main class="main">
-        <!-- Popular Section -->
-    <section class="section aboutmain_sec">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <div class="px-4">
-
-                        <div class="section-header ">
-                            {{-- <p>Our Services</p> --}}
-                            <h2>Contact Us!</h2>
-                            <h3 style="font-size: 34px; font-weight: 600;color: #0d5a9e;">This feels good,</h3>
-                        </div>
-                        <div class="about-content">
-                            <p><b>We believe everyone deserves healthy, radiant skin and hair—without compromise.</b></p>
-                            <p>
-                                Our expert team is dedicated to providing personalised care tailored to your unique needs. Whether you're seeking treatment, advice, or simply a consultation, we’re here to help you look and feel your best.
-                            </p>
-                            <p>
-                                Reach out today to book an appointment or speak to one of our specialists. Your journey to better skin and hair starts here.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- Doctor Widget -->
-                    <div class="profile-widget">
-                        <div class="doc-img aboutsideimg">
-                                <img class="img-fluid" style="height: 100%" alt="User Image" src="{{asset('assets/img/contactus1.jpg')}}">
-                                {{-- <img class="img-fluid" alt="User Image" src="{{asset('assets/img/aboutus.png')}}"> --}}
-                            {{-- <a href="javascript:void(0)" class="fav-btn">
-                                <i class="far fa-bookmark"></i>
-                            </a> --}}
-                        </div>
-
-                    </div>
-                    <!-- /Doctor Widget -->
-                </div>
+     <section class="hero-section">
+        <div class="floating-elements">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your <span class="pulse-animation">Asthetics</span></h1>
+            <p class="hero-subtitle">
+                Our dermatology experts are ready to provide personalized care. Schedule your consultation today 
+                and take the first step toward radiant skin and healthy hair with our cutting-edge treatments.
+            </p>
+            <div class="btn-container">
+                <a href="#contact" class="contact-btn">
+                    <i class="fas fa-calendar-check"></i> Book Consultation
+                </a>
+                <a href="tel:+1234567890" class="contact-btn secondary-btn">
+                    <i class="fas fa-phone-alt"></i> Call  &nbsp;+447570957502
+                </a>
             </div>
         </div>
     </section>
-    <!-- /Popular Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
