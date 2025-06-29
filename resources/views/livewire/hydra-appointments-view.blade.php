@@ -61,6 +61,7 @@
                         <th>Type</th>
                         <th>date</th>
                         <th>Time</th>
+                        <th>Status</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -74,6 +75,7 @@
                             <td>{{ $appointment->appointment_type }}</td>
                             <td>{{ $appointment->date }}</td>
                             <td>{{ $appointment->time }}</td>
+                            <td>{{ $appointment->status->label() }}</td>
                             <td>
                                 <a target="_blank" href="{{ route('hydra.detail', $appointment->id)}}" class="btn btn-info btn-sm">View</a>
                                 <a target="_blank" href="{{ route('hydra.edit', $appointment->id)}}" class="btn btn-warning btn-sm">Edit</a>

@@ -24,6 +24,10 @@
                         <td>{{ $contactDetail->Message }}</td>
                     </tr>
                     <tr>
+                        <th>Status</th>
+                        <td>{{ $contactDetail->status->label() }}</td>
+                    </tr>
+                    <tr>
                         <th>Date</th>
                         <td>{{ $contactDetail->created_at }}</td>
                     </tr>

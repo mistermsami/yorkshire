@@ -8,7 +8,7 @@ use Livewire\Component;
 class EditLaserAppintmentDetail extends Component
 {
     public $appointmentId;
-    public $name, $email, $contact, $date, $time, $appointment_type, $price, $paid, $message;
+    public $name, $email, $contact, $date, $time, $appointment_type, $price, $paid, $message , $status;
 
     public function mount()
     {
@@ -22,6 +22,7 @@ class EditLaserAppintmentDetail extends Component
         $this->appointment_type = $appointment->appointment_type;
         $this->price = $appointment->pirce;
         $this->paid = $appointment->paid;
+        $this->status = $appointment->status;
         $this->message = $appointment->message;
     }
 
@@ -48,6 +49,7 @@ class EditLaserAppintmentDetail extends Component
             'appointment_type' => $this->appointment_type,
             'pirce' => $this->price,
             'paid' => $this->paid,
+            'status' => $this->status,
             'message' => $this->message,
         ]);
 
