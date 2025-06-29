@@ -472,8 +472,8 @@
                                 <p>8+ years of experience in cosmetic dermatology and skin rejuvenation.</p>
 
                                 <div class="contact-info">
-                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                                    <p><i class="fas fa-envelope"></i> jane.smith@example.com</p>
+                                    <p><i class="fas fa-phone"></i>  0113 338 2716</p>
+                                    <p><i class="fas fa-envelope"></i> info@yorkshirehairandskinsolution.co.uk</p>
                                 </div>
                             </div>
                         </div>
@@ -483,7 +483,7 @@
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="./assets/img/doc2.jpg" alt="Dr. Emily Davis">
-                                <h4>Dr. Emily Davis</h4>
+                                <h4>Dr. Neha Sharma</h4>
                                 <p>Cosmetic Surgeon</p>
                                 <div class="social-links">
                                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -492,12 +492,12 @@
                                 </div>
                             </div>
                             <div class="card-back">
-                                <h4>Dr. Emily Davis</h4>
+                                <h4>Neha Sharma</h4>
                                 <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
 
                                 <div class="contact-info">
-                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                                    <p><i class="fas fa-envelope"></i> emily.davis@example.com</p>
+                                    <p><i class="fas fa-phone"></i> 0113 338 2716</p>
+                                    <p><i class="fas fa-envelope"></i> info@yorkshirehairandskinsolution.co.uk</p>
                                 </div>
                             </div>
                         </div>
@@ -520,8 +520,8 @@
                                 <p>7+ years of experience in PRP therapy and hair restoration.</p>
 
                                 <div class="contact-info">
-                                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                                    <p><i class="fas fa-envelope"></i> michael.brown@example.com</p>
+                                    <p><i class="fas fa-phone"></i> 0113 338 2716</p>
+                                    <p><i class="fas fa-envelope"></i> info@yorkshirehairandskinsolution.co.uk</p>
                                 </div>
                             </div>
                         </div>

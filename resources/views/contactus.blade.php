@@ -143,6 +143,7 @@
         .secondary-btn:hover {
             background-color: rgba(130, 177, 255, 0.1);
             transform: translateY(-3px);
+            color: white;
         }
         
         .floating-elements {

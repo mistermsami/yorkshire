@@ -29,8 +29,11 @@
 
         p {
             font-size: 16px !important;
+            
         }
-
+       .about-content{
+         max-width: 535px;
+       }
         .aboutmain_sec_img {
             border-radius: 15px;
             width: 100%;
@@ -375,7 +378,9 @@
 
             .aboutmain_sec_img {
                 height: auto;
+                margin-left: 0px;
             }
+            
         }
 
         .pricingbtn {

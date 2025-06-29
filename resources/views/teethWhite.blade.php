@@ -676,12 +676,15 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="pricing-card">
-                        <h4>Basic Whitening</h4>
-                        <div class="price">$199 <span>/ session</span></div>
+                        <h4>One Time Session</h4>
+                        <div class="price">&pound;50 - &pound;90 </div>
                         <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;50</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 45 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;70</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 60 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;90</span></li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Single whitening session</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Professional cleaning</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Take-home maintenance kit</li>
+                            {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Take-home maintenance kit</li> --}}
                             <li class="mb-2"><i class="fas fa-times text-secondary me-2"></i> No touch-up sessions</li>
                         </ul>
                         <a href="#contact" class="btn btn-whitening-outline w-100">Book Now</a>
@@ -690,12 +693,16 @@
                 <div class="col-md-4">
                     <div class="pricing-card popular">
                         <div class="popular-badge">Most Popular</div>
-                        <h4>Premium Whitening</h4>
-                        <div class="price">$299 <span>/ session</span></div>
+                        <h4>Six Months</h4>
+                        <div class="price">&pound;250 - &pound;500 </div>
                         <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;250</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;400</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;500</span></li>
+
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Two whitening sessions</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Professional cleaning</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Enhanced whitening gel</li>
+                            {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Enhanced whitening gel</li> --}}
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 1 free touch-up session</li>
                         </ul>
                         <a href="#contact" class="btn btn-whitening w-100">Book Now</a>
@@ -703,12 +710,15 @@
                 </div>
                 <div class="col-md-4">
                     <div class="pricing-card">
-                        <h4>Deluxe Package</h4>
-                        <div class="price">$499 <span>/ session</span></div>
+                        <h4>One Year</h4>
+                        <div class="price">&pound;500 - &pound;900 </div>
                         <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;500</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;750</span></li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 Minutes session <span style="color: #0077b6; font-weight: bold;"> &pound;900</span></li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Three whitening sessions</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Professional cleaning</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Premium whitening gel</li>
+                            {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Premium whitening gel</li> --}}
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 2 free touch-up sessions</li>
                         </ul>
                         <a href="#contact" class="btn btn-whitening-outline w-100">Book Now</a>

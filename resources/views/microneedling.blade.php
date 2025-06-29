@@ -65,8 +65,8 @@
     <!-- Page Content -->
     <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="content">
-        <h1>Microneedling Services Available at Our Clinic</h1>
-        <p>While we're still working on our online information, our expert Microneedling services are currently available at Yorkshire Hair and Skin Solutions Clinic. Visit us or call to book your consultation today!</p>
+        <h1 style="max-width: 650px; margin: auto; margin-bottom: 15px;">Microneedling Services Available at Our Clinic</h1>
+        <p style="max-width: 620px; margin: auto;">While we're still working on our online information, our expert Microneedling services are currently available at Yorkshire Hair and Skin Solutions Clinic. Visit us or call to book your consultation today!</p>
         <button class="btn btn-lg mt-4 notify-btn" onclick="alert('We’ll notify you when it’s live!')">
           Notify Me
         </button>

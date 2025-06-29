@@ -345,7 +345,7 @@
                    <div class="about-image position-relative w-100 h-100">
                   <img src="assets/img/aboutpic.webp" alt="About Us"
                    class="img-fluid rounded shadow object-fit-cover h-100 w-100" />
-                    <a href="assets/img/homepage.mp4"
+                    <a href="https://youtu.be/2Q6qyfTXskw?si=5tqMAzzGfTmFFvu8"
                      class="glightbox pulsating-play-btn position-absolute translate-middle"
                      style="top: 50%; left: 50%; z-index: 10;"
                      data-type="video">
