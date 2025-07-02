@@ -458,8 +458,8 @@
                     <div class="expert-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="./assets/img/doc1copy.jpg" alt="Dr. Jane Smith">
-                                <h4>Dr. Jane Smith</h4>
+                                <img src="./assets/img/prp-doc1.jpeg" alt="Dr. Jane Smith">
+                                <h4>Dr. Sansskriti</h4>
                                 <p>Dermatologist</p>
                                 <div class="social-links">
                                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -468,7 +468,7 @@
                                 </div>
                             </div>
                             <div class="card-back">
-                                <h4>Dr. Jane Smith</h4>
+                                <h4>Dr. Sansskriti</h4>
                                 <p>8+ years of experience in cosmetic dermatology and skin rejuvenation.</p>
 
                                 <div class="contact-info">
@@ -482,8 +482,8 @@
                     <div class="expert-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="./assets/img/doc2.jpg" alt="Dr. Emily Davis">
-                                <h4>Dr. Neha Sharma</h4>
+                                <img src="./assets/img/prp-doc.jpeg" alt="Dr. Emily Davis">
+                                <h4>Dr. Kavya </h4>
                                 <p>Cosmetic Surgeon</p>
                                 <div class="social-links">
                                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -492,7 +492,7 @@
                                 </div>
                             </div>
                             <div class="card-back">
-                                <h4>Neha Sharma</h4>
+                                <h4>Dr. Kavya </h4>
                                 <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
 
                                 <div class="contact-info">
@@ -506,8 +506,8 @@
                     <div class="expert-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="./assets/img/doc3.jpg" alt="Dr. Michael Brown">
-                                <h4>Dr. Michael Brown</h4>
+                                <img src="./assets/img/doc4.jpg" alt="Dr. Michael Brown">
+                                <h4>Dr. Kamran</h4>
                                 <p>PRP Therapist</p>
                                 <div class="social-links">
                                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -516,7 +516,7 @@
                                 </div>
                             </div>
                             <div class="card-back">
-                                <h4>Dr. Michael Brown</h4>
+                                <h4>Dr. Kamran</h4>
                                 <p>7+ years of experience in PRP therapy and hair restoration.</p>
 
                                 <div class="contact-info">

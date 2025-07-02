@@ -200,18 +200,7 @@
             text-align: center;
         }
         
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--gradient-blue);
-            border-radius: 2px;
-        }
-        
+    
         .benefit-card {
             background: var(--white);
             border-radius: 10px;
@@ -492,6 +481,83 @@
             }
         }
     </style>
+    <style>
+    /* Primary Solid Button (for popular package) */
+    .btn-whitening-price {
+        background: linear-gradient(135deg, #0077b6, #0096c7);
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .btn-whitening-price:hover {
+        background: linear-gradient(135deg, #023e8a, #0077b6);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+        color: white;
+    }
+    
+    .btn-whitening-price:active {
+        transform: translateY(1px);
+    }
+    
+    /* Secondary Outline Button */
+    .btn-whitening-outline-price {
+        background: transparent;
+        color: #0077b6;
+        border: 2px solid var(--secondary-blue);
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .btn-whitening-outline-price:hover {
+        background: #0077b6;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 119, 182, 0.2);
+    }
+    
+    .btn-whitening-outline-price:active {
+        transform: translateY(1px);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .btn-whitening-price,
+        .btn-whitening-outline-price {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .btn-whitening-price,
+        .btn-whitening-outline-price {
+            padding: 8px 15px;
+            font-size: 0.85rem;
+        }
+    }
+</style>
 @endsection
 
 @section('maincontent')
@@ -511,7 +577,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block slide-up">
-                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smiling woman" class="img-fluid rounded-4 shadow">
+                    <img src="assets/img/teethHeroSection.jpg" alt="Smiling woman" class="img-fluid rounded-4 shadow">
                 </div>
             </div>
         </div>
@@ -520,7 +586,7 @@
     <!-- Benefits Section -->
     <section class="py-5 my-5" id="benefits">
         <div class="container">
-            <h2 class="section-title">Why Choose Our Whitening Service?</h2>
+            <h2 class="tw-section-heading">Why Choose Our Whitening Service?</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="benefit-card slide-up" style="transition-delay: 0.1s;">
@@ -608,12 +674,12 @@
     <!-- Before/After Section -->
     <section class="py-5 my-5" id="results">
         <div class="container">
-            <h2 class="section-title">See the Transformation</h2>
+            <h2 class="tw-section-heading">See the Transformation</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="before-after-container" id="beforeAfterSlider">
-                        <img src="assets/img/teethwhiting1.jpg" alt="Before teeth whitening" class="before-image">
-                        <img src="assets/img/teethwhiting.jpg" alt="After teeth whitening" class="after-image">
+                        <img src="assets/img/teethWhite.jpg" alt="Before teeth whitening" class="before-image">
+                        <img src="assets/img/teethWhiteAfter.jpg" alt="After teeth whitening" class="after-image">
                         <div class="slider-handle"></div>
                     </div>
                 </div>
@@ -624,7 +690,7 @@
     <!-- Testimonials Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">What Our Patients Say</h2>
+            <h2 class="tw-section-heading">What Our Patients Say</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="testimonial-card">
@@ -672,7 +738,7 @@
     <!-- Pricing Section -->
     <section class="py-5 my-5" id="pricing">
         <div class="container">
-            <h2 class="section-title">Whitening Packages</h2>
+            <h2 class="tw-section-heading">Whitening Packages</h2>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="pricing-card">
@@ -687,7 +753,7 @@
                             {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Take-home maintenance kit</li> --}}
                             <li class="mb-2"><i class="fas fa-times text-secondary me-2"></i> No touch-up sessions</li>
                         </ul>
-                        <a href="#contact" class="btn btn-whitening-outline w-100">Book Now</a>
+                        <a href="#contact" class="btn btn-whitening-outline-price w-100">Book Now</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -705,7 +771,7 @@
                             {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Enhanced whitening gel</li> --}}
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 1 free touch-up session</li>
                         </ul>
-                        <a href="#contact" class="btn btn-whitening w-100">Book Now</a>
+                        <a href="#contact" class="btn btn-whitening-price w-100">Book Now</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -721,7 +787,7 @@
                             {{-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Premium whitening gel</li> --}}
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 2 free touch-up sessions</li>
                         </ul>
-                        <a href="#contact" class="btn btn-whitening-outline w-100">Book Now</a>
+                        <a href="#contact" class="btn btn-whitening-outline-price w-100">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -731,11 +797,9 @@
         </div>
     </section>
 
-
-
    {{-- faq section --}}
   <section id="faq" class="faq section light-background">
-    <div class="container section-title">
+    <div class="container section-title ">
         <h2>Frequently Asked Questions</h2>
     </div>
 
