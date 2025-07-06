@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('appointment_type');
             $table->integer('pirce')->default('0');
             $table->integer('paid')->default('0');
-            $table->enum('status', ['pending', 'confirm', 'complete'])->default('pending');
+            $table->string('status')->default('0');
             $table->string('message')->nullable(true);
             $table->timestamps();
         });

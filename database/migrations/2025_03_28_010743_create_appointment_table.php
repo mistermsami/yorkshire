@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('month');
             $table->integer('year');
             $table->integer('day');
+            $table->string('status')->default('0');
             $table->string('time');
             $table->timestamps();
         });
