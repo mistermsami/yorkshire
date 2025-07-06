@@ -484,7 +484,7 @@
                             <div class="card-front">
                                 <img src="./assets/img/prp-doc.jpeg" alt="Dr. Emily Davis">
                                 <h4>Dr. Kavya </h4>
-                                <p>Cosmetic Surgeon</p>
+                                <p>Aesthetic Practitioner</p>
                                 <div class="social-links">
                                     <a href="#"><i class="fab fa-linkedin"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -493,7 +493,7 @@
                             </div>
                             <div class="card-back">
                                 <h4>Dr. Kavya </h4>
-                                <p>12+ years of experience in cosmetic and reconstructive surgery.</p>
+                                <p>Certified Aesthetic Practitioner specialising in PRP therapy, injectables, microneedling, and IV drips, with a focus on advanced hair and skin restoration at Yorkshire Hair and Skin Solutions.</p>
 
                                 <div class="contact-info">
                                     <p><i class="fas fa-phone"></i> 0113 338 2716</p>

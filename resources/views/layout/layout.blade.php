@@ -107,13 +107,13 @@
                         <li class="dropdown"><a href="#"><span>Solutions</span> <i
                                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><a href="{{ route('hairtransplant') }}">Hair Transplant</a></li>
-                                <li><a href="face-treatment">Face Treatments</a></li>
+                                <li><a href="{{ route('hairtransplant') }}">Hair Growth Treatments</a></li>
                                 <li><a href="laser-hair-removal">Laser Hair Removal</a></li>
                                 <li><a href="hydra-ficial">HydraFacial</a></li>
                                 <li><a href="teethWhite">Teeth Whitening</a></li>
-                                <li><a href="microneedling">Microneedling</a></li>
-                                <li><a href="prp">PRP</a></li>
+                                 <li><a href="face-treatment">IV Drips & Vitamin Injections</a></li>
+                                {{-- <li><a href="microneedling">Microneedling</a></li> --}}
+                                <li><a href="prp">Skin Rejuvenation Treatments</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ route('contactus') }}">Contact Us</a></li>
@@ -176,13 +176,14 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Transplant</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/hairtransplant">Hair Growth Treatment</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/laser-hair-removalhttps://yorkshirehairandskinsolutions.co.uk/laser-hair-removal">Laser Hair Removal</a></li>
-                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">PRP</a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">IV Drips </a></li>
+                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/prp">Vitamin Injections</a></li>
                         <li><a href="https://yorkshirehairandskinsolutions.co.uk/hydra-ficial">HydraFacial</a></li>
-                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Face Treatment</a></li>
-                        <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li>
+                        {{-- <li><a href="https://yorkshirehairandskinsolutions.co.uk/microneedling">Microneedling</a></li> --}}
                            <li><a href="https://yorkshirehairandskinsolutions.co.uk/teethWhite">Teeth Whitening</a></li>
+                           <li><a href="https://yorkshirehairandskinsolutions.co.uk/face-treatment">Skin Rejuvenation Treatments</a></li>
                     </ul>
                 </div>
 

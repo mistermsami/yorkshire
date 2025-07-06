@@ -199,6 +199,134 @@
 }
 
 
+
+   
+      .appointment-form-wrapper {
+        flex: 1;
+        min-width: 280px;
+        max-width: 340px;
+        background: white;
+        border-radius: 12px;
+        padding: 22px;
+        box-shadow: 0 8px 24px rgba(32, 101, 209, 0.12);
+        border: 1px solid rgba(32, 101, 209, 0.08);
+    }
+    
+    .appointment-form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .form-title {
+        color: #2a3439;
+        font-size: 18px;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+    }
+    
+    .form-icon {
+        font-size: 22px;
+        opacity: 0.8;
+    }
+    
+    .form-row {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .half-width {
+        flex: 1;
+    }
+    
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #e0e3e7;
+        border-radius: 8px;
+        font-size: 13px;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #f8fafc;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        background: white;
+    }
+    
+    .form-group select {
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 12px;
+    }
+    
+    .submit-btn {
+        background: linear-gradient(to right, #3b82f6, #2563eb);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.15);
+    }
+    
+    .submit-btn:hover {
+        background: linear-gradient(to right, #2563eb, #1d4ed8);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 8px rgba(59, 130, 246, 0.2);
+    }
+    
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+    
+    .btn-icon {
+        font-weight: bold;
+        transition: transform 0.2s ease;
+    }
+    
+    .submit-btn:hover .btn-icon {
+        transform: translateX(2px);
+    }
+    
+    .form-footer {
+        color: #64748b;
+        font-size: 11px;
+        text-align: center;
+        margin: 10px 0 0 0;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+        .appointment-form-wrapper {
+            padding: 18px;
+            max-width: 100%;
+        }
+    }
+
+
 /* ------------------------------------------------------ */
         .svgicon {
             fill: #1977cc;
@@ -310,7 +438,7 @@
             <div class="section-hero__content">
                 <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
                 <p class="section-hero__description">
-                    We are your premier destination for transformative hair and skin treatments. 
+                    YOUR GO-TO FOR HAIR RESTORATION & SKIN REJUVENATION 
                     {{-- Recommended Provider for Private Medical Insurance. --}}
                 </p>
                 <div class="section-hero__badges">
@@ -319,9 +447,52 @@
                 </div>
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
-            <div class="section-hero__image-wrapper">
-                <img src="{{asset('assets/img/heroImage.png')}}" alt="Hero Image" class="section-hero__image">
+          <div class="appointment-form-wrapper">
+            
+    <form class="appointment-form" >
+        <div class="form-header">
+            <h3 class="form-title">Book Your Consultation</h3>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group half-width">
+                <input type="text" placeholder="Your Name" required>
             </div>
+            <div class="form-group half-width">
+                <input type="tel" placeholder="Phone" required>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <select required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="hair">Hair Growth Treatments</option>
+                <option value="skin">Laser Hair Removal</option>
+                <option value="both">Vitamin Injections</option>
+                <option value="both">HydraFacial</option>
+                <option value="both">Teeth Whitening</option>
+                <option value="both">IV Drips</option>
+                <option value="both">Skin Rejuvanation Treatments</option>
+            </select>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group half-width">
+                <input type="date" placeholder="Date">
+            </div>
+            <div class="form-group half-width">
+                <input type="time" placeholder="Time">
+            </div>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+            <span class="btn-text">Book Now</span>
+            <span class="btn-icon">→</span>
+        </button>
+        
+        <p class="form-footer">Let’s connect! We’ll reach out within 24 hours</p>
+    </form>
+</div>
         </section>
 
 
@@ -486,11 +657,10 @@
                                 </svg>
                             </div>
                             <a href="{{ route('hairtransplant') }}" class="stretched-link">
-                                <h3>Hair Transplant</h3>
+                                <h3>Hair Growth Treatment</h3>
                             </a>
                             <p>
-                                Hair loss is now treatable. Clinically proven solutions work for 9 out of 10 men and we have
-                                them all here.
+                               Hair growth treatment involves medical or non-surgical methods to stimulate hair follicles and promote new hair growth. It targets thinning, hair fall, or bald spots using therapies like PRP, mesotherapy, or topical solutions
                             </p>
                         </div>
                     </div><!-- End Service Item -->
@@ -503,7 +673,7 @@
                             <a href="{{ route('teethWhite') }}" class="stretched-link">
                               <h3>Teeth Whitening</h3>
                             </a>
-                            <p>Brighten your smile with our professional teeth whitening treatments. Using safe and effective techniques, we help remove stains and discoloration, giving you a whiter, more confident smile.</p>
+                            <p>Teeth whitening is a cosmetic dental procedure that uses bleaching agents to lighten the color of your teeth. It breaks down stains caused by food, drinks, or smoking to restore a naturally whiter appearance.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -531,8 +701,7 @@
                             <a href="{{ route('laser-hair-removal') }}" class="stretched-link">
                                 <h3>Laser Hair Removal</h3>
                             </a>
-                            <p>Say goodbye to unwanted hair with our effective laser hair removal treatments. Safe for all
-                                skin types, this solution delivers smooth and long-lasting results.</p>
+                            <p>Laser hair removal is a treatment that uses light energy to safely target hair roots and slow down hair growth. It’s a long-term solution for reducing unwanted hair on areas like the face, arms, legs, and more.</p>
                         </div>
                     </div><!-- End Service Item -->
                     {{-- data-aos="fade-up" data-aos-delay="400" --}}
@@ -557,9 +726,8 @@
                             <a href="{{ route('hydra-ficial') }}" class="stretched-link">
                                 <h3>HydraFacial</h3>
                             </a>
-                            <p>Rejuvenate your skin with our luxurious facial treatments. Designed to cleanse, hydrate, and
-                                revitalize, our facials leave you with a glowing and refreshed complexion.</p>
-                            <a href="#" class="stretched-link"></a>
+                            <p>A gentle, multi-step facial that deeply cleanses, exfoliates, and hydrates your skin using advanced technology. It removes impurities and infuses the skin with nourishing serums for an instant glow and smoother texture.</p>
+                            <a href="{{ route('hydra-ficial') }}"  class="stretched-link"></a>
                         </div>
                     </div><!-- End Service Item -->
                     <div class="col-lg-4 col-md-6">
@@ -638,9 +806,9 @@
                                 </svg>
                             </div>
                             <a href="#" class="stretched-link">
-                                <h3>Face Treatment</h3>
+                                <h3>Skin Rejuvanation Treatments</h3>
                             </a>
-                            <p>Our medical facial uses clinical peels, LED therapy, and collagen boosters to treat acne, pigmentation, or ageing. Includes expert skin analysis, deep exfoliation, and restorative serums for lasting results</p>
+                            <p>A non-invasive treatment designed to revive tired, aging, or damaged skin. It helps improve skin tone, texture, and elasticity, leaving your skin looking fresh, radiant, and youthful</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
                     </div><!-- End Service Item -->
@@ -651,9 +819,9 @@
                                 <i class="fas fa-notes-medical"></i>
                             </div>
                             <a href="{{ route('prp') }}" class="stretched-link">
-                                <h3>PRP</h3>
+                                <h3>IV Drips & Vitamin Injections</h3>
                             </a>
-                            <p>A dermatologist-led PRP treatment extracts and reinjects your platelets to accelerate skin repair, targeting ageing, scarring, and dullness with scientifically proven results.</p>
+                            <p>This treatment delivers essential vitamins and nutrients directly into your bloodstream through an IV or injection. It helps with hydration, boosts immunity, enhances energy, and improves skin health.</p>
 
                             <a href="#" class="stretched-link"></a>
                         </div>
@@ -738,19 +906,19 @@
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hydrafacial</a>
                             </li> --}}
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hair Transplant</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hair Growth Treatment</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Microneedling</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">IV Drips and Vitamin Injections</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Teeth Whitening</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">PRP</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6"> Skin Rejuvenation Treatments</a>
                             </li>
 
 
@@ -790,12 +958,9 @@
                             <div class="tab-pane " id="departments-tab-3">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Hair Transplant Department</h3>
+                                        <h3>Hair Growth Treatment Department</h3>
                                         <p class="fst-italic">
-                                            Dedicated to hair transplant procedures and overall scalp health, this
-                                            department combines advanced techniques with personalized care to address hair
-                                            loss concerns effectively. We focus on delivering natural-looking hairlines that
-                                            restore confidence and enhance your appearance.
+                                            Dedicated to treating hair loss and improving scalp health, this department offers advanced non-surgical solutions like PRP, mesotherapy, and medical therapies. Our personalized approach helps stimulate natural hair regrowth, restore thinning areas, and boost your confidence
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -806,7 +971,7 @@
                             <div class="tab-pane" id="departments-tab-4">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3 id="dephead">Laser Hair RemovalDepartment</h3>
+                                        <h3 id="dephead">Laser Hair Removal Department</h3>
                                         <p class="fst-italic">
                                             Our laser hair removal treatments are designed for smooth, lasting results with minimal discomfort. Using advanced, FDA-approved technology, we safely target unwanted hair on all skin types, ensuring precision and effectiveness. From your initial consultation to aftercare, our specialists guide you through every step—making the process seamless, personalised, and stress-free.
                                         </p>
@@ -819,8 +984,8 @@
                             <div class="tab-pane" id="departments-tab-5">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3 id="dephead">Microneedling</h3>
-                                        <p>Our collagen induction therapy revitalises your skin naturally, stimulating your body's healing response for a fresher, more youthful complexion. </p> <p> Using advanced microneedling technology, we create controlled micro-channels in the skin to boost collagen and elastin production. This innovative treatment effectively reduces fine lines, acne scars, and uneven skin texture while enhancing product absorption for optimal results. Suitable for all skin types, our personalised approach ensures visible improvement with minimal downtime.</p>
+                                        <h3 id="dephead">IV Drips and Vitamin Injections</h3>
+                                        <p>Our IV drips and vitamin injections deliver essential nutrients directly into your bloodstream for fast and effective absorption. </p> <p>These treatments are designed to boost energy levels, enhance immunity, improve skin radiance, and support overall wellness. Whether you're recovering from fatigue, dehydration, or simply looking to glow from within, our personalized infusions are tailored to meet your body's needs with noticeable results and minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="{{asset('assets/img/mndep.jpg')}}" alt="" class="dpt_img">
@@ -842,8 +1007,8 @@
                             <div class="tab-pane" id="departments-tab-6">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3 id="dephead">PRP</h3>
-                                        <p>Experience the ultimate in natural skin rejuvenation with our signature PRP treatment. </p> <p> Our vampire facial combines microneedling with your own growth-rich plasma for unparalleled revitalization. This cutting-edge yet completely natural approach diminishes signs of aging, improves skin texture, and restores youthful radiance. The perfect solution for those seeking noticeable results without synthetic fillers or harsh procedures.</p>
+                                        <h3 id="dephead">Skin Rejuvenation Treatment Department</h3>
+                                      <p>Our Skin Rejuvenation Department specializes in advanced, non-surgical treatments that restore and refresh your skin’s natural glow.</p> <p>Using techniques like PRP (Vampire Facial), microneedling, laser therapy, and medical facials, we target concerns such as dullness, fine lines, acne scars, and uneven texture. Each treatment is customized to your skin type and goals, delivering visible improvements with minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="{{asset('assets/img/prpdep.jpg')}}" alt="" class="dpt_img">
@@ -861,7 +1026,7 @@
         <!-- /Departments Section -->
 
         <!-- Appointment Section -->
-        <section id="appointment" class="appointment section">
+        {{-- <section id="appointment" class="appointment section">
 
             <!-- Section Title -->
             <div class="container section-title">
@@ -872,117 +1037,91 @@
 
              @livewire('AppointmentForm.HomeApointmentForm') 
 
-        </section>
+        </section> --}}
         <!-- /Appointment Section -->
 
 
         <!-- Faq Section -->
-        <section id="faq" class="faq section light-background">
+       <section id="faq" class="faq section light-background">
 
-            <!-- Section Title -->
-            <div class="container section-title">
-                <h2>Frequently Asked Questions</h2>
-                {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
-            </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title">
+        <h2>Frequently Asked Questions</h2>
+    </div><!-- End Section Title -->
 
-            <div class="container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="faq-container">
 
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-10">
-
-                        <div class="faq-container">
-
-                            <div class="faq-item faq-active">
-                                <h3>How long does a hair transplant procedure take?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        The procedure typically takes 4-8 hours, depending on the number of grafts required.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Is laser hair removal painful?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        Laser hair removal is generally well-tolerated, with many clients describing it as a
-                                        mild snapping sensation.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>How soon can I see results from weight loss treatments?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        Results vary depending on the individual and the chosen treatment plan, but many
-                                        clients notice changes within a few weeks.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Are facial treatments suitable for sensitive skin?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        Yes, our facial treatments are customized to suit all skin types, including
-                                        sensitive skin.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>How do I get the best results from HydraFacial?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        Hydrafacials are all about deeply hydrating your skin, so be sure to keep yourself
-                                        well-hydrated in the days leading up to your appointment. This can help maximize
-                                        your Hydrafacial results. On the day of your appointment with Yorkshire, arrive with
-                                        a clean face, free from makeup and skincare products
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Does HydraFacial work immediately?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        No matter your skin type or tone, HydraFacials cleanse, extract and hydrate to
-                                        create a more radiant complexion. In other words, they're ideal for a wide range of
-                                        people and produce visible results almost immediately.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Is HydraFacial good for sensitive skin?</h3>
-                                <div class="faq-content">
-                                    <p>
-                                        Suitable for All Skin Types: Whether you have dry, oily, combination, or sensitive
-                                        skin, the HydraFacial can be customized to suit your unique needs. No Downtime: One
-                                        of the biggest advantages of a HydraFacial is its zero downtime, allowing clients to
-                                        return to their daily activities immediately post-treatment.
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
+                    <div class="faq-item faq-active">
+                        <h3>How long does a hair transplant procedure take?</h3>
+                        <div class="faq-content">
+                            <p>
+                                A typical hair transplant takes around 4 to 8 hours, depending on the number of grafts needed. The procedure is performed under local anesthesia, and most clients are comfortable throughout. It's usually a one-day session, and you can return home the same day with aftercare instructions. Recovery is quick, and visible results begin within a few months.
+                            </p>
                         </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
 
-                    </div><!-- End Faq Column-->
+                    <div class="faq-item">
+                        <h3>Is laser hair removal painful?</h3>
+                        <div class="faq-content">
+                            <p>
+                                Laser hair removal is generally well-tolerated. Most clients describe the sensation as a light snapping of a rubber band on the skin. Newer laser machines come with built-in cooling systems to minimize discomfort. Sessions are quick, and any mild redness usually fades within hours.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3>Are facial treatments suitable for sensitive skin?</h3>
+                        <div class="faq-content">
+                            <p>
+                                Yes, definitely. We offer a range of gentle facials specially designed for sensitive or reactive skin. Our therapists assess your skin first and choose calming, non-irritating products that reduce redness, boost hydration, and leave your skin feeling fresh without discomfort or flare-ups.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3>How do I get the best results from HydraFacial?</h3>
+                        <div class="faq-content">
+                            <p>
+                                To maximize results, drink plenty of water before and after your session, and avoid harsh skincare (like retinols or exfoliants) 24–48 hours prior. Arrive with a clean, makeup-free face. After your HydraFacial, avoid heavy makeup or sun exposure for the next 24 hours to let your skin fully absorb the treatment.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3>How long do teeth whitening results last?</h3>
+                        <div class="faq-content">
+                            <p>
+                                Teeth whitening results typically last from 6 months to 1 year, depending on your lifestyle and oral hygiene. Avoiding coffee, tea, smoking, and colored foods helps maintain your brighter smile longer. For best results, we recommend touch-up treatments every few months.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3>Is HydraFacial good for sensitive skin?</h3>
+                        <div class="faq-content">
+                            <p>
+                                Absolutely. HydraFacial is known for being gentle and safe for all skin types, including sensitive or acne-prone skin. It uses non-irritating serums and adjustable suction levels to ensure comfort and effectiveness. Plus, there’s no downtime — you can walk out glowing and return to your normal routine right away.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
 
                 </div>
+            </div><!-- End Faq Column-->
+        </div>
+    </div>
 
-            </div>
+       </section>
 
-        </section>
+
         <!-- /Faq Section -->
 
 
@@ -1106,7 +1245,7 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Contact</h2>
-                <p>For enquiries or further information, please contact us. Our team is available to assist you</p>
+                <p>For enquiries or further information, please fill out the form below. Our team is available to assist you.</p>
             </div><!-- End Section Title -->
 
             <div class="mb-5">
