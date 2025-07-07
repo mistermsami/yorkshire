@@ -381,6 +381,7 @@
                 margin-left: 0px;
             }
             
+            
         }
 
         .pricingbtn {
@@ -429,8 +430,9 @@
 
             .aboutmain_sec_img {
                 height: auto;
+                margin-left: 0px;
             }
-
+         
             .exploreclinic .card {
                 margin-bottom: 20px;
             }

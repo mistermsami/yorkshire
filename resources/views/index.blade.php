@@ -449,7 +449,7 @@
             </div>
           <div class="appointment-form-wrapper">
             
-    <form class="appointment-form" >
+    <form class="appointment-form" id="appointment" >
         <div class="form-header">
             <h3 class="form-title">Book Your Consultation</h3>
         </div>
@@ -1304,10 +1304,12 @@
             <div class="consultation-cta">
                 <div class="consultation-box">
                     <span class="cta-text">Ready to transform your look?</span>
-                    <button class="consultation-btn">
+                   <a href="#appointment">
+                     <button class="consultation-btn">
                         {{-- <i class="fas fa-calendar-check"></i>  --}}
                         Book Consultation
                     </button>
+                   </a>
                 </div>
             </div>
         </main>
