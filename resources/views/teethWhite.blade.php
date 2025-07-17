@@ -678,7 +678,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="before-after-container" id="beforeAfterSlider">
-                        <img src="assets/img/teethWhite.jpg" alt="Before teeth whitening" class="before-image">
+                        <img src="assets/img/teethWhitebefore.jpg" alt="Before teeth whitening" class="before-image">
                         <img src="assets/img/teethWhiteAfter.jpg" alt="After teeth whitening" class="after-image">
                         <div class="slider-handle"></div>
                     </div>
