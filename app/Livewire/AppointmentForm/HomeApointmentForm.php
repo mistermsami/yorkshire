@@ -10,7 +10,7 @@ class HomeApointmentForm extends Component
     public $contact;
     public $appointment_type;
     public $date; 
-    public $message; 
+    public $message = 'No message provided'; // Default message value
  
     public function save()
     {

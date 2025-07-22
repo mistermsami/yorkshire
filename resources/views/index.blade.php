@@ -13,321 +13,325 @@
     and for custom css --}}
 
     <style>
-.section-hero {
-    min-height: 78vh;
-    background: linear-gradient(180deg, #3c3c3b, #0057b7);
-    display: flex;
-    align-items: center;
-    padding: 0 8%;
-    overflow: hidden;
-}
-
-.section-hero__content {
-    flex: 1;
-    transform: translateX(-100%);
-    animation: slideInLeft 1s ease-out forwards;
-    margin-left: 10px
-}
-
-.section-hero__image-wrapper {
-    transform: translateX(100%);
-    animation: slideInRight 1s ease-out forwards;
-}
-
-.section-hero__image {
-    height: 233px;
-    width: 366px;
-    margin-bottom: 100px;
-    margin-right: 80px;
-}
-
-.section-hero__title {
-    font-size: 2.5rem;
-    color: #fff;
-    /* margin-bottom: 1rem; */
-    line-height: 1.2;
-    max-width: 622px;
-}
-
-.section-hero__description {
-    font-size: 1.3rem;
-    color: #f0f0f0;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    max-width: 500px;
-}
-
-.section-hero__cta {
-    display: inline-block;
-    background: transparent;
-    color: #fff;
-    padding: 8px 100px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid #fff;
-    position: relative;
-    overflow: hidden;
-}
-
-.section-hero__cta:hover {
-    background: #fff;
-    color: #0a2647;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-}
-
-.section-hero__badges img {
-    width: 190px;
-    margin-bottom: 20px;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Tablet Styles (769px - 1080px) */
-@media (min-width: 769px) and (max-width: 1080px) {
-    .section-hero {
-        padding: 0 5%;
-        min-height: 80vh;
-    }
-    ..section-hero__content{
-        margin-left: 0px;
-    }
-    .section-hero__title {
-        font-size: 2.2rem;
-        max-width: 350px;
-    }
-
-    .section-hero__description {
-        font-size: 1rem;
-        max-width: 350px;
-    }
-
-    .section-hero__image {
-        width: 300px;
-        height: auto;
-        margin-bottom: 50px;
-        margin-right: 0px;
-    }
-
-    .section-hero__cta {
-        padding: 8px 70px;
-    }
-
-    .section-hero__badges img {
-        width: 150px;
-    }
-}
-
-/* Mobile Styles (up to 768px) */
-@media (max-width: 768px) {
-    .section-hero {
-        flex-direction: column;
-        padding: 100px 5% 50px;
-        text-align: center;
-        min-height: auto;
-    }
-
-    .section-hero__content,
-    .section-hero__image-wrapper {
-        transform: none;
-        animation: none;
-        width: 100%;
-        opacity: 1;
-    }
-
-    .section-hero__content {
-        margin-bottom: 50px;
-    }
-
-    .section-hero__image {
-        width: 100%;
-        max-width: 330px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .section-hero__title {
-        font-size: 2rem;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .section-hero__description {
-        max-width: 100%;
-    }
-
-    .section-hero__cta {
-        padding: 8px 50px;
-    }
-
-    .section-hero__badges img {
-        width: 130px;
-    }
-}
-
-/* testimonial trustpilot image */
-.trustpilot-img-container {
-    margin-bottom: 15px;
-    
-}
-
-.trustpilot-img-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-   
-      .appointment-form-wrapper {
-        flex: 1;
-        min-width: 280px;
-        max-width: 340px;
-        background: white;
-        border-radius: 12px;
-        padding: 22px;
-        box-shadow: 0 8px 24px rgba(32, 101, 209, 0.12);
-        border: 1px solid rgba(32, 101, 209, 0.08);
-    }
-    
-    .appointment-form {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-    
-    .form-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    
-    .form-title {
-        color: #2a3439;
-        font-size: 18px;
-        margin: 0;
-        font-weight: 700;
-        letter-spacing: 0.2px;
-    }
-    
-    .form-icon {
-        font-size: 22px;
-        opacity: 0.8;
-    }
-    
-    .form-row {
-        display: flex;
-        gap: 10px;
-    }
-    
-    .half-width {
-        flex: 1;
-    }
-    
-    .form-group input,
-    .form-group select {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid #e0e3e7;
-        border-radius: 8px;
-        font-size: 13px;
-        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-        background: #f8fafc;
-    }
-    
-    .form-group input:focus,
-    .form-group select:focus {
-        border-color: #3b82f6;
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-        background: white;
-    }
-    
-    .form-group select {
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        background-size: 12px;
-    }
-    
-    .submit-btn {
-        background: linear-gradient(to right, #3b82f6, #2563eb);
-        color: white;
-        border: none;
-        padding: 12px;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        margin-top: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.15);
-    }
-    
-    .submit-btn:hover {
-        background: linear-gradient(to right, #2563eb, #1d4ed8);
-        transform: translateY(-1px);
-        box-shadow: 0 6px 8px rgba(59, 130, 246, 0.2);
-    }
-    
-    .submit-btn:active {
-        transform: translateY(0);
-    }
-    
-    .btn-icon {
-        font-weight: bold;
-        transition: transform 0.2s ease;
-    }
-    
-    .submit-btn:hover .btn-icon {
-        transform: translateX(2px);
-    }
-    
-    .form-footer {
-        color: #64748b;
-        font-size: 11px;
-        text-align: center;
-        margin: 10px 0 0 0;
-        opacity: 0.8;
-    }
-
-    @media (max-width: 480px) {
-        .appointment-form-wrapper {
-            padding: 18px;
-            max-width: 100%;
+        .section-hero {
+            min-height: 78vh;
+            background: linear-gradient(180deg, #3c3c3b, #0057b7);
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            overflow: hidden;
         }
-    }
+
+        .section-hero__content {
+            flex: 1;
+            transform: translateX(-100%);
+            animation: slideInLeft 1s ease-out forwards;
+            margin-left: 10px
+        }
+
+        .section-hero__image-wrapper {
+            transform: translateX(100%);
+            animation: slideInRight 1s ease-out forwards;
+        }
+
+        .section-hero__image {
+            height: 233px;
+            width: 366px;
+            margin-bottom: 100px;
+            margin-right: 80px;
+        }
+
+        .section-hero__title {
+            font-size: 2.5rem;
+            color: #fff;
+            /* margin-bottom: 1rem; */
+            line-height: 1.2;
+            max-width: 622px;
+        }
+
+        .section-hero__description {
+            font-size: 1.3rem;
+            color: #f0f0f0;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        .section-hero__cta {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            padding: 8px 100px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-hero__cta:hover {
+            background: #fff;
+            color: #0a2647;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .section-hero__badges img {
+            width: 190px;
+            margin-bottom: 20px;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tablet Styles (769px - 1080px) */
+        @media (min-width: 769px) and (max-width: 1080px) {
+            .section-hero {
+                padding: 0 5%;
+                min-height: 80vh;
+            }
+
+            ..section-hero__content {
+                margin-left: 0px;
+            }
+
+            .section-hero__title {
+                font-size: 2.2rem;
+                max-width: 350px;
+            }
+
+            .section-hero__description {
+                font-size: 1rem;
+                max-width: 350px;
+            }
+
+            .section-hero__image {
+                width: 300px;
+                height: auto;
+                margin-bottom: 50px;
+                margin-right: 0px;
+            }
+
+            .section-hero__cta {
+                padding: 8px 70px;
+            }
+
+            .section-hero__badges img {
+                width: 150px;
+            }
+        }
+
+        /* Mobile Styles (up to 768px) */
+        @media (max-width: 768px) {
+            .section-hero {
+                flex-direction: column;
+                padding: 100px 5% 50px;
+                text-align: center;
+                min-height: auto;
+            }
+
+            .section-hero__content,
+            .section-hero__image-wrapper {
+                transform: none;
+                animation: none;
+                width: 100%;
+                opacity: 1;
+            }
+
+            .section-hero__content {
+                margin-bottom: 50px;
+            }
+
+            .section-hero__image {
+                width: 100%;
+                max-width: 330px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .section-hero__title {
+                font-size: 2rem;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .section-hero__description {
+                max-width: 100%;
+            }
+
+            .section-hero__cta {
+                padding: 8px 50px;
+            }
+
+            .section-hero__badges img {
+                width: 130px;
+            }
+        }
+
+        /* testimonial trustpilot image */
+        .trustpilot-img-container {
+            margin-bottom: 15px;
+
+        }
+
+        .trustpilot-img-container img {
+            max-width: 100%;
+            height: auto;
+        }
 
 
-/* ------------------------------------------------------ */
+
+
+        .appointment-form-wrapper {
+            flex: 1;
+            min-width: 280px;
+            max-width: 340px;
+            background: white;
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 8px 24px rgba(32, 101, 209, 0.12);
+            border: 1px solid rgba(32, 101, 209, 0.08);
+        }
+
+        .appointment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-title {
+            color: #2a3439;
+            font-size: 18px;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        .form-icon {
+            font-size: 22px;
+            opacity: 0.8;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .half-width {
+            flex: 1;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e0e3e7;
+            border-radius: 8px;
+            font-size: 13px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #f8fafc;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+            background: white;
+        }
+
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(to right, #3b82f6, #2563eb);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.15);
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 8px rgba(59, 130, 246, 0.2);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-icon {
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .submit-btn:hover .btn-icon {
+            transform: translateX(2px);
+        }
+
+        .form-footer {
+            color: #64748b;
+            font-size: 11px;
+            text-align: center;
+            margin: 10px 0 0 0;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .appointment-form-wrapper {
+                padding: 18px;
+                max-width: 100%;
+            }
+        }
+
+
+        /* ------------------------------------------------------ */
         .svgicon {
             fill: #1977cc;
             color: #1977cc;
@@ -363,72 +367,79 @@
             transition: 0.4s;
             border-radius: 50px;
         }
-        @media(max-width:786px){
-            #dephead{
+
+        @media(max-width:786px) {
+            #dephead {
                 margin-top: 12px;
             }
-            .hydrafacial-hero-title {
-              font-size: 1.9rem;
-              margin-bottom: 15px;
-          }
 
-          .hydrafacial-hero-subtitle {
-              font-size: 1.2rem;
-          }
+            .hydrafacial-hero-title {
+                font-size: 1.9rem;
+                margin-bottom: 15px;
+            }
+
+            .hydrafacial-hero-subtitle {
+                font-size: 1.2rem;
+            }
         }
+
         /* CTA BTN  */
         .consultation-cta {
-    position: fixed;
-    bottom: 20px; /* Always visible position */
-    left: 0;
-    right: 0;
-    display: none; /* Hidden by default */
-    justify-content: center;
-    z-index: 9999;
-    padding: 0 20px;
-}
+            position: fixed;
+            bottom: 20px;
+            /* Always visible position */
+            left: 0;
+            right: 0;
+            display: none;
+            /* Hidden by default */
+            justify-content: center;
+            z-index: 9999;
+            padding: 0 20px;
+        }
 
-/* Mobile-only styles */
-@media (max-width: 768px) {
-    .consultation-cta {
-        display: flex; /* Always visible on mobile */
-    }
+        /* Mobile-only styles */
+        @media (max-width: 768px) {
+            .consultation-cta {
+                display: flex;
+                /* Always visible on mobile */
+            }
 
-    .consultation-box {
-        background: rgba(255, 255, 255, 0.92);
-        backdrop-filter: blur(8px);
-        border-radius: 12px;
-        padding: 10px 15px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-    .cta-text {
-        font-size: 0.85rem;
-        color: #333;
-        font-weight: 500;
-        white-space: nowrap;
-    }
+            .consultation-box {
+                background: rgba(255, 255, 255, 0.92);
+                backdrop-filter: blur(8px);
+                border-radius: 12px;
+                padding: 10px 15px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
 
-    .consultation-btn {
-        background: #1977cc;
-        color: white;
-        border: none;
-        padding: 7px 14px;
-        border-radius: 8px;
-        font-size: 0.85rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
-    }
+            .cta-text {
+                font-size: 0.85rem;
+                color: #333;
+                font-weight: 500;
+                white-space: nowrap;
+            }
 
-}
+            .consultation-btn {
+                background: #1977cc;
+                color: white;
+                border: none;
+                padding: 7px 14px;
+                border-radius: 8px;
+                font-size: 0.85rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 0 2px 8px rgba(25, 119, 204, 0.2);
+            }
+
+        }
     </style>
 @endsection
 
@@ -438,61 +449,17 @@
             <div class="section-hero__content">
                 <h1 class="section-hero__title">YORKSHIRE'S TRUSTED HAIR AND SKIN SPECIALISTS</h1>
                 <p class="section-hero__description">
-                    YOUR GO-TO FOR HAIR RESTORATION & SKIN REJUVENATION 
+                    YOUR GO-TO FOR HAIR RESTORATION & SKIN REJUVENATION
                     {{-- Recommended Provider for Private Medical Insurance. --}}
                 </p>
                 <div class="section-hero__badges">
-                    <img src="{{asset('assets/img/c1.png')}}" alt="not found" width="50px">
-                    <img src="{{asset('assets/img/c3.png')}}" alt="not found">
+                    <img src="{{ asset('assets/img/c1.png') }}" alt="not found" width="50px">
+                    <img src="{{ asset('assets/img/c3.png') }}" alt="not found">
                 </div>
                 <a href="#services" class="section-hero__cta">Get Started</a>
             </div>
-          <div class="appointment-form-wrapper">
-            
-    <form class="appointment-form" id="appointment" >
-        <div class="form-header">
-            <h3 class="form-title">Book Your Consultation</h3>
-        </div>
-        
-        <div class="form-row">
-            <div class="form-group half-width">
-                <input type="text" placeholder="Your Name" required>
-            </div>
-            <div class="form-group half-width">
-                <input type="tel" placeholder="Phone" required>
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <select required>
-                <option value="" disabled selected>Select Service</option>
-                <option value="hair">Hair Growth Treatments</option>
-                <option value="skin">Laser Hair Removal</option>
-                <option value="both">Vitamin Injections</option>
-                <option value="both">HydraFacial</option>
-                <option value="both">Teeth Whitening</option>
-                <option value="both">IV Drips</option>
-                <option value="both">Skin Rejuvanation Treatments</option>
-            </select>
-        </div>
-        
-        <div class="form-row">
-            <div class="form-group half-width">
-                <input type="date" placeholder="Date">
-            </div>
-            <div class="form-group half-width">
-                <input type="time" placeholder="Time">
-            </div>
-        </div>
-        
-        <button type="submit" class="submit-btn">
-            <span class="btn-text">Book Now</span>
-            <span class="btn-icon">→</span>
-        </button>
-        
-        <p class="form-footer">Let’s connect! We’ll reach out within 24 hours</p>
-    </form>
-</div>
+
+            @livewire(name: 'AppointmentForm.HomeApointmentForm')
         </section>
 
 
@@ -512,19 +479,18 @@
                             <div class="image-overlay"></div>
                         </div>
                     </div> --}}
-                   <div class="col-md-6 d-flex">
-                   <div class="about-image position-relative w-100 h-100">
-                  <img src="assets/img/aboutpic.webp" alt="About Us"
-                   class="img-fluid rounded shadow object-fit-cover h-100 w-100" />
-                    <a href="https://youtu.be/2Q6qyfTXskw?si=5tqMAzzGfTmFFvu8"
-                     class="glightbox pulsating-play-btn position-absolute translate-middle"
-                     style="top: 50%; left: 50%; z-index: 10;"
-                     data-type="video">
-                        ▶
-                    </a>
-                 <div class="image-overlay"></div>
-                 </div>
-                  </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="about-image position-relative w-100 h-100">
+                            <img src="assets/img/aboutpic.webp" alt="About Us"
+                                class="img-fluid rounded shadow object-fit-cover h-100 w-100" />
+                            <a href="https://youtu.be/2Q6qyfTXskw?si=5tqMAzzGfTmFFvu8"
+                                class="glightbox pulsating-play-btn position-absolute translate-middle"
+                                style="top: 50%; left: 50%; z-index: 10;" data-type="video">
+                                ▶
+                            </a>
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
 
                     <!-- Content Column -->
                     <div class="col-md-6 d-flex">
@@ -575,51 +541,52 @@
         </section>
         <!-- /About Section -->
 
-         {{-- trustpilot thing --}}
-       <section class="trust-features">
-        <div class="container">
-            <!-- Trustpilot Logo -->
-            <div class="trustpilot-logo-container">
-                <h2>The Yorkshire Hair and Skin Solution difference</h2>
-                <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="trustpilot" class="trustpilot-logo" style="width: 290px">
+        {{-- trustpilot thing --}}
+        <section class="trust-features">
+            <div class="container">
+                <!-- Trustpilot Logo -->
+                <div class="trustpilot-logo-container">
+                    <h2>The Yorkshire Hair and Skin Solution difference</h2>
+                    <img src="{{ asset('assets/img/trustpilotimage.png') }}" alt="trustpilot" class="trustpilot-logo"
+                        style="width: 290px">
+                </div>
+
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <p class="feature-content">UK Licensed medication</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-spa"></i> <!-- Spa icon for relaxation and beauty treatments -->
+                        </div>
+                        <p class="feature-content"> Skincare treatments</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i> <!-- Health & wellness icon -->
+                        </div>
+                        <p class="feature-content">FDA approved procedures</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <p class="feature-content">Ongoing medical support</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Features Grid -->
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <p class="feature-content">UK Licensed medication</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i> <!-- Spa icon for relaxation and beauty treatments -->
-                    </div>
-                    <p class="feature-content"> Skincare treatments</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-md"></i> <!-- Health & wellness icon -->
-                    </div>
-                    <p class="feature-content">FDA approved procedures</p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <p class="feature-content">Ongoing medical support</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Services Section -->
         <section id="services" class="services section">
@@ -660,7 +627,9 @@
                                 <h3>Hair Growth Treatment</h3>
                             </a>
                             <p>
-                               Hair growth treatment involves medical or non-surgical methods to stimulate hair follicles and promote new hair growth. It targets thinning, hair fall, or bald spots using therapies like PRP, mesotherapy, or topical solutions
+                                Hair growth treatment involves medical or non-surgical methods to stimulate hair follicles
+                                and promote new hair growth. It targets thinning, hair fall, or bald spots using therapies
+                                like PRP, mesotherapy, or topical solutions
                             </p>
                         </div>
                     </div><!-- End Service Item -->
@@ -671,9 +640,11 @@
                                 <i class="fas fa-notes-medical"></i>
                             </div>
                             <a href="{{ route('teethWhite') }}" class="stretched-link">
-                              <h3>Teeth Whitening</h3>
+                                <h3>Teeth Whitening</h3>
                             </a>
-                            <p>Teeth whitening is a cosmetic dental procedure that uses bleaching agents to lighten the color of your teeth. It breaks down stains caused by food, drinks, or smoking to restore a naturally whiter appearance.</p>
+                            <p>Teeth whitening is a cosmetic dental procedure that uses bleaching agents to lighten the
+                                color of your teeth. It breaks down stains caused by food, drinks, or smoking to restore a
+                                naturally whiter appearance.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -701,7 +672,9 @@
                             <a href="{{ route('laser-hair-removal') }}" class="stretched-link">
                                 <h3>Laser Hair Removal</h3>
                             </a>
-                            <p>Laser hair removal is a treatment that uses light energy to safely target hair roots and slow down hair growth. It’s a long-term solution for reducing unwanted hair on areas like the face, arms, legs, and more.</p>
+                            <p>Laser hair removal is a treatment that uses light energy to safely target hair roots and slow
+                                down hair growth. It’s a long-term solution for reducing unwanted hair on areas like the
+                                face, arms, legs, and more.</p>
                         </div>
                     </div><!-- End Service Item -->
                     {{-- data-aos="fade-up" data-aos-delay="400" --}}
@@ -726,8 +699,10 @@
                             <a href="{{ route('hydra-ficial') }}" class="stretched-link">
                                 <h3>HydraFacial</h3>
                             </a>
-                            <p>A gentle, multi-step facial that deeply cleanses, exfoliates, and hydrates your skin using advanced technology. It removes impurities and infuses the skin with nourishing serums for an instant glow and smoother texture.</p>
-                            <a href="{{ route('hydra-ficial') }}"  class="stretched-link"></a>
+                            <p>A gentle, multi-step facial that deeply cleanses, exfoliates, and hydrates your skin using
+                                advanced technology. It removes impurities and infuses the skin with nourishing serums for
+                                an instant glow and smoother texture.</p>
+                            <a href="{{ route('hydra-ficial') }}" class="stretched-link"></a>
                         </div>
                     </div><!-- End Service Item -->
                     <div class="col-lg-4 col-md-6">
@@ -738,77 +713,80 @@
                                     style="enable-background:new 0 0 1000 1080;" xml:space="preserve">
                                     <g>
                                         <path class="cls-1 cls-1-2" d="M769.23,497.72c8.93,3.79,16.34,6.24,23.08,9.92c30.24,16.55,60.25,33.52,90.43,50.17c6.21,3.42,12.48,3.08,19.35,0.35 c4.21-1.67,9.69-0.78,14.45-0.02c1.41,0.22,3.23,3.87,3.25,5.96c0.24,21.83,0.18,43.66,0.13,65.5c-0.01,4.61-2.49,7.35-7.01,7.25 c-4.76-0.11-9.5-0.94-14.24-1.46c-0.13-0.51-0.25-1.02-0.38-1.53c-0.45,1.34-0.99,2.66-1.33,4.03 c-4.31,17.12-8.53,34.26-12.88,51.36c-7.88,30.96-34.21,52.44-66.06,53.81c-3.03,0.13-4.67,1.16-6.29,3.69 c-11.87,18.55-28.95,28.16-50.96,28.17c-173.66,0.08-347.32,0.08-520.98-0.01c-22.02-0.01-39.07-9.66-50.82-28.34 c-1.5-2.39-3.02-3.35-5.89-3.45c-32.87-1.24-59.01-22.39-67.19-54.28c-4.3-16.77-8.45-33.59-12.68-50.38 c-0.39-1.54-0.87-3.06-0.9-3.17c-5.76,0.61-10.67,1.45-15.6,1.55c-4.08,0.08-6.57-2.54-6.59-6.65c-0.09-22.17-0.09-44.33,0-66.5 c0.02-4.4,2.67-6.84,6.99-6.79c4.51,0.05,8.72,0.3,13.36,2.26c4.51,1.9,11.68,1.26,16.15-1.12c31.44-16.77,62.44-34.35,93.7-51.47 c5.33-2.92,11.2-4.83,17.35-7.43c0-4.38,1.09-9.91-0.17-14.84c-11.65-45.43-28.18-88.89-54.36-128.14 c-6.35-9.52-13.94-18.24-21.31-27.04c-1.42-1.7-4.44-2.81-6.76-2.87c-4.82-0.14-9.59-0.74-14.45,2.03 c-2.88,1.65-7.62,1.02-11.18,0.11c-1.83-0.47-4.14-3.8-4.17-5.87c-0.32-20.16-0.23-40.33-0.17-60.49c0.01-4.2,2.45-6.35,6.57-6.66
-                          c0.5-0.04,1.01-0.09,1.5-0.02c5.58,0.88,8.93-1.09,12.25-6.15c6.66-10.14,17.27-15.84,28.69-18.77
-                          c10.72-2.75,21.91-5.12,32.89-5.14c201.99-0.3,403.98-0.23,605.97-0.2c16.39,0,32.14,3.07,46.65,11.09
-                          c7.41,4.09,13.65,9.45,18,16.9c0.68,1.17,2.67,1.83,4.18,2.18c1.58,0.37,3.31,0.04,4.98,0.08c6.07,0.13,8.16,2.14,8.17,8.09
-                          c0.03,19.17,0.03,38.33,0,57.5c-0.01,6.03-2.03,8.25-8.12,7.92c-3.64-0.2-7.17-1.92-10.82-2.28c-4.94-0.49-9.99-0.79-14.88-0.21
-                          c-1.99,0.24-3.88,2.84-5.48,4.66c-30.2,34.39-49.56,74.75-64.52,117.5c-3.24,9.26-6.29,18.64-8.63,28.16
-                          C770.67,483.98,770.13,491.61,769.23,497.72z M893.92,634.06c-262.95,0-524.88,0-787.32,0c0.41,1.93,0.7,3.52,1.09,5.09
-                          c3.78,15.36,7.59,30.71,11.37,46.07c8.38,34.04,33.93,54.1,69.09,54.1c207.82,0.02,415.65,0.05,623.47-0.13
-                          c8.05-0.01,16.43-1.06,24.08-3.46c20.83-6.56,35.7-20.47,42.34-41.26C884.3,674.85,888.6,654.61,893.92,634.06z M898.54,564.34
-                          c-265.97,0-531.37,0-796.99,0c0,21.85,0,43.41,0,65.07c265.84,0,531.34,0,796.99,0C898.54,607.57,898.54,586.14,898.54,564.34z
-                          M864.86,262.59c-243.52,0-486.54,0-729.57,0c0,19.95,0,39.52,0,59.15c243.36,0,486.37,0,729.57,0
-                          C864.86,301.92,864.86,282.46,864.86,262.59z M865.36,257.95c-4.85-10.72-13.15-16.55-22.69-20.91
-                          c-13.43-6.13-27.68-8.12-42.34-8.12c-200.45,0.03-400.89,0.02-601.34,0.03c-2.5,0-5-0.01-7.49,0.16
-                          c-15.32,1.04-30,4.29-43.03,12.92c-5.88,3.9-10.7,8.77-13.67,15.92C378.46,257.95,621.49,257.95,865.36,257.95z M808.85,743.62
-                          c-206.1,0-411.27,0-617.22,0c11.65,17.82,27.26,27.35,47.83,27.36c173.97,0.11,347.95,0.09,521.92-0.07
-                          c6.05-0.01,12.32-1.22,18.09-3.11C792.05,763.69,801.75,755.68,808.85,743.62z M197.52,353.3c3.16,5.77,6.32,10.66,8.58,15.94
-                          c2.2,5.15,5.29,6.71,10.95,6.71c187.14-0.18,374.28-0.2,561.42,0.05c7.98,0.01,13.07-1.48,15.85-9.43
-                          c1.58-4.52,4.59-8.54,7.22-13.26C599.82,353.3,399.19,353.3,197.52,353.3z M219.66,397.49c2.2,5.49,4.67,10.41,6.11,15.62
-                          c1.42,5.14,4.11,6.34,9.23,6.33c176.28-0.15,352.57-0.12,528.85-0.12c1.33,0,2.74,0.26,3.98-0.09c1.11-0.31,2.55-1.07,2.96-2.01
-                          c2.73-6.38,5.23-12.86,7.96-19.73C592.25,397.49,406.28,397.49,219.66,397.49z M237.04,445.1c1.66,5.77,3.63,10.95,4.54,16.31
-                          c0.87,5.07,3.36,6,8.06,6c166.43-0.12,332.85-0.1,499.28-0.1c1.33,0,2.7,0.17,3.98-0.09c0.82-0.16,1.97-0.82,2.18-1.5
-                          c2.09-6.74,4.02-13.53,6.08-20.61C586.26,445.1,412.03,445.1,237.04,445.1z M875.87,560.06c0.1-0.3,0.21-0.61,0.31-0.91
-                          c-0.79-0.5-1.55-1.05-2.37-1.51c-29.51-16.49-58.91-33.18-88.64-49.27c-5.02-2.71-11.43-4-17.2-4
-                          c-178.49-0.2-356.98-0.2-535.46,0.04c-6.04,0.01-12.69,1.73-18.02,4.59c-29.2,15.66-58.07,31.93-87.05,48.01
-                          c-1.22,0.68-2.37,1.49-4.86,3.07c7.12,0,12.72-0.23,18.3,0.07c4.85,0.26,9.01-0.96,13.23-3.35c19.42-10.99,38.81-22.05,58.59-32.37
-                          c5.68-2.96,12.61-4.97,18.97-4.98c178.99-0.23,357.98-0.15,536.96-0.14c7.34,0,14.04,1.78,20.47,5.43
-                          c19.84,11.27,39.81,22.31,59.77,33.36c1.69,0.93,3.66,1.82,5.53,1.88C861.55,560.19,868.71,560.06,875.87,560.06z M768.32,424.05
-                          c-179.68,0-358.84,0-538.44,0c1.35,3.9,2.92,7.26,3.63,10.8c0.99,4.95,3.37,6.34,8.5,6.33c171.32-0.16,342.64-0.14,513.96-0.14
-                          c1.5,0,3.04,0.19,4.49-0.08c0.96-0.18,2.31-0.82,2.6-1.59C764.91,434.44,766.52,429.4,768.32,424.05z M156.79,559.7
-                          c229.42,0,457.34,0,686.69,0c-5.69-3.2-10.28-5.51-14.56-8.27c-5.08-3.28-10.42-4.33-16.47-4.32
-                          c-103.98,0.14-207.96,0.1-311.94,0.1c-104.98,0-209.96-0.01-314.94,0.04c-2.61,0-5.53-0.07-7.76,1.02
-                          C171.09,551.54,164.65,555.37,156.79,559.7z M812.7,336.62c-208.87,0-417.32,0-626.31,0c1.56,2.31,3.08,3.95,3.89,5.88
-                          c2.52,5.96,6.91,6.96,13.04,6.96c195.82-0.18,391.65-0.24,587.47,0.13c10.2,0.02,17.11-2.22,21.27-11.52
-                          C812.2,337.76,812.33,337.46,812.7,336.62z M211.8,379.96c1.1,2.47,2.35,4.48,2.89,6.66c1.37,5.57,4.81,6.56,10.22,6.56
-                          c183.45-0.16,366.91-0.13,550.36-0.13c1.17,0,2.41,0.25,3.48-0.07c1.12-0.33,2.54-0.96,3.03-1.88c1.86-3.48,3.39-7.13,5.24-11.13
-                          C595.14,379.96,403.79,379.96,211.8,379.96z M231.97,499.94c178.08,0,355.87,0,533.82,0c0-4.3,0-8.22,0-12.37
-                          c-178.07,0-355.88,0-533.82,0C231.97,491.87,231.97,495.79,231.97,499.94z M204.56,533.86c197.36,0,394.12,0,591.55,0
-                          c-10.05-7.27-20.12-10.8-32.13-10.79c-175.47,0.25-350.95,0.25-526.42-0.01C225.24,523.04,214.79,526.44,204.56,533.86z
-                          M247.27,482.84c167.94,0,335.53,0,503.47,0c0.93-3.74,1.83-7.36,2.83-11.37c-169.94,0-339.16,0-509.07,0
-                          C245.47,475.48,246.36,479.1,247.27,482.84z M179.11,326.25c2.16,3.82,4.08,5.92,8.41,5.92c208.16-0.12,416.32-0.12,624.47-0.01
-                          c4.54,0,6.45-2,7.95-5.91C606.27,326.25,393.02,326.25,179.11,326.25z M188.47,541.44c0.12,0.47,0.25,0.94,0.37,1.42
-                          c207.53,0,415.06,0,622.59,0c0.11-0.52,0.21-1.04,0.32-1.56c-3.68-1.03-7.35-2.97-11.03-2.97c-200.14-0.14-400.28-0.14-600.42,0.01
-                          C196.35,538.35,192.41,540.37,188.47,541.44z M844.54,326.08c-5.63,0-9.93,0.23-14.19-0.08c-3.23-0.23-5.26,0.89-7.04,3.5
-                          c-5.43,7.98-11.36,15.63-16.51,23.78c-24.71,39.15-39.95,82.15-51.09,126.78c-0.22,0.86-0.23,1.78-0.37,2.99
-                          c1.44,0,2.42-0.01,3.41,0c7.51,0.08,7.49,0.07,9.51-7.1c8.67-30.85,19.96-60.68,34.79-89.12
-                          C814.25,365.34,827.45,345.21,844.54,326.08z M155.7,326.08c0.39,0.99,0.45,1.5,0.73,1.82c23.42,25.95,39.93,56.13,52.61,88.36
-                          c8.03,20.4,14.44,41.45,21.25,62.31c1.15,3.54,2.52,4.98,6.14,4.53c2.05-0.25,4.16-0.05,6.51-0.05c-0.4-1.99-0.62-3.29-0.93-4.57
-                          c-6.65-26.68-14.94-52.83-25.68-78.17c-10.62-25.07-23.16-49.07-40.13-70.53c-1.16-1.47-2.83-3.4-4.39-3.53
-                          C166.6,325.8,161.31,326.08,155.7,326.08z M916.05,596.86c0-10.33-0.19-20.66,0.08-30.98c0.13-5.2-2.95-5.07-6.49-4.95
-                          c-3.39,0.12-7.08-0.96-7.02,4.85c0.21,20.65,0.2,41.31-0.01,61.96c-0.05,5.29,2.82,5.41,6.7,5.36c3.75-0.05,6.97,0.14,6.83-5.27
-                          C915.86,617.52,916.05,607.19,916.05,596.86z M97.31,597c0-10.31-0.25-20.63,0.1-30.93c0.19-5.56-3.09-5.15-6.74-5.15
-                          c-3.65,0-6.87-0.39-6.81,5.14c0.23,20.46,0.27,40.92-0.01,61.37c-0.08,5.87,3.31,5.28,7.09,5.43c3.99,0.16,6.67-0.16,6.49-5.42
-                          C97.07,617.3,97.32,607.14,97.31,597z M118.95,291.86c0,9.5,0.17,19-0.07,28.49c-0.13,4.91,2.77,4.72,6.16,4.75
-                          c3.5,0.03,6.12-0.08,6.08-4.87c-0.18-18.66-0.19-37.32,0.01-55.98c0.06-5.11-2.84-5-6.45-5.1c-3.83-0.11-5.92,0.77-5.81,5.22
-                          C119.12,273.53,118.95,282.7,118.95,291.86z M881.05,292.17c0-9.16-0.21-18.33,0.09-27.49c0.15-4.67-1.95-5.61-6.02-5.56
-                          c-3.83,0.05-6.31,0.43-6.25,5.32c0.21,18.49,0.21,36.99,0,55.48c-0.06,4.97,2.54,5.12,6.3,5.22c4.1,0.11,6.13-0.8,5.98-5.48
-                          C880.84,310.51,881.05,301.34,881.05,292.17z" />
+                                          c0.5-0.04,1.01-0.09,1.5-0.02c5.58,0.88,8.93-1.09,12.25-6.15c6.66-10.14,17.27-15.84,28.69-18.77
+                                          c10.72-2.75,21.91-5.12,32.89-5.14c201.99-0.3,403.98-0.23,605.97-0.2c16.39,0,32.14,3.07,46.65,11.09
+                                          c7.41,4.09,13.65,9.45,18,16.9c0.68,1.17,2.67,1.83,4.18,2.18c1.58,0.37,3.31,0.04,4.98,0.08c6.07,0.13,8.16,2.14,8.17,8.09
+                                          c0.03,19.17,0.03,38.33,0,57.5c-0.01,6.03-2.03,8.25-8.12,7.92c-3.64-0.2-7.17-1.92-10.82-2.28c-4.94-0.49-9.99-0.79-14.88-0.21
+                                          c-1.99,0.24-3.88,2.84-5.48,4.66c-30.2,34.39-49.56,74.75-64.52,117.5c-3.24,9.26-6.29,18.64-8.63,28.16
+                                          C770.67,483.98,770.13,491.61,769.23,497.72z M893.92,634.06c-262.95,0-524.88,0-787.32,0c0.41,1.93,0.7,3.52,1.09,5.09
+                                          c3.78,15.36,7.59,30.71,11.37,46.07c8.38,34.04,33.93,54.1,69.09,54.1c207.82,0.02,415.65,0.05,623.47-0.13
+                                          c8.05-0.01,16.43-1.06,24.08-3.46c20.83-6.56,35.7-20.47,42.34-41.26C884.3,674.85,888.6,654.61,893.92,634.06z M898.54,564.34
+                                          c-265.97,0-531.37,0-796.99,0c0,21.85,0,43.41,0,65.07c265.84,0,531.34,0,796.99,0C898.54,607.57,898.54,586.14,898.54,564.34z
+                                          M864.86,262.59c-243.52,0-486.54,0-729.57,0c0,19.95,0,39.52,0,59.15c243.36,0,486.37,0,729.57,0
+                                          C864.86,301.92,864.86,282.46,864.86,262.59z M865.36,257.95c-4.85-10.72-13.15-16.55-22.69-20.91
+                                          c-13.43-6.13-27.68-8.12-42.34-8.12c-200.45,0.03-400.89,0.02-601.34,0.03c-2.5,0-5-0.01-7.49,0.16
+                                          c-15.32,1.04-30,4.29-43.03,12.92c-5.88,3.9-10.7,8.77-13.67,15.92C378.46,257.95,621.49,257.95,865.36,257.95z M808.85,743.62
+                                          c-206.1,0-411.27,0-617.22,0c11.65,17.82,27.26,27.35,47.83,27.36c173.97,0.11,347.95,0.09,521.92-0.07
+                                          c6.05-0.01,12.32-1.22,18.09-3.11C792.05,763.69,801.75,755.68,808.85,743.62z M197.52,353.3c3.16,5.77,6.32,10.66,8.58,15.94
+                                          c2.2,5.15,5.29,6.71,10.95,6.71c187.14-0.18,374.28-0.2,561.42,0.05c7.98,0.01,13.07-1.48,15.85-9.43
+                                          c1.58-4.52,4.59-8.54,7.22-13.26C599.82,353.3,399.19,353.3,197.52,353.3z M219.66,397.49c2.2,5.49,4.67,10.41,6.11,15.62
+                                          c1.42,5.14,4.11,6.34,9.23,6.33c176.28-0.15,352.57-0.12,528.85-0.12c1.33,0,2.74,0.26,3.98-0.09c1.11-0.31,2.55-1.07,2.96-2.01
+                                          c2.73-6.38,5.23-12.86,7.96-19.73C592.25,397.49,406.28,397.49,219.66,397.49z M237.04,445.1c1.66,5.77,3.63,10.95,4.54,16.31
+                                          c0.87,5.07,3.36,6,8.06,6c166.43-0.12,332.85-0.1,499.28-0.1c1.33,0,2.7,0.17,3.98-0.09c0.82-0.16,1.97-0.82,2.18-1.5
+                                          c2.09-6.74,4.02-13.53,6.08-20.61C586.26,445.1,412.03,445.1,237.04,445.1z M875.87,560.06c0.1-0.3,0.21-0.61,0.31-0.91
+                                          c-0.79-0.5-1.55-1.05-2.37-1.51c-29.51-16.49-58.91-33.18-88.64-49.27c-5.02-2.71-11.43-4-17.2-4
+                                          c-178.49-0.2-356.98-0.2-535.46,0.04c-6.04,0.01-12.69,1.73-18.02,4.59c-29.2,15.66-58.07,31.93-87.05,48.01
+                                          c-1.22,0.68-2.37,1.49-4.86,3.07c7.12,0,12.72-0.23,18.3,0.07c4.85,0.26,9.01-0.96,13.23-3.35c19.42-10.99,38.81-22.05,58.59-32.37
+                                          c5.68-2.96,12.61-4.97,18.97-4.98c178.99-0.23,357.98-0.15,536.96-0.14c7.34,0,14.04,1.78,20.47,5.43
+                                          c19.84,11.27,39.81,22.31,59.77,33.36c1.69,0.93,3.66,1.82,5.53,1.88C861.55,560.19,868.71,560.06,875.87,560.06z M768.32,424.05
+                                          c-179.68,0-358.84,0-538.44,0c1.35,3.9,2.92,7.26,3.63,10.8c0.99,4.95,3.37,6.34,8.5,6.33c171.32-0.16,342.64-0.14,513.96-0.14
+                                          c1.5,0,3.04,0.19,4.49-0.08c0.96-0.18,2.31-0.82,2.6-1.59C764.91,434.44,766.52,429.4,768.32,424.05z M156.79,559.7
+                                          c229.42,0,457.34,0,686.69,0c-5.69-3.2-10.28-5.51-14.56-8.27c-5.08-3.28-10.42-4.33-16.47-4.32
+                                          c-103.98,0.14-207.96,0.1-311.94,0.1c-104.98,0-209.96-0.01-314.94,0.04c-2.61,0-5.53-0.07-7.76,1.02
+                                          C171.09,551.54,164.65,555.37,156.79,559.7z M812.7,336.62c-208.87,0-417.32,0-626.31,0c1.56,2.31,3.08,3.95,3.89,5.88
+                                          c2.52,5.96,6.91,6.96,13.04,6.96c195.82-0.18,391.65-0.24,587.47,0.13c10.2,0.02,17.11-2.22,21.27-11.52
+                                          C812.2,337.76,812.33,337.46,812.7,336.62z M211.8,379.96c1.1,2.47,2.35,4.48,2.89,6.66c1.37,5.57,4.81,6.56,10.22,6.56
+                                          c183.45-0.16,366.91-0.13,550.36-0.13c1.17,0,2.41,0.25,3.48-0.07c1.12-0.33,2.54-0.96,3.03-1.88c1.86-3.48,3.39-7.13,5.24-11.13
+                                          C595.14,379.96,403.79,379.96,211.8,379.96z M231.97,499.94c178.08,0,355.87,0,533.82,0c0-4.3,0-8.22,0-12.37
+                                          c-178.07,0-355.88,0-533.82,0C231.97,491.87,231.97,495.79,231.97,499.94z M204.56,533.86c197.36,0,394.12,0,591.55,0
+                                          c-10.05-7.27-20.12-10.8-32.13-10.79c-175.47,0.25-350.95,0.25-526.42-0.01C225.24,523.04,214.79,526.44,204.56,533.86z
+                                          M247.27,482.84c167.94,0,335.53,0,503.47,0c0.93-3.74,1.83-7.36,2.83-11.37c-169.94,0-339.16,0-509.07,0
+                                          C245.47,475.48,246.36,479.1,247.27,482.84z M179.11,326.25c2.16,3.82,4.08,5.92,8.41,5.92c208.16-0.12,416.32-0.12,624.47-0.01
+                                          c4.54,0,6.45-2,7.95-5.91C606.27,326.25,393.02,326.25,179.11,326.25z M188.47,541.44c0.12,0.47,0.25,0.94,0.37,1.42
+                                          c207.53,0,415.06,0,622.59,0c0.11-0.52,0.21-1.04,0.32-1.56c-3.68-1.03-7.35-2.97-11.03-2.97c-200.14-0.14-400.28-0.14-600.42,0.01
+                                          C196.35,538.35,192.41,540.37,188.47,541.44z M844.54,326.08c-5.63,0-9.93,0.23-14.19-0.08c-3.23-0.23-5.26,0.89-7.04,3.5
+                                          c-5.43,7.98-11.36,15.63-16.51,23.78c-24.71,39.15-39.95,82.15-51.09,126.78c-0.22,0.86-0.23,1.78-0.37,2.99
+                                          c1.44,0,2.42-0.01,3.41,0c7.51,0.08,7.49,0.07,9.51-7.1c8.67-30.85,19.96-60.68,34.79-89.12
+                                          C814.25,365.34,827.45,345.21,844.54,326.08z M155.7,326.08c0.39,0.99,0.45,1.5,0.73,1.82c23.42,25.95,39.93,56.13,52.61,88.36
+                                          c8.03,20.4,14.44,41.45,21.25,62.31c1.15,3.54,2.52,4.98,6.14,4.53c2.05-0.25,4.16-0.05,6.51-0.05c-0.4-1.99-0.62-3.29-0.93-4.57
+                                          c-6.65-26.68-14.94-52.83-25.68-78.17c-10.62-25.07-23.16-49.07-40.13-70.53c-1.16-1.47-2.83-3.4-4.39-3.53
+                                          C166.6,325.8,161.31,326.08,155.7,326.08z M916.05,596.86c0-10.33-0.19-20.66,0.08-30.98c0.13-5.2-2.95-5.07-6.49-4.95
+                                          c-3.39,0.12-7.08-0.96-7.02,4.85c0.21,20.65,0.2,41.31-0.01,61.96c-0.05,5.29,2.82,5.41,6.7,5.36c3.75-0.05,6.97,0.14,6.83-5.27
+                                          C915.86,617.52,916.05,607.19,916.05,596.86z M97.31,597c0-10.31-0.25-20.63,0.1-30.93c0.19-5.56-3.09-5.15-6.74-5.15
+                                          c-3.65,0-6.87-0.39-6.81,5.14c0.23,20.46,0.27,40.92-0.01,61.37c-0.08,5.87,3.31,5.28,7.09,5.43c3.99,0.16,6.67-0.16,6.49-5.42
+                                          C97.07,617.3,97.32,607.14,97.31,597z M118.95,291.86c0,9.5,0.17,19-0.07,28.49c-0.13,4.91,2.77,4.72,6.16,4.75
+                                          c3.5,0.03,6.12-0.08,6.08-4.87c-0.18-18.66-0.19-37.32,0.01-55.98c0.06-5.11-2.84-5-6.45-5.1c-3.83-0.11-5.92,0.77-5.81,5.22
+                                          C119.12,273.53,118.95,282.7,118.95,291.86z M881.05,292.17c0-9.16-0.21-18.33,0.09-27.49c0.15-4.67-1.95-5.61-6.02-5.56
+                                          c-3.83,0.05-6.31,0.43-6.25,5.32c0.21,18.49,0.21,36.99,0,55.48c-0.06,4.97,2.54,5.12,6.3,5.22c4.1,0.11,6.13-0.8,5.98-5.48
+                                          C880.84,310.51,881.05,301.34,881.05,292.17z" />
                                         <path class="st0 cls-1 cls-1-2"
                                             d="M844.54,326.08c-17.09,19.13-30.29,39.26-41.49,60.75c-14.83,28.45-26.12,58.27-34.79,89.12
-                          c-2.02,7.18-2,7.18-9.51,7.1c-0.99-0.01-1.97,0-3.41,0c0.15-1.21,0.16-2.13,0.37-2.99c11.14-44.64,26.37-87.64,51.09-126.78
-                          c5.15-8.15,11.08-15.8,16.51-23.78c1.78-2.61,3.81-3.73,7.04-3.5C834.61,326.31,838.91,326.08,844.54,326.08z" />
-                                        <path class="st0 cls-1 cls-1-2" d="M155.7,326.08c5.61,0,10.89-0.28,16.11,0.17c1.57,0.13,3.23,2.06,4.39,3.53
-                          c16.97,21.46,29.5,45.46,40.13,70.53c10.73,25.34,19.02,51.49,25.68,78.17c0.32,1.28,0.53,2.58,0.93,4.57
-                          c-2.36,0-4.46-0.21-6.51,0.05c-3.62,0.45-4.98-0.99-6.14-4.53c-6.81-20.87-13.22-41.91-21.25-62.31
-                          c-12.68-32.23-29.19-62.41-52.61-88.36C156.15,327.58,156.09,327.07,155.7,326.08z" />
+                                          c-2.02,7.18-2,7.18-9.51,7.1c-0.99-0.01-1.97,0-3.41,0c0.15-1.21,0.16-2.13,0.37-2.99c11.14-44.64,26.37-87.64,51.09-126.78
+                                          c5.15-8.15,11.08-15.8,16.51-23.78c1.78-2.61,3.81-3.73,7.04-3.5C834.61,326.31,838.91,326.08,844.54,326.08z" />
+                                        <path class="st0 cls-1 cls-1-2"
+                                            d="M155.7,326.08c5.61,0,10.89-0.28,16.11,0.17c1.57,0.13,3.23,2.06,4.39,3.53
+                                          c16.97,21.46,29.5,45.46,40.13,70.53c10.73,25.34,19.02,51.49,25.68,78.17c0.32,1.28,0.53,2.58,0.93,4.57
+                                          c-2.36,0-4.46-0.21-6.51,0.05c-3.62,0.45-4.98-0.99-6.14-4.53c-6.81-20.87-13.22-41.91-21.25-62.31
+                                          c-12.68-32.23-29.19-62.41-52.61-88.36C156.15,327.58,156.09,327.07,155.7,326.08z" />
                                     </g>
                                 </svg>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>Skin Rejuvanation Treatments</h3>
                             </a>
-                            <p>A non-invasive treatment designed to revive tired, aging, or damaged skin. It helps improve skin tone, texture, and elasticity, leaving your skin looking fresh, radiant, and youthful</p>
+                            <p>A non-invasive treatment designed to revive tired, aging, or damaged skin. It helps improve
+                                skin tone, texture, and elasticity, leaving your skin looking fresh, radiant, and youthful
+                            </p>
                             <a href="#" class="stretched-link"></a>
                         </div>
                     </div><!-- End Service Item -->
@@ -821,7 +799,9 @@
                             <a href="{{ route('prp') }}" class="stretched-link">
                                 <h3>IV Drips & Vitamin Injections</h3>
                             </a>
-                            <p>This treatment delivers essential vitamins and nutrients directly into your bloodstream through an IV or injection. It helps with hydration, boosts immunity, enhances energy, and improves skin health.</p>
+                            <p>This treatment delivers essential vitamins and nutrients directly into your bloodstream
+                                through an IV or injection. It helps with hydration, boosts immunity, enhances energy, and
+                                improves skin health.</p>
 
                             <a href="#" class="stretched-link"></a>
                         </div>
@@ -897,7 +877,8 @@
                     <div class="col-lg-3">
                         <ul class="nav nav-tabs flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Hydrafacial</a>
+                                <a class="nav-link active show" data-bs-toggle="tab"
+                                    href="#departments-tab-1">Hydrafacial</a>
                             </li>
                             {{-- <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Face Treatment </a>
@@ -906,19 +887,22 @@
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hydrafacial</a>
                             </li> --}}
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hair Growth Treatment</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hair Growth
+                                    Treatment</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Laser Hair Removal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">IV Drips and Vitamin Injections</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">IV Drips and Vitamin
+                                    Injections</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Teeth Whitening</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6"> Skin Rejuvenation Treatments</a>
+                                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6"> Skin Rejuvenation
+                                    Treatments</a>
                             </li>
 
 
@@ -927,7 +911,7 @@
                     </div>
                     <div class="col-lg-9 mt-4 mt-lg-0">
                         <div class="tab-content">
-                            
+
                             {{-- <div class="tab-pane" id="departments-tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
@@ -946,12 +930,18 @@
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3 id="dephead">Hydrafacial Department</h3>
                                         <p class="fst-italic">
-                                            Our HydraFacial treatments are designed to transform your skin with immediate, visible results. Using advanced vortex technology, this multi-step therapy deeply cleanses, exfoliates, extracts impurities, and infuses potent serums tailored to your skin’s needs. Perfect for hydration, anti-ageing, or blemish control, HydraFacial leaves your complexion radiant, refreshed, and rejuvenated—with zero downtime.
+                                            Our HydraFacial treatments are designed to transform your skin with immediate,
+                                            visible results. Using advanced vortex technology, this multi-step therapy
+                                            deeply cleanses, exfoliates, extracts impurities, and infuses potent serums
+                                            tailored to your skin’s needs. Perfect for hydration, anti-ageing, or blemish
+                                            control, HydraFacial leaves your complexion radiant, refreshed, and
+                                            rejuvenated—with zero downtime.
 
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{asset('assets/img/hydrafdep.jpg')}}" alt="" class="dpt_img">
+                                        <img src="{{ asset('assets/img/hydrafdep.jpg') }}" alt=""
+                                            class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -960,7 +950,10 @@
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3>Hair Growth Treatment Department</h3>
                                         <p class="fst-italic">
-                                            Dedicated to treating hair loss and improving scalp health, this department offers advanced non-surgical solutions like PRP, mesotherapy, and medical therapies. Our personalized approach helps stimulate natural hair regrowth, restore thinning areas, and boost your confidence
+                                            Dedicated to treating hair loss and improving scalp health, this department
+                                            offers advanced non-surgical solutions like PRP, mesotherapy, and medical
+                                            therapies. Our personalized approach helps stimulate natural hair regrowth,
+                                            restore thinning areas, and boost your confidence
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -973,11 +966,15 @@
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3 id="dephead">Laser Hair Removal Department</h3>
                                         <p class="fst-italic">
-                                            Our laser hair removal treatments are designed for smooth, lasting results with minimal discomfort. Using advanced, FDA-approved technology, we safely target unwanted hair on all skin types, ensuring precision and effectiveness. From your initial consultation to aftercare, our specialists guide you through every step—making the process seamless, personalised, and stress-free.
+                                            Our laser hair removal treatments are designed for smooth, lasting results with
+                                            minimal discomfort. Using advanced, FDA-approved technology, we safely target
+                                            unwanted hair on all skin types, ensuring precision and effectiveness. From your
+                                            initial consultation to aftercare, our specialists guide you through every
+                                            step—making the process seamless, personalised, and stress-free.
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{asset('assets/img/lhrdep.jpg')}}" alt="" class="dpt_img">
+                                        <img src="{{ asset('assets/img/lhrdep.jpg') }}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -985,10 +982,16 @@
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3 id="dephead">IV Drips and Vitamin Injections</h3>
-                                        <p>Our IV drips and vitamin injections deliver essential nutrients directly into your bloodstream for fast and effective absorption. </p> <p>These treatments are designed to boost energy levels, enhance immunity, improve skin radiance, and support overall wellness. Whether you're recovering from fatigue, dehydration, or simply looking to glow from within, our personalized infusions are tailored to meet your body's needs with noticeable results and minimal downtime.</p>
+                                        <p>Our IV drips and vitamin injections deliver essential nutrients directly into
+                                            your bloodstream for fast and effective absorption. </p>
+                                        <p>These treatments are designed to boost energy levels, enhance immunity, improve
+                                            skin radiance, and support overall wellness. Whether you're recovering from
+                                            fatigue, dehydration, or simply looking to glow from within, our personalized
+                                            infusions are tailored to meet your body's needs with noticeable results and
+                                            minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{asset('assets/img/mndep.jpg')}}" alt="" class="dpt_img">
+                                        <img src="{{ asset('assets/img/mndep.jpg') }}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -996,11 +999,16 @@
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3 id="dephead">Teeth Whitening</h3>
-                                        <p>Brighten your smile with our professional teeth whitening treatment.</p>  
-                                        <p>Our safe and effective solution removes stubborn stains and discoloration, giving you a whiter, more radiant smile in just one session. Perfect for anyone looking to enhance their appearance, this quick and pain-free treatment delivers instant results without sensitivity or damage to enamel. Most patients see a noticeable difference immediately, with teeth appearing up to several shades lighter.</p>  
+                                        <p>Brighten your smile with our professional teeth whitening treatment.</p>
+                                        <p>Our safe and effective solution removes stubborn stains and discoloration, giving
+                                            you a whiter, more radiant smile in just one session. Perfect for anyone looking
+                                            to enhance their appearance, this quick and pain-free treatment delivers instant
+                                            results without sensitivity or damage to enamel. Most patients see a noticeable
+                                            difference immediately, with teeth appearing up to several shades lighter.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{asset('assets/img/hairlossdep.jpg')}}" alt="" class="dpt_img">
+                                        <img src="{{ asset('assets/img/hairlossdep.jpg') }}" alt=""
+                                            class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -1008,10 +1016,15 @@
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3 id="dephead">Skin Rejuvenation Treatment Department</h3>
-                                      <p>Our Skin Rejuvenation Department specializes in advanced, non-surgical treatments that restore and refresh your skin’s natural glow.</p> <p>Using techniques like PRP (Vampire Facial), microneedling, laser therapy, and medical facials, we target concerns such as dullness, fine lines, acne scars, and uneven texture. Each treatment is customized to your skin type and goals, delivering visible improvements with minimal downtime.</p>
+                                        <p>Our Skin Rejuvenation Department specializes in advanced, non-surgical treatments
+                                            that restore and refresh your skin’s natural glow.</p>
+                                        <p>Using techniques like PRP (Vampire Facial), microneedling, laser therapy, and
+                                            medical facials, we target concerns such as dullness, fine lines, acne scars,
+                                            and uneven texture. Each treatment is customized to your skin type and goals,
+                                            delivering visible improvements with minimal downtime.</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{asset('assets/img/prpdep.jpg')}}" alt="" class="dpt_img">
+                                        <img src="{{ asset('assets/img/prpdep.jpg') }}" alt="" class="dpt_img">
                                     </div>
                                 </div>
                             </div>
@@ -1042,84 +1055,103 @@
 
 
         <!-- Faq Section -->
-       <section id="faq" class="faq section light-background">
+        <section id="faq" class="faq section light-background">
 
-    <!-- Section Title -->
-    <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-    </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div><!-- End Section Title -->
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="faq-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="faq-container">
 
-                    <div class="faq-item faq-active">
-                        <h3>How long does a hair transplant procedure take?</h3>
-                        <div class="faq-content">
-                            <p>
-                                A typical hair transplant takes around 4 to 8 hours, depending on the number of grafts needed. The procedure is performed under local anesthesia, and most clients are comfortable throughout. It's usually a one-day session, and you can return home the same day with aftercare instructions. Recovery is quick, and visible results begin within a few months.
-                            </p>
+                            <div class="faq-item faq-active">
+                                <h3>How long does a hair transplant procedure take?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        A typical hair transplant takes around 4 to 8 hours, depending on the number of
+                                        grafts needed. The procedure is performed under local anesthesia, and most clients
+                                        are comfortable throughout. It's usually a one-day session, and you can return home
+                                        the same day with aftercare instructions. Recovery is quick, and visible results
+                                        begin within a few months.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>Is laser hair removal painful?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Laser hair removal is generally well-tolerated. Most clients describe the sensation
+                                        as a light snapping of a rubber band on the skin. Newer laser machines come with
+                                        built-in cooling systems to minimize discomfort. Sessions are quick, and any mild
+                                        redness usually fades within hours.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>Are facial treatments suitable for sensitive skin?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Yes, definitely. We offer a range of gentle facials specially designed for sensitive
+                                        or reactive skin. Our therapists assess your skin first and choose calming,
+                                        non-irritating products that reduce redness, boost hydration, and leave your skin
+                                        feeling fresh without discomfort or flare-ups.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>How do I get the best results from HydraFacial?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        To maximize results, drink plenty of water before and after your session, and avoid
+                                        harsh skincare (like retinols or exfoliants) 24–48 hours prior. Arrive with a clean,
+                                        makeup-free face. After your HydraFacial, avoid heavy makeup or sun exposure for the
+                                        next 24 hours to let your skin fully absorb the treatment.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>How long do teeth whitening results last?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Teeth whitening results typically last from 6 months to 1 year, depending on your
+                                        lifestyle and oral hygiene. Avoiding coffee, tea, smoking, and colored foods helps
+                                        maintain your brighter smile longer. For best results, we recommend touch-up
+                                        treatments every few months.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>Is HydraFacial good for sensitive skin?</h3>
+                                <div class="faq-content">
+                                    <p>
+                                        Absolutely. HydraFacial is known for being gentle and safe for all skin types,
+                                        including sensitive or acne-prone skin. It uses non-irritating serums and adjustable
+                                        suction levels to ensure comfort and effectiveness. Plus, there’s no downtime — you
+                                        can walk out glowing and return to your normal routine right away.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
                         </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Is laser hair removal painful?</h3>
-                        <div class="faq-content">
-                            <p>
-                                Laser hair removal is generally well-tolerated. Most clients describe the sensation as a light snapping of a rubber band on the skin. Newer laser machines come with built-in cooling systems to minimize discomfort. Sessions are quick, and any mild redness usually fades within hours.
-                            </p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Are facial treatments suitable for sensitive skin?</h3>
-                        <div class="faq-content">
-                            <p>
-                                Yes, definitely. We offer a range of gentle facials specially designed for sensitive or reactive skin. Our therapists assess your skin first and choose calming, non-irritating products that reduce redness, boost hydration, and leave your skin feeling fresh without discomfort or flare-ups.
-                            </p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>How do I get the best results from HydraFacial?</h3>
-                        <div class="faq-content">
-                            <p>
-                                To maximize results, drink plenty of water before and after your session, and avoid harsh skincare (like retinols or exfoliants) 24–48 hours prior. Arrive with a clean, makeup-free face. After your HydraFacial, avoid heavy makeup or sun exposure for the next 24 hours to let your skin fully absorb the treatment.
-                            </p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>How long do teeth whitening results last?</h3>
-                        <div class="faq-content">
-                            <p>
-                                Teeth whitening results typically last from 6 months to 1 year, depending on your lifestyle and oral hygiene. Avoiding coffee, tea, smoking, and colored foods helps maintain your brighter smile longer. For best results, we recommend touch-up treatments every few months.
-                            </p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Is HydraFacial good for sensitive skin?</h3>
-                        <div class="faq-content">
-                            <p>
-                                Absolutely. HydraFacial is known for being gentle and safe for all skin types, including sensitive or acne-prone skin. It uses non-irritating serums and adjustable suction levels to ensure comfort and effectiveness. Plus, there’s no downtime — you can walk out glowing and return to your normal routine right away.
-                            </p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
+                    </div><!-- End Faq Column-->
                 </div>
-            </div><!-- End Faq Column-->
-        </div>
-    </div>
+            </div>
 
-       </section>
+        </section>
 
 
         <!-- /Faq Section -->
@@ -1140,64 +1172,80 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-1.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-1.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-1.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-1.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-2.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-2.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-2.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-2.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-3.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-3.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-3.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-3.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-4.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-4.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-4.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-4.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-5.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-5.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-5.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-5.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-6.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-6.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-6.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-6.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-7.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-7.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-7.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-7.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{asset('assets/img/gallery/gallery-8.jpg')}}" class="glightbox" data-gallery="images-gallery">
-                                <img src="{{asset('assets/img/gallery/gallery-8.jpg')}}" alt="" class="img-fluid">
+                            <a href="{{ asset('assets/img/gallery/gallery-8.jpg') }}" class="glightbox"
+                                data-gallery="images-gallery">
+                                <img src="{{ asset('assets/img/gallery/gallery-8.jpg') }}" alt=""
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div><!-- End Gallery Item -->
@@ -1216,13 +1264,14 @@
 
             <div class="container">
                 <div class="trusted-men-header">
-                    <h2>More than <span class="trusted-men-counter">100,000</span> clients<br>trust our treatment plans</h2>
+                    <h2>More than <span class="trusted-men-counter">100,000</span> clients<br>trust our treatment plans
+                    </h2>
                 </div>
 
 
                 <div class="trustpilot-container" style="display: flex; justify-content: center; margin-bottom: 40px;">
                     <div class="trustpilot-line">
-                        <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="trustpilot" width="320px">
+                        <img src="{{ asset('assets/img/trustpilotimage.png') }}" alt="trustpilot" width="320px">
                     </div>
                 </div>
                 <div class="trusted-men-grid" id="trustedMenGrid">
@@ -1245,7 +1294,8 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Contact</h2>
-                <p>For enquiries or further information, please fill out the form below. Our team is available to assist you.</p>
+                <p>For enquiries or further information, please fill out the form below. Our team is available to assist
+                    you.</p>
             </div><!-- End Section Title -->
 
             <div class="mb-5">
@@ -1304,147 +1354,146 @@
             <div class="consultation-cta">
                 <div class="consultation-box">
                     <span class="cta-text">Ready to transform your look?</span>
-                   <a href="#appointment">
-                     <button class="consultation-btn">
-                        {{-- <i class="fas fa-calendar-check"></i>  --}}
-                        Book Consultation
-                    </button>
-                   </a>
+                    <a href="#appointment">
+                        <button class="consultation-btn">
+                            {{-- <i class="fas fa-calendar-check"></i>  --}}
+                            Book Consultation
+                        </button>
+                    </a>
                 </div>
             </div>
         </main>
     </main>
     {{-- CTA-btn-scripts  --}}
-   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    // Only run on mobile
-    if (window.innerWidth > 768) return;
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Only run on mobile
+            if (window.innerWidth > 768) return;
 
-    // Just keep the click handler
-    document.querySelector('.consultation-btn')?.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('appointment')?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            // Just keep the click handler
+            document.querySelector('.consultation-btn')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('appointment')?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
         });
-    });
-});
-   </script>
+    </script>
     {{-- testimonials script --}}
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Intersection Observer for counter animation
-        const counterElement = document.querySelector('.trusted-men-counter');
-        const section = document.querySelector('.trusted-men-section');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for counter animation
+            const counterElement = document.querySelector('.trusted-men-counter');
+            const section = document.querySelector('.trusted-men-section');
 
-        let counterAnimated = false;
+            let counterAnimated = false;
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !counterAnimated) {
-                    animateCounter(counterElement, 100000);
-                    counterAnimated = true;
-                }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !counterAnimated) {
+                        animateCounter(counterElement, 100000);
+                        counterAnimated = true;
+                    }
+                });
+            }, {
+                threshold: 0.5
             });
-        }, {
-            threshold: 0.5
-        });
 
-        observer.observe(section);
+            observer.observe(section);
 
-        function animateCounter(element, target, duration = 2000) {
-            const start = 0;
-            const increment = target / (duration / 16);
-            let current = start;
+            function animateCounter(element, target, duration = 2000) {
+                const start = 0;
+                const increment = target / (duration / 16);
+                let current = start;
 
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    element.textContent = Math.floor(current).toLocaleString();
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    element.textContent = target.toLocaleString();
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        element.textContent = Math.floor(current).toLocaleString();
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target.toLocaleString();
+                    }
+                };
+
+                updateCounter();
+            }
+
+            // Testimonial data (removed rating property)
+            const testimonials = [{
+                    content: "After struggling with hair loss for years, this treatment plan actually worked. My confidence has never been higher!",
+                    img: "https://randomuser.me/api/portraits/men/32.jpg",
+                    name: "Michael R.",
+                    treatment: "12-month hair program"
+                },
+                {
+                    content: "The personalized approach made all the difference. Finally found a solution that delivers real results.",
+                    img: "https://randomuser.me/api/portraits/men/44.jpg",
+                    name: "David T.",
+                    treatment: "Custom hair treatment"
+                },
+                {
+                    content: "Noticeable improvement in just 3 months. The team understands men's hair concerns better than anyone.",
+                    img: "https://randomuser.me/api/portraits/men/22.jpg",
+                    name: "James K.",
+                    treatment: "Hair restoration"
+                },
+                {
+                    content: "Wish I had started sooner. The treatments are painless and actually work. Worth every penny.",
+                    img: "https://randomuser.me/api/portraits/men/55.jpg",
+                    name: "Robert P.",
+                    treatment: "6-month plan"
+                },
+                {
+                    content: "My barber asked what I've been doing differently. Friends are noticing the transformation!",
+                    img: "https://randomuser.me/api/portraits/men/66.jpg",
+                    name: "Thomas W.",
+                    treatment: "Complete hair solution"
+                },
+                {
+                    content: "No more worrying about thinning spots. This treatment gave me back my confidence.",
+                    img: "https://randomuser.me/api/portraits/men/77.jpg",
+                    name: "Christopher M.",
+                    treatment: "Hair thickening program"
                 }
-            };
+            ];
 
-            updateCounter();
-        }
+            const grid = document.getElementById('trustedMenGrid');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            let currentIndex = 0;
+            let visibleTestimonials = 3;
+            let autoRotateInterval;
+            const rotationInterval = 6000;
 
-        // Testimonial data (removed rating property)
-        const testimonials = [
-            {
-                content: "After struggling with hair loss for years, this treatment plan actually worked. My confidence has never been higher!",
-                img: "https://randomuser.me/api/portraits/men/32.jpg",
-                name: "Michael R.",
-                treatment: "12-month hair program"
-            },
-            {
-                content: "The personalized approach made all the difference. Finally found a solution that delivers real results.",
-                img: "https://randomuser.me/api/portraits/men/44.jpg",
-                name: "David T.",
-                treatment: "Custom hair treatment"
-            },
-            {
-                content: "Noticeable improvement in just 3 months. The team understands men's hair concerns better than anyone.",
-                img: "https://randomuser.me/api/portraits/men/22.jpg",
-                name: "James K.",
-                treatment: "Hair restoration"
-            },
-            {
-                content: "Wish I had started sooner. The treatments are painless and actually work. Worth every penny.",
-                img: "https://randomuser.me/api/portraits/men/55.jpg",
-                name: "Robert P.",
-                treatment: "6-month plan"
-            },
-            {
-                content: "My barber asked what I've been doing differently. Friends are noticing the transformation!",
-                img: "https://randomuser.me/api/portraits/men/66.jpg",
-                name: "Thomas W.",
-                treatment: "Complete hair solution"
-            },
-            {
-                content: "No more worrying about thinning spots. This treatment gave me back my confidence.",
-                img: "https://randomuser.me/api/portraits/men/77.jpg",
-                name: "Christopher M.",
-                treatment: "Hair thickening program"
-            }
-        ];
+            function initGrid() {
+                if (window.innerWidth < 576) {
+                    visibleTestimonials = 1;
+                } else if (window.innerWidth < 992) {
+                    visibleTestimonials = 2;
+                } else {
+                    visibleTestimonials = 3;
+                }
 
-        const grid = document.getElementById('trustedMenGrid');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        let currentIndex = 0;
-        let visibleTestimonials = 3;
-        let autoRotateInterval;
-        const rotationInterval = 6000;
-
-        function initGrid() {
-            if (window.innerWidth < 576) {
-                visibleTestimonials = 1;
-            } else if (window.innerWidth < 992) {
-                visibleTestimonials = 2;
-            } else {
-                visibleTestimonials = 3;
+                renderTestimonials();
+                updateControls();
+                startAutoRotate();
             }
 
-            renderTestimonials();
-            updateControls();
-            startAutoRotate();
-        }
+            function renderTestimonials() {
+                grid.innerHTML = '';
+                const endIndex = Math.min(currentIndex + visibleTestimonials, testimonials.length);
 
-        function renderTestimonials() {
-            grid.innerHTML = '';
-            const endIndex = Math.min(currentIndex + visibleTestimonials, testimonials.length);
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const testimonial = testimonials[i];
+                    const card = document.createElement('div');
+                    card.className = 'trusted-men-card';
+                    card.style.animationDelay = `${(i - currentIndex) * 0.1}s`;
 
-            for (let i = currentIndex; i < endIndex; i++) {
-                const testimonial = testimonials[i];
-                const card = document.createElement('div');
-                card.className = 'trusted-men-card';
-                card.style.animationDelay = `${(i - currentIndex) * 0.1}s`;
-
-                card.innerHTML = `
+                    card.innerHTML = `
                     <div class="trustpilot-img-container">
-                        <img src="{{asset('assets/img/trustpilotimage.png')}}" alt="Trustpilot" width="230">
+                        <img src="{{ asset('assets/img/trustpilotimage.png') }}" alt="Trustpilot" width="230">
                     </div>
                     <p class="trusted-men-content">"${testimonial.content}"</p>
                     <div class="trusted-men-client">
@@ -1456,73 +1505,73 @@
                     </div>
                 `;
 
-                grid.appendChild(card);
+                    grid.appendChild(card);
+                }
             }
-        }
 
-        function updateControls() {
-            prevBtn.classList.toggle('disabled', currentIndex === 0);
-            nextBtn.classList.toggle('disabled', currentIndex >= testimonials.length - visibleTestimonials);
-        }
+            function updateControls() {
+                prevBtn.classList.toggle('disabled', currentIndex === 0);
+                nextBtn.classList.toggle('disabled', currentIndex >= testimonials.length - visibleTestimonials);
+            }
 
-        function showNext() {
-            if (currentIndex < testimonials.length - visibleTestimonials) {
-                currentIndex++;
+            function showNext() {
+                if (currentIndex < testimonials.length - visibleTestimonials) {
+                    currentIndex++;
+                    renderTestimonials();
+                    updateControls();
+                } else {
+                    currentIndex = 0;
+                    renderTestimonials();
+                    updateControls();
+                }
+            }
+
+            function showPrev() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    renderTestimonials();
+                    updateControls();
+                }
+            }
+
+            function startAutoRotate() {
+                autoRotateInterval = setInterval(showNext, rotationInterval);
+            }
+
+            function stopAutoRotate() {
+                clearInterval(autoRotateInterval);
+            }
+
+            nextBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    stopAutoRotate();
+                    showNext();
+                    startAutoRotate();
+                }
+            });
+
+            prevBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    stopAutoRotate();
+                    showPrev();
+                    startAutoRotate();
+                }
+            });
+
+            window.addEventListener('resize', function() {
+                const prevVisible = visibleTestimonials;
+                initGrid();
+                if (visibleTestimonials > prevVisible) {
+                    currentIndex = Math.max(0, currentIndex - (visibleTestimonials - prevVisible));
+                }
                 renderTestimonials();
                 updateControls();
-            } else {
-                currentIndex = 0;
-                renderTestimonials();
-                updateControls();
-            }
-        }
+            });
 
-        function showPrev() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                renderTestimonials();
-                updateControls();
-            }
-        }
+            grid.addEventListener('mouseenter', stopAutoRotate);
+            grid.addEventListener('mouseleave', startAutoRotate);
 
-        function startAutoRotate() {
-            autoRotateInterval = setInterval(showNext, rotationInterval);
-        }
-
-        function stopAutoRotate() {
-            clearInterval(autoRotateInterval);
-        }
-
-        nextBtn.addEventListener('click', function() {
-            if (!this.classList.contains('disabled')) {
-                stopAutoRotate();
-                showNext();
-                startAutoRotate();
-            }
-        });
-
-        prevBtn.addEventListener('click', function() {
-            if (!this.classList.contains('disabled')) {
-                stopAutoRotate();
-                showPrev();
-                startAutoRotate();
-            }
-        });
-
-        window.addEventListener('resize', function() {
-            const prevVisible = visibleTestimonials;
             initGrid();
-            if (visibleTestimonials > prevVisible) {
-                currentIndex = Math.max(0, currentIndex - (visibleTestimonials - prevVisible));
-            }
-            renderTestimonials();
-            updateControls();
         });
-
-        grid.addEventListener('mouseenter', stopAutoRotate);
-        grid.addEventListener('mouseleave', startAutoRotate);
-
-        initGrid();
-    });
-</script>
+    </script>
 @endsection
