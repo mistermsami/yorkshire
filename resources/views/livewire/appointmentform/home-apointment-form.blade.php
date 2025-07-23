@@ -80,14 +80,14 @@
             <div class="form-group">
 
                 <select name="appointment_type" required id="appointment_type" wire:model="appointment_type" required>
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="hair">Hair Growth Treatments</option>
-                    <option value="skin">Laser Hair Removal</option>
-                    <option value="both">Vitamin Injections</option>
-                    <option value="both">HydraFacial</option>
-                    <option value="both">Teeth Whitening</option>
-                    <option value="both">IV Drips</option>
-                    <option value="both">Skin Rejuvanation Treatments</option>
+                    <option value= "" selected>Select Service</option>
+                    <option value="Hair Growth Treatments">Hair Growth Treatments</option>
+                    <option value="Laser Hair Removal">Laser Hair Removal</option>
+                    <option value="Vitamin Injections">Vitamin Injections</option>
+                    <option value="HydraFacial">HydraFacial</option>
+                    <option value="Teeth Whitening">Teeth Whitening</option>
+                    <option value="IV Drips">IV Drips</option>
+                    <option value="Skin Rejuvanation Treatments">Skin Rejuvanation Treatments</option>
                 </select>
             </div>
 
