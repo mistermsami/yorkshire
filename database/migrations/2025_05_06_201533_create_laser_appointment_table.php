@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('date');
             $table->string('time'); 
             $table->string('appointment_type');
-            $table->integer('pirce')->default('0');
+            $table->integer('price')->default('0');
             $table->string('status')->default('0');
             $table->integer('paid')->default('0');
             $table->string('message')->nullable(true);

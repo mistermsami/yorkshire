@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('all_appointment', function (Blueprint $table) {
+        Schema::create('teeth_appointment', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('contact');
-            $table->string('email');  
-            $table->string('date');     
+            $table->string('email');
+            $table->string('date');
+            $table->string('time'); 
             $table->string('appointment_type');
             $table->integer('price')->default('0');
             $table->integer('paid')->default('0');
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('all_appointment');
+        Schema::dropIfExists('teeth_appointment');
     }
 };
