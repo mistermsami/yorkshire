@@ -51,13 +51,13 @@
             </form>
         </div>
     </div> --}}
-    <div class="appointment-form-wrapper">
+    <div class="appointment-form-wrapper" id="appointment">
         @if (session()->has('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
         @endif
-        <form wire:submit.prevent="save" class="appointment-form" action="javascript:void(0);" id="appointment">
+        <form wire:submit.prevent="save" class="appointment-form" action="javascript:void(0);">
             <div class="form-header">
                 <h3 class="form-title">Book Your Consultation</h3>
             </div>

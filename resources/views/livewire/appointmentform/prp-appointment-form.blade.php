@@ -5,7 +5,7 @@
             {{ session('success') }}
         </div>
     @endif
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="appointment">
         <div class="col-md-8">
             <form wire:submit.prevent="save" class="bg-white p-4 rounded shadow" action="javascript:void(0);">
                 <div class="row">
