@@ -4,6 +4,7 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Queue\SerializesModels;
 
 class ContactSubmitted extends Mailable
@@ -21,6 +22,16 @@ class ContactSubmitted extends Mailable
 
     public function build()
     {
+        Log::info("Appointment Confirmation Message", [
+            'name' => $this->emailform->name,   
+            'email' => $this->emailform->email,
+            'contact' => $this->emailform->contact,
+            'appointment_type' => $this->emailform->appointment_type,
+            'date' => $this->emailform->date,
+            'time' => $this->emailform->time,
+            'message' => $this->emailform->message,
+            'pagetype' => $this->pagetype,
+        ]);
 
         if ($this->pagetype == '1') {
             return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
@@ -33,6 +44,6 @@ class ContactSubmitted extends Mailable
                 ->cc('support@yorkshirehairandskinsolutions.co.uk')
                 ->view('emails.appointment-submitted');
         }
-        dd(( $this->pagetype));
+        dd(($this->pagetype));
     }
 }

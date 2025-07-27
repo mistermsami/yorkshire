@@ -29,14 +29,14 @@ class LaserAppointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        $Laser_Appointment =  Laser_Appointment::create(
+        $emailform =  Laser_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
         // Reset form fields after submission
         $this->reset();
 
         
-        Mail::to($this->email)->send(new ContactSubmitted($Laser_Appointment, '2'));
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2'));
         // Optionally, show a success messag 
         session()->flash('success', 'we will be in touch shortly to address your Appointment.');
     }
