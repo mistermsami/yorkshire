@@ -30,9 +30,8 @@ class ContactForm extends Component
     {
         $validated = $this->validate();
 
-        $contact = Contact::create($validated); // assign to $contact
-        dd($contact); // Debugging line to check the contact data
-        Mail::to($this->email)->send(new ContactSubmitted($contact)); 
+        $contact = Contact::create($validated); // assign to $contact 
+        Mail::to($this->email)->send(new ContactSubmitted($contact, '1')); 
         session()->flash('success', 'We will be in touch shortly to address your questions or concerns.');
 
         $this->reset();

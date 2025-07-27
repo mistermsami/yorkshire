@@ -16,12 +16,12 @@
         Thank you for contacting Yorkshire Hair & Skin Solutions
       </h1>
       <p>
-        Dear {{ $contact->name }},
+        Dear {{ $emailform->name }},
       </p>
       <p>
         We have received your message:<br>
-        <strong>Subject:</strong> {{ $contact->subject }}<br>
-        <strong>Message:</strong> {{ $contact->Message }}
+        <strong>Subject:</strong> {{ $emailform->subject }}<br>
+        <strong>Message:</strong> {{ $emailform->message }}
       </p>
       <p>
         Our team will get back to you soon.

@@ -10,21 +10,27 @@ class ContactSubmitted extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $contact;
+    public $emailform;
+    public $pagetype;
 
-    public function __construct($contact)
+    public function __construct($emailform, $pagetype = null)
     {
-        $this->contact = $contact;
+        $this->emailform = $emailform;
+        $this->pagetype = $pagetype;
     }
 
     public function build()
     {
-        // return $this->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
-        //     ->cc('support@yorkshirehairandskinsolutions.co.uk')
-        //     ->view('emails.contact-submitted');
-        return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
-        ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
-        ->cc('support@yorkshirehairandskinsolutions.co.uk')
-        ->view('emails.contact-submitted');
+        if ($this->pagetype === '1') {
+            return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
+                ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
+                ->cc('support@yorkshirehairandskinsolutions.co.uk')
+                ->view('emails.contact-submitted');
+        } elseif ($this->pagetype === '2') {
+            return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
+                ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
+                ->cc('support@yorkshirehairandskinsolutions.co.uk')
+                ->view('emails.appointment-submitted');
+        }
     }
 }
