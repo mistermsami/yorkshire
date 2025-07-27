@@ -18,14 +18,14 @@
                 Thank you for the bookiing an appointment at Yorkshire Hair & Skin Solutions
             </h1>
             <p>
-                Dear {{ $emailform->name }},
+                Dear XYZ,
             </p>
             <p>
                 We have received your appointment request:
-                <br><strong>Appointment Type:</strong> {{ $emailform->appointment_type }}
-                <br><strong>Date:</strong> {{ $emailform->date }}
-                <br><strong>Time:</strong> {{ $emailform->time }}
-                <br><strong>Contact Number:</strong> {{ $emailform->contact }}
+                <br><strong>Appointment Type:</strong> LEASORR
+                <br><strong>Date:</strong> 21/11/2021
+                <br><strong>Time:</strong> 22:00
+                <br><strong>Contact Number:</strong> +123456789
             </p>
             <p>
                 Looking forward to the appointment.
