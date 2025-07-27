@@ -33,6 +33,6 @@ class ContactSubmitted extends Mailable
                 ->cc('support@yorkshirehairandskinsolutions.co.uk')
                 ->view('emails.appointment-submitted');
         }
-        dd(( $this->pagetype = $pagetype));
+        dd(( $this->pagetype));
     }
 }
