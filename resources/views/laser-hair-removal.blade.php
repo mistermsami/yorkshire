@@ -29,11 +29,13 @@
 
         p {
             font-size: 16px !important;
-            
+
         }
-       .about-content{
-         max-width: 535px;
-       }
+
+        .about-content {
+            max-width: 535px;
+        }
+
         .aboutmain_sec_img {
             border-radius: 15px;
             width: 100%;
@@ -120,22 +122,22 @@
         }
 
         /* .carousel-control-prev-icon {
-            background-image: none;
-            width: 3rem;
-            height: 3rem;
-            background-color: #1977cc;
-            mask-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 010 .708L5.707 8l5.647 5.646a.5.5 0 11-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z'/%3E%3C/svg%3E");
-            mask-size: cover;
-        }
+                background-image: none;
+                width: 3rem;
+                height: 3rem;
+                background-color: #1977cc;
+                mask-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 010 .708L5.707 8l5.647 5.646a.5.5 0 11-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z'/%3E%3C/svg%3E");
+                mask-size: cover;
+            }
 
-        .carousel-control-next-icon {
-            background-image: none;
-            width: 3rem;
-            height: 3rem;
-            background-color: #1977cc;
-            mask-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 11-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z'/%3E%3C/svg%3E");
-            mask-size: cover;
-        } */
+            .carousel-control-next-icon {
+                background-image: none;
+                width: 3rem;
+                height: 3rem;
+                background-color: #1977cc;
+                mask-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 11-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+                mask-size: cover;
+            } */
 
         .afterresult .card {
             background-color: #1977cc;
@@ -236,6 +238,7 @@
             border-radius: 20px;
             object-fit: cover;
         }
+
         .hairTfaq .details p {
             transition: all 0.5s ease-in-out;
         }
@@ -350,19 +353,22 @@
             border-radius: 15px;
             color: #f1f7f7;
         }
+
         .laserdevice .card {
             border: none;
             background-color: #1977cc;
             border-radius: 15px;
             color: #f1f7f7;
         }
+
         .laserinstruction .card {
             border: none;
             background-color: #1977cc;
             border-radius: 15px;
             color: #f1f7f7;
         }
-        .laserinstruction .card h4{
+
+        .laserinstruction .card h4 {
             color: #f1f7f7;
         }
 
@@ -380,8 +386,8 @@
                 height: auto;
                 margin-left: 0px;
             }
-            
-            
+
+
         }
 
         .pricingbtn {
@@ -432,18 +438,19 @@
                 height: auto;
                 margin-left: 0px;
             }
-         
+
             .exploreclinic .card {
                 margin-bottom: 20px;
             }
+
             .hairTfaq .nav-item .active {
                 background-color: #f1f7fc;
             }
         }
-/* Blue Color Scheme */
 
-/* Visual Section */
+        /* Blue Color Scheme */
 
+        /* Visual Section */
     </style>
 @endsection
 
@@ -457,18 +464,18 @@
                         <div class="">
 
                             <div class="section-header ">
-                                
+
                                 <h2 style="color: #0d5a9e;">Laser Hair Removal from the Best Clinic</h2>
-                                
+
                             </div>
                             <div class="about-content">
                                 <p>
                                     Restore your hair with the UK’s most trusted hair clinic. Yorkshire has helped over
-                                    <b>200,000</b> men regain their confidence.  
-                                    Book your free consultation today and take the first step toward a fuller head of hair.  
+                                    <b>200,000</b> men regain their confidence.
+                                    Book your free consultation today and take the first step toward a fuller head of hair.
                                     Expert care, natural results – your transformation starts here.
                                 </p>
-                                
+
                                 <div>
                                     <img src="/assets/img/trustpilotimage.png" alt="trustpilot" width="320px">
                                 </div>
@@ -481,7 +488,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 position-relative align-self-start">
-                        <img src="assets/img/lasercoverphoto.jpg" class="aboutmain_sec_img" alt="" >
+                        <img src="assets/img/lasercoverphoto.jpg" class="aboutmain_sec_img" alt="">
                         <a href="https://www.youtube.com/embed/QvzQlwSnzTQ?si=simxRnGf6dYMNeyV"
                             class="glightbox pulsating-play-btn"></a>
                     </div>
@@ -515,70 +522,73 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/laserresult1.webp" alt="Laser Hair Removal Results - Before & After" class="w-100">
+                                                    <img src="assets/img/laserresult1.webp"
+                                                        alt="Laser Hair Removal Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
                                                         <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">03</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">6 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Card 2 -->
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/laserresult2.jpg" alt="Skin Brightening Results - Before & After" class="w-100">
+                                                    <img src="assets/img/laserresult2.jpg"
+                                                        alt="Skin Brightening Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
                                                         <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">06</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">12 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Package Price:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;35 (save 15%)</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Card 3 -->
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/laserresult3.webp" alt="Acne Treatment Results - Before & After" class="w-100">
+                                                    <img src="assets/img/laserresult3.webp"
+                                                        alt="Acne Treatment Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
-                                                       <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+                                                        <div class="col-md-6">Laser Hair Removal</div>
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">06</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">8 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
@@ -588,7 +598,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Slide 2 -->
                             <div class="carousel-item">
                                 <div class="container">
@@ -597,70 +607,73 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/laserresult4.webp" alt="Scar Reduction Results - Before & After" class="w-100">
+                                                    <img src="assets/img/laserresult4.webp"
+                                                        alt="Scar Reduction Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
                                                         <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">06</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">10 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Package Deal:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;35/session</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Card 5 -->
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/result5.png" alt="Anti-Aging Results - Before & After" class="w-100">
+                                                    <img src="assets/img/result5.png"
+                                                        alt="Anti-Aging Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
                                                         <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">06</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">12 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Starting at:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;8/session</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Card 6 -->
                                         <div class="col-md-4 mb-3">
                                             <div class="card h-100">
                                                 <div class="card-header p-0 overflow-hidden">
-                                                    <img src="assets/img/result6.png" alt="Pigmentation Results - Before & After" class="w-100">
+                                                    <img src="assets/img/result6.png"
+                                                        alt="Pigmentation Results - Before & After" class="w-100">
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <hr style="color: #bfbfbf;">
                                                         <div class="col-md-6"><b>Treatment:</b></div>
                                                         <div class="col-md-6">Laser Hair Removal</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Sessions:</b></div>
                                                         <div class="col-md-6 mt-2">03</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Time Frame:</b></div>
                                                         <div class="col-md-6 mt-2">4 Weeks</div>
-                                                        
+
                                                         <div class="col-md-6 mt-2"><b>Quick Fix:</b></div>
                                                         <div class="col-md-6 mt-2 text-primary">&pound;35/session</div>
                                                     </div>
@@ -671,23 +684,25 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Carousel Controls -->
-                        <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" 
-                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
-                                style="margin-left: -13px; color: #1977cc;">
-                            <span class="carousel-control-prev-icon" style="filter: invert(0);" aria-hidden="true"></span>
+                        <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
+                            style="margin-left: -13px; color: #1977cc;">
+                            <span class="carousel-control-prev-icon" style="filter: invert(0);"
+                                aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" 
-                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
-                                style="margin-right: -13px; color: #1977cc;">
-                            <span class="carousel-control-next-icon" style="filter: invert(0);" aria-hidden="true"></span>
+                        <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
+                            style="margin-right: -13px; color: #1977cc;">
+                            <span class="carousel-control-next-icon" style="filter: invert(0);"
+                                aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
-            
+
                 <!-- CTA Button -->
                 <div class="col-md-12 d-flex justify-content-center mt-4">
                     <button class="cta-btn resultsbtn d-none d-sm-block" onclick="window.location.href='#'">
@@ -708,7 +723,7 @@
                     <h2 class="servicesection-title">Our Commitment to You</h2>
                     <p class="section-subtitle">Experience the Yorkshire Hair and Skin Solutions difference</p>
                 </div>
-                
+
                 <div class="row g-4">
                     <!-- Service Card 1 -->
                     <div class="col-lg-4 col-md-6">
@@ -717,11 +732,12 @@
                                 <i class="fas fa-user-md"></i>
                             </div>
                             <h3>Expertise You Can Trust</h3>
-                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration and skin rejuvenation treatments, using only medically-approved techniques.</p>
-                            
+                            <p>Our certified specialists bring 15+ years of combined experience in advanced hair restoration
+                                and skin rejuvenation treatments, using only medically-approved techniques.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -729,11 +745,12 @@
                                 <i class="fas fa-heart"></i>
                             </div>
                             <h3>Personalized Care</h3>
-                            <p>Your journey begins with a comprehensive consultation where we listen to understand your unique concerns and goals before creating a customized treatment plan.</p>
-                           
+                            <p>Your journey begins with a comprehensive consultation where we listen to understand your
+                                unique concerns and goals before creating a customized treatment plan.</p>
+
                         </div>
                     </div>
-                    
+
                     <!-- Service Card 3 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -741,12 +758,13 @@
                                 <i class="fas fa-clinic-medical"></i>
                             </div>
                             <h3>Premium Facilities</h3>
-                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the latest FDA-cleared technologies in a serene Yorkshire setting.</p>
-                            
+                            <p>Our state-of-the-art clinic combines medical precision with spa-like comfort, featuring the
+                                latest FDA-cleared technologies in a serene Yorkshire setting.</p>
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-5">
                     <a href="#contact" class="btn btn-primary ">
                         Book Your Consultation
@@ -776,253 +794,262 @@
                 <div id="female-cards">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4">
-                       <div class="card text-center" style="border: none">
-                      <div class="card-header py-1">
-                      <div class="mt-3">
-                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                     Face Treatments
-                    </span>
-                     </div>
-                  <h6 class="mt-3">Pricing Per Area</h6>
-                   <p>Save with multi-session packages.</p>
-                  </div>
-                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                  <table class="table table-borderless mb-0">
-                  <thead>
-                    <tr class="border-bottom">
-                        <th>Area</th>
-                        <th>1 Session</th>
-                        <th>6 Sessions</th>
-                    </tr>
-                </thead>
-                      <tbody>
-                    <tr>
-                        <td><strong>Full Face</strong></td>
-                        <td>&pound;45</td>
-                        <td>&pound;270 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Half Face</strong></td>
-                        <td>&pound;30</td>
-                        <td>&pound;180 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Neck Front/Back</strong></td>
-                        <td>&pound;35</td>
-                        <td>&pound;210</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Upper Lip + Chin/Cheeks</strong></td>
-                        <td>&pound;15</td>
-                        <td>&pound;90 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Sideburns</strong></td>
-                        <td>&pound;35</td>
-                        <td>&pound;210 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Jaw Line + Chin</strong></td>
-                        <td>&pound;50</td>
-                        <td>&pound;300 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>1/2 Face + Front/back Neck</strong></td>
-                        <td>&pound;50</td>
-                        <td>&pound;300 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>Beard + Cheek</strong></td>
-                        <td>&pound;55</td>
-                        <td>&pound;330 </td>
-                    </tr>
-                    </tbody>
-                     </table>
-                     </div>
-                       </div>
+                            <div class="card text-center" style="border: none">
+                                <div class="card-header py-1">
+                                    <div class="mt-3">
+                                        <span
+                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                                            Face Treatments
+                                        </span>
+                                    </div>
+                                    <h6 class="mt-3">Pricing Per Area</h6>
+                                    <p>Save with multi-session packages.</p>
+                                </div>
+                                <div class="card-body p-0"
+                                    style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                                    <table class="table table-borderless mb-0">
+                                        <thead>
+                                            <tr class="border-bottom">
+                                                <th>Area</th>
+                                                <th>1 Session</th>
+                                                <th>6 Sessions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Full Face</strong></td>
+                                                <td>&pound;45</td>
+                                                <td>&pound;270 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Half Face</strong></td>
+                                                <td>&pound;30</td>
+                                                <td>&pound;180 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Neck Front/Back</strong></td>
+                                                <td>&pound;35</td>
+                                                <td>&pound;210</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Upper Lip + Chin/Cheeks</strong></td>
+                                                <td>&pound;15</td>
+                                                <td>&pound;90 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Sideburns</strong></td>
+                                                <td>&pound;35</td>
+                                                <td>&pound;210 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Jaw Line + Chin</strong></td>
+                                                <td>&pound;50</td>
+                                                <td>&pound;300 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1/2 Face + Front/back Neck</strong></td>
+                                                <td>&pound;50</td>
+                                                <td>&pound;300 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Beard + Cheek</strong></td>
+                                                <td>&pound;55</td>
+                                                <td>&pound;330 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
 
-                    
-                     <div class="col-md-4">
-                       <div class="card text-center" style="border: none">
-                      <div class="card-header py-1">
-                      <div class="mt-3">
-                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                     Lower Body Treatments
-                    </span>
-                     </div>
-                  <h6 class="mt-3">Pricing Per Area</h6>
-                   <p>Save with multi-session packages.</p>
-                  </div>
-                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                  <table class="table table-borderless mb-0">
-                  <thead>
-                    <tr class="border-bottom">
-                        <th>Area</th>
-                        <th>1 Session</th>
-                        <th>6 Sessions</th>
-                    </tr>
-                </thead>
-                      <tbody>
-                    <tr>
-                        <td><strong>Full Legs <small style="color: #043264">(feet and toes)</small></strong></td>
-                        <td>&pound;95</td>
-                        <td>&pound;570 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Half Legs</strong></td>
-                        <td>&pound;60</td>
-                        <td>&pound;330 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Feet & Toes</strong></td>
-                        <td>&pound;20</td>
-                        <td>&pound;120</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Female Bikini</strong></td>
-                        <td>&pound;30</td>
-                        <td>&pound;180 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Female Brazilian</strong></td>
-                        <td>&pound;40</td>
-                        <td>&pound;240 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Female Hollywood + Underarms</strong></td>
-                        <td>&pound;55</td>
-                        <td>&pound;330 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>Male Brazalian</strong></td>
-                        <td>&pound;40</td>
-                        <td>&pound;240 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>Beard + Cheek</strong></td>
-                        <td>&pound;55</td>
-                        <td>&pound;330 </td>
-                    </tr>
-                    </tbody>
-                     </table>
-                     </div>
-                       </div>
-                        </div>
-                    
 
-
-
-
-                    <div class="col-md-4">
-                       <div class="card text-center" style="border: none">
-                      <div class="card-header py-1">
-                      <div class="mt-3">
-                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                     Upper Body Treatments
-                    </span>
-                     </div>
-                  <h6 class="mt-3">Pricing Per Area</h6>
-                   <p>Save with multi-session packages.</p>
-                  </div>
-                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                  <table class="table table-borderless mb-0">
-                 <thead>
-                    <tr class="border-bottom">
-                        <th>Area</th>
-                        <th>1 Session</th>
-                        <th>6 Sessions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Under Arms</strong></td>
-                        <td>&pound;8</td>
-                        <td>&pound;48 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Full Arms</strong></td>
-                        <td>&pound;75</td>
-                        <td>&pound;450 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Half Arms</strong></td>
-                        <td>&pound;40</td>
-                        <td>&pound;240</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Full Back</strong></td>
-                        <td>&pound;90</td>
-                        <td>&pound;540 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Stomach</strong></td>
-                        <td>&pound;40</td>
-                        <td>&pound;240 </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Chest</strong></td>
-                        <td>&pound;35</td>
-                        <td>&pound;210 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>Hands + Fingers</strong></td>
-                        <td>&pound;15</td>
-                        <td>&pound;90 </td>
-                    </tr>
-                     <tr>
-                        <td><strong>Snail Trail/Naval</strong></td>
-                        <td>&pound;25</td>
-                        <td>&pound;150 </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+                        <div class="col-md-4">
+                            <div class="card text-center" style="border: none">
+                                <div class="card-header py-1">
+                                    <div class="mt-3">
+                                        <span
+                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                                            Lower Body Treatments
+                                        </span>
+                                    </div>
+                                    <h6 class="mt-3">Pricing Per Area</h6>
+                                    <p>Save with multi-session packages.</p>
+                                </div>
+                                <div class="card-body p-0"
+                                    style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                                    <table class="table table-borderless mb-0">
+                                        <thead>
+                                            <tr class="border-bottom">
+                                                <th>Area</th>
+                                                <th>1 Session</th>
+                                                <th>6 Sessions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Full Legs <small style="color: #043264">(feet and
+                                                            toes)</small></strong></td>
+                                                <td>&pound;95</td>
+                                                <td>&pound;570 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Half Legs</strong></td>
+                                                <td>&pound;60</td>
+                                                <td>&pound;330 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Feet & Toes</strong></td>
+                                                <td>&pound;20</td>
+                                                <td>&pound;120</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Female Bikini</strong></td>
+                                                <td>&pound;30</td>
+                                                <td>&pound;180 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Female Brazilian</strong></td>
+                                                <td>&pound;40</td>
+                                                <td>&pound;240 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Female Hollywood + Underarms</strong></td>
+                                                <td>&pound;55</td>
+                                                <td>&pound;330 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Male Brazalian</strong></td>
+                                                <td>&pound;40</td>
+                                                <td>&pound;240 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Beard + Cheek</strong></td>
+                                                <td>&pound;55</td>
+                                                <td>&pound;330 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
 
-                         <div class="col-md-4">
-                       <div class="card text-center" style="border: none">
-                      <div class="card-header py-1">
-                      <div class="mt-3">
-                     <span style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
-                     Full Body Treatments
-                    </span>
-                     </div>
-                  <h6 class="mt-3">Pricing Per Area</h6>
-                   <p>Save with multi-session packages.</p>
-                  </div>
-                <div class="card-body p-0" style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
-                  <table class="table table-borderless mb-0">
-                 <thead>
-                    <tr class="border-bottom">
-                        <th>Area</th>
-                        <th>1 Session</th>
-                        <th>6 Sessions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Full Body</strong></td>
-                        <td>&pound;300</td>
-                        <td>&pound;1800</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Full body (4 parts)</strong></td>
-                        <td>&pound;190</td>
-                        <td>&pound;1200 </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+
+
+
+                        <div class="col-md-4">
+                            <div class="card text-center" style="border: none">
+                                <div class="card-header py-1">
+                                    <div class="mt-3">
+                                        <span
+                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                                            Upper Body Treatments
+                                        </span>
+                                    </div>
+                                    <h6 class="mt-3">Pricing Per Area</h6>
+                                    <p>Save with multi-session packages.</p>
+                                </div>
+                                <div class="card-body p-0"
+                                    style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                                    <table class="table table-borderless mb-0">
+                                        <thead>
+                                            <tr class="border-bottom">
+                                                <th>Area</th>
+                                                <th>1 Session</th>
+                                                <th>6 Sessions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Under Arms</strong></td>
+                                                <td>&pound;8</td>
+                                                <td>&pound;48 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Full Arms</strong></td>
+                                                <td>&pound;75</td>
+                                                <td>&pound;450 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Half Arms</strong></td>
+                                                <td>&pound;40</td>
+                                                <td>&pound;240</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Full Back</strong></td>
+                                                <td>&pound;90</td>
+                                                <td>&pound;540 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Stomach</strong></td>
+                                                <td>&pound;40</td>
+                                                <td>&pound;240 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Chest</strong></td>
+                                                <td>&pound;35</td>
+                                                <td>&pound;210 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Hands + Fingers</strong></td>
+                                                <td>&pound;15</td>
+                                                <td>&pound;90 </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Snail Trail/Naval</strong></td>
+                                                <td>&pound;25</td>
+                                                <td>&pound;150 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                      
-                     
 
-                      
+                        <div class="col-md-4">
+                            <div class="card text-center" style="border: none">
+                                <div class="card-header py-1">
+                                    <div class="mt-3">
+                                        <span
+                                            style="background-color:#f1f7fc; color: #1977cc; padding: 5px; border-radius: 7px; font-size: 14px; font-weight: 500;">
+                                            Full Body Treatments
+                                        </span>
+                                    </div>
+                                    <h6 class="mt-3">Pricing Per Area</h6>
+                                    <p>Save with multi-session packages.</p>
+                                </div>
+                                <div class="card-body p-0"
+                                    style="border: 1px solid #ebebeb; border-radius: 0 0 20px 20px;">
+                                    <table class="table table-borderless mb-0">
+                                        <thead>
+                                            <tr class="border-bottom">
+                                                <th>Area</th>
+                                                <th>1 Session</th>
+                                                <th>6 Sessions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Full Body</strong></td>
+                                                <td>&pound;300</td>
+                                                <td>&pound;1800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Full body (4 parts)</strong></td>
+                                                <td>&pound;190</td>
+                                                <td>&pound;1200 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-                       
+
+
+
+
+
                     </div>
                 </div>
 
@@ -1148,7 +1175,7 @@
                                         <br>
                                         Full Face 6 session : 270 £
                                         <br>
-                                        Half Face 1 session : 30 £	
+                                        Half Face 1 session : 30 £
                                         <br>
                                         Half Face 6 session : 180 £
                                         <br>
@@ -1197,19 +1224,19 @@
                                         <br>
                                         Female Brazilian 1 session : 40 £
                                         <br>
-                                         Female Brazilian 6 session : 240 £
-                                         <br>
-                                         Female Hollywood + Underarms 1 session : 55 £
-                                         <br>
-                                         Female Hollywood + Underarms 6 session : 330 £
-                                         <br>
-                                         Male Brazalian 1 session : 40 £
-                                         <br>
-                                         Male Brazalian 1 session : 240 £
-                                         <br>
-                                         Beard + Cheek 1 session : 55 £
-                                         <br>
-                                         Beard + Cheek 1 session : 330 £
+                                        Female Brazilian 6 session : 240 £
+                                        <br>
+                                        Female Hollywood + Underarms 1 session : 55 £
+                                        <br>
+                                        Female Hollywood + Underarms 6 session : 330 £
+                                        <br>
+                                        Male Brazalian 1 session : 40 £
+                                        <br>
+                                        Male Brazalian 1 session : 240 £
+                                        <br>
+                                        Beard + Cheek 1 session : 55 £
+                                        <br>
+                                        Beard + Cheek 1 session : 330 £
                                         <br><br>
 
                                         <b>Upper Body Treatments</b>
@@ -1250,11 +1277,11 @@
 
                                         <b>Full body</b>
                                         <br>
-                                       Full Body 1 session : 300 £
+                                        Full Body 1 session : 300 £
                                         <br>
-                                       Full Body 6 session : 1800 £
+                                        Full Body 6 session : 1800 £
                                         <br>
-                                       Full body (4 parts) 1 session : 190 £
+                                        Full body (4 parts) 1 session : 190 £
                                         <br>
                                         Full body (4 parts) 6 session : 1200 £
                                         <br><br>
@@ -1263,7 +1290,7 @@
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div>
 
-                      
+
                         </div>
                     </div>
                 </div>
@@ -1288,7 +1315,7 @@
                                     Charged on a per graft basis to maximise the cost of your procedure
                                 </p>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1321,10 +1348,12 @@
                             <div class="col-md-10 pt-1">
                                 <h3>Affordable Pricing Plans</h3>
                                 {{-- <br> --}}
-                                <p>Lock in our best price—quality care that fits your budget.Transparent pricing, no hidden fees—ever.</p>  
-                                <p>Limited-time offer: Book now and save up to 20%.Premium results at a price you’ll love.</p>  
-                                <p>Flexible payment plans tailored just for you.</p>  
-                                <p></p>  
+                                <p>Lock in our best price—quality care that fits your budget.Transparent pricing, no hidden
+                                    fees—ever.</p>
+                                <p>Limited-time offer: Book now and save up to 20%.Premium results at a price you’ll love.
+                                </p>
+                                <p>Flexible payment plans tailored just for you.</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -1339,7 +1368,7 @@
                     <h2 class="lasersection-title">Laser Hair Removal Instructions</h2>
                     <p class="section-subtitle">Essential guidelines for optimal treatment results</p>
                 </div>
-        
+
                 <div class="row justify-content-center g-4">
                     <!-- Before Treatment -->
                     <div class="col-lg-5 col-md-6">
@@ -1358,7 +1387,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- After Treatment -->
                     <div class="col-lg-5 col-md-6">
                         <div class="instruction-card">
@@ -1377,12 +1406,12 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="text-center mt-4">
                     <p class="text-muted">For best results: 6-8 treatments spaced 4-6 weeks apart</p>
                 </div>
             </div>
-        </section> 
+        </section>
 
 
 
@@ -1394,7 +1423,7 @@
                     <h2>Soprano ICE Platinum Laser System</h2>
                     <p class="subheader">The gold standard in pain-free, permanent hair reduction</p>
                 </div>
-        
+
                 <!-- Main Content -->
                 <div class="laser-grid">
                     <!-- Left Column - Visual -->
@@ -1405,7 +1434,7 @@
                                 <span>810nm Diode Laser</span>
                             </div>
                         </div>
-                        
+
                         <div class="highlights-box">
                             <div class="highlight-item">
                                 <div class="icon-circle">
@@ -1413,10 +1442,11 @@
                                 </div>
                                 <div>
                                     <h4>All Skin Types</h4>
-                                    <p>Safe for all skin tones (I-VI), including darker complexions that often can't use traditional lasers.</p>
+                                    <p>Safe for all skin tones (I-VI), including darker complexions that often can't use
+                                        traditional lasers.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="highlight-item">
                                 <div class="icon-circle">
                                     <i class="fas fa-snowflake"></i>
@@ -1426,7 +1456,7 @@
                                     <p>Patented cooling system eliminates discomfort - no numbing cream needed.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="highlight-item">
                                 <div class="icon-circle">
                                     <i class="fas fa-bolt"></i>
@@ -1436,7 +1466,7 @@
                                     <p>Large 24mm spot size treats full legs in under 30 minutes.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="highlight-item">
                                 <div class="icon-circle">
                                     <i class="fas fa-award"></i>
@@ -1448,22 +1478,28 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Right Column - Details -->
                     <div class="laser-details">
                         <div class="detail-card">
                             <h3><i class="fas fa-atom blue-icon"></i> How It Works</h3>
                             <p>
-                              The <strong>Soprano ICE Platinum</strong> uses advanced diode laser technology to gently heat the hair follicles, effectively targeting the root without harming surrounding skin. Its built-in <strong>cooling system</strong> keeps the skin protected and comfortable throughout the treatment.
+                                The <strong>Soprano ICE Platinum</strong> uses advanced diode laser technology to gently
+                                heat the hair follicles, effectively targeting the root without harming surrounding skin.
+                                Its built-in <strong>cooling system</strong> keeps the skin protected and comfortable
+                                throughout the treatment.
                             </p>
                             <p>
-                              Operating at a precise <strong>810nm wavelength</strong>, the laser focuses on the melanin in the hair shaft, disabling the follicle to prevent regrowth. This wavelength is known for its efficiency and safety across a wide range of skin types and hair colors.
+                                Operating at a precise <strong>810nm wavelength</strong>, the laser focuses on the melanin
+                                in the hair shaft, disabling the follicle to prevent regrowth. This wavelength is known for
+                                its efficiency and safety across a wide range of skin types and hair colors.
                             </p>
                             <p>
-                              With consistent sessions, the treatment results in <strong>long-lasting hair reduction</strong>, giving you smoother skin with minimal discomfort or downtime.
+                                With consistent sessions, the treatment results in <strong>long-lasting hair
+                                    reduction</strong>, giving you smoother skin with minimal discomfort or downtime.
                             </p>
-                          </div>
-                          
+                        </div>
+
                         <div class="tech-specs">
                             <h4>Technical Specifications:</h4>
                             <div class="specs-grid">
@@ -1491,8 +1527,8 @@
                         </div>
                     </div>
                 </div>
-        
-               
+
+
             </div>
         </section>
         <!-- Faq Section -->
@@ -1500,77 +1536,89 @@
             <div class="container section-title">
                 <h2>Frequently Asked Questions</h2>
             </div>
-        
+
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="faq-container">
-        
+
                             <div class="faq-item faq-active">
                                 <h3>What is Laser Hair Removal, and how does it work?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Laser Hair Removal is a non-invasive procedure that uses concentrated light energy to target and destroy hair follicles, preventing future hair growth. It provides long-term hair reduction and works on various skin types.
+                                        Laser Hair Removal is a non-invasive procedure that uses concentrated light energy
+                                        to target and destroy hair follicles, preventing future hair growth. It provides
+                                        long-term hair reduction and works on various skin types.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Is Laser Hair Removal permanent?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Laser Hair Removal significantly reduces hair growth, but results may vary. Some hair may regrow over time, requiring occasional maintenance sessions for long-lasting smooth skin.
+                                        Laser Hair Removal significantly reduces hair growth, but results may vary. Some
+                                        hair may regrow over time, requiring occasional maintenance sessions for
+                                        long-lasting smooth skin.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Is Laser Hair Removal safe?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Yes, Laser Hair Removal is a safe and FDA-approved procedure when performed by trained professionals. Minor redness or irritation may occur but usually subsides within a few hours.
+                                        Yes, Laser Hair Removal is a safe and FDA-approved procedure when performed by
+                                        trained professionals. Minor redness or irritation may occur but usually subsides
+                                        within a few hours.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>How many sessions are needed for the best results?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Most individuals require 6-8 sessions spaced 4-6 weeks apart to achieve optimal results, depending on hair type, skin tone, and treatment area.
+                                        Most individuals require 6-8 sessions spaced 4-6 weeks apart to achieve optimal
+                                        results, depending on hair type, skin tone, and treatment area.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Does Laser Hair Removal hurt?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        The procedure is generally well-tolerated, with most patients describing it as a mild tingling or snapping sensation. Cooling techniques and numbing creams can help reduce discomfort.
+                                        The procedure is generally well-tolerated, with most patients describing it as a
+                                        mild tingling or snapping sensation. Cooling techniques and numbing creams can help
+                                        reduce discomfort.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Which areas can be treated with Laser Hair Removal?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Laser Hair Removal can be performed on various areas, including the face, arms, legs, underarms, bikini line, back, and chest, offering smooth and hair-free skin.
+                                        Laser Hair Removal can be performed on various areas, including the face, arms,
+                                        legs, underarms, bikini line, back, and chest, offering smooth and hair-free skin.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-        
+
                             <div class="faq-item">
                                 <h3>Are there any side effects?</h3>
                                 <div class="faq-content">
                                     <p>
-                                        Side effects are minimal and may include slight redness, swelling, or temporary sensitivity in the treated area. These usually subside within a few hours to a couple of days.
+                                        Side effects are minimal and may include slight redness, swelling, or temporary
+                                        sensitivity in the treated area. These usually subside within a few hours to a
+                                        couple of days.
                                     </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1580,7 +1628,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- /Faq Section -->
 
 
@@ -1664,7 +1712,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -1672,7 +1720,7 @@
 
 
 
-        
+
         <!-- Laser CTA Section -->
         <section id="hydrafacial-contact" class="hydrafacial-cta-section py-5">
             <div class="hydrafacial-floating-bubbles">
@@ -1687,7 +1735,7 @@
                     <div class="col-lg-8 text-center" id="contact">
                         <h2 class="text-white mb-4">Ready for Laser Treatment?</h2>
                         <p class="lead text-white mb-5">Book your Laser treatment today and experience the difference
-                        </p> 
+                        </p>
                         @livewire(name: 'AppointmentForm.LaserAppointmentForm')
                     </div>
                 </div>
@@ -1701,7 +1749,7 @@
             document.getElementById('male-cards').style.display = (gender === 'male') ? 'block' : 'none';
             document.getElementById('female-cards').style.display = (gender === 'female') ? 'block' : 'none';
         }
-    </script> 
+    </script>
     <script>
         $(document).ready(function() {
             var $grid = $('.grid').isotope({
@@ -1721,7 +1769,7 @@
                 $(this).addClass('active');
             });
         });
-    </script> 
+    </script>
     <script>
         $(document).ready(function() {
             $("#toggleButton").click(function() {
@@ -1741,38 +1789,37 @@
     {{-- hydra bubles js --}}
     <script>
         function createHydraFacialBubbles() {
-                const bubblesContainer = document.querySelector('.hydrafacial-floating-bubbles');
-                if (!bubblesContainer) return;
+            const bubblesContainer = document.querySelector('.hydrafacial-floating-bubbles');
+            if (!bubblesContainer) return;
 
-                for (let i = 0; i < 8; i++) {
-                    const bubble = document.createElement('div');
-                    bubble.classList.add('hydrafacial-bubble');
+            for (let i = 0; i < 8; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('hydrafacial-bubble');
 
-                    // Random size between 20px and 60px
-                    const size = Math.random() * 40 + 20;
+                // Random size between 20px and 60px
+                const size = Math.random() * 40 + 20;
 
-                    // Random position
-                    const left = Math.random() * 100;
+                // Random position
+                const left = Math.random() * 100;
 
-                    // Random animation delay
-                    const delay = Math.random() * 5;
+                // Random animation delay
+                const delay = Math.random() * 5;
 
-                    // Random animation duration between 10s and 20s
-                    const duration = Math.random() * 10 + 10;
+                // Random animation duration between 10s and 20s
+                const duration = Math.random() * 10 + 10;
 
-                    bubble.style.width = `${size}px`;
-                    bubble.style.height = `${size}px`;
-                    bubble.style.left = `${left}%`;
-                    bubble.style.animationDelay = `${delay}s`;
-                    bubble.style.animationDuration = `${duration}s`;
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${left}%`;
+                bubble.style.animationDelay = `${delay}s`;
+                bubble.style.animationDuration = `${duration}s`;
 
-                    bubblesContainer.appendChild(bubble);
-                }
+                bubblesContainer.appendChild(bubble);
             }
+        }
 
-            createHydraFacialBubbles();
-        });
-         const bookButtons = document.getElementsByClassName('bookNow');
+        createHydraFacialBubbles();
+        const bookButtons = document.getElementsByClassName('bookNow');
 
         // If there's only one button, access the first one
         // bookButtons[0].addEventListener('click', function(e) {
