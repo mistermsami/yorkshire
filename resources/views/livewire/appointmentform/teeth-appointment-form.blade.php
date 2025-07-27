@@ -7,7 +7,7 @@
     @endif
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <form wire:submit.prevent="save" class="bg-white p-4 rounded shadow" action="javascript:void(0);">
+            <form wire:submit.prevent="save" class="bg-white p-4 rounded shadow" action="javascript:void(0);" id="appointment">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <input type="text" class="form-control" wire:model="name" name="name"
