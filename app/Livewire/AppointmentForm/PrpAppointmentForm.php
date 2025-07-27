@@ -2,6 +2,9 @@
  
 namespace App\Livewire\AppointmentForm;
 use Livewire\Component;
+use App\Mail\ContactSubmitted;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use App\Models\Prp_Appointment;   
 
 class PrpAppointmentForm extends Component
@@ -25,9 +28,11 @@ class PrpAppointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        Prp_Appointment::create(
+        $emailform = Prp_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
+        // Reset form fields after submission
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2'));
         // Reset form fields after submission
         $this->reset();
 

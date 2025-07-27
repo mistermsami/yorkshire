@@ -1,6 +1,9 @@
 <?php
 namespace App\Livewire\AppointmentForm;
 use Livewire\Component;  
+use App\Mail\ContactSubmitted;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use App\Models\ALLAppointment;
 
 class HomeApointmentForm extends Component
@@ -16,9 +19,10 @@ class HomeApointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        AllAppointment::create(
+        $emailform = AllAppointment::create(
             attributes: $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'message'])
         );
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2')); 
         // Reset form fields after submission
         $this->reset();
 

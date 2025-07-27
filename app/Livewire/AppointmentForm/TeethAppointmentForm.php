@@ -2,7 +2,10 @@
 
 namespace App\Livewire\AppointmentForm;
 
-use Livewire\Component;
+use Livewire\Component; 
+use App\Mail\ContactSubmitted;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use App\Models\Teeth_Appointment;
 
 class TeethAppointmentForm extends Component
@@ -26,10 +29,11 @@ class TeethAppointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        Teeth_Appointment::create(
+        $emailform = Teeth_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
         // Reset form fields after submission
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2'));
         $this->reset();
 
         // Optionally, show a success messag 

@@ -3,6 +3,9 @@
 namespace App\Livewire\AppointmentForm;
 
 use App\Models\Hydra_Appointment;
+use App\Mail\ContactSubmitted;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class AppointmentForm extends Component
@@ -27,9 +30,11 @@ class AppointmentForm extends Component
     {
         // dd($this->all());
         // Logic to store an appointment form 
-        Hydra_Appointment::create(
+        $emailform = Hydra_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
+        // Logic to store an appointment form
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2')); 
         // Reset form fields after submission
         $this->reset();
 
