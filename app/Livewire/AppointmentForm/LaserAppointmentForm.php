@@ -6,7 +6,7 @@ namespace App\Livewire\AppointmentForm;
 use App\Models\Laser_Appointment;
 use App\Mail\ContactSubmitted;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Log; 
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class LaserAppointmentForm extends Component
@@ -33,12 +33,10 @@ class LaserAppointmentForm extends Component
         $emailform =  Laser_Appointment::create(
             $this->only(['name', 'email', 'contact', 'appointment_type', 'date', 'time', 'message'])
         );
+
+        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2'));
         // Reset form fields after submission
         $this->reset();
-
-        
-        Mail::to($this->email)->send(new ContactSubmitted($emailform, '2'));
-        Log::info('Email sent successfully to ' . $this->email);
         // Optionally, show a success messag 
         session()->flash('success', 'we will be in touch shortly to address your Appointment.');
     }

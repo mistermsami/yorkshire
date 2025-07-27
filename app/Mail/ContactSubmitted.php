@@ -43,10 +43,6 @@ class ContactSubmitted extends Mailable
                 ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
                 ->cc('support@yorkshirehairandskinsolutions.co.uk')
                 ->view('emails.appointment-submitted');
-        }
-        return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
-            ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
-            ->cc('support@yorkshirehairandskinsolutions.co.uk')
-            ->view('emails.appointment-submitted');
+        } 
     }
 }
