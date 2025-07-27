@@ -21,16 +21,18 @@ class ContactSubmitted extends Mailable
 
     public function build()
     {
-        if ($this->pagetype === '1') {
+
+        if ($this->pagetype == '1') {
             return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
                 ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
                 ->cc('support@yorkshirehairandskinsolutions.co.uk')
                 ->view('emails.contact-submitted');
-        } elseif ($this->pagetype === '2') {
+        } elseif ($this->pagetype == '2') {
             return $this->from('noreply@yorkshirehairandskinsolutions.co.uk', 'Yorkshire')
                 ->subject('Thank you for contacting Yorkshire Hair & Skin Solutions')
                 ->cc('support@yorkshirehairandskinsolutions.co.uk')
                 ->view('emails.appointment-submitted');
         }
+        dd(( $this->pagetype = $pagetype));
     }
 }
