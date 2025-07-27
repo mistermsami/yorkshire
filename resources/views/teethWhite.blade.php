@@ -983,7 +983,6 @@
             }
 
             createHydraFacialBubbles();
-            });
             const bookButtons = document.getElementsByClassName('bookNow');
 
             // If there's only one button, access the first one
