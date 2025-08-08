@@ -16,7 +16,7 @@
 @section('MainSection')
     <div class="row">
         <div class="col-md-12">
-            @livewire('EditConstDetail', ['appointmentId' => $appointment->id])
+            @livewire('EditConstAppintmentDetail', ['appointmentId' => $appointment->id])
         </div> <!-- /.col -->
     </div>
 @endsection
