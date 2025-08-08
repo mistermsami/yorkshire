@@ -44,7 +44,7 @@ class EditConstAppintmentDetail extends Component
             'contact' => $this->contact,
             'date' => $this->date, 
             'appointment_type' => $this->appointment_type,
-            'pirce' => $this->price,
+            'price' => $this->price,
             'paid' => $this->paid,
             'status' => $this->status,
             'message' => $this->message,
