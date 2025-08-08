@@ -7,6 +7,7 @@ use App\Http\Controllers\LaserController;
 use App\Http\Controllers\PrpController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TeethController;
+use App\Http\Controllers\ConstController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -102,6 +103,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/teethAppointments', [TeethController::class, 'index'])->name('teeth.index');
     Route::get('/teethAppointments/detail/{id}', [TeethController::class, 'appointmentDetail'])->name('teeth.detail');
     Route::get('/teethAppointments/edit/{id}', [TeethController::class, 'editAppointmentDetail'])->name('teeth.edit');
+
+    // Hydera
+    Route::get('/consultation', [ConstController::class, 'index'])->name('const.index');
+    Route::get('/consultation/detail/{id}', [ConstController::class, 'appointmentDetail'])->name('const.detail');
+    Route::get('/consultation/edit/{id}', [ConstController::class, 'editAppointmentDetail'])->name('const.edit');
 
     // CONTACTS LIST
     Route::get('/contactlist', [ContactListController::class, 'index'])->name('contact.index');
