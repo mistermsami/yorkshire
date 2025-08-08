@@ -8,7 +8,7 @@ use App\Enums\AppointmentStatus;
 class ALLAppointment extends Model
 {
     protected $table = 'all_appointment';
-    protected $fillable = ['name', 'email', 'contact', 'date', 'appointment_type', 'message', 'paid', 'pirce', 'status']; // Fillable fields for mass assignment
+    protected $fillable = ['name', 'email', 'contact', 'date', 'time', 'appointment_type', 'message', 'paid', 'pirce', 'status']; // Fillable fields for mass assignment
     //
     protected $casts = [
         'status' => AppointmentStatus::class,
