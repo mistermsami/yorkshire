@@ -17,8 +17,7 @@ class EditConstAppintmentDetail extends Component
         $this->name = $appointment->name;
         $this->email = $appointment->email;
         $this->contact = $appointment->contact;
-        $this->date = $appointment->date;
-        $this->time = $appointment->time;
+        $this->date = $appointment->date; 
         $this->appointment_type = $appointment->appointment_type;
         $this->price = $appointment->pirce;
         $this->paid = $appointment->paid;
@@ -32,8 +31,7 @@ class EditConstAppintmentDetail extends Component
             'name' => 'required|string',
             'email' => 'required|email',
             'contact' => 'required',
-            'date' => 'required|date',
-            'time' => 'required',
+            'date' => 'required|date', 
             'appointment_type' => 'required|string',
             'price' => 'required|numeric',
             'paid' => 'required|numeric',
@@ -44,8 +42,7 @@ class EditConstAppintmentDetail extends Component
             'name' => $this->name,
             'email' => $this->email,
             'contact' => $this->contact,
-            'date' => $this->date,
-            'time' => $this->time,
+            'date' => $this->date, 
             'appointment_type' => $this->appointment_type,
             'pirce' => $this->price,
             'paid' => $this->paid,
