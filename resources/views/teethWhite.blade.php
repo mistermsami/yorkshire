@@ -397,6 +397,7 @@
             color: var(--primary-blue);
             margin-bottom: 20px;
         }
+        
 
 
         /* Animation classes */
@@ -551,6 +552,45 @@
 
         .btn-whitening-outline-price:active {
             transform: translateY(1px);
+        }
+        
+               /* HydraFacial CTA Section */
+        .hydrafacial-cta-section {
+            background: linear-gradient(to right, #3577cf, #021580e8);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hydrafacial-cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: white;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+
+        .hydrafacial-floating-bubbles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .hydrafacial-bubble {
+            position: absolute;
+            bottom: -100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: hydrafacial-floating 15s infinite ease-in;
         }
 
         /* Responsive Adjustments */
@@ -950,6 +990,94 @@
             </div>
         </section>
 
+
+        <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const slider = document.getElementById('beforeAfterSlider');
+        const beforeImage = slider.querySelector('.before-image');
+        const sliderHandle = slider.querySelector('.slider-handle');
+        
+        let isDragging = false;
+        
+        function moveSlider(e) {
+            if (!isDragging) return;
+            
+            let x = e.pageX - slider.getBoundingClientRect().left;
+            if (e.type === 'touchmove') {
+                x = e.touches[0].pageX - slider.getBoundingClientRect().left;
+            }
+            
+            // Constrain the slider within the container
+            if (x < 0) x = 0;
+            if (x > slider.offsetWidth) x = slider.offsetWidth;
+            
+            // Calculate percentage
+            const percent = (x / slider.offsetWidth) * 100;
+            
+            // Update the before image width and slider handle position
+            beforeImage.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0% 100%)`;
+            sliderHandle.style.left = `${percent}%`;
+        }
+        
+        // Mouse events
+        sliderHandle.addEventListener('mousedown', () => {
+            isDragging = true;
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        document.addEventListener('mousemove', moveSlider);
+        
+        // Touch events
+        sliderHandle.addEventListener('touchstart', () => {
+            isDragging = true;
+        });
+        
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+        
+        document.addEventListener('touchmove', moveSlider);
+
+        // Scroll animations
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.slide-up');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        animateOnScroll();
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+        </script>
 
         <script>
             function createHydraFacialBubbles() {
